@@ -1,0 +1,148 @@
+name: Auto-generate blog post
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # Every Monday at 9am UTC
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  generate-post:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate blog post via Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 << 'PYEOF'
+          import urllib.request
+          import json
+          import os
+          import re
+          import random
+          from datetime import datetime
+
+          TOPICS = [
+            "How to calculate the true cost of owning an electric car vs a petrol car",
+            "Electric car vs petrol: which is cheaper to run in 2025?",
+            "How home charging affects your electric car running costs",
+            "The real cost of public EV charging vs filling up at a petrol station",
+            "How many miles do you need to drive before an EV pays off?",
+            "Electric car depreciation vs petrol car depreciation: what the numbers show",
+            "How to factor in government incentives when comparing EV and petrol costs",
+            "Insurance costs for electric cars vs petrol cars: what to expect",
+            "How electricity prices affect the savings from switching to an EV",
+            "Petrol car maintenance costs vs electric car maintenance costs explained",
+            "How to compare the total cost of ownership for any EV and petrol model",
+            "Why the upfront price of an EV does not tell the whole story",
+            "How driving habits change the cost equation for electric vs petrol cars",
+            "Road tax and registration fees for EVs vs petrol cars around the world",
+            "How to use a cost calculator to decide if an EV is right for you",
+            "Electric cars vs petrol cars: which has lower lifetime emissions and costs?",
+            "How battery replacement costs factor into the long-term EV ownership equation",
+            "The best time to switch from a petrol car to an electric car based on costs",
+            "How fuel price volatility makes the case for switching to an electric car",
+            "Electric car vs petrol car: a beginner's guide to understanding the cost difference",
+          ]
+
+          with open("lib/blog.ts", "r") as f:
+            existing = f.read()
+
+          available = [t for t in TOPICS if t[:30].lower() not in existing.lower()]
+          topic = random.choice(available) if available else random.choice(TOPICS)
+
+          today = datetime.now().strftime("%B %d, %Y").replace(" 0", " ")
+          slug = re.sub(r"[^a-z0-9]+", "-", topic.lower())[:60].strip("-")
+
+          prompt = (
+            "You are writing a blog post for ev-vs-petrol-calc.com, a utility calculator for Australian users.\n\n"
+            f"Topic: {topic}\n"
+            f"Date: {today}\n\n"
+            "Write a helpful, plain-English blog post for Australian users.\n\n"
+            "WRITING RULES: No em-dashes. Sentence case headings. Australian English.\n\n"
+            "Output ONLY a valid TypeScript object literal (no imports, no exports, no surrounding code, no markdown fences) that matches this exact interface:\n"
+            "{\n"
+            "  slug: string,\n"
+            "  title: string,\n"
+            "  excerpt: string,\n"
+            "  date: string,\n"
+            "  readTime: string,\n"
+            "  category: string,\n"
+            "  tags: string[],\n"
+            "  content: Array<{\n"
+            "    heading?: string,\n"
+            "    subheading?: string,\n"
+            "    body?: string,\n"
+            "    list?: string[],\n"
+            "    table?: { headers: string[], rows: string[][] },\n"
+            "    callout?: { type: 'info' | 'tip' | 'warning', text: string },\n"
+            "  }>,\n"
+            "}\n\n"
+            "Requirements:\n"
+            "- 5-8 content sections\n"
+            "- At least one list\n"
+            "- At least one callout\n"
+            "- Output only the raw object literal starting with { and ending with }\n"
+            f'- slug must be exactly: "{slug}"\n'
+            f'- date must be exactly: "{today}"\n'
+            "- category must be one of: Tax, Calculator guide, How-to, Regulation, Tips\n"
+          )
+
+          payload = json.dumps({
+            "model": "claude-sonnet-4-6",
+            "max_tokens": 4000,
+            "messages": [{"role": "user", "content": prompt}]
+          }).encode()
+
+          req = urllib.request.Request(
+            "https://api.anthropic.com/v1/messages",
+            data=payload,
+            headers={
+              "x-api-key": os.environ["ANTHROPIC_API_KEY"],
+              "anthropic-version": "2023-06-01",
+              "content-type": "application/json",
+            }
+          )
+
+          with urllib.request.urlopen(req) as res:
+            body = json.loads(res.read())
+
+          raw = body["content"][0]["text"].strip()
+          raw = re.sub(r"^```[a-z]*\n?", "", raw)
+          raw = re.sub(r"\n?```$", "", raw)
+          raw = raw.strip()
+
+          if not (raw.startswith("{") and raw.endswith("}")):
+            raise ValueError("Unexpected output format: " + raw[:200])
+
+          with open("lib/blog.ts", "r") as f:
+            content = f.read()
+
+          insert_before = "];\n\nexport function getPostBySlug"
+          new_entry = "  " + raw + ",\n"
+          updated = content.replace(insert_before, new_entry + insert_before)
+
+          if updated == content:
+            raise ValueError("Could not find insertion point in lib/blog.ts")
+
+          with open("lib/blog.ts", "w") as f:
+            f.write(updated)
+
+          print("Blog post generated: " + slug)
+          PYEOF
+
+      - name: Commit and push
+        run: |
+          git config user.name "ev-vs-petrol-calc Bot"
+          git config user.email "bot@ev-vs-petrol-calc.com"
+          git add lib/blog.ts
+          git diff --staged --quiet || git commit -m "blog: auto-generate weekly post"
+          git push

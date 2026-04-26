@@ -1,0 +1,36 @@
+import type { Metadata } from "next";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://ev-vs-petrol-calc.com"),
+  title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
+  description: "Compare the real cost of driving electric vs petrol. Enter your mileage, energy prices, and car details to see total ownership costs side by side.",
+  openGraph: {
+    title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
+    description: "See exactly how much you save switching to electric. Compare EV vs petrol running costs in seconds.",
+    url: "https://ev-vs-petrol-calc.com",
+    siteName: "EV vs Petrol Cost Calculator",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
+    description: "See exactly how much you save switching to electric. Compare EV vs petrol running costs in seconds.",
+  },
+  robots: { index: true, follow: true },
+  alternates: { canonical: "https://ev-vs-petrol-calc.com" },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en-AU">
+      <head>
+        {/* AdSense — replace ADSENSE_CLIENT_ID with your publisher ID */}
+        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-ADSENSE_CLIENT_ID" crossOrigin="anonymous" /> */}
+        {/* GA4 — replace GA4_MEASUREMENT_ID */}
+        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID" /> */}
+      </head>
+      <body>{children}</body>
+    </html>
+  );
+}

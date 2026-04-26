@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1f2328;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  /* System font stack — zero download, instant FCP, looks native on every device */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hide native scrollbar across all browsers */
+* {
+  scrollbar-width: none;       /* Firefox */
+  -ms-overflow-style: none;    /* IE/Edge */
+}
+*::-webkit-scrollbar {
+  display: none;               /* Chrome/Safari/Opera */
+}
+
+/* Prevent iOS Safari auto-zoom on input focus */
+input, select, textarea, button {
+  font-size: max(16px, 1em);
+}

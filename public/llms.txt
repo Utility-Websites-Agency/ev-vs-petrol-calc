@@ -1,0 +1,21 @@
+# ev-vs-petrol-calc
+
+> A free calculator that compares the true cost of owning and running an electric vehicle versus a petrol car over any time period you choose.
+
+## Tools
+- Electric car vs petrol cost calculator: estimates and compares total ownership costs including purchase price, fuel or charging costs, insurance, maintenance, and depreciation for electric and petrol vehicles side by side
+
+## Topics covered
+- Fuel and charging cost comparison over time
+- Purchase price and depreciation differences between EVs and petrol cars
+- Home charging versus public charging costs
+- Petrol price trends and how they affect long-term running costs
+- EV battery longevity and replacement cost considerations
+- Government incentives, grants, and tax credits for electric vehicles
+- Insurance cost differences between electric and petrol vehicles
+- Maintenance and servicing cost comparisons
+- Break-even point calculation for switching from petrol to electric
+- Environmental cost and carbon footprint comparison
+
+## Audience
+This site is for anyone considering switching from a petrol car to an electric vehicle and wanting a clear, numbers-based comparison of the real costs involved.
