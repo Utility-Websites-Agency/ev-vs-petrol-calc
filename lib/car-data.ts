@@ -822,6 +822,1652 @@ export const PETROL_MAKES: PetrolMake[] = [
       },
     ],
   },
+  {
+    make: "Abarth",
+    models: [
+      {
+        model: "595",
+        versions: [
+          { name: "595 1.4T 5MT", l100km: 6.9, fuelType: "petrol" },
+          { name: "595 Competizione 1.4T 5MT", l100km: 7.1, fuelType: "petrol" },
+          { name: "595 Turismo 1.4T 5AT", l100km: 7.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "695",
+        versions: [
+          { name: "695 Biposto 1.4T 6MT", l100km: 7.3, fuelType: "petrol" },
+          { name: "695 Rivale 1.4T 5MT", l100km: 7.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "124 Spider",
+        versions: [
+          { name: "124 Spider 1.4T 6MT", l100km: 6.7, fuelType: "petrol" },
+          { name: "124 Spider Abarth 1.4T 6MT", l100km: 7.0, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Alfa Romeo",
+    models: [
+      {
+        model: "Giulia",
+        versions: [
+          { name: "Giulia 2.0T 8AT RWD", l100km: 7.1, fuelType: "petrol" },
+          { name: "Giulia 2.0T 8AT AWD", l100km: 7.5, fuelType: "petrol" },
+          { name: "Giulia Quadrifoglio 2.9 V6 8AT", l100km: 10.5, fuelType: "petrol" },
+          { name: "Giulia 2.2 Diesel 8AT RWD", l100km: 5.0, fuelType: "diesel" },
+          { name: "Giulia 2.2 Diesel 8AT AWD", l100km: 5.3, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Stelvio",
+        versions: [
+          { name: "Stelvio 2.0T 8AT AWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "Stelvio Quadrifoglio 2.9 V6 8AT", l100km: 11.4, fuelType: "petrol" },
+          { name: "Stelvio 2.2 Diesel 8AT AWD", l100km: 6.0, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Tonale",
+        versions: [
+          { name: "Tonale 1.5T MHEV 7DCT FWD", l100km: 6.5, fuelType: "petrol" },
+          { name: "Tonale 1.5T PHEV AWD", l100km: 2.1, fuelType: "petrol" },
+          { name: "Tonale 1.6 Diesel 6AT FWD", l100km: 5.0, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Giulietta",
+        versions: [
+          { name: "Giulietta 1.4T 6MT FWD", l100km: 6.5, fuelType: "petrol" },
+          { name: "Giulietta 1.75T 6MT FWD", l100km: 7.8, fuelType: "petrol" },
+          { name: "Giulietta Quadrifoglio Verde 1.75T 6MT", l100km: 8.4, fuelType: "petrol" },
+          { name: "Giulietta 2.0 JTDm 6AT", l100km: 5.5, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Alpina",
+    models: [
+      {
+        model: "B3",
+        versions: [
+          { name: "B3 3.0 BiTurbo 8AT AWD", l100km: 9.3, fuelType: "petrol" },
+          { name: "B3 Touring 3.0 BiTurbo 8AT AWD", l100km: 9.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "B4",
+        versions: [
+          { name: "B4 Gran Coupe 3.0 BiTurbo 8AT AWD", l100km: 9.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "B5",
+        versions: [
+          { name: "B5 Sedan 4.4 V8 BiTurbo 8AT AWD", l100km: 11.5, fuelType: "petrol" },
+          { name: "B5 Touring 4.4 V8 BiTurbo 8AT AWD", l100km: 11.6, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "B7",
+        versions: [
+          { name: "B7 4.4 V8 BiTurbo 8AT AWD", l100km: 12.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "XB7",
+        versions: [
+          { name: "XB7 4.4 V8 BiTurbo 8AT AWD", l100km: 13.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "D3",
+        versions: [
+          { name: "D3 S Touring 3.0 BiTurbo Diesel 8AT AWD", l100km: 6.2, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Alpine",
+    models: [
+      {
+        model: "A110",
+        versions: [
+          { name: "A110 1.8T 7DCT", l100km: 6.5, fuelType: "petrol" },
+          { name: "A110 S 1.8T 7DCT", l100km: 6.8, fuelType: "petrol" },
+          { name: "A110 GT 1.8T 7DCT", l100km: 6.7, fuelType: "petrol" },
+          { name: "A110 R 1.8T 7DCT", l100km: 7.0, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Aston Martin",
+    models: [
+      {
+        model: "Vantage",
+        versions: [
+          { name: "Vantage 4.0 V8 8AT", l100km: 11.9, fuelType: "petrol" },
+          { name: "Vantage F1 Edition 4.0 V8 8AT", l100km: 12.2, fuelType: "petrol" },
+          { name: "Vantage Roadster 4.0 V8 8AT", l100km: 12.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "DB11",
+        versions: [
+          { name: "DB11 V8 4.0 8AT", l100km: 12.5, fuelType: "petrol" },
+          { name: "DB11 V12 5.2 8AT", l100km: 14.3, fuelType: "petrol" },
+          { name: "DB11 Volante V8 4.0 8AT", l100km: 12.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "DB12",
+        versions: [
+          { name: "DB12 4.0 V8 8AT", l100km: 12.3, fuelType: "petrol" },
+          { name: "DB12 Volante 4.0 V8 8AT", l100km: 12.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "DBX",
+        versions: [
+          { name: "DBX 4.0 V8 9AT AWD", l100km: 14.4, fuelType: "petrol" },
+          { name: "DBX707 4.0 V8 9AT AWD", l100km: 15.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "DBS",
+        versions: [
+          { name: "DBS Superleggera 5.2 V12 8AT", l100km: 14.8, fuelType: "petrol" },
+          { name: "DBS Volante 5.2 V12 8AT", l100km: 15.1, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Bentley",
+    models: [
+      {
+        model: "Continental GT",
+        versions: [
+          { name: "Continental GT V8 4.0 8AT AWD", l100km: 12.2, fuelType: "petrol" },
+          { name: "Continental GT W12 6.0 8AT AWD", l100km: 14.7, fuelType: "petrol" },
+          { name: "Continental GT Speed W12 6.0 8AT AWD", l100km: 15.2, fuelType: "petrol" },
+          { name: "Continental GTC V8 4.0 8AT AWD", l100km: 12.5, fuelType: "petrol" },
+          { name: "Continental GTC W12 6.0 8AT AWD", l100km: 15.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Flying Spur",
+        versions: [
+          { name: "Flying Spur V8 4.0 8AT AWD", l100km: 11.9, fuelType: "petrol" },
+          { name: "Flying Spur W12 6.0 8AT AWD", l100km: 14.5, fuelType: "petrol" },
+          { name: "Flying Spur Hybrid 2.9 V6 PHEV", l100km: 2.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Bentayga",
+        versions: [
+          { name: "Bentayga V8 4.0 8AT AWD", l100km: 14.7, fuelType: "petrol" },
+          { name: "Bentayga Speed W12 6.0 8AT AWD", l100km: 17.0, fuelType: "petrol" },
+          { name: "Bentayga Hybrid 3.0 V6 PHEV AWD", l100km: 3.2, fuelType: "petrol" },
+          { name: "Bentayga EWB V8 4.0 8AT AWD", l100km: 15.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Mulsanne",
+        versions: [
+          { name: "Mulsanne 6.75 V8 8AT", l100km: 19.9, fuelType: "petrol" },
+          { name: "Mulsanne Speed 6.75 V8 8AT", l100km: 20.3, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Chery",
+    models: [
+      {
+        model: "Omoda 5",
+        versions: [
+          { name: "Omoda 5 1.6T 7DCT FWD", l100km: 7.6, fuelType: "petrol" },
+          { name: "Omoda 5 GT 1.6T 7DCT FWD", l100km: 7.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Tiggo 4 Pro",
+        versions: [
+          { name: "Tiggo 4 Pro 1.5T 6AT FWD", l100km: 7.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Tiggo 7 Pro",
+        versions: [
+          { name: "Tiggo 7 Pro 1.6T 7DCT FWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "Tiggo 7 Pro Max 1.6T 7DCT AWD", l100km: 8.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Tiggo 8 Pro",
+        versions: [
+          { name: "Tiggo 8 Pro 1.6T 7DCT FWD", l100km: 8.3, fuelType: "petrol" },
+          { name: "Tiggo 8 Pro Max 2.0T 8AT AWD", l100km: 9.5, fuelType: "petrol" },
+          { name: "Tiggo 8 Pro e+ PHEV AWD", l100km: 1.8, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Chrysler",
+    models: [
+      {
+        model: "300",
+        versions: [
+          { name: "300 3.6L V6 8AT RWD", l100km: 10.7, fuelType: "petrol" },
+          { name: "300 S 3.6L V6 8AT RWD", l100km: 10.7, fuelType: "petrol" },
+          { name: "300 SRT 6.4L V8 8AT RWD", l100km: 13.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Pacifica",
+        versions: [
+          { name: "Pacifica 3.6L V6 9AT FWD", l100km: 12.4, fuelType: "petrol" },
+          { name: "Pacifica Hybrid 3.6L V6 PHEV FWD", l100km: 3.4, fuelType: "petrol" },
+          { name: "Pacifica Limited 3.6L V6 9AT FWD", l100km: 12.6, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Citroen",
+    models: [
+      {
+        model: "C3",
+        versions: [
+          { name: "C3 1.2 PureTech 83 5MT", l100km: 5.7, fuelType: "petrol" },
+          { name: "C3 1.2 PureTech 110 6AT", l100km: 5.9, fuelType: "petrol" },
+          { name: "C3 1.5 BlueHDi 100 6MT", l100km: 4.1, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "C4",
+        versions: [
+          { name: "C4 1.2 PureTech 130 8AT", l100km: 6.1, fuelType: "petrol" },
+          { name: "C4 X 1.2 PureTech 130 8AT", l100km: 6.2, fuelType: "petrol" },
+          { name: "C4 1.5 BlueHDi 130 8AT", l100km: 4.6, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "C5 Aircross",
+        versions: [
+          { name: "C5 Aircross 1.2 PureTech 130 8AT", l100km: 6.6, fuelType: "petrol" },
+          { name: "C5 Aircross PHEV 225 e-EAT8", l100km: 1.6, fuelType: "petrol" },
+          { name: "C5 Aircross 1.5 BlueHDi 130 8AT", l100km: 5.1, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Berlingo",
+        versions: [
+          { name: "Berlingo 1.2 PureTech 110 6AT", l100km: 7.0, fuelType: "petrol" },
+          { name: "Berlingo 1.5 BlueHDi 100 6MT", l100km: 4.9, fuelType: "diesel" },
+          { name: "Berlingo 1.5 BlueHDi 130 8AT", l100km: 5.1, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Daewoo",
+    models: [
+      {
+        model: "Lanos",
+        versions: [
+          { name: "Lanos 1.4 5MT", l100km: 7.8, fuelType: "petrol" },
+          { name: "Lanos 1.6 5MT", l100km: 8.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Nubira",
+        versions: [
+          { name: "Nubira 1.6 5MT", l100km: 8.3, fuelType: "petrol" },
+          { name: "Nubira 2.0 5MT", l100km: 9.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Leganza",
+        versions: [
+          { name: "Leganza 2.0 4AT", l100km: 9.5, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Daihatsu",
+    models: [
+      {
+        model: "Terios",
+        versions: [
+          { name: "Terios 1.5 4AT 4WD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Terios 1.5 5MT 4WD", l100km: 8.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Sirion",
+        versions: [
+          { name: "Sirion 1.0 5MT", l100km: 6.1, fuelType: "petrol" },
+          { name: "Sirion 1.3 4AT", l100km: 6.7, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Charade",
+        versions: [
+          { name: "Charade 1.0 5MT", l100km: 5.8, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Dodge",
+    models: [
+      {
+        model: "Challenger",
+        versions: [
+          { name: "Challenger SXT 3.6L V6 8AT RWD", l100km: 11.7, fuelType: "petrol" },
+          { name: "Challenger R/T 5.7L V8 8AT RWD", l100km: 13.6, fuelType: "petrol" },
+          { name: "Challenger Scat Pack 392 6.4L V8 8AT RWD", l100km: 14.8, fuelType: "petrol" },
+          { name: "Challenger SRT Hellcat 6.2L V8 8AT RWD", l100km: 16.5, fuelType: "petrol" },
+          { name: "Challenger SRT Hellcat Redeye 6.2L V8 8AT", l100km: 17.2, fuelType: "petrol" },
+          { name: "Challenger SRT Demon 170 6.2L V8 8AT", l100km: 18.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Charger",
+        versions: [
+          { name: "Charger SXT 3.6L V6 8AT RWD", l100km: 11.9, fuelType: "petrol" },
+          { name: "Charger R/T 5.7L V8 8AT RWD", l100km: 13.8, fuelType: "petrol" },
+          { name: "Charger Scat Pack 6.4L V8 8AT RWD", l100km: 15.0, fuelType: "petrol" },
+          { name: "Charger SRT Hellcat 6.2L V8 8AT RWD", l100km: 16.6, fuelType: "petrol" },
+          { name: "Charger SRT Hellcat Widebody 6.2L V8 8AT", l100km: 16.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Durango",
+        versions: [
+          { name: "Durango SXT 3.6L V6 8AT AWD", l100km: 13.0, fuelType: "petrol" },
+          { name: "Durango GT 3.6L V6 8AT AWD", l100km: 13.2, fuelType: "petrol" },
+          { name: "Durango R/T 5.7L V8 8AT AWD", l100km: 15.6, fuelType: "petrol" },
+          { name: "Durango SRT 392 6.4L V8 8AT AWD", l100km: 17.2, fuelType: "petrol" },
+          { name: "Durango SRT Hellcat 6.2L V8 8AT AWD", l100km: 19.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "RAM 1500 Classic",
+        versions: [
+          { name: "RAM 1500 Classic 3.6L V6 8AT 4x4", l100km: 14.0, fuelType: "petrol" },
+          { name: "RAM 1500 Classic 5.7L V8 8AT 4x4", l100km: 15.8, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Ferrari",
+    models: [
+      {
+        model: "Roma",
+        versions: [
+          { name: "Roma 3.9 V8 Turbo 8DCT", l100km: 10.5, fuelType: "petrol" },
+          { name: "Roma Spider 3.9 V8 Turbo 8DCT", l100km: 10.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "296 GTB",
+        versions: [
+          { name: "296 GTB 3.0 V6 Turbo PHEV 8DCT", l100km: 5.9, fuelType: "petrol" },
+          { name: "296 GTS 3.0 V6 Turbo PHEV 8DCT", l100km: 6.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "SF90",
+        versions: [
+          { name: "SF90 Stradale 4.0 V8 PHEV 8DCT AWD", l100km: 7.8, fuelType: "petrol" },
+          { name: "SF90 Spider 4.0 V8 PHEV 8DCT AWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "SF90 XX Stradale 4.0 V8 PHEV 8DCT AWD", l100km: 8.3, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "812",
+        versions: [
+          { name: "812 Superfast 6.5 V12 7DCT", l100km: 14.9, fuelType: "petrol" },
+          { name: "812 GTS 6.5 V12 7DCT", l100km: 15.3, fuelType: "petrol" },
+          { name: "812 Competizione 6.5 V12 7DCT", l100km: 15.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Purosangue",
+        versions: [
+          { name: "Purosangue 6.5 V12 8AT AWD", l100km: 14.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Portofino",
+        versions: [
+          { name: "Portofino 3.9 V8 Turbo 7DCT", l100km: 11.4, fuelType: "petrol" },
+          { name: "Portofino M 3.9 V8 Turbo 8DCT", l100km: 11.0, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Fiat",
+    models: [
+      {
+        model: "500",
+        versions: [
+          { name: "500 1.0 Mild Hybrid 6MT", l100km: 5.4, fuelType: "petrol" },
+          { name: "500C 1.0 Mild Hybrid 6MT", l100km: 5.5, fuelType: "petrol" },
+          { name: "500 Abarth 1.4T 5MT", l100km: 6.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "500X",
+        versions: [
+          { name: "500X 1.5 Turbo 7DCT FWD", l100km: 6.5, fuelType: "petrol" },
+          { name: "500X Sport 1.3T 6AT AWD", l100km: 7.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Tipo",
+        versions: [
+          { name: "Tipo 1.0 FireFly 6MT", l100km: 6.1, fuelType: "petrol" },
+          { name: "Tipo Cross 1.0 FireFly 6MT", l100km: 6.4, fuelType: "petrol" },
+          { name: "Tipo 1.6 JTD 6MT", l100km: 4.7, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Panda",
+        versions: [
+          { name: "Panda 1.0 Mild Hybrid 5MT", l100km: 5.2, fuelType: "petrol" },
+          { name: "Panda Cross 1.0 Mild Hybrid 5MT 4x4", l100km: 5.8, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "FPV",
+    models: [
+      {
+        model: "GT",
+        versions: [
+          { name: "GT 5.0L V8 6MT", l100km: 13.9, fuelType: "petrol" },
+          { name: "GT-P 5.0L V8 6MT", l100km: 14.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GS",
+        versions: [
+          { name: "GS 5.0L V8 6AT", l100km: 14.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "F6",
+        versions: [
+          { name: "F6 4.0L 6cyl Turbo 6MT", l100km: 12.6, fuelType: "petrol" },
+          { name: "F6 X 4.0L 6cyl Turbo 6MT", l100km: 13.0, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Genesis",
+    models: [
+      {
+        model: "G70",
+        versions: [
+          { name: "G70 2.0T 8AT RWD", l100km: 8.6, fuelType: "petrol" },
+          { name: "G70 2.0T 8AT AWD", l100km: 9.0, fuelType: "petrol" },
+          { name: "G70 3.3T 8AT RWD", l100km: 10.9, fuelType: "petrol" },
+          { name: "G70 3.3T 8AT AWD", l100km: 11.3, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "G80",
+        versions: [
+          { name: "G80 2.5T 8AT AWD", l100km: 9.2, fuelType: "petrol" },
+          { name: "G80 3.5T 8AT AWD", l100km: 11.7, fuelType: "petrol" },
+          { name: "G80 2.2D 8AT AWD", l100km: 6.2, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "G90",
+        versions: [
+          { name: "G90 3.5T 8AT AWD", l100km: 12.2, fuelType: "petrol" },
+          { name: "G90 5.0L V8 8AT AWD", l100km: 14.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GV70",
+        versions: [
+          { name: "GV70 2.5T 8AT RWD", l100km: 9.5, fuelType: "petrol" },
+          { name: "GV70 2.5T 8AT AWD", l100km: 9.9, fuelType: "petrol" },
+          { name: "GV70 3.5T 8AT AWD", l100km: 12.3, fuelType: "petrol" },
+          { name: "GV70 2.2D 8AT AWD", l100km: 7.1, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "GV80",
+        versions: [
+          { name: "GV80 2.5T 8AT AWD", l100km: 10.4, fuelType: "petrol" },
+          { name: "GV80 3.5T 8AT AWD", l100km: 13.0, fuelType: "petrol" },
+          { name: "GV80 2.2D 8AT AWD", l100km: 7.5, fuelType: "diesel" },
+          { name: "GV80 3.0D 8AT AWD", l100km: 8.2, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Great Wall",
+    models: [
+      {
+        model: "Cannon",
+        versions: [
+          { name: "Cannon Standard 2.0T 8AT 4x4", l100km: 10.2, fuelType: "petrol" },
+          { name: "Cannon Premium 2.0T 8AT 4x4", l100km: 10.2, fuelType: "petrol" },
+          { name: "Cannon Ultimate 2.0T 8AT 4x4", l100km: 10.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Steed",
+        versions: [
+          { name: "Steed 2.0L 5MT 4x4", l100km: 10.8, fuelType: "petrol" },
+          { name: "Steed 2.0T 6AT 4x4", l100km: 11.1, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Haval",
+    models: [
+      {
+        model: "H2",
+        versions: [
+          { name: "H2 1.5T 6DCT FWD", l100km: 7.8, fuelType: "petrol" },
+          { name: "H2 1.5T 6AT AWD", l100km: 8.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "H6",
+        versions: [
+          { name: "H6 1.5T 7DCT FWD", l100km: 7.9, fuelType: "petrol" },
+          { name: "H6 GT 1.5T 7DCT AWD", l100km: 8.3, fuelType: "petrol" },
+          { name: "H6 Ultra 2.0T 7DCT AWD", l100km: 9.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Jolion",
+        versions: [
+          { name: "Jolion 1.5T 7DCT FWD", l100km: 7.5, fuelType: "petrol" },
+          { name: "Jolion HEV 1.5L HEV CVT", l100km: 5.8, fuelType: "petrol" },
+          { name: "Jolion PHEV 1.5L PHEV", l100km: 1.9, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Holden",
+    models: [
+      {
+        model: "Commodore",
+        versions: [
+          { name: "Commodore Evoke 3.0L V6 6AT RWD", l100km: 10.8, fuelType: "petrol" },
+          { name: "Commodore SV6 3.0L V6 6AT RWD", l100km: 10.8, fuelType: "petrol" },
+          { name: "Commodore SS 6.0L V8 6AT RWD", l100km: 13.7, fuelType: "petrol" },
+          { name: "Commodore SS-V 6.0L V8 6AT RWD", l100km: 13.7, fuelType: "petrol" },
+          { name: "Commodore HSV Clubsport 6.2L V8 6MT RWD", l100km: 15.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Colorado",
+        versions: [
+          { name: "Colorado LS 2.5T 6MT 4x2", l100km: 9.8, fuelType: "diesel" },
+          { name: "Colorado LT 2.8T 6AT 4x4", l100km: 10.3, fuelType: "diesel" },
+          { name: "Colorado Z71 2.8T 6AT 4x4", l100km: 10.5, fuelType: "diesel" },
+          { name: "Colorado LTZ 2.8T 6AT 4x4", l100km: 10.5, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Astra",
+        versions: [
+          { name: "Astra CD 1.4T 6AT", l100km: 7.3, fuelType: "petrol" },
+          { name: "Astra RS 1.6T 6AT", l100km: 8.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Captiva",
+        versions: [
+          { name: "Captiva LS 2.4L 6AT FWD", l100km: 9.4, fuelType: "petrol" },
+          { name: "Captiva LT 2.0 CDTi 6AT AWD", l100km: 7.2, fuelType: "diesel" },
+          { name: "Captiva LTZ 2.2 CDTi 6AT AWD", l100km: 7.5, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Cruze",
+        versions: [
+          { name: "Cruze CD 1.4T 6AT", l100km: 7.1, fuelType: "petrol" },
+          { name: "Cruze SRi-V 1.6T 6AT", l100km: 7.9, fuelType: "petrol" },
+          { name: "Cruze CDX 2.0T Diesel 6MT", l100km: 5.4, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "HSV",
+    models: [
+      {
+        model: "Clubsport",
+        versions: [
+          { name: "Clubsport R8 6.2L V8 6MT RWD", l100km: 15.2, fuelType: "petrol" },
+          { name: "Clubsport R8 LSA 6.2L SC V8 6MT RWD", l100km: 15.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GTS",
+        versions: [
+          { name: "GTS 6.2L V8 6MT RWD", l100km: 15.5, fuelType: "petrol" },
+          { name: "GTS-R W1 6.2L SC V8 6MT RWD", l100km: 16.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Senator",
+        versions: [
+          { name: "Senator 6.0L V8 6AT RWD", l100km: 14.5, fuelType: "petrol" },
+          { name: "Senator Signature 6.2L V8 6AT RWD", l100km: 14.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Maloo",
+        versions: [
+          { name: "Maloo R8 6.2L V8 6MT RWD ute", l100km: 15.7, fuelType: "petrol" },
+          { name: "Maloo R8 LSA SC 6.2L V8 6MT RWD", l100km: 16.2, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Hummer",
+    models: [
+      {
+        model: "H2",
+        versions: [
+          { name: "H2 6.0L V8 4AT 4x4", l100km: 22.0, fuelType: "petrol" },
+          { name: "H2 SUT 6.0L V8 4AT 4x4", l100km: 22.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "H3",
+        versions: [
+          { name: "H3 3.7L I5 4AT 4x4", l100km: 14.7, fuelType: "petrol" },
+          { name: "H3 Alpha 5.3L V8 4AT 4x4", l100km: 16.0, fuelType: "petrol" },
+          { name: "H3T 3.7L I5 4AT 4x4", l100km: 14.7, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Infiniti",
+    models: [
+      {
+        model: "Q50",
+        versions: [
+          { name: "Q50 2.0T 7AT RWD", l100km: 8.4, fuelType: "petrol" },
+          { name: "Q50 2.0T 7AT AWD", l100km: 8.8, fuelType: "petrol" },
+          { name: "Q50 3.0T 7AT RWD", l100km: 10.1, fuelType: "petrol" },
+          { name: "Q50 3.0T AWD 400 7AT", l100km: 10.5, fuelType: "petrol" },
+          { name: "Q50 Red Sport 400 3.0T 7AT RWD", l100km: 10.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Q60",
+        versions: [
+          { name: "Q60 2.0T 7AT RWD", l100km: 9.1, fuelType: "petrol" },
+          { name: "Q60 3.0T 7AT RWD", l100km: 10.5, fuelType: "petrol" },
+          { name: "Q60 Red Sport 400 3.0T 7AT RWD", l100km: 11.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "QX50",
+        versions: [
+          { name: "QX50 Essential 2.0T CVT AWD", l100km: 9.2, fuelType: "petrol" },
+          { name: "QX50 Sensory 2.0T CVT AWD", l100km: 9.4, fuelType: "petrol" },
+          { name: "QX50 Autograph 2.0T CVT AWD", l100km: 9.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "QX60",
+        versions: [
+          { name: "QX60 3.5L V6 CVT AWD", l100km: 11.9, fuelType: "petrol" },
+          { name: "QX60 Pure 3.5L V6 CVT AWD", l100km: 11.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "QX80",
+        versions: [
+          { name: "QX80 5.6L V8 7AT AWD", l100km: 16.0, fuelType: "petrol" },
+          { name: "QX80 Luxe 5.6L V8 7AT AWD", l100km: 16.2, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Jaguar",
+    models: [
+      {
+        model: "F-Type",
+        versions: [
+          { name: "F-Type 2.0T 8AT RWD", l100km: 8.9, fuelType: "petrol" },
+          { name: "F-Type R P450 5.0 SC V8 8AT AWD", l100km: 12.0, fuelType: "petrol" },
+          { name: "F-Type R75 5.0 SC V8 8AT AWD", l100km: 12.2, fuelType: "petrol" },
+          { name: "F-Type Roadster P300 2.0T 8AT RWD", l100km: 9.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "XE",
+        versions: [
+          { name: "XE P250 2.0T 8AT RWD", l100km: 7.7, fuelType: "petrol" },
+          { name: "XE P300 2.0T 8AT AWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "XE D180 2.0D 8AT RWD", l100km: 5.3, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "XF",
+        versions: [
+          { name: "XF P250 2.0T 8AT RWD", l100km: 8.0, fuelType: "petrol" },
+          { name: "XF P300 2.0T 8AT AWD", l100km: 8.5, fuelType: "petrol" },
+          { name: "XF D200 2.0D 8AT RWD", l100km: 5.6, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "F-Pace",
+        versions: [
+          { name: "F-Pace P250 2.0T 8AT AWD", l100km: 9.2, fuelType: "petrol" },
+          { name: "F-Pace P400e PHEV 8AT AWD", l100km: 2.5, fuelType: "petrol" },
+          { name: "F-Pace SVR P550 5.0 SC V8 8AT AWD", l100km: 13.2, fuelType: "petrol" },
+          { name: "F-Pace D200 2.0D 8AT AWD", l100km: 6.7, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "E-Pace",
+        versions: [
+          { name: "E-Pace P250 2.0T 9AT AWD", l100km: 8.9, fuelType: "petrol" },
+          { name: "E-Pace P300e PHEV 9AT AWD", l100km: 2.1, fuelType: "petrol" },
+          { name: "E-Pace D165 2.0D 9AT AWD", l100km: 6.4, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "JMC",
+    models: [
+      {
+        model: "Vigus Pro",
+        versions: [
+          { name: "Vigus Pro 2.0T 6AT 4x4", l100km: 10.5, fuelType: "diesel" },
+          { name: "Vigus Pro 2.0T 4x2 6AT", l100km: 9.8, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Vigus 6",
+        versions: [
+          { name: "Vigus 6 2.0T 6AT 4x4 Sport", l100km: 10.8, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Lamborghini",
+    models: [
+      {
+        model: "Huracan",
+        versions: [
+          { name: "Huracan EVO 5.2 V10 7DCT AWD", l100km: 13.7, fuelType: "petrol" },
+          { name: "Huracan EVO RWD 5.2 V10 7DCT", l100km: 13.0, fuelType: "petrol" },
+          { name: "Huracan STO 5.2 V10 7DCT RWD", l100km: 13.5, fuelType: "petrol" },
+          { name: "Huracan Tecnica 5.2 V10 7DCT RWD", l100km: 13.3, fuelType: "petrol" },
+          { name: "Huracan Sterrato 5.2 V10 7DCT AWD", l100km: 14.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Urus",
+        versions: [
+          { name: "Urus 4.0 V8 Biturbo 8AT AWD", l100km: 13.8, fuelType: "petrol" },
+          { name: "Urus S 4.0 V8 Biturbo 8AT AWD", l100km: 14.2, fuelType: "petrol" },
+          { name: "Urus Performante 4.0 V8 Biturbo 8AT AWD", l100km: 14.5, fuelType: "petrol" },
+          { name: "Urus SE PHEV 4.0 V8 8AT AWD", l100km: 4.3, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Revuelto",
+        versions: [
+          { name: "Revuelto 6.5 V12 PHEV 8DCT AWD", l100km: 8.7, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Land Rover",
+    models: [
+      {
+        model: "Defender",
+        versions: [
+          { name: "Defender 90 P300 2.0T 8AT AWD", l100km: 9.9, fuelType: "petrol" },
+          { name: "Defender 90 P400e PHEV 8AT AWD", l100km: 3.4, fuelType: "petrol" },
+          { name: "Defender 90 V8 5.0 SC 8AT AWD", l100km: 16.7, fuelType: "petrol" },
+          { name: "Defender 110 P300 2.0T 8AT AWD", l100km: 10.4, fuelType: "petrol" },
+          { name: "Defender 110 P400e PHEV 8AT AWD", l100km: 3.7, fuelType: "petrol" },
+          { name: "Defender 110 V8 5.0 SC 8AT AWD", l100km: 17.2, fuelType: "petrol" },
+          { name: "Defender 130 P300 2.0T 8AT AWD", l100km: 10.7, fuelType: "petrol" },
+          { name: "Defender 90 D250 3.0D 8AT AWD", l100km: 8.4, fuelType: "diesel" },
+          { name: "Defender 110 D250 3.0D 8AT AWD", l100km: 8.7, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Discovery",
+        versions: [
+          { name: "Discovery P300 2.0T 8AT AWD", l100km: 10.8, fuelType: "petrol" },
+          { name: "Discovery P360 3.0 MHEV 8AT AWD", l100km: 11.9, fuelType: "petrol" },
+          { name: "Discovery D250 3.0D 8AT AWD", l100km: 8.1, fuelType: "diesel" },
+          { name: "Discovery D300 3.0D 8AT AWD", l100km: 8.3, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Discovery Sport",
+        versions: [
+          { name: "Discovery Sport P200 2.0T 9AT AWD", l100km: 8.8, fuelType: "petrol" },
+          { name: "Discovery Sport P300e PHEV 9AT AWD", l100km: 2.0, fuelType: "petrol" },
+          { name: "Discovery Sport D165 2.0D 9AT AWD", l100km: 6.3, fuelType: "diesel" },
+          { name: "Discovery Sport D200 2.0D 9AT AWD", l100km: 6.5, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Range Rover",
+        versions: [
+          { name: "Range Rover P400 3.0 MHEV 8AT AWD", l100km: 11.5, fuelType: "petrol" },
+          { name: "Range Rover P460e PHEV 8AT AWD", l100km: 3.6, fuelType: "petrol" },
+          { name: "Range Rover P530 4.4 V8 8AT AWD", l100km: 14.5, fuelType: "petrol" },
+          { name: "Range Rover D350 3.0D 8AT AWD", l100km: 8.4, fuelType: "diesel" },
+          { name: "Range Rover LWB P530 4.4 V8 8AT AWD", l100km: 14.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Range Rover Sport",
+        versions: [
+          { name: "Range Rover Sport P360 3.0 MHEV 8AT AWD", l100km: 10.5, fuelType: "petrol" },
+          { name: "Range Rover Sport P460e PHEV 8AT AWD", l100km: 3.3, fuelType: "petrol" },
+          { name: "Range Rover Sport P635 4.4 V8 8AT AWD", l100km: 14.1, fuelType: "petrol" },
+          { name: "Range Rover Sport D250 3.0D 8AT AWD", l100km: 7.6, fuelType: "diesel" },
+          { name: "Range Rover Sport D300 3.0D 8AT AWD", l100km: 7.9, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Range Rover Evoque",
+        versions: [
+          { name: "Evoque P200 2.0T 9AT AWD", l100km: 8.4, fuelType: "petrol" },
+          { name: "Evoque P300e PHEV 9AT AWD", l100km: 2.0, fuelType: "petrol" },
+          { name: "Evoque D165 2.0D 9AT AWD", l100km: 5.8, fuelType: "diesel" },
+          { name: "Evoque D200 2.0D 9AT AWD", l100km: 5.9, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Range Rover Velar",
+        versions: [
+          { name: "Velar P250 2.0T 8AT AWD", l100km: 8.8, fuelType: "petrol" },
+          { name: "Velar P400e PHEV 8AT AWD", l100km: 2.4, fuelType: "petrol" },
+          { name: "Velar D200 2.0D 8AT AWD", l100km: 6.5, fuelType: "diesel" },
+          { name: "Velar D300 3.0D 8AT AWD", l100km: 7.3, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Lexus",
+    models: [
+      {
+        model: "IS",
+        versions: [
+          { name: "IS 300 2.0T 6AT RWD", l100km: 8.8, fuelType: "petrol" },
+          { name: "IS 350 3.5L V6 6AT RWD", l100km: 10.2, fuelType: "petrol" },
+          { name: "IS 350 AWD 3.5L V6 6AT", l100km: 10.5, fuelType: "petrol" },
+          { name: "IS 500 F Sport 5.0L V8 8AT RWD", l100km: 12.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "ES",
+        versions: [
+          { name: "ES 250 2.5L 6AT FWD", l100km: 9.3, fuelType: "petrol" },
+          { name: "ES 300h 2.5L HEV CVT", l100km: 5.6, fuelType: "petrol" },
+          { name: "ES 350 3.5L V6 6AT FWD", l100km: 10.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GS",
+        versions: [
+          { name: "GS 300 2.0T 6AT RWD", l100km: 9.1, fuelType: "petrol" },
+          { name: "GS 350 3.5L V6 6AT RWD", l100km: 10.8, fuelType: "petrol" },
+          { name: "GS 300h 2.5L HEV CVT", l100km: 6.5, fuelType: "petrol" },
+          { name: "GS F 5.0L V8 8AT RWD", l100km: 13.3, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "LS",
+        versions: [
+          { name: "LS 500 3.5L V6 TT 10AT AWD", l100km: 11.3, fuelType: "petrol" },
+          { name: "LS 500h 3.5L V6 HEV CVT AWD", l100km: 7.7, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "NX",
+        versions: [
+          { name: "NX 250 2.5L CVT AWD", l100km: 7.7, fuelType: "petrol" },
+          { name: "NX 350 2.4T 8AT AWD", l100km: 8.7, fuelType: "petrol" },
+          { name: "NX 350h 2.5L HEV CVT AWD", l100km: 5.8, fuelType: "petrol" },
+          { name: "NX 450h+ PHEV CVT AWD", l100km: 1.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "RX",
+        versions: [
+          { name: "RX 350 2.4T 8AT AWD", l100km: 9.7, fuelType: "petrol" },
+          { name: "RX 350h 2.5L HEV CVT AWD", l100km: 6.3, fuelType: "petrol" },
+          { name: "RX 450h+ PHEV CVT AWD", l100km: 2.0, fuelType: "petrol" },
+          { name: "RX 500h F Sport 2.4T HEV 6AT AWD", l100km: 7.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "LX",
+        versions: [
+          { name: "LX 600 3.4 V6 TT 10AT AWD", l100km: 14.5, fuelType: "petrol" },
+          { name: "LX 600 F Sport 3.4 V6 TT 10AT AWD", l100km: 14.7, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GX",
+        versions: [
+          { name: "GX 550 3.4 V6 TT 10AT AWD", l100km: 12.8, fuelType: "petrol" },
+          { name: "GX 550 Overtrail 3.4 V6 TT 10AT AWD", l100km: 13.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "LC",
+        versions: [
+          { name: "LC 500 5.0L V8 10AT RWD", l100km: 12.5, fuelType: "petrol" },
+          { name: "LC 500h 3.5L V6 HEV CVT AWD", l100km: 8.9, fuelType: "petrol" },
+          { name: "LC 500 Convertible 5.0L V8 10AT RWD", l100km: 12.7, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Lotus",
+    models: [
+      {
+        model: "Emira",
+        versions: [
+          { name: "Emira 2.0T AMT 4cyl", l100km: 8.8, fuelType: "petrol" },
+          { name: "Emira 3.5L V6 SC 6MT", l100km: 10.4, fuelType: "petrol" },
+          { name: "Emira 3.5L V6 SC AT", l100km: 10.7, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Evora",
+        versions: [
+          { name: "Evora 3.5L V6 6MT", l100km: 10.2, fuelType: "petrol" },
+          { name: "Evora GT 3.5L V6 SC 6MT", l100km: 11.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Exige",
+        versions: [
+          { name: "Exige 350 Sport 3.5L V6 SC 6MT", l100km: 10.1, fuelType: "petrol" },
+          { name: "Exige 430 Cup 3.5L V6 SC 6MT", l100km: 11.0, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Mahindra",
+    models: [
+      {
+        model: "Scorpio",
+        versions: [
+          { name: "Scorpio 2.2 mHawk Diesel 6MT 4x2", l100km: 10.5, fuelType: "diesel" },
+          { name: "Scorpio 4x4 2.2 mHawk Diesel 6MT", l100km: 11.0, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Thar",
+        versions: [
+          { name: "Thar 2.2 mHawk Diesel 6MT 4WD", l100km: 11.5, fuelType: "diesel" },
+          { name: "Thar 2.0T Petrol 6MT 4WD", l100km: 12.2, fuelType: "petrol" },
+          { name: "Thar Roxx 2.2 mHawk Diesel 6AT 4WD", l100km: 12.0, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "XUV700",
+        versions: [
+          { name: "XUV700 MX 2.0T 6AT FWD", l100km: 9.5, fuelType: "petrol" },
+          { name: "XUV700 AX7L 2.2 mHawk Diesel 6AT AWD", l100km: 9.0, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Maserati",
+    models: [
+      {
+        model: "Ghibli",
+        versions: [
+          { name: "Ghibli 2.0T 8AT RWD", l100km: 9.4, fuelType: "petrol" },
+          { name: "Ghibli 3.0L V6 8AT RWD", l100km: 11.5, fuelType: "petrol" },
+          { name: "Ghibli Trofeo 3.8L V8 8AT RWD", l100km: 14.4, fuelType: "petrol" },
+          { name: "Ghibli Hybrid 2.0T MHEV 8AT RWD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Ghibli Diesel 3.0L V6 8AT RWD", l100km: 6.4, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Quattroporte",
+        versions: [
+          { name: "Quattroporte 3.0L V6 8AT RWD", l100km: 12.0, fuelType: "petrol" },
+          { name: "Quattroporte 3.8L V8 8AT RWD", l100km: 15.1, fuelType: "petrol" },
+          { name: "Quattroporte Trofeo 3.8L V8 8AT RWD", l100km: 15.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Levante",
+        versions: [
+          { name: "Levante 2.0T 8AT AWD", l100km: 10.5, fuelType: "petrol" },
+          { name: "Levante 3.0L V6 8AT AWD", l100km: 12.6, fuelType: "petrol" },
+          { name: "Levante Trofeo 3.8L V8 8AT AWD", l100km: 15.6, fuelType: "petrol" },
+          { name: "Levante Hybrid 2.0T MHEV 8AT AWD", l100km: 9.7, fuelType: "petrol" },
+          { name: "Levante Diesel 3.0L V6 8AT AWD", l100km: 7.8, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Grecale",
+        versions: [
+          { name: "Grecale GT 2.0T MHEV 8AT AWD", l100km: 8.9, fuelType: "petrol" },
+          { name: "Grecale Modena 2.0T MHEV 8AT AWD", l100km: 9.2, fuelType: "petrol" },
+          { name: "Grecale Trofeo 3.0L V6 8AT AWD", l100km: 12.2, fuelType: "petrol" },
+          { name: "Grecale Folgore EV AWD", l100km: 18.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GranTurismo",
+        versions: [
+          { name: "GranTurismo Modena 3.0L V6 TT 8DCT AWD", l100km: 11.0, fuelType: "petrol" },
+          { name: "GranTurismo Trofeo 3.0L V6 TT 8DCT AWD", l100km: 11.8, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Maybach",
+    models: [
+      {
+        model: "S-Class",
+        versions: [
+          { name: "Maybach S 480 3.0L I6 9AT AWD", l100km: 11.3, fuelType: "petrol" },
+          { name: "Maybach S 580 4.0L V8 9AT AWD", l100km: 13.2, fuelType: "petrol" },
+          { name: "Maybach S 680 6.0L V12 9AT AWD", l100km: 15.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GLS",
+        versions: [
+          { name: "Maybach GLS 600 4.0L V8 9AT AWD", l100km: 15.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "EQS",
+        versions: [
+          { name: "Maybach EQS 680 SUV AWD", l100km: 24.7, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "McLaren",
+    models: [
+      {
+        model: "Artura",
+        versions: [
+          { name: "Artura 3.0 V6 PHEV 8DCT RWD", l100km: 7.1, fuelType: "petrol" },
+          { name: "Artura Spider 3.0 V6 PHEV 8DCT RWD", l100km: 7.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "720S",
+        versions: [
+          { name: "720S 4.0 V8 TT 7DCT RWD", l100km: 11.9, fuelType: "petrol" },
+          { name: "720S Spider 4.0 V8 TT 7DCT RWD", l100km: 12.2, fuelType: "petrol" },
+          { name: "720S Le Mans 4.0 V8 TT 7DCT RWD", l100km: 12.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "750S",
+        versions: [
+          { name: "750S 4.0 V8 TT 7DCT RWD", l100km: 12.2, fuelType: "petrol" },
+          { name: "750S Spider 4.0 V8 TT 7DCT RWD", l100km: 12.5, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "GT",
+        versions: [
+          { name: "GT 4.0 V8 TT 7DCT RWD", l100km: 10.7, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "MG",
+    models: [
+      {
+        model: "MG3",
+        versions: [
+          { name: "MG3 Core 1.5L CVT FWD", l100km: 7.2, fuelType: "petrol" },
+          { name: "MG3 Excite 1.5L CVT FWD", l100km: 7.2, fuelType: "petrol" },
+          { name: "MG3 Hybrid+ 1.5L HEV CVT", l100km: 4.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "HS",
+        versions: [
+          { name: "HS Essence 1.5T DCT FWD", l100km: 7.4, fuelType: "petrol" },
+          { name: "HS Vibe 2.0T DCT AWD", l100km: 9.0, fuelType: "petrol" },
+          { name: "HS PHEV AWD", l100km: 2.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "ZS",
+        versions: [
+          { name: "ZS Essence 1.5L CVT FWD", l100km: 7.0, fuelType: "petrol" },
+          { name: "ZS Excite 1.0T DCT FWD", l100km: 6.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "RX5",
+        versions: [
+          { name: "RX5 Standard 1.5T DCT FWD", l100km: 8.0, fuelType: "petrol" },
+          { name: "RX5 Premium 2.0T DCT AWD", l100km: 9.2, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "MINI",
+    models: [
+      {
+        model: "Hatch",
+        versions: [
+          { name: "One 1.5T 6MT FWD", l100km: 6.1, fuelType: "petrol" },
+          { name: "Cooper 1.5T 7DCT FWD", l100km: 6.3, fuelType: "petrol" },
+          { name: "Cooper S 2.0T 7DCT FWD", l100km: 7.0, fuelType: "petrol" },
+          { name: "JCW 2.0T 7DCT FWD", l100km: 7.4, fuelType: "petrol" },
+          { name: "One D 1.5D 6MT FWD", l100km: 4.3, fuelType: "diesel" },
+          { name: "Cooper D 1.5D 7DCT FWD", l100km: 4.4, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Convertible",
+        versions: [
+          { name: "Cooper Convertible 1.5T 7DCT FWD", l100km: 6.4, fuelType: "petrol" },
+          { name: "Cooper S Convertible 2.0T 7DCT FWD", l100km: 7.2, fuelType: "petrol" },
+          { name: "JCW Convertible 2.0T 7DCT FWD", l100km: 7.6, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Clubman",
+        versions: [
+          { name: "Cooper Clubman 1.5T 7DCT FWD", l100km: 6.5, fuelType: "petrol" },
+          { name: "Cooper S Clubman 2.0T 8AT AWD", l100km: 7.6, fuelType: "petrol" },
+          { name: "JCW Clubman 2.0T 8AT AWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "Cooper D Clubman 2.0D 8AT FWD", l100km: 5.1, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Countryman",
+        versions: [
+          { name: "Cooper Countryman 1.5T 7DCT FWD", l100km: 7.0, fuelType: "petrol" },
+          { name: "Cooper S Countryman 2.0T 8AT AWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "Cooper S E Countryman PHEV AWD", l100km: 2.5, fuelType: "petrol" },
+          { name: "JCW Countryman 2.0T 8AT AWD", l100km: 8.8, fuelType: "petrol" },
+          { name: "Cooper D Countryman 2.0D 8AT AWD", l100km: 5.8, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Paceman",
+        versions: [
+          { name: "Cooper Paceman 1.6T 6MT FWD", l100km: 7.3, fuelType: "petrol" },
+          { name: "Cooper S Paceman 1.6T 6AT AWD", l100km: 8.0, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Morgan",
+    models: [
+      {
+        model: "Plus Four",
+        versions: [
+          { name: "Plus Four 2.0T 6MT RWD", l100km: 9.0, fuelType: "petrol" },
+          { name: "Plus Four CX-T 2.0T 6MT RWD", l100km: 9.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Plus Six",
+        versions: [
+          { name: "Plus Six 3.0L I6 TT 8AT RWD", l100km: 10.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Super 3",
+        versions: [
+          { name: "Super 3 1.5L I3 FWD", l100km: 8.2, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Opel",
+    models: [
+      {
+        model: "Astra",
+        versions: [
+          { name: "Astra 1.2T 6MT FWD", l100km: 6.1, fuelType: "petrol" },
+          { name: "Astra 1.2T 8AT FWD", l100km: 6.4, fuelType: "petrol" },
+          { name: "Astra GSe 1.6T PHEV 8AT FWD", l100km: 1.5, fuelType: "petrol" },
+          { name: "Astra 1.5D 6AT FWD", l100km: 4.8, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Insignia",
+        versions: [
+          { name: "Insignia 1.5T 6AT FWD", l100km: 7.3, fuelType: "petrol" },
+          { name: "Insignia 2.0T 9AT AWD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Insignia 2.0D 8AT AWD", l100km: 6.0, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Mokka",
+        versions: [
+          { name: "Mokka 1.2T 6AT FWD", l100km: 6.3, fuelType: "petrol" },
+          { name: "Mokka-e (EV) AWD", l100km: 6.9, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Peugeot",
+    models: [
+      {
+        model: "208",
+        versions: [
+          { name: "208 Active 1.2 PureTech 75 5MT", l100km: 5.8, fuelType: "petrol" },
+          { name: "208 Allure 1.2 PureTech 100 6AT", l100km: 6.0, fuelType: "petrol" },
+          { name: "208 GT 1.2 PureTech 130 8AT", l100km: 6.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "2008",
+        versions: [
+          { name: "2008 Active 1.2 PureTech 100 6AT", l100km: 6.4, fuelType: "petrol" },
+          { name: "2008 GT 1.2 PureTech 130 8AT", l100km: 6.8, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "308",
+        versions: [
+          { name: "308 Active 1.2 PureTech 130 8AT", l100km: 6.3, fuelType: "petrol" },
+          { name: "308 GT 1.6 PureTech 180 8AT", l100km: 7.3, fuelType: "petrol" },
+          { name: "308 Hybrid 225 PHEV 8AT", l100km: 1.4, fuelType: "petrol" },
+          { name: "308 BlueHDi 130 8AT", l100km: 4.9, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "3008",
+        versions: [
+          { name: "3008 Active 1.2 PureTech 130 8AT", l100km: 7.0, fuelType: "petrol" },
+          { name: "3008 GT 1.6 PureTech 180 8AT", l100km: 7.6, fuelType: "petrol" },
+          { name: "3008 Hybrid 225 PHEV AWD 8AT", l100km: 1.7, fuelType: "petrol" },
+          { name: "3008 BlueHDi 130 8AT", l100km: 5.5, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "5008",
+        versions: [
+          { name: "5008 Active 1.2 PureTech 130 8AT", l100km: 7.5, fuelType: "petrol" },
+          { name: "5008 GT 1.6 PureTech 180 8AT", l100km: 8.2, fuelType: "petrol" },
+          { name: "5008 BlueHDi 130 8AT", l100km: 5.9, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "508",
+        versions: [
+          { name: "508 Allure 1.6 PureTech 180 8AT", l100km: 7.1, fuelType: "petrol" },
+          { name: "508 GT 1.6 PureTech 225 8AT", l100km: 7.5, fuelType: "petrol" },
+          { name: "508 Hybrid 225 PHEV 8AT FWD", l100km: 1.5, fuelType: "petrol" },
+          { name: "508 SW Hybrid 360 PHEV 8AT AWD", l100km: 1.6, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Porsche",
+    models: [
+      {
+        model: "911",
+        versions: [
+          { name: "911 Carrera 3.0T 8PDK RWD", l100km: 9.0, fuelType: "petrol" },
+          { name: "911 Carrera S 3.0T 8PDK RWD", l100km: 9.3, fuelType: "petrol" },
+          { name: "911 Carrera 4S 3.0T 8PDK AWD", l100km: 9.6, fuelType: "petrol" },
+          { name: "911 Targa 4S 3.0T 8PDK AWD", l100km: 9.7, fuelType: "petrol" },
+          { name: "911 Turbo 3.7T 8PDK AWD", l100km: 10.6, fuelType: "petrol" },
+          { name: "911 Turbo S 3.7T 8PDK AWD", l100km: 11.0, fuelType: "petrol" },
+          { name: "911 GT3 4.0 7PDK RWD", l100km: 12.4, fuelType: "petrol" },
+          { name: "911 GT3 RS 4.0 7PDK RWD", l100km: 13.0, fuelType: "petrol" },
+          { name: "911 Dakar 3.0T 8PDK AWD", l100km: 11.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Cayenne",
+        versions: [
+          { name: "Cayenne 3.0T 8AT AWD", l100km: 11.0, fuelType: "petrol" },
+          { name: "Cayenne S 2.9T V6 8AT AWD", l100km: 11.9, fuelType: "petrol" },
+          { name: "Cayenne GTS 4.0L V8 8AT AWD", l100km: 14.3, fuelType: "petrol" },
+          { name: "Cayenne Turbo GT 4.0L V8 8AT AWD", l100km: 15.5, fuelType: "petrol" },
+          { name: "Cayenne E-Hybrid PHEV 3.0T 8AT AWD", l100km: 3.4, fuelType: "petrol" },
+          { name: "Cayenne Turbo S E-Hybrid 4.0L V8 PHEV 8AT", l100km: 4.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Macan",
+        versions: [
+          { name: "Macan 2.0T 7PDK AWD", l100km: 8.8, fuelType: "petrol" },
+          { name: "Macan S 2.9T V6 7PDK AWD", l100km: 10.0, fuelType: "petrol" },
+          { name: "Macan GTS 2.9T V6 7PDK AWD", l100km: 10.8, fuelType: "petrol" },
+          { name: "Macan Turbo 2.9T V6 7PDK AWD", l100km: 11.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Panamera",
+        versions: [
+          { name: "Panamera 2.9T V6 8PDK AWD", l100km: 9.6, fuelType: "petrol" },
+          { name: "Panamera S 2.9T V6 8PDK AWD", l100km: 10.2, fuelType: "petrol" },
+          { name: "Panamera GTS 4.0L V8 8PDK AWD", l100km: 13.6, fuelType: "petrol" },
+          { name: "Panamera Turbo S 4.0L V8 8PDK AWD", l100km: 13.9, fuelType: "petrol" },
+          { name: "Panamera 4 E-Hybrid PHEV 8PDK AWD", l100km: 2.7, fuelType: "petrol" },
+          { name: "Panamera Turbo S E-Hybrid 4.0L V8 PHEV", l100km: 3.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "718",
+        versions: [
+          { name: "718 Boxster 2.0T 6MT RWD", l100km: 7.4, fuelType: "petrol" },
+          { name: "718 Boxster S 2.5T 7PDK RWD", l100km: 8.2, fuelType: "petrol" },
+          { name: "718 Boxster GTS 4.0 6MT RWD", l100km: 10.4, fuelType: "petrol" },
+          { name: "718 Cayman 2.0T 6MT RWD", l100km: 7.2, fuelType: "petrol" },
+          { name: "718 Cayman S 2.5T 7PDK RWD", l100km: 7.8, fuelType: "petrol" },
+          { name: "718 Cayman GT4 RS 4.0 7PDK RWD", l100km: 11.1, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Ram",
+    models: [
+      {
+        model: "1500",
+        versions: [
+          { name: "1500 Tradesman 3.6L V6 8AT 4x2", l100km: 12.4, fuelType: "petrol" },
+          { name: "1500 Big Horn 3.6L V6 8AT 4x4", l100km: 13.3, fuelType: "petrol" },
+          { name: "1500 Laramie 5.7L V8 8AT 4x4", l100km: 15.2, fuelType: "petrol" },
+          { name: "1500 Rebel 5.7L V8 8AT 4x4", l100km: 15.6, fuelType: "petrol" },
+          { name: "1500 TRX 6.2L SC V8 8AT 4x4", l100km: 18.9, fuelType: "petrol" },
+          { name: "1500 EcoDiesel 3.0L V6 8AT 4x4", l100km: 10.4, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "2500",
+        versions: [
+          { name: "2500 Tradesman 6.4L V8 6AT 4x4", l100km: 16.7, fuelType: "petrol" },
+          { name: "2500 Laramie 6.4L V8 6AT 4x4", l100km: 17.1, fuelType: "petrol" },
+          { name: "2500 Power Wagon 6.4L V8 6AT 4x4", l100km: 17.6, fuelType: "petrol" },
+          { name: "2500 6.7L Cummins Diesel 6AT 4x4", l100km: 13.0, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Renault",
+    models: [
+      {
+        model: "Clio",
+        versions: [
+          { name: "Clio Expression 1.0T 6MT FWD", l100km: 5.6, fuelType: "petrol" },
+          { name: "Clio Intens 1.0T CVT FWD", l100km: 6.0, fuelType: "petrol" },
+          { name: "Clio RS Line 1.3T 7DCT FWD", l100km: 6.2, fuelType: "petrol" },
+          { name: "Clio E-Tech Hybrid 1.6 HEV CVT", l100km: 4.9, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Captur",
+        versions: [
+          { name: "Captur Intens 1.3T 7DCT FWD", l100km: 6.6, fuelType: "petrol" },
+          { name: "Captur RS Line 1.3T 7DCT FWD", l100km: 6.8, fuelType: "petrol" },
+          { name: "Captur E-Tech PHEV 160 FWD", l100km: 2.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Megane",
+        versions: [
+          { name: "Megane Intens 1.3T 7DCT FWD", l100km: 6.3, fuelType: "petrol" },
+          { name: "Megane RS 1.8T 6MT FWD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Megane RS Trophy-R 1.8T 6MT FWD", l100km: 8.9, fuelType: "petrol" },
+          { name: "Megane dCi 115 6MT FWD", l100km: 4.5, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Koleos",
+        versions: [
+          { name: "Koleos Life 2.5L CVT FWD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Koleos Zen 2.5L CVT AWD", l100km: 9.0, fuelType: "petrol" },
+          { name: "Koleos Intens 2.5L CVT AWD", l100km: 9.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Kangoo",
+        versions: [
+          { name: "Kangoo 1.3T 6MT FWD", l100km: 7.0, fuelType: "petrol" },
+          { name: "Kangoo 1.5 Blue dCi 6MT FWD", l100km: 5.3, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Saab",
+    models: [
+      {
+        model: "9-3",
+        versions: [
+          { name: "9-3 Linear 1.8T 5AT FWD", l100km: 8.6, fuelType: "petrol" },
+          { name: "9-3 Arc 2.0T 5AT FWD", l100km: 9.0, fuelType: "petrol" },
+          { name: "9-3 Aero 2.8T 6AT AWD", l100km: 11.0, fuelType: "petrol" },
+          { name: "9-3 Sport Combi 1.9 TiD 6MT", l100km: 6.2, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "9-5",
+        versions: [
+          { name: "9-5 Linear 2.3T 5AT FWD", l100km: 10.2, fuelType: "petrol" },
+          { name: "9-5 Aero 2.8T V6 6AT AWD", l100km: 11.8, fuelType: "petrol" },
+          { name: "9-5 2.0 TiD 6AT FWD", l100km: 7.0, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "SEAT",
+    models: [
+      {
+        model: "Ibiza",
+        versions: [
+          { name: "Ibiza Reference 1.0 MPI 5MT", l100km: 5.9, fuelType: "petrol" },
+          { name: "Ibiza FR 1.0 TSI 6MT", l100km: 5.7, fuelType: "petrol" },
+          { name: "Ibiza FR 1.5 TSI 7DSG", l100km: 5.9, fuelType: "petrol" },
+          { name: "Ibiza Cupra 2.0 TSI 6MT", l100km: 7.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Leon",
+        versions: [
+          { name: "Leon Style 1.0 TSI 6MT FWD", l100km: 5.6, fuelType: "petrol" },
+          { name: "Leon FR 1.5 TSI 7DSG FWD", l100km: 5.8, fuelType: "petrol" },
+          { name: "Leon Cupra R 2.0 TSI 6MT FWD", l100km: 8.0, fuelType: "petrol" },
+          { name: "Leon e-Hybrid PHEV 1.4 TSI 6DSG FWD", l100km: 1.7, fuelType: "petrol" },
+          { name: "Leon 2.0 TDI 7DSG FWD", l100km: 4.7, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Ateca",
+        versions: [
+          { name: "Ateca Reference 1.0 TSI 6MT FWD", l100km: 6.3, fuelType: "petrol" },
+          { name: "Ateca FR 2.0 TSI 7DSG AWD", l100km: 8.0, fuelType: "petrol" },
+          { name: "Ateca Cupra 2.0 TSI 7DSG AWD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Ateca 2.0 TDI 7DSG AWD", l100km: 5.9, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Skoda",
+    models: [
+      {
+        model: "Fabia",
+        versions: [
+          { name: "Fabia Active 1.0 MPI 5MT", l100km: 5.9, fuelType: "petrol" },
+          { name: "Fabia Ambition 1.0 TSI 6MT", l100km: 5.5, fuelType: "petrol" },
+          { name: "Fabia Monte Carlo 1.5 TSI 7DSG", l100km: 6.0, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Octavia",
+        versions: [
+          { name: "Octavia Ambition 1.5 TSI 7DSG FWD", l100km: 6.0, fuelType: "petrol" },
+          { name: "Octavia RS 2.0 TSI 7DSG FWD", l100km: 7.4, fuelType: "petrol" },
+          { name: "Octavia RS245 2.0 TSI 7DSG AWD", l100km: 7.8, fuelType: "petrol" },
+          { name: "Octavia Combi 1.5 TSI 7DSG FWD", l100km: 6.1, fuelType: "petrol" },
+          { name: "Octavia iV PHEV 1.4 TSI 6DSG FWD", l100km: 1.7, fuelType: "petrol" },
+          { name: "Octavia 2.0 TDI 7DSG FWD", l100km: 4.6, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Superb",
+        versions: [
+          { name: "Superb Ambition 1.5 TSI 7DSG FWD", l100km: 6.5, fuelType: "petrol" },
+          { name: "Superb Sportline 2.0 TSI 7DSG AWD", l100km: 8.4, fuelType: "petrol" },
+          { name: "Superb iV PHEV 1.4 TSI 6DSG FWD", l100km: 1.9, fuelType: "petrol" },
+          { name: "Superb 2.0 TDI 7DSG AWD", l100km: 5.7, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Karoq",
+        versions: [
+          { name: "Karoq Ambition 1.5 TSI 7DSG FWD", l100km: 6.7, fuelType: "petrol" },
+          { name: "Karoq Sportline 2.0 TSI 7DSG AWD", l100km: 8.1, fuelType: "petrol" },
+          { name: "Karoq 2.0 TDI 7DSG AWD", l100km: 5.7, fuelType: "diesel" },
+        ],
+      },
+      {
+        model: "Kodiaq",
+        versions: [
+          { name: "Kodiaq Ambition 1.5 TSI 7DSG FWD", l100km: 7.7, fuelType: "petrol" },
+          { name: "Kodiaq Sportline 2.0 TSI 7DSG AWD", l100km: 9.5, fuelType: "petrol" },
+          { name: "Kodiaq RS 2.0 TSI 7DSG AWD", l100km: 10.0, fuelType: "petrol" },
+          { name: "Kodiaq 2.0 TDI 7DSG AWD", l100km: 6.4, fuelType: "diesel" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Smart",
+    models: [
+      {
+        model: "Fortwo",
+        versions: [
+          { name: "Fortwo 1.0 5MT", l100km: 4.7, fuelType: "petrol" },
+          { name: "Fortwo 0.9T 6DCT", l100km: 4.9, fuelType: "petrol" },
+          { name: "Fortwo Cabriolet 0.9T 6DCT", l100km: 5.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Forfour",
+        versions: [
+          { name: "Forfour 1.0 5MT", l100km: 5.0, fuelType: "petrol" },
+          { name: "Forfour 0.9T 6DCT", l100km: 5.2, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
+  {
+    make: "Suzuki",
+    models: [
+      {
+        model: "Swift",
+        versions: [
+          { name: "Swift GL 1.2L CVT FWD", l100km: 5.8, fuelType: "petrol" },
+          { name: "Swift GLX 1.2L CVT FWD", l100km: 5.8, fuelType: "petrol" },
+          { name: "Swift Sport 1.4T 6MT FWD", l100km: 6.7, fuelType: "petrol" },
+          { name: "Swift Hybrid 1.2L MHEV CVT FWD", l100km: 5.2, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Vitara",
+        versions: [
+          { name: "Vitara GL 1.4T 6AT AWD", l100km: 7.3, fuelType: "petrol" },
+          { name: "Vitara GLX 1.4T 6AT AWD", l100km: 7.5, fuelType: "petrol" },
+          { name: "Vitara Hybrid 1.5L MHEV 6AT AWD", l100km: 6.3, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "S-Cross",
+        versions: [
+          { name: "S-Cross GL 1.4T 6AT AWD", l100km: 7.2, fuelType: "petrol" },
+          { name: "S-Cross GLX Hybrid 1.4T PHEV AWD", l100km: 2.1, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Jimny",
+        versions: [
+          { name: "Jimny GL 1.5L 4AT 4WD", l100km: 8.5, fuelType: "petrol" },
+          { name: "Jimny GLX 1.5L 4AT 4WD", l100km: 8.7, fuelType: "petrol" },
+          { name: "Jimny Pro 1.5L 5MT 4WD", l100km: 8.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Baleno",
+        versions: [
+          { name: "Baleno GL 1.5L CVT FWD", l100km: 6.4, fuelType: "petrol" },
+          { name: "Baleno GLX 1.5L CVT FWD", l100km: 6.4, fuelType: "petrol" },
+        ],
+      },
+      {
+        model: "Across",
+        versions: [
+          { name: "Across 2.5 PHEV CVT AWD", l100km: 1.8, fuelType: "petrol" },
+        ],
+      },
+    ],
+  },
 ]
 
 // ─── ELECTRIC VEHICLES ───────────────────────────────────────────────────────
