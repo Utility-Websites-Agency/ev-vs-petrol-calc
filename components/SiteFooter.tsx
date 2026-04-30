@@ -1,99 +1,54 @@
 import Link from "next/link";
 
-const FOOTER_GROUPS =   [
-    {
-      "label": "CALCULATOR",
-      "links": [
-        {
-          "label": "EV vs petrol calculator",
-          "href": "/"
-        },
-        {
-          "label": "How it works",
-          "href": "/how-it-works"
-        },
-        {
-          "label": "FAQ",
-          "href": "/faq"
-        }
-      ]
-    },
-    {
-      "label": "GUIDES",
-      "links": [
-        {
-          "label": "Understanding fuel costs",
-          "href": "/guides/understanding-fuel-costs"
-        },
-        {
-          "label": "EV charging explained",
-          "href": "/guides/ev-charging-explained"
-        },
-        {
-          "label": "Total cost of ownership",
-          "href": "/guides/total-cost-of-ownership"
-        },
-        {
-          "label": "Choosing your first EV",
-          "href": "/guides/choosing-your-first-ev"
-        }
-      ]
-    },
-    {
-      "label": "TOPICS",
-      "links": [
-        {
-          "label": "Electric vehicles",
-          "href": "/topics/electric-vehicles"
-        },
-        {
-          "label": "Petrol and diesel cars",
-          "href": "/topics/petrol-diesel-cars"
-        },
-        {
-          "label": "Charging infrastructure",
-          "href": "/topics/charging-infrastructure"
-        },
-        {
-          "label": "Government incentives",
-          "href": "/topics/government-incentives"
-        }
-      ]
-    }
-  ];
+const FS = { fontVariationSettings: "'wght' 510", fontFeatureSettings: '"cv01", "ss03"' } as const;
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[#1b1f24] text-white px-4 md:px-6 py-12 mt-auto">
+    <footer className="px-4 md:px-6 py-12 mt-auto" style={{ background: "#0f1011", borderTop: "1px solid rgba(255,255,255,0.05)" }}>
       <div className="mx-auto max-w-[1280px]">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
-          <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-3">
-              <span className="w-7 h-7 rounded bg-[#1a6fe8] text-white flex items-center justify-center text-[12px] font-black">
+        <div className="flex flex-col md:flex-row justify-between gap-10 mb-10">
+          <div className="flex flex-col gap-3 max-w-xs">
+            <Link href="/" className="flex items-center gap-2" style={FS}>
+              <span className="w-7 h-7 rounded bg-[#5e6ad2] text-white flex items-center justify-center text-[11px] font-black tracking-tight">
                 EV
               </span>
-              <span className="font-bold text-[15px]">ev-vs-petrol-calc</span>
-            </div>
-            <p className="text-[13px] text-[#8b949e] leading-relaxed">Compare the real cost of electric vs petrol driving</p>
+              <span className="text-[15px] text-[#f7f8f8]">EV vs Petrol</span>
+            </Link>
+            <p className="text-[13px] text-[#8a8f98] leading-relaxed" style={FS}>
+              Free tool to compare the running cost of electric and petrol vehicles. Supports km/miles and multiple currencies.
+            </p>
           </div>
-          {FOOTER_GROUPS.map((group) => (
-            <div key={group.label}>
-              <p className="text-[11px] font-semibold text-[#8b949e] tracking-widest mb-3 uppercase">{group.label}</p>
-              <ul className="space-y-2">
-                {group.links.map((link) => (
-                  <li key={link.href}>
-                    <Link href={link.href} className="text-[13px] text-[#c9d1d9] hover:text-white transition-colors">
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+
+          <div className="flex flex-wrap gap-10">
+            <div className="flex flex-col gap-3">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[#f7f8f8]" style={FS}>CALCULATOR</p>
+              <div className="flex flex-col gap-2">
+                <Link href="/#calculator" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>EV vs petrol calculator</Link>
+                <Link href="/blog" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>All articles</Link>
+              </div>
             </div>
-          ))}
+            <div className="flex flex-col gap-3">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[#f7f8f8]" style={FS}>GUIDES</p>
+              <div className="flex flex-col gap-2">
+                <Link href="/blog/electric-car-vs-petrol-true-cost-comparison" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>True cost comparison</Link>
+                <Link href="/blog/how-to-calculate-ev-break-even-point" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>EV break-even guide</Link>
+                <Link href="/blog/tips-to-maximize-electric-car-savings" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>Maximize your savings</Link>
+              </div>
+            </div>
+            <div className="flex flex-col gap-3">
+              <p className="text-[11px] font-semibold uppercase tracking-wider text-[#f7f8f8]" style={FS}>LEGAL</p>
+              <div className="flex flex-col gap-2">
+                <Link href="/about" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>About</Link>
+                <Link href="/contact" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>Contact</Link>
+                <Link href="/privacy-policy" className="text-[13px] text-[#8a8f98] hover:text-[#f7f8f8] transition-colors" style={FS}>Privacy policy</Link>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className="border-t border-[#30363d] pt-6 text-[12px] text-[#8b949e]">
-          <p>&copy; {new Date().getFullYear()} ev-vs-petrol-calc. Free to use, no sign-up required.</p>
-          <p className="mt-1">This tool provides estimates only. Always consult a qualified professional for financial or legal advice.</p>
+
+        <div className="border-t border-[rgba(255,255,255,0.06)] pt-6 flex flex-col gap-1">
+          <p className="text-[12px] text-[#62666d]" style={FS}>© {new Date().getFullYear()} ev-vs-petrol-calc.com · Free to use, no sign-up required.</p>
+          <p className="text-[12px] text-[#62666d]" style={FS}>Estimates only. Always consult a qualified professional for financial decisions.</p>
         </div>
       </div>
     </footer>
