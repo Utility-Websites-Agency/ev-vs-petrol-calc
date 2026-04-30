@@ -1,9 +1,6 @@
 "use client";
 import { useState } from "react";
 
-const FS = { fontVariationSettings: "'wght' 510", fontFeatureSettings: '"cv01", "ss03"' } as const;
-const FSB = { fontVariationSettings: "'wght' 590", fontFeatureSettings: '"cv01", "ss03"' } as const;
-
 const FAQS = [
   {
     q: "How accurate is this electric car vs petrol cost calculator?",
@@ -42,26 +39,23 @@ const FAQS = [
 export function FaqAccordion() {
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <section className="px-4 md:px-6 py-16" style={{ background: "#08090a" }}>
+    <section className="px-4 md:px-6 py-16 bg-[#f6f8fa]">
       <div className="mx-auto max-w-[860px]">
-        <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-3 text-center" style={FS}>FAQ</p>
-        <h2 className="text-[28px] text-[#f7f8f8] mb-10 text-center" style={{ ...FSB, letterSpacing: "-0.6px" }}>
-          Frequently asked questions
-        </h2>
-        <div className="flex flex-col gap-2">
+        <h2 className="text-[28px] font-bold text-[#1f2328] mb-8">Frequently asked questions</h2>
+        <div className="flex flex-col gap-3">
           {FAQS.map((faq, i) => (
-            <div key={i} className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] overflow-hidden">
+            <div key={i} className="rounded-xl border border-[#e7e7e7] bg-white overflow-hidden">
               <button
                 onClick={() => setOpen(open === i ? null : i)}
-                className="w-full flex items-center justify-between px-5 py-4 text-left transition-colors hover:bg-[rgba(255,255,255,0.03)] cursor-pointer"
+                className="w-full flex items-center justify-between px-5 py-4 text-left transition-colors hover:bg-[#f6f8fa] cursor-pointer"
               >
-                <span className="text-[14px] text-[#d0d6e0] leading-snug pr-4" style={FS}>{faq.q}</span>
+                <span className="text-[15px] font-semibold text-[#1f2328] pr-4">{faq.q}</span>
                 <span className="flex-shrink-0 text-[#5e6ad2] text-[18px] font-light leading-none">
                   {open === i ? "−" : "+"}
                 </span>
               </button>
               {open === i && (
-                <div className="px-5 pb-4 text-[14px] text-[#8a8f98] leading-relaxed border-t border-[rgba(255,255,255,0.06)] pt-3" style={FS}>
+                <div className="px-5 pb-4 text-[14px] text-[#5f676f] leading-relaxed border-t border-[#e7e7e7] pt-3">
                   {faq.a}
                 </div>
               )}

@@ -9,36 +9,31 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://ev-vs-petrol-calc.com/contact" },
 };
 
-const FS = { fontVariationSettings: "'wght' 510", fontFeatureSettings: '"cv01", "ss03"' } as const;
-const FSB = { fontVariationSettings: "'wght' 590", fontFeatureSettings: '"cv01", "ss03"' } as const;
-
 export default function ContactPage() {
   return (
-    <div className="flex flex-col min-h-screen" style={{ background: "#08090a" }}>
+    <div className="flex flex-col min-h-screen bg-white font-sans text-[#1f2328]">
       <HomeNav />
       <main className="flex-1 px-6 py-16">
         <div className="mx-auto max-w-[720px]">
-          <h1 className="text-[32px] text-[#f7f8f8] mb-4" style={{ ...FSB, letterSpacing: "-0.7px" }}>Contact us</h1>
-          <p className="text-[17px] text-[#8a8f98] leading-[28px] mb-10" style={FS}>
+          <h1 className="text-[32px] font-extrabold tracking-tight text-[#1f2328] mb-4">Contact us</h1>
+          <p className="text-[17px] text-[#5f676f] leading-[28px] mb-10">
             Have a question about the calculator, found an error in the car data, or want to suggest a new feature?
             We welcome all feedback.
           </p>
 
           <section className="mb-10">
-            <h2 className="text-[20px] text-[#f7f8f8] mb-3" style={{ ...FSB, letterSpacing: "-0.4px" }}>Email</h2>
-            <p className="text-[15px] text-[#8a8f98] leading-[26px]" style={FS}>
+            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Email</h2>
+            <p className="text-[16px] text-[#5f676f] leading-[28px]">
               The best way to reach us:{" "}
-              <a href="mailto:hello@ev-vs-petrol-calc.com" className="text-[#7170ff] hover:text-[#828fff] transition-colors">
+              <a href="mailto:hello@ev-vs-petrol-calc.com" className="text-[#5e6ad2] hover:underline">
                 hello@ev-vs-petrol-calc.com
               </a>
             </p>
-            <p className="text-[15px] text-[#8a8f98] leading-[26px] mt-2" style={FS}>
-              We aim to respond within 2–3 business days.
-            </p>
+            <p className="text-[16px] text-[#5f676f] leading-[28px] mt-2">We aim to respond within 2–3 business days.</p>
           </section>
 
           <section className="mb-10">
-            <h2 className="text-[20px] text-[#f7f8f8] mb-3" style={{ ...FSB, letterSpacing: "-0.4px" }}>Common questions</h2>
+            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Common questions</h2>
             <div className="flex flex-col gap-3">
               {[
                 {
@@ -54,9 +49,9 @@ export default function ContactPage() {
                   a: "No. EV vs Petrol is a free estimation tool only. We are not financial advisors. For a purchase decision involving significant money, consult a qualified professional.",
                 },
               ].map(({ q, a }) => (
-                <div key={q} className="rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] px-5 py-4">
-                  <p className="text-[14px] text-[#f7f8f8] mb-1" style={FSB}>{q}</p>
-                  <p className="text-[13px] text-[#8a8f98] leading-[22px]" style={FS}>{a}</p>
+                <div key={q} className="rounded-xl border border-[#e7e7e7] bg-[#f6f8fa] px-5 py-4">
+                  <p className="text-[15px] font-semibold text-[#1f2328] mb-1">{q}</p>
+                  <p className="text-[14px] text-[#5f676f] leading-[22px]">{a}</p>
                 </div>
               ))}
             </div>
@@ -64,9 +59,9 @@ export default function ContactPage() {
 
           <section>
             <div className="flex gap-4 flex-wrap">
-              <Link href="/about" className="text-[13px] text-[#7170ff] hover:text-[#828fff] transition-colors" style={FS}>About us</Link>
-              <Link href="/privacy-policy" className="text-[13px] text-[#7170ff] hover:text-[#828fff] transition-colors" style={FS}>Privacy policy</Link>
-              <Link href="/blog" className="text-[13px] text-[#7170ff] hover:text-[#828fff] transition-colors" style={FS}>EV guides</Link>
+              <Link href="/about" className="text-[14px] text-[#5e6ad2] hover:underline">About us</Link>
+              <Link href="/privacy-policy" className="text-[14px] text-[#5e6ad2] hover:underline">Privacy policy</Link>
+              <Link href="/blog" className="text-[14px] text-[#5e6ad2] hover:underline">EV guides</Link>
             </div>
           </section>
         </div>

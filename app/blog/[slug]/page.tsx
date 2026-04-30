@@ -238,14 +238,14 @@ export default function BlogPostPage() {
           {/* End-of-post CTA */}
           <div className="mt-10 rounded-xl bg-[#1b1f24] px-6 py-7 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
-              <p className="text-[16px] font-bold text-white leading-snug mb-1">Know what you should charge?</p>
-              <p className="text-[14px] text-[#c9d1d9] leading-relaxed">Use our free calculator to find your exact charge-out rate in 60 seconds.</p>
+              <p className="text-[16px] font-bold text-white leading-snug mb-1">See how much you could save</p>
+              <p className="text-[14px] text-[#c9d1d9] leading-relaxed">Use our free calculator to compare EV vs petrol running costs in under 2 minutes.</p>
             </div>
             <Link
               href="/#calculator"
-              className="shrink-0 inline-flex items-center justify-center rounded-full bg-[#1a6fe8] px-6 py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#1560d0]"
+              className="shrink-0 inline-flex items-center justify-center rounded-full bg-[#5e6ad2] px-6 py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#7170ff]"
             >
-              Calculate my rate
+              Calculate savings
             </Link>
           </div>
 
@@ -293,15 +293,15 @@ export default function BlogPostPage() {
           {/* CTA card */}
           <div className="rounded-xl border border-[#e7e7e7] overflow-hidden sticky top-20">
             <div className="bg-[#1b1f24] px-5 py-4">
-              <p className="text-[16px] font-bold text-white leading-snug mb-1">Try the Calculator</p>
-              <p className="text-[13px] text-[#c9d1d9] leading-relaxed">Find your exact charge-out rate in 60 seconds.</p>
+              <p className="text-[16px] font-bold text-white leading-snug mb-1">EV vs Petrol Calculator</p>
+              <p className="text-[13px] text-[#c9d1d9] leading-relaxed">See how much you save switching to electric in under 2 minutes.</p>
             </div>
             <div className="p-4 bg-white">
               <Link
                 href="/#calculator"
-                className="flex items-center justify-center w-full rounded-full bg-[#1a6fe8] px-5 py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#1560d0]"
+                className="flex items-center justify-center w-full rounded-full bg-[#5e6ad2] px-5 py-2.5 text-[14px] font-semibold text-white transition hover:bg-[#7170ff]"
               >
-                Calculate my rate
+                Calculate savings
               </Link>
             </div>
           </div>

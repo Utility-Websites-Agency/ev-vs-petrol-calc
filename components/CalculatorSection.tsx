@@ -40,9 +40,6 @@ const LITRES_PER_GALLON = 4.54609
 const L100KM_TO_MPG = (l: number) => 235.21 / l
 const KWH100KM_TO_KWHMI = (k: number) => k / 62.137
 
-const FS = { fontVariationSettings: "'wght' 510", fontFeatureSettings: '"cv01", "ss03"' } as const
-const FSB = { fontVariationSettings: "'wght' 590", fontFeatureSettings: '"cv01", "ss03"' } as const
-
 interface FormState {
   petrolMake: string
   petrolModel: string
@@ -81,33 +78,33 @@ const EMPTY: FormState = {
 
 function inputClass(err?: boolean) {
   return [
-    "w-full bg-[rgba(255,255,255,0.03)] border rounded-lg px-3 py-2.5 text-sm text-[#f7f8f8] outline-none transition-all",
-    "placeholder:text-[#3d4148]",
-    "focus:border-[rgba(255,255,255,0.18)] focus:bg-[rgba(255,255,255,0.05)]",
-    err ? "border-red-500/40" : "border-[rgba(255,255,255,0.09)]",
+    "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all",
+    "placeholder:text-[#94a3b8]",
+    "focus:border-[#5e6ad2] focus:ring-2 focus:ring-[#5e6ad2]/15",
+    err ? "border-red-400" : "border-[#e2e8f0]",
   ].join(" ")
 }
 
 function selectClass(err?: boolean) {
   return [
-    "w-full bg-[rgba(255,255,255,0.03)] border rounded-lg px-3 py-2.5 text-sm text-[#f7f8f8] outline-none transition-all appearance-none cursor-pointer",
-    "focus:border-[rgba(255,255,255,0.18)]",
-    err ? "border-red-500/40" : "border-[rgba(255,255,255,0.09)]",
+    "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all appearance-none cursor-pointer",
+    "focus:border-[#5e6ad2]",
+    err ? "border-red-400" : "border-[#e2e8f0]",
   ].join(" ")
 }
 
 function labelClass() {
-  return "block text-[11px] font-medium text-[#5a6070] mb-1.5 uppercase tracking-wider"
+  return "block text-[11px] font-semibold text-[#64748b] mb-1.5 uppercase tracking-wider"
 }
 
 function Err({ msg }: { msg?: string }) {
   if (!msg) return null
-  return <p className="mt-1 text-xs text-red-400" style={FS}>{msg}</p>
+  return <p className="mt-1 text-xs text-red-500">{msg}</p>
 }
 
 function ChevronDown() {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[#4a4f58]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[#94a3b8]">
       <path d="M3 5L7 9L11 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
@@ -119,10 +116,10 @@ function SelectWrap({ children }: { children: React.ReactNode }) {
 
 function ResultCard({ label, value, sub, accent }: { label: string; value: string; sub?: string; accent?: boolean }) {
   return (
-    <div className={["rounded-xl p-4 border", accent ? "bg-[rgba(94,106,210,0.1)] border-[rgba(94,106,210,0.25)]" : "bg-[rgba(255,255,255,0.03)] border-[rgba(255,255,255,0.08)]"].join(" ")}>
-      <p className="text-[11px] text-[#5a6070] mb-1 uppercase tracking-wider" style={FS}>{label}</p>
-      <p className={["text-2xl", accent ? "text-[#828fff]" : "text-[#f7f8f8]"].join(" ")} style={{ ...FSB, letterSpacing: "-0.4px" }}>{value}</p>
-      {sub && <p className="text-xs text-[#3d4148] mt-0.5" style={FS}>{sub}</p>}
+    <div className={["rounded-xl p-4 border", accent ? "bg-[#5e6ad2]/8 border-[#5e6ad2]/25" : "bg-[#f8fafc] border-[#e2e8f0]"].join(" ")}>
+      <p className="text-[11px] text-[#64748b] mb-1 uppercase tracking-wider font-semibold">{label}</p>
+      <p className={["text-2xl font-bold", accent ? "text-[#5e6ad2]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
+      {sub && <p className="text-xs text-[#94a3b8] mt-0.5">{sub}</p>}
     </div>
   )
 }
@@ -181,22 +178,15 @@ export function CalculatorSection() {
   const sym = currency.symbol
   const presets = unit === "metric" ? DISTANCE_PRESETS_METRIC : DISTANCE_PRESETS_IMPERIAL
 
-  // Cascading petrol car options
   const petrolModels = useMemo(() => PETROL_CARS.find((m) => m.make === form.petrolMake)?.models ?? [], [form.petrolMake])
   const petrolVersions = useMemo(() => petrolModels.find((m) => m.model === form.petrolModel)?.versions ?? [], [petrolModels, form.petrolModel])
-
-  // Cascading EV options
   const evModels = useMemo(() => EV_CARS.find((m) => m.make === form.evMake)?.models ?? [], [form.evMake])
   const evVersions = useMemo(() => evModels.find((m) => m.model === form.evModel)?.versions ?? [], [evModels, form.evModel])
 
   function set(updates: Partial<FormState>) {
     setForm((prev) => ({ ...prev, ...updates }))
     const keys = Object.keys(updates)
-    setErrors((prev) => {
-      const next = { ...prev }
-      keys.forEach((k) => delete next[k])
-      return next
-    })
+    setErrors((prev) => { const next = { ...prev }; keys.forEach((k) => delete next[k]); return next })
   }
 
   function onPetrolMake(make: string) {
@@ -212,9 +202,7 @@ export function CalculatorSection() {
     const model = make?.models.find((m) => m.model === form.petrolModel)
     const version = model?.versions.find((v) => v.name === versionName)
     if (!version) { set({ petrolVersion: versionName }); return }
-    const eff = unit === "metric"
-      ? version.l100km.toFixed(1)
-      : L100KM_TO_MPG(version.l100km).toFixed(1)
+    const eff = unit === "metric" ? version.l100km.toFixed(1) : L100KM_TO_MPG(version.l100km).toFixed(1)
     set({ petrolVersion: versionName, fuelType: version.fuelType, fuelEfficiency: eff })
   }
 
@@ -231,15 +219,12 @@ export function CalculatorSection() {
     const model = make?.models.find((m) => m.model === form.evModel)
     const version = model?.versions.find((v) => v.name === versionName)
     if (!version) { set({ evVersion: versionName }); return }
-    const cons = unit === "metric"
-      ? version.kwh100km.toFixed(1)
-      : KWH100KM_TO_KWHMI(version.kwh100km).toFixed(3)
+    const cons = unit === "metric" ? version.kwh100km.toFixed(1) : KWH100KM_TO_KWHMI(version.kwh100km).toFixed(3)
     set({ evVersion: versionName, evConsumption: cons })
   }
 
   function onChargingMethod(method: ChargingMethod) {
     const suggested = String(CHARGING_RATES[method])
-    // Only auto-update if the current value is empty or matches a known suggested rate
     const currentIsDefault = Object.values(CHARGING_RATES).map(String).includes(form.electricityPrice)
     set({ chargingMethod: method, ...(currentIsDefault || !form.electricityPrice ? { electricityPrice: suggested } : {}) })
   }
@@ -279,14 +264,10 @@ export function CalculatorSection() {
     setForm((prev) => ({
       ...prev,
       fuelEfficiency: prev.fuelEfficiency && prev.petrolVersion
-        ? u === "imperial"
-          ? L100KM_TO_MPG(parseFloat(prev.fuelEfficiency)).toFixed(1)
-          : (235.21 / L100KM_TO_MPG(parseFloat(prev.fuelEfficiency))).toFixed(1)
+        ? u === "imperial" ? L100KM_TO_MPG(parseFloat(prev.fuelEfficiency)).toFixed(1) : (235.21 / L100KM_TO_MPG(parseFloat(prev.fuelEfficiency))).toFixed(1)
         : "",
       evConsumption: prev.evConsumption && prev.evVersion
-        ? u === "imperial"
-          ? KWH100KM_TO_KWHMI(parseFloat(prev.evConsumption)).toFixed(3)
-          : (parseFloat(prev.evConsumption) * 62.137).toFixed(1)
+        ? u === "imperial" ? KWH100KM_TO_KWHMI(parseFloat(prev.evConsumption)).toFixed(3) : (parseFloat(prev.evConsumption) * 62.137).toFixed(1)
         : "",
       distancePreset: null,
       distanceCustom: "",
@@ -295,38 +276,36 @@ export function CalculatorSection() {
   }
 
   return (
-    <section className="w-full px-4 py-16 sm:py-20" style={{ background: "#08090a" }}>
+    <section className="w-full px-4 py-16 sm:py-20 bg-[#f6f8fa]">
       <div className="mx-auto max-w-[1100px]">
 
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-xs text-[#5e6ad2] mb-3 uppercase tracking-widest" style={FS}>EV vs Petrol Cost Calculator</p>
-          <h2 className="text-[2rem] sm:text-[2.5rem] text-[#f7f8f8] leading-tight mb-3" style={{ ...FSB, letterSpacing: "-0.7px" }}>
+          <p className="text-xs text-[#5e6ad2] mb-3 uppercase tracking-widest font-semibold">EV vs Petrol Cost Calculator</p>
+          <h2 className="text-[2rem] sm:text-[2.5rem] text-[#1f2328] font-extrabold tracking-tight leading-tight mb-3">
             How much could you save switching to an EV?
           </h2>
-          <p className="text-[#6b7280] text-base leading-relaxed max-w-lg mx-auto" style={FS}>
+          <p className="text-[#5f676f] text-base leading-relaxed max-w-lg mx-auto">
             Pick your current car and your EV, choose how far you drive, then hit Calculate.
           </p>
         </div>
 
         {/* Controls row */}
         <div className="flex items-center justify-between flex-wrap gap-3 mb-5">
-          <div className="flex items-center gap-1 bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.08)] rounded-lg p-0.5">
+          <div className="flex items-center gap-1 bg-white border border-[#e2e8f0] rounded-lg p-0.5">
             {(["metric", "imperial"] as Unit[]).map((u) => (
               <button key={u} type="button" onClick={() => handleUnitChange(u)}
-                className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer", unit === u ? "bg-[rgba(255,255,255,0.09)] text-[#f7f8f8]" : "text-[#6b7280] hover:text-[#d0d6e0]"].join(" ")}
-                style={FS}>
+                className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#5e6ad2] text-white shadow-sm" : "text-[#64748b] hover:text-[#1f2328]"].join(" ")}>
                 {u === "metric" ? "km / L" : "mi / gal"}
               </button>
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-[#6b7280]" style={FS}>Currency</span>
+            <span className="text-xs text-[#64748b]">Currency</span>
             <SelectWrap>
-              <select className="bg-[rgba(255,255,255,0.03)] border border-[rgba(255,255,255,0.09)] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#f7f8f8] outline-none cursor-pointer appearance-none"
+              <select className="bg-white border border-[#e2e8f0] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#5e6ad2]"
                 value={currency.code}
-                onChange={(e) => { const c = CURRENCIES.find((x) => x.code === e.target.value); if (c) setCurrency(c) }}
-                style={{ ...FS, background: "#0d0e0f" }}>
+                onChange={(e) => { const c = CURRENCIES.find((x) => x.code === e.target.value); if (c) setCurrency(c) }}>
                 {CURRENCIES.map((c) => <option key={c.code} value={c.code}>{c.label}</option>)}
               </select>
             </SelectWrap>
@@ -336,178 +315,162 @@ export function CalculatorSection() {
         {/* 3-column panels */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
 
-          {/* ── Step 1: Petrol car ── */}
-          <div className="rounded-xl border border-[rgba(255,255,255,0.09)] bg-[rgba(255,255,255,0.02)] p-6 flex flex-col gap-4">
+          {/* Step 1: Petrol car */}
+          <div className="rounded-xl border border-[#e7e7e7] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1" style={FS}>Step 1</p>
-                <p className="text-[15px] text-[#f7f8f8] leading-snug" style={FSB}>Which petrol car do you drive?</p>
+                <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1 font-semibold">Step 1</p>
+                <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">Which petrol car do you drive?</p>
               </div>
-              <div className="w-9 h-9 rounded-lg bg-[rgba(94,106,210,0.12)] border border-[rgba(94,106,210,0.18)] flex items-center justify-center flex-shrink-0 ml-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7170ff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-9 h-9 rounded-lg bg-[#5e6ad2]/10 border border-[#5e6ad2]/20 flex items-center justify-center flex-shrink-0 ml-3">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5e6ad2" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M19 17H22V13L19 7H5L2 13V17H5" /><circle cx="7.5" cy="17" r="2.5" /><circle cx="16.5" cy="17" r="2.5" /><path d="M7.5 17H16.5" />
                 </svg>
               </div>
             </div>
 
-            {/* Make */}
             <div>
               <label className={labelClass()}>Make</label>
               <SelectWrap>
-                <select className={selectClass()} value={form.petrolMake} onChange={(e) => onPetrolMake(e.target.value)}
-                  style={{ ...FS, background: "#0d0e0f" }}>
+                <select className={selectClass()} value={form.petrolMake} onChange={(e) => onPetrolMake(e.target.value)}>
                   <option value="">Select make</option>
                   {PETROL_CARS.map((m) => <option key={m.make} value={m.make}>{m.make}</option>)}
                 </select>
               </SelectWrap>
             </div>
 
-            {/* Model */}
             <div>
               <label className={labelClass()}>Model</label>
               <SelectWrap>
                 <select className={selectClass()} value={form.petrolModel}
                   onChange={(e) => onPetrolModel(e.target.value)}
                   disabled={!form.petrolMake}
-                  style={{ ...FS, background: "#0d0e0f", opacity: form.petrolMake ? 1 : 0.4 }}>
+                  style={{ opacity: form.petrolMake ? 1 : 0.5 }}>
                   <option value="">{form.petrolMake ? "Select model" : "Select make first"}</option>
                   {petrolModels.map((m) => <option key={m.model} value={m.model}>{m.model}</option>)}
                 </select>
               </SelectWrap>
             </div>
 
-            {/* Version */}
             <div>
               <label className={labelClass()}>Version</label>
               <SelectWrap>
                 <select className={selectClass()} value={form.petrolVersion}
                   onChange={(e) => onPetrolVersion(e.target.value)}
                   disabled={!form.petrolModel}
-                  style={{ ...FS, background: "#0d0e0f", opacity: form.petrolModel ? 1 : 0.4 }}>
+                  style={{ opacity: form.petrolModel ? 1 : 0.5 }}>
                   <option value="">{form.petrolModel ? "Select version" : "Select model first"}</option>
                   {petrolVersions.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
                 </select>
               </SelectWrap>
             </div>
 
-            {/* Fuel type (auto-set, still editable) */}
             <div>
               <label className={labelClass()}>Fuel type</label>
               <div className="flex gap-2">
                 {(["petrol", "diesel"] as const).map((ft) => (
                   <button key={ft} type="button" onClick={() => set({ fuelType: ft })}
-                    className={["flex-1 py-2 rounded-lg text-sm border transition-all cursor-pointer",
+                    className={["flex-1 py-2 rounded-lg text-sm border transition-all cursor-pointer font-medium",
                       form.fuelType === ft
-                        ? "bg-[rgba(94,106,210,0.14)] border-[rgba(94,106,210,0.35)] text-[#828fff]"
-                        : "bg-transparent border-[rgba(255,255,255,0.09)] text-[#6b7280] hover:text-[#d0d6e0]"
-                    ].join(" ")} style={FS}>
+                        ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30 text-[#5e6ad2]"
+                        : "bg-white border-[#e2e8f0] text-[#64748b] hover:text-[#1f2328] hover:border-[#94a3b8]"
+                    ].join(" ")}>
                     {ft.charAt(0).toUpperCase() + ft.slice(1)}
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* Fuel efficiency — auto-filled */}
             <div>
               <label className={labelClass()}>
                 {unit === "metric" ? "Fuel efficiency (L/100km)" : "Fuel efficiency (MPG)"}
-                {form.petrolVersion && <span className="ml-1 text-[#3d4148] normal-case tracking-normal">— from your selection</span>}
+                {form.petrolVersion && <span className="ml-1 text-[#94a3b8] normal-case tracking-normal font-normal">— from your selection</span>}
               </label>
               <input type="number" inputMode="decimal" min="0" step="0.1"
                 placeholder={unit === "metric" ? "e.g. 8.5" : "e.g. 35"}
                 className={inputClass(!!errors.fuelEfficiency)}
                 value={form.fuelEfficiency}
-                onChange={(e) => set({ fuelEfficiency: e.target.value })}
-                style={FS} />
+                onChange={(e) => set({ fuelEfficiency: e.target.value })} />
               <Err msg={errors.fuelEfficiency} />
             </div>
 
-            {/* Fuel price */}
             <div>
               <label className={labelClass()}>{unit === "metric" ? `Fuel price (${sym}/litre)` : `Fuel price (${sym}/gallon)`}</label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#3d4148] pointer-events-none">{sym}</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#94a3b8] pointer-events-none">{sym}</span>
                 <input type="number" inputMode="decimal" min="0" step="0.01"
                   placeholder={unit === "metric" ? "e.g. 1.80" : "e.g. 4.50"}
                   className={inputClass(!!errors.fuelPrice) + " pl-7"}
                   value={form.fuelPrice}
-                  onChange={(e) => set({ fuelPrice: e.target.value })}
-                  style={FS} />
+                  onChange={(e) => set({ fuelPrice: e.target.value })} />
               </div>
               <Err msg={errors.fuelPrice} />
             </div>
 
-            {/* Optional: EV premium */}
             <div>
               <label className={labelClass()}>{`EV price premium (${sym}) — optional`}</label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#3d4148] pointer-events-none">{sym}</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#94a3b8] pointer-events-none">{sym}</span>
                 <input type="number" inputMode="numeric" min="0" step="500"
                   placeholder="e.g. 8000"
                   className={inputClass() + " pl-7"}
                   value={form.purchasePriceDiff}
-                  onChange={(e) => set({ purchasePriceDiff: e.target.value })}
-                  style={FS} />
+                  onChange={(e) => set({ purchasePriceDiff: e.target.value })} />
               </div>
-              <p className="mt-1 text-[11px] text-[#3d4148]" style={FS}>How much more the EV costs upfront — calculates your break-even</p>
+              <p className="mt-1 text-[11px] text-[#94a3b8]">How much more the EV costs upfront — calculates your break-even</p>
             </div>
           </div>
 
-          {/* ── Step 2: EV ── */}
-          <div className="rounded-xl border border-[rgba(255,255,255,0.09)] bg-[rgba(255,255,255,0.02)] p-6 flex flex-col gap-4">
+          {/* Step 2: EV */}
+          <div className="rounded-xl border border-[#e7e7e7] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1" style={FS}>Step 2</p>
-                <p className="text-[15px] text-[#f7f8f8] leading-snug" style={FSB}>Which electric vehicle would you compare?</p>
+                <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1 font-semibold">Step 2</p>
+                <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">Which electric vehicle would you compare?</p>
               </div>
-              <div className="w-9 h-9 rounded-lg bg-[rgba(94,106,210,0.12)] border border-[rgba(94,106,210,0.18)] flex items-center justify-center flex-shrink-0 ml-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7170ff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-9 h-9 rounded-lg bg-[#5e6ad2]/10 border border-[#5e6ad2]/20 flex items-center justify-center flex-shrink-0 ml-3">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5e6ad2" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                 </svg>
               </div>
             </div>
 
-            {/* Make */}
             <div>
               <label className={labelClass()}>Make</label>
               <SelectWrap>
-                <select className={selectClass()} value={form.evMake} onChange={(e) => onEvMake(e.target.value)}
-                  style={{ ...FS, background: "#0d0e0f" }}>
+                <select className={selectClass()} value={form.evMake} onChange={(e) => onEvMake(e.target.value)}>
                   <option value="">Select make</option>
                   {EV_CARS.map((m) => <option key={m.make} value={m.make}>{m.make}</option>)}
                 </select>
               </SelectWrap>
             </div>
 
-            {/* Model */}
             <div>
               <label className={labelClass()}>Model</label>
               <SelectWrap>
                 <select className={selectClass()} value={form.evModel}
                   onChange={(e) => onEvModel(e.target.value)}
                   disabled={!form.evMake}
-                  style={{ ...FS, background: "#0d0e0f", opacity: form.evMake ? 1 : 0.4 }}>
+                  style={{ opacity: form.evMake ? 1 : 0.5 }}>
                   <option value="">{form.evMake ? "Select model" : "Select make first"}</option>
                   {evModels.map((m) => <option key={m.model} value={m.model}>{m.model}</option>)}
                 </select>
               </SelectWrap>
             </div>
 
-            {/* Version */}
             <div>
               <label className={labelClass()}>Version</label>
               <SelectWrap>
                 <select className={selectClass()} value={form.evVersion}
                   onChange={(e) => onEvVersion(e.target.value)}
                   disabled={!form.evModel}
-                  style={{ ...FS, background: "#0d0e0f", opacity: form.evModel ? 1 : 0.4 }}>
+                  style={{ opacity: form.evModel ? 1 : 0.5 }}>
                   <option value="">{form.evModel ? "Select version" : "Select model first"}</option>
                   {evVersions.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
                 </select>
               </SelectWrap>
             </div>
 
-            {/* Charging method */}
             <div>
               <label className={labelClass()}>How would you mainly charge?</label>
               <div className="flex gap-2">
@@ -517,49 +480,45 @@ export function CalculatorSection() {
                   { key: "mix", label: "Mix of both" },
                 ] as { key: ChargingMethod; label: string }[]).map(({ key, label }) => (
                   <button key={key} type="button" onClick={() => onChargingMethod(key)}
-                    className={["flex-1 py-2 px-1 rounded-lg text-xs border transition-all cursor-pointer text-center",
+                    className={["flex-1 py-2 px-1 rounded-lg text-xs border transition-all cursor-pointer text-center font-medium",
                       form.chargingMethod === key
-                        ? "bg-[rgba(94,106,210,0.14)] border-[rgba(94,106,210,0.35)] text-[#828fff]"
-                        : "bg-transparent border-[rgba(255,255,255,0.09)] text-[#6b7280] hover:text-[#d0d6e0]"
-                    ].join(" ")} style={FS}>
+                        ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30 text-[#5e6ad2]"
+                        : "bg-white border-[#e2e8f0] text-[#64748b] hover:text-[#1f2328] hover:border-[#94a3b8]"
+                    ].join(" ")}>
                     {label}
                   </button>
                 ))}
               </div>
             </div>
 
-            {/* EV consumption — auto-filled */}
             <div>
               <label className={labelClass()}>
                 {unit === "metric" ? "Energy use (kWh/100km)" : "Energy use (kWh/mile)"}
-                {form.evVersion && <span className="ml-1 text-[#3d4148] normal-case tracking-normal">— from your selection</span>}
+                {form.evVersion && <span className="ml-1 text-[#94a3b8] normal-case tracking-normal font-normal">— from your selection</span>}
               </label>
               <input type="number" inputMode="decimal" min="0" step="0.1"
                 placeholder={unit === "metric" ? "e.g. 16.3" : "e.g. 0.262"}
                 className={inputClass(!!errors.evConsumption)}
                 value={form.evConsumption}
-                onChange={(e) => set({ evConsumption: e.target.value })}
-                style={FS} />
+                onChange={(e) => set({ evConsumption: e.target.value })} />
               <Err msg={errors.evConsumption} />
-              <p className="mt-1 text-[11px] text-[#3d4148]" style={FS}>
+              <p className="mt-1 text-[11px] text-[#94a3b8]">
                 {unit === "metric" ? "Typical EVs: 14–22 kWh/100km" : "Typical EVs: 0.22–0.35 kWh/mile"}
               </p>
             </div>
 
-            {/* Electricity price — suggested from charging method */}
             <div>
               <label className={labelClass()}>{`Electricity rate (${sym}/kWh)`}</label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#3d4148] pointer-events-none">{sym}</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#94a3b8] pointer-events-none">{sym}</span>
                 <input type="number" inputMode="decimal" min="0" step="0.01"
                   placeholder="e.g. 0.30"
                   className={inputClass(!!errors.electricityPrice) + " pl-7"}
                   value={form.electricityPrice}
-                  onChange={(e) => set({ electricityPrice: e.target.value })}
-                  style={FS} />
+                  onChange={(e) => set({ electricityPrice: e.target.value })} />
               </div>
               <Err msg={errors.electricityPrice} />
-              <p className="mt-1 text-[11px] text-[#3d4148]" style={FS}>
+              <p className="mt-1 text-[11px] text-[#94a3b8]">
                 {form.chargingMethod === "home" && "Pre-filled with avg home rate — adjust to your actual tariff"}
                 {form.chargingMethod === "public" && "Pre-filled with avg public DC fast-charge rate"}
                 {form.chargingMethod === "mix" && "Pre-filled with blended home + public average"}
@@ -567,15 +526,15 @@ export function CalculatorSection() {
             </div>
           </div>
 
-          {/* ── Step 3: Distance ── */}
-          <div className="rounded-xl border border-[rgba(255,255,255,0.09)] bg-[rgba(255,255,255,0.02)] p-6 flex flex-col gap-4">
+          {/* Step 3: Distance */}
+          <div className="rounded-xl border border-[#e7e7e7] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1" style={FS}>Step 3</p>
-                <p className="text-[15px] text-[#f7f8f8] leading-snug" style={FSB}>How far do you drive per year?</p>
+                <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1 font-semibold">Step 3</p>
+                <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">How far do you drive per year?</p>
               </div>
-              <div className="w-9 h-9 rounded-lg bg-[rgba(94,106,210,0.12)] border border-[rgba(94,106,210,0.18)] flex items-center justify-center flex-shrink-0 ml-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7170ff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-9 h-9 rounded-lg bg-[#5e6ad2]/10 border border-[#5e6ad2]/20 flex items-center justify-center flex-shrink-0 ml-3">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5e6ad2" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
                 </svg>
               </div>
@@ -592,11 +551,11 @@ export function CalculatorSection() {
                     }}
                     className={["rounded-lg border px-3 py-2.5 text-left transition-all cursor-pointer",
                       form.distancePreset === p.value
-                        ? "bg-[rgba(94,106,210,0.14)] border-[rgba(94,106,210,0.35)]"
-                        : "bg-transparent border-[rgba(255,255,255,0.09)] hover:border-[rgba(255,255,255,0.16)]"
+                        ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30"
+                        : "bg-white border-[#e2e8f0] hover:border-[#94a3b8]"
                     ].join(" ")}>
-                    <p className={["text-xs leading-none mb-0.5", form.distancePreset === p.value ? "text-[#828fff]" : "text-[#d0d6e0]"].join(" ")} style={FSB}>{p.label}</p>
-                    <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#6370c4]" : "text-[#3d4148]"].join(" ")} style={FS}>{p.sub}</p>
+                    <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#5e6ad2]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
+                    <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#5e6ad2]/70" : "text-[#94a3b8]"].join(" ")}>{p.sub}</p>
                   </button>
                 ))}
               </div>
@@ -605,9 +564,9 @@ export function CalculatorSection() {
 
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <div className="flex-1 h-px bg-[rgba(255,255,255,0.06)]" />
-                <span className="text-[10px] text-[#3d4148] uppercase tracking-wider" style={FS}>or enter custom</span>
-                <div className="flex-1 h-px bg-[rgba(255,255,255,0.06)]" />
+                <div className="flex-1 h-px bg-[#e2e8f0]" />
+                <span className="text-[10px] text-[#94a3b8] uppercase tracking-wider">or enter custom</span>
+                <div className="flex-1 h-px bg-[#e2e8f0]" />
               </div>
               <input type="number" inputMode="numeric" min="0" step="1000"
                 placeholder={unit === "metric" ? "e.g. 17,500 km/year" : "e.g. 11,000 mi/year"}
@@ -616,8 +575,7 @@ export function CalculatorSection() {
                 onChange={(e) => {
                   setForm((prev) => ({ ...prev, distanceCustom: e.target.value, distancePreset: null }))
                   setErrors((prev) => { const n = { ...prev }; delete n.distance; return n })
-                }}
-                style={FS} />
+                }} />
             </div>
           </div>
         </div>
@@ -625,31 +583,29 @@ export function CalculatorSection() {
         {/* Calculate */}
         <div className="flex flex-col items-center gap-3">
           <button type="button" onClick={handleCalculate}
-            className="w-full max-w-sm py-3.5 rounded-xl text-sm text-white bg-[#5e6ad2] hover:bg-[#7170ff] transition-colors cursor-pointer"
-            style={{ ...FSB, letterSpacing: "-0.1px" }}>
+            className="w-full max-w-sm py-3.5 rounded-xl text-sm font-semibold text-white bg-[#5e6ad2] hover:bg-[#7170ff] transition-colors cursor-pointer">
             Calculate fuel savings
           </button>
           <button type="button" onClick={handleReset}
-            className="text-sm text-[#5e6ad2] hover:text-[#828fff] transition-colors cursor-pointer"
-            style={FS}>
+            className="text-sm text-[#5e6ad2] hover:text-[#7170ff] transition-colors cursor-pointer">
             Clear all
           </button>
         </div>
 
         {/* Results */}
         {results && (
-          <div id="ev-results" className="mt-12 border-t border-[rgba(255,255,255,0.06)] pt-10">
-            <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-2 text-center" style={FS}>Your results</p>
-            <p className="text-2xl text-[#f7f8f8] text-center mb-1" style={{ ...FSB, letterSpacing: "-0.5px" }}>
+          <div id="ev-results" className="mt-12 border-t border-[#e2e8f0] pt-10">
+            <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
+            <p className="text-2xl font-extrabold text-[#1f2328] text-center mb-1" style={{ letterSpacing: "-0.5px" }}>
               {results.annualSaving > 0
                 ? `You save ${fmt(results.annualSaving, sym)} per year switching to an EV`
                 : `EV charging costs ${fmt(Math.abs(results.annualSaving), sym)} more per year at current rates`}
             </p>
-            <p className="text-sm text-[#6b7280] text-center mb-8" style={FS}>Based on your inputs. Figures are estimates only.</p>
+            <p className="text-sm text-[#5f676f] text-center mb-8">Based on your inputs. Figures are estimates only.</p>
 
             {results.annualSaving <= 0 && (
-              <div className="rounded-xl border border-yellow-500/20 bg-yellow-500/5 px-4 py-3 mb-6 max-w-xl mx-auto">
-                <p className="text-sm text-yellow-400 text-center" style={FS}>
+              <div className="rounded-xl border border-yellow-300 bg-yellow-50 px-4 py-3 mb-6 max-w-xl mx-auto">
+                <p className="text-sm text-yellow-700 text-center">
                   At current prices and your driving profile, petrol is cheaper to run. Try selecting a higher mileage or checking a lower electricity tariff.
                 </p>
               </div>

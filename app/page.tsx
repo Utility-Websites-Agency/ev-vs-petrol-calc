@@ -7,9 +7,6 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://ev-vs-petrol-calc.com" },
 };
 
-const FS = { fontVariationSettings: "'wght' 510", fontFeatureSettings: '"cv01", "ss03"' } as const;
-const FSB = { fontVariationSettings: "'wght' 590", fontFeatureSettings: '"cv01", "ss03"' } as const;
-
 const HOW_STEPS = [
   {
     title: "Pick your current petrol car",
@@ -31,31 +28,27 @@ const HOW_STEPS = [
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen flex flex-col font-sans" style={{ background: "#08090a" }}>
+    <div className="min-h-screen flex flex-col bg-white font-sans text-[#1f2328]">
       <HomeNav />
 
       {/* Hero */}
-      <section className="px-4 md:px-6 pt-20 pb-12 text-center" id="hero">
+      <section className="px-4 md:px-6 pt-20 pb-12 text-center">
         <div className="mx-auto max-w-[760px]">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.03)] px-4 py-1.5 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
-            <span className="text-[13px] text-[#8a8f98]" style={FS}>Free · No sign-up · Supports km and miles</span>
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#e7e7e7] bg-[#f6f8fa] px-4 py-1.5 mb-6">
+            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+            <span className="text-[13px] text-[#5f676f]">Free · No sign-up · Supports km and miles</span>
           </div>
-          <h1
-            className="text-[38px] md:text-[56px] text-[#f7f8f8] leading-[1.05] mb-5"
-            style={{ ...FSB, letterSpacing: "-1.2px" }}
-          >
+          <h1 className="text-[38px] md:text-[56px] font-extrabold tracking-tight leading-[1.05] mb-5 text-[#1f2328]">
             Electric car vs petrol{" "}
-            <span style={{ color: "#7170ff" }}>cost calculator</span>
+            <span className="text-[#5e6ad2]">cost calculator</span>
           </h1>
-          <p className="text-[17px] text-[#8a8f98] leading-relaxed max-w-xl mx-auto mb-8" style={FS}>
+          <p className="text-[17px] text-[#5f676f] leading-relaxed max-w-xl mx-auto mb-8">
             Enter your driving habits and local fuel prices to see a full cost comparison
             between electric and petrol vehicles — in under two minutes.
           </p>
           <a
             href="#calculator"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] text-white bg-[#5e6ad2] hover:bg-[#7170ff] transition-colors"
-            style={{ ...FSB, letterSpacing: "-0.1px" }}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] font-semibold text-white bg-[#5e6ad2] hover:bg-[#7170ff] transition-colors"
           >
             Calculate my savings →
           </a>
@@ -68,33 +61,19 @@ export default function HomePage() {
       </div>
 
       {/* How it works */}
-      <section className="px-4 md:px-6 py-20 border-t border-[rgba(255,255,255,0.05)]" style={{ background: "#08090a" }}>
+      <section className="px-4 md:px-6 py-20 bg-white border-t border-[#e7e7e7]">
         <div className="mx-auto max-w-[900px]">
-          <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-3 text-center" style={FS}>How it works</p>
-          <h2
-            className="text-[28px] text-[#f7f8f8] mb-2 text-center"
-            style={{ ...FSB, letterSpacing: "-0.6px" }}
-          >
-            Four steps to your fuel saving estimate
-          </h2>
-          <p className="text-[15px] text-[#8a8f98] mb-12 text-center" style={FS}>
-            No account needed. Results in under two minutes.
-          </p>
+          <h2 className="text-[28px] font-extrabold tracking-tight text-[#1f2328] mb-2 text-center">How it works</h2>
+          <p className="text-[15px] text-[#5f676f] mb-12 text-center">No account needed. Results in under two minutes.</p>
           <div className="grid gap-4 md:grid-cols-2">
             {HOW_STEPS.map((step, i) => (
-              <div
-                key={i}
-                className="flex gap-4 rounded-xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.02)] p-5"
-              >
-                <div
-                  className="flex-shrink-0 w-8 h-8 rounded-lg flex items-center justify-center text-[13px] text-[#828fff]"
-                  style={{ ...FSB, background: "rgba(94,106,210,0.12)", border: "1px solid rgba(94,106,210,0.18)" }}
-                >
+              <div key={i} className="flex gap-4 rounded-xl border border-[#e7e7e7] bg-[#f6f8fa] p-5">
+                <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#5e6ad2]/10 border border-[#5e6ad2]/20 flex items-center justify-center text-[13px] font-bold text-[#5e6ad2]">
                   {i + 1}
                 </div>
                 <div>
-                  <h3 className="text-[14px] text-[#f7f8f8] mb-1" style={FSB}>{step.title}</h3>
-                  <p className="text-[13px] text-[#8a8f98] leading-relaxed" style={FS}>{step.body}</p>
+                  <h3 className="text-[14px] font-bold text-[#1f2328] mb-1">{step.title}</h3>
+                  <p className="text-[13px] text-[#5f676f] leading-relaxed">{step.body}</p>
                 </div>
               </div>
             ))}
@@ -102,7 +81,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
