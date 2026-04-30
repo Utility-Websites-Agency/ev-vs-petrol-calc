@@ -367,18 +367,12 @@ export function CalculatorSection() {
 
             <div>
               <label className={labelClass()}>Fuel type</label>
-              <div className="flex gap-2">
-                {(["petrol", "diesel"] as const).map((ft) => (
-                  <button key={ft} type="button" onClick={() => set({ fuelType: ft })}
-                    className={["flex-1 py-2 rounded-lg text-sm border transition-all cursor-pointer font-medium",
-                      form.fuelType === ft
-                        ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30 text-[#5e6ad2]"
-                        : "bg-white border-[#e2e8f0] text-[#64748b] hover:text-[#1f2328] hover:border-[#94a3b8]"
-                    ].join(" ")}>
-                    {ft.charAt(0).toUpperCase() + ft.slice(1)}
-                  </button>
-                ))}
-              </div>
+              <SelectWrap>
+                <select className={selectClass()} value={form.fuelType} onChange={(e) => set({ fuelType: e.target.value as "petrol" | "diesel" })}>
+                  <option value="petrol">Petrol</option>
+                  <option value="diesel">Diesel</option>
+                </select>
+              </SelectWrap>
             </div>
 
             <div>
@@ -473,22 +467,13 @@ export function CalculatorSection() {
 
             <div>
               <label className={labelClass()}>How would you mainly charge?</label>
-              <div className="flex gap-2">
-                {([
-                  { key: "home", label: "At home" },
-                  { key: "public", label: "Public chargers" },
-                  { key: "mix", label: "Mix of both" },
-                ] as { key: ChargingMethod; label: string }[]).map(({ key, label }) => (
-                  <button key={key} type="button" onClick={() => onChargingMethod(key)}
-                    className={["flex-1 py-2 px-1 rounded-lg text-xs border transition-all cursor-pointer text-center font-medium",
-                      form.chargingMethod === key
-                        ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30 text-[#5e6ad2]"
-                        : "bg-white border-[#e2e8f0] text-[#64748b] hover:text-[#1f2328] hover:border-[#94a3b8]"
-                    ].join(" ")}>
-                    {label}
-                  </button>
-                ))}
-              </div>
+              <SelectWrap>
+                <select className={selectClass()} value={form.chargingMethod} onChange={(e) => onChargingMethod(e.target.value as ChargingMethod)}>
+                  <option value="home">At home</option>
+                  <option value="public">Public chargers</option>
+                  <option value="mix">Mix of both</option>
+                </select>
+              </SelectWrap>
             </div>
 
             <div>
