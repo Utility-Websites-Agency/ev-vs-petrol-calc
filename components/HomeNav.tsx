@@ -82,10 +82,11 @@ export function HomeNav() {
 
       {/* Drawer */}
       <div
-        className="fixed top-0 right-0 z-50 h-full w-[300px] bg-white shadow-2xl flex flex-col md:hidden"
+        className="fixed top-0 right-0 z-50 h-full w-[300px] bg-white flex flex-col md:hidden"
         style={{
           transform: drawerOpen ? "translateX(0)" : "translateX(100%)",
-          transition: "transform 0.25s cubic-bezier(0.32, 0, 0.67, 0)",
+          boxShadow: drawerOpen ? "-8px 0 40px rgba(0,0,0,0.18)" : "none",
+          transition: "transform 0.25s cubic-bezier(0.32, 0, 0.67, 0), box-shadow 0.25s ease",
           willChange: "transform",
         }}
       >
