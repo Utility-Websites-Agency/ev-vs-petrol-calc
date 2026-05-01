@@ -81,27 +81,34 @@ export default function HomePage() {
                 <span className="rounded-full bg-[#16a34a]/10 px-3 py-1 text-[12px] font-semibold text-[#16a34a]">EV wins</span>
               </div>
 
-              {/* Big saving number */}
-              <div className="rounded-xl bg-[#f6faf7] border border-[#16a34a]/20 px-5 py-4 mb-4 text-center">
-                <p className="text-[13px] text-[#16a34a] font-semibold mb-1">Annual fuel saving</p>
-                <p className="text-[44px] font-semibold text-[#1f2328] leading-none tracking-tight">$2,640</p>
-                <p className="text-[13px] text-[#4a4c4d] mt-1">$220 / month</p>
+              {/* Savings hero */}
+              <div className="rounded-xl bg-[#f6faf7] border border-[#16a34a]/20 px-5 py-4 mb-3 flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-[11px] text-[#16a34a] font-semibold uppercase tracking-wider mb-1.5">Annual saving</p>
+                  <p className="text-[38px] font-semibold text-[#1f2328] leading-none tracking-tight">$2,640</p>
+                </div>
+                <div className="text-right shrink-0">
+                  <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">Monthly saving</p>
+                  <p className="text-[24px] font-semibold text-[#1f2328] leading-none tracking-tight">$220</p>
+                </div>
               </div>
 
-              {/* Stats row */}
-              <div className="grid grid-cols-2 gap-3 mb-4">
+              {/* Cost comparison */}
+              <div className="grid grid-cols-2 gap-2 mb-2">
                 <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[12px] text-[#4a4c4d] mb-1">Petrol cost / yr</p>
-                  <p className="text-[20px] font-semibold text-[#1f2328]">$3,840</p>
+                  <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">Petrol / yr</p>
+                  <p className="text-[22px] font-semibold text-[#1f2328] leading-none">$3,840</p>
                 </div>
                 <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[12px] text-[#4a4c4d] mb-1">EV cost / yr</p>
-                  <p className="text-[20px] font-semibold text-[#1f2328]">$1,200</p>
+                  <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">EV / yr</p>
+                  <p className="text-[22px] font-semibold text-[#1f2328] leading-none">$1,200</p>
                 </div>
-                <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[12px] text-[#4a4c4d] mb-1">CO₂ saved / yr</p>
-                  <p className="text-[20px] font-semibold text-[#1f2328]">2.1 t</p>
-                </div>
+              </div>
+
+              {/* CO₂ */}
+              <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3 mb-4">
+                <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">CO₂ saved / yr</p>
+                <p className="text-[22px] font-semibold text-[#1f2328] leading-none">2.1 t <span className="text-[13px] font-normal text-[#4a4c4d]">vs your petrol car</span></p>
               </div>
 
               <a

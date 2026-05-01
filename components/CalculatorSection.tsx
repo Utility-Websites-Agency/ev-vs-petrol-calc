@@ -575,15 +575,37 @@ export function CalculatorSection() {
               </div>
             )}
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-              <ResultCard label="Monthly saving" value={fmt(results.monthlySaving, sym)} sub={results.monthlySaving < 0 ? "extra vs petrol" : "vs petrol"} accent={results.monthlySaving > 0} />
-              <ResultCard label="Annual saving" value={fmt(results.annualSaving, sym)} sub={results.annualSaving < 0 ? "extra vs petrol" : "vs petrol"} accent={results.annualSaving > 0} />
-              <ResultCard label="Petrol cost/year" value={fmt(results.annualFuelCost, sym)} />
-              <ResultCard label="EV charging/year" value={fmt(results.annualEvCost, sym)} />
+            {/* Savings hero block */}
+            <div className={["rounded-xl px-5 py-5 mb-3 flex items-center justify-between gap-4", results.annualSaving > 0 ? "bg-[#f6faf7] border border-[#16a34a]/20" : "bg-[#f6f8fa] border border-[#dfdfdf]"].join(" ")}>
+              <div>
+                <p className={["text-[11px] font-semibold uppercase tracking-wider mb-1.5", results.annualSaving > 0 ? "text-[#16a34a]" : "text-[#4a4c4d]"].join(" ")}>Annual saving</p>
+                <p className="text-[38px] font-semibold text-[#1f2328] leading-none tracking-tight">{fmt(results.annualSaving, sym)}</p>
+              </div>
+              <div className="text-right shrink-0">
+                <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">Monthly saving</p>
+                <p className="text-[24px] font-semibold text-[#1f2328] leading-none tracking-tight">{fmt(results.monthlySaving, sym)}</p>
+              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              <ResultCard label="CO₂ reduction" value={`${Math.round(results.co2ReductionKg).toLocaleString()} kg/yr`} sub="vs your current car (tailpipe emissions only)" />
+            {/* Cost comparison */}
+            <div className="grid grid-cols-2 gap-2 mb-2">
+              <div className="rounded-xl bg-[#f6f8fa] border border-[#dfdfdf] px-4 py-4">
+                <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">Petrol / yr</p>
+                <p className="text-[24px] font-semibold text-[#1f2328] leading-none tracking-tight">{fmt(results.annualFuelCost, sym)}</p>
+              </div>
+              <div className="rounded-xl bg-[#f6f8fa] border border-[#dfdfdf] px-4 py-4">
+                <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">EV / yr</p>
+                <p className="text-[24px] font-semibold text-[#1f2328] leading-none tracking-tight">{fmt(results.annualEvCost, sym)}</p>
+              </div>
+            </div>
+
+            {/* CO₂ */}
+            <div className="rounded-xl bg-[#f6f8fa] border border-[#dfdfdf] px-4 py-4">
+              <p className="text-[11px] text-[#4a4c4d] font-semibold uppercase tracking-wider mb-1.5">CO₂ reduction</p>
+              <p className="text-[24px] font-semibold text-[#1f2328] leading-none tracking-tight">
+                {Math.round(results.co2ReductionKg).toLocaleString()} kg/yr{" "}
+                <span className="text-[13px] font-normal text-[#4a4c4d]">vs your current car</span>
+              </p>
             </div>
           </div>
         )}
