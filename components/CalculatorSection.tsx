@@ -81,7 +81,7 @@ function inputClass(err?: boolean) {
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all",
     "placeholder:text-[#94a3b8]",
     "focus:border-[#5e6ad2] focus:ring-2 focus:ring-[#5e6ad2]/15",
-    err ? "border-red-400" : "border-[#e2e8f0]",
+    err ? "border-red-400" : "border-[#e7e7e7]",
   ].join(" ")
 }
 
@@ -89,12 +89,12 @@ function selectClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all appearance-none cursor-pointer",
     "focus:border-[#5e6ad2]",
-    err ? "border-red-400" : "border-[#e2e8f0]",
+    err ? "border-red-400" : "border-[#e7e7e7]",
   ].join(" ")
 }
 
 function labelClass() {
-  return "block text-[11px] font-semibold text-[#64748b] mb-1.5 uppercase tracking-wider"
+  return "block text-[11px] font-semibold text-[#4b5563] mb-1.5 uppercase tracking-wider"
 }
 
 function Err({ msg }: { msg?: string }) {
@@ -104,7 +104,7 @@ function Err({ msg }: { msg?: string }) {
 
 function ChevronDown() {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[#94a3b8]">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" className="absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none text-[#4b5563]">
       <path d="M3 5L7 9L11 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   )
@@ -116,7 +116,7 @@ function SelectWrap({ children }: { children: React.ReactNode }) {
 
 function ResultCard({ label, value, sub, accent }: { label: string; value: string; sub?: string; accent?: boolean }) {
   return (
-    <div className={["rounded-xl p-4 border", accent ? "bg-[#5e6ad2]/8 border-[#5e6ad2]/25" : "bg-[#f8fafc] border-[#e2e8f0]"].join(" ")}>
+    <div className={["rounded-xl p-4 border", accent ? "bg-[#5e6ad2]/8 border-[#5e6ad2]/25" : "bg-[#f6f8fa] border-[#e7e7e7]"].join(" ")}>
       <p className="text-[11px] text-[#64748b] mb-1 uppercase tracking-wider font-semibold">{label}</p>
       <p className={["text-2xl font-bold", accent ? "text-[#5e6ad2]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
       {sub && <p className="text-xs text-[#94a3b8] mt-0.5">{sub}</p>}
@@ -292,7 +292,7 @@ export function CalculatorSection() {
 
         {/* Controls row */}
         <div className="flex items-center justify-between flex-wrap gap-3 mb-5">
-          <div className="flex items-center gap-1 bg-white border border-[#e2e8f0] rounded-lg p-0.5">
+          <div className="flex items-center gap-1 bg-white border border-[#e7e7e7] rounded-lg p-0.5">
             {(["metric", "imperial"] as Unit[]).map((u) => (
               <button key={u} type="button" onClick={() => handleUnitChange(u)}
                 className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#5e6ad2] text-white shadow-sm" : "text-[#64748b] hover:text-[#1f2328]"].join(" ")}>
@@ -303,7 +303,7 @@ export function CalculatorSection() {
           <div className="flex items-center gap-2">
             <span className="text-xs text-[#64748b]">Currency</span>
             <SelectWrap>
-              <select className="bg-white border border-[#e2e8f0] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#5e6ad2]"
+              <select className="bg-white border border-[#e7e7e7] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#5e6ad2]"
                 value={currency.code}
                 onChange={(e) => { const c = CURRENCIES.find((x) => x.code === e.target.value); if (c) setCurrency(c) }}>
                 {CURRENCIES.map((c) => <option key={c.code} value={c.code}>{c.label}</option>)}
@@ -391,7 +391,7 @@ export function CalculatorSection() {
             <div>
               <label className={labelClass()}>{unit === "metric" ? `Fuel price (${sym}/litre)` : `Fuel price (${sym}/gallon)`}</label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#94a3b8] pointer-events-none">{sym}</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#4b5563] pointer-events-none">{sym}</span>
                 <input type="number" inputMode="decimal" min="0" step="0.01"
                   placeholder={unit === "metric" ? "e.g. 1.80" : "e.g. 4.50"}
                   className={inputClass(!!errors.fuelPrice) + " pl-7"}
@@ -404,7 +404,7 @@ export function CalculatorSection() {
             <div>
               <label className={labelClass()}>{`EV price premium (${sym}) — optional`}</label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#94a3b8] pointer-events-none">{sym}</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#4b5563] pointer-events-none">{sym}</span>
                 <input type="number" inputMode="numeric" min="0" step="500"
                   placeholder="e.g. 8000"
                   className={inputClass() + " pl-7"}
@@ -495,7 +495,7 @@ export function CalculatorSection() {
             <div>
               <label className={labelClass()}>{`Electricity rate (${sym}/kWh)`}</label>
               <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#94a3b8] pointer-events-none">{sym}</span>
+                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#4b5563] pointer-events-none">{sym}</span>
                 <input type="number" inputMode="decimal" min="0" step="0.01"
                   placeholder="e.g. 0.30"
                   className={inputClass(!!errors.electricityPrice) + " pl-7"}
@@ -537,7 +537,7 @@ export function CalculatorSection() {
                     className={["rounded-lg border px-3 py-2.5 text-left transition-all cursor-pointer",
                       form.distancePreset === p.value
                         ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30"
-                        : "bg-white border-[#e2e8f0] hover:border-[#94a3b8]"
+                        : "bg-white border-[#e7e7e7] hover:border-[#4b5563]"
                     ].join(" ")}>
                     <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#5e6ad2]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
                     <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#5e6ad2]/70" : "text-[#94a3b8]"].join(" ")}>{p.sub}</p>
@@ -549,9 +549,9 @@ export function CalculatorSection() {
 
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <div className="flex-1 h-px bg-[#e2e8f0]" />
+                <div className="flex-1 h-px bg-[#e7e7e7]" />
                 <span className="text-[10px] text-[#94a3b8] uppercase tracking-wider">or enter custom</span>
-                <div className="flex-1 h-px bg-[#e2e8f0]" />
+                <div className="flex-1 h-px bg-[#e7e7e7]" />
               </div>
               <input type="number" inputMode="numeric" min="0" step="1000"
                 placeholder={unit === "metric" ? "e.g. 17,500 km/year" : "e.g. 11,000 mi/year"}
@@ -579,7 +579,7 @@ export function CalculatorSection() {
 
         {/* Results */}
         {results && (
-          <div id="ev-results" className="mt-12 border-t border-[#e2e8f0] pt-10">
+          <div id="ev-results" className="mt-12 border-t border-[#e7e7e7] pt-10">
             <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
             <p className="text-2xl font-extrabold text-[#1f2328] text-center mb-1" style={{ letterSpacing: "-0.5px" }}>
               {results.annualSaving > 0
