@@ -568,7 +568,7 @@ export function CalculatorSection() {
             Calculate fuel savings
           </button>
           <button type="button" onClick={handleReset}
-            className="text-sm text-[#16a34a] hover:text-[#15803d] transition-colors cursor-pointer">
+            className="text-sm text-[#1f2328] hover:text-[#343638] transition-colors cursor-pointer">
             Clear all
           </button>
         </div>

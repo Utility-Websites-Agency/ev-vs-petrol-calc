@@ -71,7 +71,7 @@ export default function HomePage() {
 
           {/* Right: results preview card */}
           <div className="w-full lg:flex lg:justify-end">
-            <div className="w-full max-w-[480px] mx-auto lg:mx-0 rounded-2xl bg-white border border-[#e7e7e7] p-6 shadow-[0_20px_60px_-12px_rgba(0,0,0,0.18)]">
+            <div className="w-full max-w-[480px] mx-auto lg:mx-0 rounded-2xl bg-white p-6 shadow-[0_20px_60px_-12px_rgba(0,0,0,0.18)]">
               {/* Card header */}
               <div className="flex items-center justify-between mb-5">
                 <div>

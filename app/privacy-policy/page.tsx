@@ -63,11 +63,11 @@ export default function PrivacyPolicyPage() {
             </p>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               You can opt out of personalised advertising by visiting{" "}
-              <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-[#16a34a] hover:underline">
+              <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-[#1f2328] underline hover:no-underline">
                 Google's Ad Settings
               </a>{" "}
               or{" "}
-              <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="text-[#16a34a] hover:underline">
+              <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="text-[#1f2328] underline hover:no-underline">
                 aboutads.info
               </a>.
             </p>
@@ -106,11 +106,11 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Contact</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               Privacy questions:{" "}
-              <a href="mailto:hello@evrunningcosts.com" className="text-[#16a34a] hover:underline">
+              <a href="mailto:hello@evrunningcosts.com" className="text-[#1f2328] underline hover:no-underline">
                 hello@evrunningcosts.com
               </a>
               {" "}·{" "}
-              <Link href="/contact" className="text-[#16a34a] hover:underline">Contact page</Link>
+              <Link href="/contact" className="text-[#1f2328] underline hover:no-underline">Contact page</Link>
             </p>
           </section>
         </div>
