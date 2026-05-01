@@ -79,7 +79,7 @@ const EMPTY: FormState = {
 function inputClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all",
-    "placeholder:text-[#94a3b8]",
+    "placeholder:text-[#4a4c4d]",
     "focus:border-[#16a34a] focus:ring-2 focus:ring-[#16a34a]/15",
     err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
@@ -88,13 +88,13 @@ function inputClass(err?: boolean) {
 function selectClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all appearance-none cursor-pointer",
-    "focus:border-[#16a34a] disabled:text-[#94a3b8] disabled:cursor-not-allowed",
+    "focus:border-[#16a34a] disabled:text-[#4a4c4d] disabled:cursor-not-allowed",
     err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
 }
 
 function labelClass() {
-  return "block text-[11px] font-semibold text-[#4b5563] mb-1.5 uppercase tracking-wider"
+  return "block text-[12px] font-semibold text-[#4b5563] mb-1.5 uppercase tracking-wider"
 }
 
 function Err({ msg }: { msg?: string }) {
@@ -117,9 +117,9 @@ function SelectWrap({ children }: { children: React.ReactNode }) {
 function ResultCard({ label, value, sub, accent }: { label: string; value: string; sub?: string; accent?: boolean }) {
   return (
     <div className={["rounded-xl p-4 border", accent ? "bg-[#16a34a]/8 border-[#16a34a]/25" : "bg-[#f6f8fa] border-[#dfdfdf]"].join(" ")}>
-      <p className="text-[11px] text-[#4a4c4d] mb-1 uppercase tracking-wider font-semibold">{label}</p>
+      <p className="text-[12px] text-[#4a4c4d] mb-1 uppercase tracking-wider font-semibold">{label}</p>
       <p className={["text-2xl font-bold", accent ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
-      {sub && <p className="text-xs text-[#94a3b8] mt-0.5">{sub}</p>}
+      {sub && <p className="text-xs text-[#4a4c4d] mt-0.5">{sub}</p>}
     </div>
   )
 }
@@ -319,7 +319,7 @@ export function CalculatorSection() {
           <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 1</p>
+                <p className="text-[12px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 1</p>
                 <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">Select petrol vehicle</p>
               </div>
               <div className="w-9 h-9 rounded-lg bg-[#16a34a]/10 border border-[#16a34a]/20 flex items-center justify-center flex-shrink-0 ml-3">
@@ -376,7 +376,7 @@ export function CalculatorSection() {
             <div>
               <label className={labelClass()}>
                 {unit === "metric" ? "Fuel efficiency (L/100km)" : "Fuel efficiency (MPG)"}
-                {form.petrolVersion && <span className="ml-1 text-[#94a3b8] normal-case tracking-normal font-normal">— from your selection</span>}
+                {form.petrolVersion && <span className="ml-1 text-[#4a4c4d] normal-case tracking-normal font-normal">— from your selection</span>}
               </label>
               <input type="number" inputMode="decimal" min="0" step="0.1"
                 placeholder={unit === "metric" ? "e.g. 8.5" : "e.g. 35"}
@@ -409,7 +409,7 @@ export function CalculatorSection() {
                   value={form.purchasePriceDiff}
                   onChange={(e) => set({ purchasePriceDiff: e.target.value })} />
               </div>
-              <p className="mt-1 text-[11px] text-[#94a3b8]">How much more the EV costs upfront — calculates your break-even</p>
+              <p className="mt-1 text-[12px] text-[#4a4c4d]">How much more the EV costs upfront — calculates your break-even</p>
             </div>
           </div>
 
@@ -417,7 +417,7 @@ export function CalculatorSection() {
           <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 2</p>
+                <p className="text-[12px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 2</p>
                 <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">Select electric vehicle</p>
               </div>
               <div className="w-9 h-9 rounded-lg bg-[#16a34a]/10 border border-[#16a34a]/20 flex items-center justify-center flex-shrink-0 ml-3">
@@ -475,7 +475,7 @@ export function CalculatorSection() {
             <div>
               <label className={labelClass()}>
                 {unit === "metric" ? "Energy use (kWh/100km)" : "Energy use (kWh/mile)"}
-                {form.evVersion && <span className="ml-1 text-[#94a3b8] normal-case tracking-normal font-normal">— from your selection</span>}
+                {form.evVersion && <span className="ml-1 text-[#4a4c4d] normal-case tracking-normal font-normal">— from your selection</span>}
               </label>
               <input type="number" inputMode="decimal" min="0" step="0.1"
                 placeholder={unit === "metric" ? "e.g. 16.3" : "e.g. 0.262"}
@@ -483,7 +483,7 @@ export function CalculatorSection() {
                 value={form.evConsumption}
                 onChange={(e) => set({ evConsumption: e.target.value })} />
               <Err msg={errors.evConsumption} />
-              <p className="mt-1 text-[11px] text-[#94a3b8]">
+              <p className="mt-1 text-[12px] text-[#4a4c4d]">
                 {unit === "metric" ? "Typical EVs: 14–22 kWh/100km" : "Typical EVs: 0.22–0.35 kWh/mile"}
               </p>
             </div>
@@ -499,7 +499,7 @@ export function CalculatorSection() {
                   onChange={(e) => set({ electricityPrice: e.target.value })} />
               </div>
               <Err msg={errors.electricityPrice} />
-              <p className="mt-1 text-[11px] text-[#94a3b8]">
+              <p className="mt-1 text-[12px] text-[#4a4c4d]">
                 {form.chargingMethod === "home" && "Pre-filled with avg home rate — adjust to your actual tariff"}
                 {form.chargingMethod === "public" && "Pre-filled with avg public DC fast-charge rate"}
                 {form.chargingMethod === "mix" && "Pre-filled with blended home + public average"}
@@ -511,7 +511,7 @@ export function CalculatorSection() {
           <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 3</p>
+                <p className="text-[12px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 3</p>
                 <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">How far do you drive per year?</p>
               </div>
               <div className="w-9 h-9 rounded-lg bg-[#16a34a]/10 border border-[#16a34a]/20 flex items-center justify-center flex-shrink-0 ml-3">
@@ -522,7 +522,7 @@ export function CalculatorSection() {
             </div>
 
             <div>
-              <label className={labelClass()}>Select a profile</label>
+              <label className={labelClass()}>Annual driving distance</label>
               <div className="grid grid-cols-2 gap-2">
                 {presets.map((p) => (
                   <button key={p.value} type="button"
@@ -536,7 +536,7 @@ export function CalculatorSection() {
                         : "bg-white border-[#dfdfdf] hover:border-[#4b5563]"
                     ].join(" ")}>
                     <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
-                    <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#16a34a]/70" : "text-[#94a3b8]"].join(" ")}>{p.sub}</p>
+                    <p className={["text-[15px] leading-[22px]", form.distancePreset === p.value ? "text-[#16a34a]/70" : "text-[#4a4c4d]"].join(" ")}>{p.sub}</p>
                   </button>
                 ))}
               </div>
@@ -546,7 +546,7 @@ export function CalculatorSection() {
             <div>
               <div className="flex items-center gap-3 mb-3">
                 <div className="flex-1 h-px bg-[#dfdfdf]" />
-                <span className="text-[10px] text-[#94a3b8] uppercase tracking-wider">or enter custom</span>
+                <span className="text-[10px] text-[#4a4c4d] uppercase tracking-wider">or enter custom</span>
                 <div className="flex-1 h-px bg-[#dfdfdf]" />
               </div>
               <input type="number" inputMode="numeric" min="0" step="1000"
@@ -576,7 +576,7 @@ export function CalculatorSection() {
         {/* Results */}
         {results && (
           <div id="ev-results" className="mt-12 border-t border-[#dfdfdf] pt-10">
-            <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
+            <p className="text-[12px] text-[#16a34a] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
             <p className="text-2xl font-semibold text-[#1f2328] text-center mb-1" style={{ letterSpacing: "-0.5px" }}>
               {results.annualSaving > 0
                 ? `You save ${fmt(results.annualSaving, sym)} per year switching to an EV`

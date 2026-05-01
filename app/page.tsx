@@ -75,7 +75,7 @@ export default function HomePage() {
               {/* Card header */}
               <div className="flex items-center justify-between mb-5">
                 <div>
-                  <p className="text-[11px] font-semibold uppercase tracking-widest text-[#4a4c4d] mb-1">Sample result</p>
+                  <p className="text-[12px] font-semibold uppercase tracking-widest text-[#4a4c4d] mb-1">Sample result</p>
                   <p className="text-[13px] text-[#4a4c4d]">Tesla Model 3 vs Toyota Camry</p>
                 </div>
                 <span className="rounded-full bg-[#16a34a]/10 px-3 py-1 text-[12px] font-semibold text-[#16a34a]">EV wins</span>
@@ -91,19 +91,19 @@ export default function HomePage() {
               {/* Stats row */}
               <div className="grid grid-cols-2 gap-3 mb-4">
                 <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[11px] text-[#4a4c4d] mb-1">Petrol cost / yr</p>
+                  <p className="text-[12px] text-[#4a4c4d] mb-1">Petrol cost / yr</p>
                   <p className="text-[20px] font-semibold text-[#1f2328]">$3,840</p>
                 </div>
                 <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[11px] text-[#4a4c4d] mb-1">EV cost / yr</p>
+                  <p className="text-[12px] text-[#4a4c4d] mb-1">EV cost / yr</p>
                   <p className="text-[20px] font-semibold text-[#1f2328]">$1,200</p>
                 </div>
                 <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[11px] text-[#4a4c4d] mb-1">Break-even</p>
+                  <p className="text-[12px] text-[#4a4c4d] mb-1">Break-even</p>
                   <p className="text-[20px] font-semibold text-[#1f2328]">4.2 yrs</p>
                 </div>
                 <div className="rounded-xl bg-[#f6f8fa] border border-[#e7e7e7] px-4 py-3">
-                  <p className="text-[11px] text-[#4a4c4d] mb-1">CO₂ saved / yr</p>
+                  <p className="text-[12px] text-[#4a4c4d] mb-1">CO₂ saved / yr</p>
                   <p className="text-[20px] font-semibold text-[#1f2328]">2.1 t</p>
                 </div>
               </div>

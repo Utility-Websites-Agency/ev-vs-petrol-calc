@@ -138,7 +138,7 @@ const filtered = useMemo(() => {
                   >
                     <div className="flex flex-col flex-1 p-5 gap-3">
                       {/* Category */}
-                      <span className={`inline-flex self-start items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider ${CATEGORY_COLORS[post.category] ?? "bg-gray-50 text-gray-600"}`}>
+                      <span className={`inline-flex self-start items-center gap-1.5 rounded-full px-2.5 py-1 text-[12px] font-semibold uppercase tracking-wider ${CATEGORY_COLORS[post.category] ?? "bg-gray-50 text-gray-600"}`}>
                         <Tag className="w-3 h-3" />
                         {post.category}
                       </span>
