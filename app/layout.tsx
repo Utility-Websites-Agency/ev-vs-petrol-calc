@@ -25,8 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-AU">
       <head>
-        {/* AdSense — replace ADSENSE_CLIENT_ID with your publisher ID */}
-        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-ADSENSE_CLIENT_ID" crossOrigin="anonymous" /> */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3581257773539253" crossOrigin="anonymous" />
         {/* GA4 — replace GA4_MEASUREMENT_ID */}
         {/* <script async src="https://www.googletagmanager.com/gtag/js?id=GA4_MEASUREMENT_ID" /> */}
       </head>
