@@ -10,7 +10,7 @@ export function SiteFooter() {
               <span className="w-7 h-7 rounded bg-[#16a34a] text-white flex items-center justify-center text-[12px] font-black tracking-tight">EV</span>
               <span className="text-[15px] font-semibold text-white">EV vs Petrol</span>
             </Link>
-            <p className="text-[13px] text-[#4a4c4d] leading-relaxed">
+            <p className="text-[13px] text-[#c9d1d9] leading-relaxed">
               Free tool to compare the running cost of electric and petrol vehicles. Supports km/miles and multiple currencies.
             </p>
           </div>
@@ -41,8 +41,8 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="border-t border-[#30363d] pt-6 flex flex-col gap-1">
-          <p className="text-[12px] text-[#4a4c4d]">© {new Date().getFullYear()} evrunningcosts.com · Free to use, no sign-up required.</p>
-          <p className="text-[12px] text-[#4a4c4d]">Estimates only. Always consult a qualified professional for financial decisions.</p>
+          <p className="text-[12px] text-[#c9d1d9]">© {new Date().getFullYear()} evrunningcosts.com · Free to use, no sign-up required.</p>
+          <p className="text-[12px] text-[#c9d1d9]">Estimates only. Always consult a qualified professional for financial decisions.</p>
         </div>
       </div>
     </footer>
