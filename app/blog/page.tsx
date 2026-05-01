@@ -67,13 +67,13 @@ const filtered = useMemo(() => {
 
       {/* Hero */}
       <section className="px-4 md:px-6 py-16 md:py-20">
-        <div className="mx-auto max-w-[1280px]">
+        <div className="mx-auto max-w-[1200px]">
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            <h1 className="text-[32px] md:text-[48px] font-extrabold tracking-tight text-[#1f2328] leading-[1.1] mb-4">
+            <h1 className="text-[32px] md:text-[48px] font-semibold tracking-tight text-[#1f2328] leading-[1.1] mb-4">
               EV guides and comparisons
             </h1>
             <p className="text-[16px] text-[#343638] max-w-xl leading-relaxed">
@@ -85,7 +85,7 @@ const filtered = useMemo(() => {
 
       {/* Filters + Grid */}
       <section className="flex-1 px-4 md:px-6 pb-12">
-        <div className="mx-auto max-w-[1280px]">
+        <div className="mx-auto max-w-[1200px]">
 
           {/* Search + filter bar */}
           <div className="flex flex-col gap-3 mb-8">
@@ -94,7 +94,7 @@ const filtered = useMemo(() => {
               placeholder="Search articles…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full max-w-[600px] rounded-lg border border-[#e7e7e7] bg-white px-4 py-2.5 text-[14px] text-[#1f2328] outline-none focus:border-[#388053] focus:ring-2 focus:ring-[#388053]/20 placeholder:text-[#8b949e]"
+              className="w-full max-w-[600px] rounded-lg border border-[#e7e7e7] bg-white px-4 py-2.5 text-[14px] text-[#1f2328] outline-none focus:border-[#16a34a] focus:ring-2 focus:ring-[#16a34a]/20 placeholder:text-[#8b949e]"
             />
             <div className="flex flex-wrap gap-2">
               {ALL_CATEGORIES.map((cat) => (
@@ -103,8 +103,8 @@ const filtered = useMemo(() => {
                   onClick={() => setActiveCategory(cat)}
                   className={`rounded-full px-4 py-2 text-[13px] font-semibold transition-colors border ${
                     activeCategory === cat
-                      ? "bg-[#388053] text-white border-[#388053]"
-                      : "bg-white text-[#343638] border-[#e7e7e7] hover:border-[#388053] hover:text-[#388053]"
+                      ? "bg-[#16a34a] text-white border-[#16a34a]"
+                      : "bg-white text-[#343638] border-[#e7e7e7] hover:border-[#16a34a] hover:text-[#16a34a]"
                   }`}
                 >
                   {cat}
@@ -134,7 +134,7 @@ const filtered = useMemo(() => {
                 >
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="group flex flex-col h-full rounded-xl border border-[#e7e7e7] bg-white hover:border-[#388053]/40 hover:shadow-md transition-all duration-200 overflow-hidden"
+                    className="group flex flex-col h-full rounded-xl border border-[#e7e7e7] bg-white hover:border-[#16a34a]/40 hover:shadow-md transition-all duration-200 overflow-hidden"
                   >
                     <div className="flex flex-col flex-1 p-5 gap-3">
                       {/* Category */}
@@ -144,7 +144,7 @@ const filtered = useMemo(() => {
                       </span>
 
                       {/* Title */}
-                      <h2 className="text-[18px] font-bold text-[#1f2328] leading-[28px] group-hover:text-[#388053] transition-colors line-clamp-3">
+                      <h2 className="text-[18px] font-semibold text-[#1f2328] leading-[28px] group-hover:text-[#16a34a] transition-colors line-clamp-3">
                         {post.title}
                       </h2>
 
@@ -165,7 +165,7 @@ const filtered = useMemo(() => {
                             {post.date}
                           </span>
                         </div>
-                        <span className="flex items-center gap-1 text-[12px] font-semibold text-[#388053] group-hover:gap-2 transition-all">
+                        <span className="flex items-center gap-1 text-[12px] font-semibold text-[#16a34a] group-hover:gap-2 transition-all">
                           Read <ChevronRight className="w-3.5 h-3.5" />
                         </span>
                       </div>
@@ -180,14 +180,14 @@ const filtered = useMemo(() => {
 
       {/* AD SLOT 1 — after article grid */}
       <div className="px-4 md:px-6 py-2">
-        <div className="mx-auto max-w-[1280px]">
+        <div className="mx-auto max-w-[1200px]">
           <AdSlot slotId="8772972152" />
         </div>
       </div>
 
       {/* AD SLOT 2 — above footer */}
       <div className="px-4 md:px-6 py-2">
-        <div className="mx-auto max-w-[1280px]">
+        <div className="mx-auto max-w-[1200px]">
           <AdSlot slotId="8772972152" />
         </div>
       </div>

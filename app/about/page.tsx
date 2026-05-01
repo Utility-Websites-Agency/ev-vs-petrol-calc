@@ -15,14 +15,14 @@ export default function AboutPage() {
       <HomeNav />
       <main className="flex-1 px-6 py-16">
         <div className="mx-auto max-w-[720px]">
-          <h1 className="text-[32px] font-extrabold tracking-tight text-[#1f2328] mb-4">About EV vs Petrol</h1>
+          <h1 className="text-[32px] font-semibold tracking-tight text-[#1f2328] mb-4">About EV vs Petrol</h1>
           <p className="text-[17px] text-[#5f676f] leading-[28px] mb-10">
             A free, no-signup calculator for anyone who wants to know whether switching to an electric vehicle
             actually saves money given their specific driving habits and local energy prices.
           </p>
 
           <section className="mb-10">
-            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Why we built this</h2>
+            <h2_REPLACE text-[#1f2328] mb-3">Why we built this</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px] mb-4">
               Most EV vs petrol comparisons online give you averages. Average mileage. Average electricity prices.
               Average petrol cars. But your situation isn't average — you drive a specific car, pay a specific tariff,
@@ -36,7 +36,7 @@ export default function AboutPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">What the calculator covers</h2>
+            <h2_REPLACE text-[#1f2328] mb-3">What the calculator covers</h2>
             <ul className="flex flex-col gap-3">
               {[
                 ["Fuel vs charging costs", "Annual and monthly running cost comparison between your petrol car and the EV, based on your local prices and driving distance."],
@@ -53,7 +53,7 @@ export default function AboutPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Accuracy and limitations</h2>
+            <h2_REPLACE text-[#1f2328] mb-3">Accuracy and limitations</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px] mb-4">
               The calculator uses real-world efficiency data for a large database of petrol and EV models. Car data is
               sourced from manufacturer specifications and independent testing. Electricity and fuel prices use your
@@ -67,7 +67,7 @@ export default function AboutPage() {
           </section>
 
           <section className="mb-10">
-            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Who is behind this</h2>
+            <h2_REPLACE text-[#1f2328] mb-3">Who is behind this</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               EV vs Petrol is an independent website. We are not affiliated with any car manufacturer, EV brand,
               energy company, or financial services provider. The site is funded by advertising. We have no commercial
@@ -76,10 +76,10 @@ export default function AboutPage() {
           </section>
 
           <section>
-            <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Get in touch</h2>
+            <h2_REPLACE text-[#1f2328] mb-3">Get in touch</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               Questions, corrections, or feedback?{" "}
-              <Link href="/contact" className="text-[#388053] hover:underline">Send us a message</Link>.
+              <Link href="/contact" className="text-[#16a34a] hover:underline">Send us a message</Link>.
             </p>
           </section>
         </div>

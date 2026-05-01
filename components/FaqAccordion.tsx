@@ -40,8 +40,8 @@ export function FaqAccordion() {
   const [open, setOpen] = useState<number | null>(null);
   return (
     <section className="px-4 md:px-6 py-16 bg-[#f6f8fa]">
-      <div className="mx-auto max-w-[860px]">
-        <h2 className="text-[28px] font-bold text-[#1f2328] mb-8">Frequently asked questions</h2>
+      <div className="mx-auto max-w-[1200px]">
+        <h2_REPLACE text-[#1f2328] mb-8">Frequently asked questions</h2>
         <div className="flex flex-col gap-3">
           {FAQS.map((faq, i) => (
             <div key={i} className="rounded-xl border border-[#e7e7e7] bg-white overflow-hidden">
@@ -50,7 +50,7 @@ export function FaqAccordion() {
                 className="w-full flex items-center justify-between px-5 py-4 text-left transition-colors hover:bg-[#f6f8fa] cursor-pointer"
               >
                 <span className="text-[15px] font-semibold text-[#1f2328] pr-4">{faq.q}</span>
-                <span className="flex-shrink-0 text-[#388053] text-[18px] font-light leading-none">
+                <span className="flex-shrink-0 text-[#16a34a] text-[18px] font-light leading-none">
                   {open === i ? "−" : "+"}
                 </span>
               </button>

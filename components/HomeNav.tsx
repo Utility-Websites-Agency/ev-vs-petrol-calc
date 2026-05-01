@@ -14,9 +14,9 @@ export function HomeNav() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-white border-b border-[#e7e7e7]/60">
-        <div className="mx-auto max-w-[1280px] px-4 md:px-6 flex items-center justify-between py-4">
+        <div className="mx-auto max-w-[1200px] px-4 md:px-6 flex items-center justify-between py-4">
           <Link href="/" className="flex items-center gap-2">
-            <span className="w-7 h-7 rounded bg-[#388053] text-white flex items-center justify-center text-[11px] font-black tracking-tight shrink-0">
+            <span className="w-7 h-7 rounded bg-[#16a34a] text-white flex items-center justify-center text-[11px] font-black tracking-tight shrink-0">
               EV
             </span>
             <span className="text-[15px] font-semibold text-[#1f2328] tracking-tight">EV vs Petrol</span>
@@ -33,7 +33,7 @@ export function HomeNav() {
           <div className="flex items-center gap-4">
             <Link
               href="/#calculator"
-              className="inline-flex rounded-lg border border-[#388053] bg-[#388053] px-5 py-1.5 text-[14px] font-semibold text-white transition hover:bg-[#2d6943]"
+              className="inline-flex rounded-lg border border-[#16a34a] bg-[#16a34a] px-5 py-1.5 text-[14px] font-semibold text-white transition hover:bg-[#15803d]"
             >
               Calculate now
             </Link>
@@ -116,7 +116,7 @@ export function HomeNav() {
           <Link
             href="/#calculator"
             onClick={() => setDrawerOpen(false)}
-            className="flex items-center justify-center w-full rounded-lg bg-[#388053] px-5 py-3 text-[15px] font-semibold text-white transition hover:bg-[#2d6943]"
+            className="flex items-center justify-center w-full rounded-lg bg-[#16a34a] px-5 py-3 text-[15px] font-semibold text-white transition hover:bg-[#15803d]"
           >
             Calculate now
           </Link>

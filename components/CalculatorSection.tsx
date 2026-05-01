@@ -80,7 +80,7 @@ function inputClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all",
     "placeholder:text-[#94a3b8]",
-    "focus:border-[#388053] focus:ring-2 focus:ring-[#388053]/15",
+    "focus:border-[#16a34a] focus:ring-2 focus:ring-[#16a34a]/15",
     err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
 }
@@ -88,7 +88,7 @@ function inputClass(err?: boolean) {
 function selectClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all appearance-none cursor-pointer",
-    "focus:border-[#388053] disabled:text-[#94a3b8] disabled:cursor-not-allowed",
+    "focus:border-[#16a34a] disabled:text-[#94a3b8] disabled:cursor-not-allowed",
     err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
 }
@@ -116,9 +116,9 @@ function SelectWrap({ children }: { children: React.ReactNode }) {
 
 function ResultCard({ label, value, sub, accent }: { label: string; value: string; sub?: string; accent?: boolean }) {
   return (
-    <div className={["rounded-xl p-4 border", accent ? "bg-[#388053]/8 border-[#388053]/25" : "bg-[#f6f8fa] border-[#dfdfdf]"].join(" ")}>
+    <div className={["rounded-xl p-4 border", accent ? "bg-[#16a34a]/8 border-[#16a34a]/25" : "bg-[#f6f8fa] border-[#dfdfdf]"].join(" ")}>
       <p className="text-[11px] text-[#64748b] mb-1 uppercase tracking-wider font-semibold">{label}</p>
-      <p className={["text-2xl font-bold", accent ? "text-[#388053]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
+      <p className={["text-2xl font-bold", accent ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
       {sub && <p className="text-xs text-[#94a3b8] mt-0.5">{sub}</p>}
     </div>
   )
@@ -277,12 +277,12 @@ export function CalculatorSection() {
 
   return (
     <section className="w-full px-4 py-16 sm:py-20 bg-[#f6f8fa]">
-      <div className="mx-auto max-w-[1100px]">
+      <div className="mx-auto max-w-[1200px]">
 
         {/* Header */}
         <div className="text-center mb-10">
-          <p className="text-xs text-[#388053] mb-3 uppercase tracking-widest font-semibold">EV vs Petrol Cost Calculator</p>
-          <h2 className="text-[2rem] sm:text-[2.5rem] text-[#1f2328] font-extrabold tracking-tight leading-tight mb-3">
+          <p className="text-xs text-[#16a34a] mb-3 uppercase tracking-widest font-semibold">EV vs Petrol Cost Calculator</p>
+          <h2 className="text-[2rem] sm:text-[2.5rem] text-[#1f2328] font-semibold tracking-tight leading-tight mb-3">
             How much could you save switching to an EV?
           </h2>
           <p className="text-[#5f676f] text-base leading-relaxed max-w-lg mx-auto">
@@ -295,7 +295,7 @@ export function CalculatorSection() {
           <div className="flex items-center gap-1 bg-white border border-[#dfdfdf] rounded-lg p-0.5">
             {(["metric", "imperial"] as Unit[]).map((u) => (
               <button key={u} type="button" onClick={() => handleUnitChange(u)}
-                className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#388053] text-white shadow-sm" : "text-[#64748b] hover:text-[#1f2328]"].join(" ")}>
+                className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#16a34a] text-white shadow-sm" : "text-[#64748b] hover:text-[#1f2328]"].join(" ")}>
                 {u === "metric" ? "km / L" : "mi / gal"}
               </button>
             ))}
@@ -303,7 +303,7 @@ export function CalculatorSection() {
           <div className="flex items-center gap-2">
             <span className="text-xs text-[#64748b]">Currency</span>
             <SelectWrap>
-              <select className="bg-white border border-[#dfdfdf] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#388053]"
+              <select className="bg-white border border-[#dfdfdf] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#16a34a]"
                 value={currency.code}
                 onChange={(e) => { const c = CURRENCIES.find((x) => x.code === e.target.value); if (c) setCurrency(c) }}>
                 {CURRENCIES.map((c) => <option key={c.code} value={c.code}>{c.label}</option>)}
@@ -319,11 +319,11 @@ export function CalculatorSection() {
           <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#388053] uppercase tracking-widest mb-1 font-semibold">Step 1</p>
+                <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 1</p>
                 <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">Select petrol vehicle</p>
               </div>
-              <div className="w-9 h-9 rounded-lg bg-[#388053]/10 border border-[#388053]/20 flex items-center justify-center flex-shrink-0 ml-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#388053" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-9 h-9 rounded-lg bg-[#16a34a]/10 border border-[#16a34a]/20 flex items-center justify-center flex-shrink-0 ml-3">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M19 17H22V13L19 7H5L2 13V17H5" /><circle cx="7.5" cy="17" r="2.5" /><circle cx="16.5" cy="17" r="2.5" /><path d="M7.5 17H16.5" />
                 </svg>
               </div>
@@ -417,11 +417,11 @@ export function CalculatorSection() {
           <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#388053] uppercase tracking-widest mb-1 font-semibold">Step 2</p>
+                <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 2</p>
                 <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">Select electric vehicle</p>
               </div>
-              <div className="w-9 h-9 rounded-lg bg-[#388053]/10 border border-[#388053]/20 flex items-center justify-center flex-shrink-0 ml-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#388053" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-9 h-9 rounded-lg bg-[#16a34a]/10 border border-[#16a34a]/20 flex items-center justify-center flex-shrink-0 ml-3">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
                 </svg>
               </div>
@@ -511,11 +511,11 @@ export function CalculatorSection() {
           <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
-                <p className="text-[11px] text-[#388053] uppercase tracking-widest mb-1 font-semibold">Step 3</p>
+                <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-1 font-semibold">Step 3</p>
                 <p className="text-[15px] text-[#1f2328] leading-snug font-semibold">How far do you drive per year?</p>
               </div>
-              <div className="w-9 h-9 rounded-lg bg-[#388053]/10 border border-[#388053]/20 flex items-center justify-center flex-shrink-0 ml-3">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#388053" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <div className="w-9 h-9 rounded-lg bg-[#16a34a]/10 border border-[#16a34a]/20 flex items-center justify-center flex-shrink-0 ml-3">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
                 </svg>
               </div>
@@ -532,11 +532,11 @@ export function CalculatorSection() {
                     }}
                     className={["rounded-lg border px-3 py-2.5 text-left transition-all cursor-pointer",
                       form.distancePreset === p.value
-                        ? "bg-[#388053]/10 border-[#388053]/30"
+                        ? "bg-[#16a34a]/10 border-[#16a34a]/30"
                         : "bg-white border-[#dfdfdf] hover:border-[#4b5563]"
                     ].join(" ")}>
-                    <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#388053]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
-                    <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#388053]/70" : "text-[#94a3b8]"].join(" ")}>{p.sub}</p>
+                    <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
+                    <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#16a34a]/70" : "text-[#94a3b8]"].join(" ")}>{p.sub}</p>
                   </button>
                 ))}
               </div>
@@ -564,11 +564,11 @@ export function CalculatorSection() {
         {/* Calculate */}
         <div className="flex flex-col items-center gap-3">
           <button type="button" onClick={handleCalculate}
-            className="w-full max-w-sm py-3.5 rounded-xl text-sm font-semibold text-white bg-[#388053] hover:bg-[#2d6943] transition-colors cursor-pointer">
+            className="w-full max-w-sm py-3.5 rounded-xl text-sm font-semibold text-white bg-[#16a34a] hover:bg-[#15803d] transition-colors cursor-pointer">
             Calculate fuel savings
           </button>
           <button type="button" onClick={handleReset}
-            className="text-sm text-[#388053] hover:text-[#2d6943] transition-colors cursor-pointer">
+            className="text-sm text-[#16a34a] hover:text-[#15803d] transition-colors cursor-pointer">
             Clear all
           </button>
         </div>
@@ -576,8 +576,8 @@ export function CalculatorSection() {
         {/* Results */}
         {results && (
           <div id="ev-results" className="mt-12 border-t border-[#dfdfdf] pt-10">
-            <p className="text-[11px] text-[#388053] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
-            <p className="text-2xl font-extrabold text-[#1f2328] text-center mb-1" style={{ letterSpacing: "-0.5px" }}>
+            <p className="text-[11px] text-[#16a34a] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
+            <p className="text-2xl font-semibold text-[#1f2328] text-center mb-1" style={{ letterSpacing: "-0.5px" }}>
               {results.annualSaving > 0
                 ? `You save ${fmt(results.annualSaving, sym)} per year switching to an EV`
                 : `EV charging costs ${fmt(Math.abs(results.annualSaving), sym)} more per year at current rates`}

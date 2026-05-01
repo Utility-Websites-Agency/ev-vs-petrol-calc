@@ -23,7 +23,7 @@ export default function OgImage() {
       >
         <div
           style={{
-            background: "#388053",
+            background: "#16a34a",
             borderRadius: "999px",
             padding: "8px 20px",
             fontSize: 18,
@@ -62,7 +62,7 @@ export default function OgImage() {
         <div
           style={{
             fontSize: 20,
-            color: "#388053",
+            color: "#16a34a",
             fontWeight: 600,
           }}
         >
