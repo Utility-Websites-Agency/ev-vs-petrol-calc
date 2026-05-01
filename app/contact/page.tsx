@@ -22,7 +22,7 @@ export default function ContactPage() {
           </p>
 
           <section className="mb-10">
-            <h2_REPLACE text-[#1f2328] mb-3">Email</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Email</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               The best way to reach us:{" "}
               <a href="mailto:hello@evrunningcosts.com" className="text-[#16a34a] hover:underline">
@@ -33,7 +33,7 @@ export default function ContactPage() {
           </section>
 
           <section className="mb-10">
-            <h2_REPLACE text-[#1f2328] mb-3">Common questions</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Common questions</h2>
             <div className="flex flex-col gap-3">
               {[
                 {

@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
           </p>
 
           <section className="mb-8">
-            <h2_REPLACE text-[#1f2328] mb-3">Information we collect</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Information we collect</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px] mb-3">
               <strong className="text-[#1f2328]">Calculator inputs:</strong> All calculations run entirely in your browser.
               We do not transmit or store any inputs you enter into the calculator on our servers.
@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="mb-8">
-            <h2_REPLACE text-[#1f2328] mb-3">Cookies</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Cookies</h2>
             <div className="flex flex-col gap-3">
               {[
                 ["Google Analytics", "Anonymised usage tracking. Set by Google and governed by Google's privacy policy."],
@@ -56,7 +56,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="mb-8">
-            <h2_REPLACE text-[#1f2328] mb-3">Advertising</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Advertising</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px] mb-3">
               This site uses Google AdSense to display advertisements. Google, as a third-party vendor, uses cookies to
               serve ads based on your visits to this and other websites.
@@ -74,7 +74,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="mb-8">
-            <h2_REPLACE text-[#1f2328] mb-3">How we use your information</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">How we use your information</h2>
             <ul className="flex flex-col gap-2 text-[16px] text-[#5f676f] leading-[28px] list-disc list-inside">
               <li>To operate and improve the website and calculator</li>
               <li>To respond to enquiries you send us</li>
@@ -87,7 +87,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="mb-8">
-            <h2_REPLACE text-[#1f2328] mb-3">Data retention</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Data retention</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               Google Analytics data is retained for 14 months. Email enquiries are retained for up to 12 months.
               Calculator inputs are never stored.
@@ -95,7 +95,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section className="mb-8">
-            <h2_REPLACE text-[#1f2328] mb-3">Changes to this policy</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Changes to this policy</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               We may update this policy from time to time. The date at the top of this page reflects the most recent
               revision. Continued use of the site after any changes constitutes acceptance of the updated policy.
@@ -103,7 +103,7 @@ export default function PrivacyPolicyPage() {
           </section>
 
           <section>
-            <h2_REPLACE text-[#1f2328] mb-3">Contact</h2>
+            <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Contact</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               Privacy questions:{" "}
               <a href="mailto:hello@evrunningcosts.com" className="text-[#16a34a] hover:underline">

@@ -41,7 +41,7 @@ export function FaqAccordion() {
   return (
     <section className="px-4 md:px-6 py-16 bg-[#f6f8fa]">
       <div className="mx-auto max-w-[1200px]">
-        <h2_REPLACE text-[#1f2328] mb-8">Frequently asked questions</h2>
+        <h2 className="text-[22px] font-semibold text-[#1f2328] mb-8">Frequently asked questions</h2>
         <div className="flex flex-col gap-3">
           {FAQS.map((faq, i) => (
             <div key={i} className="rounded-xl border border-[#e7e7e7] bg-white overflow-hidden">
