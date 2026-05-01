@@ -555,6 +555,64 @@ export const BLOG_POSTS: BlogPost[] = [
       { callout: { type: "info", text: "When calculating your EV's total cost of ownership, factor in the annual maintenance saving versus your current car. For many drivers, this saving alone offsets a significant portion of any EV price premium over the ownership period." } },
     ],
   },
+  {
+  slug: "why-the-upfront-price-of-an-ev-does-not-tell-the-whole-story",
+  title: "Why the upfront price of an EV does not tell the whole story",
+  excerpt: "Sticker shock is real, but the purchase price of an electric vehicle is only one piece of the puzzle. Here is what Australian buyers should factor in before making a decision.",
+  date: "May 1, 2026",
+  readTime: "6 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "total cost of ownership", "EV savings", "Australia", "fuel costs", "EV vs petrol"],
+  content: [
+    {
+      heading: "The sticker price trap",
+      body: "Walk into a dealership or browse an EV listing online and the first number that jumps out is the drive-away price. For many Australians, that figure can feel confronting when compared side by side with a comparable petrol car. A mass-market EV might list for $10,000 to $20,000 more than its petrol equivalent, and that gap is enough to send plenty of buyers back to the forecourt for a traditional combustion vehicle. But here is the thing: the purchase price is just the beginning of the story. When you own a car, you pay for it every single day through fuel, servicing, registration, insurance and eventually resale. Focusing only on what you pay at the dealership is a bit like judging a house by its deposit rather than the full mortgage. To make a genuinely informed choice, you need to think about the total cost of ownership over the years you actually plan to drive the car."
+    },
+    {
+      heading: "What is total cost of ownership?",
+      body: "Total cost of ownership (TCO) is the full amount a vehicle costs you across its entire life in your hands. It brings together every expense, not just the purchase price, so you can compare two vehicles on an apples-to-apples basis. For most Australians driving 15,000 kilometres per year, the ongoing costs of a petrol car add up quickly, and that is where EVs tend to claw back their higher upfront price. The TCO calculation typically covers the following areas.",
+      list: [
+        "Purchase price (including any government rebates or stamp duty concessions)",
+        "Fuel or electricity costs over your ownership period",
+        "Scheduled servicing and maintenance",
+        "Registration and compulsory third party insurance",
+        "Comprehensive insurance premiums",
+        "Loan interest if you are financing",
+        "Estimated resale value or depreciation"
+      ]
+    },
+    {
+      heading: "Fuel savings: where EVs really shine",
+      body: "Petrol prices in Australia have been volatile for years, regularly sitting above $2.00 per litre in capital cities and even higher in regional areas. Charging an EV at home overnight on a standard tariff generally costs the equivalent of around 30 to 50 cents per litre of petrol in energy terms, depending on your electricity plan and the efficiency of the vehicle. For a driver covering 15,000 km per year in a mid-size petrol SUV averaging 9 litres per 100 km, fuel alone can cost $2,700 or more annually at $2.00 per litre. A comparable EV using roughly 18 kWh per 100 km and charged at 25 cents per kWh would cost around $675 per year in electricity. That is a saving of over $2,000 every single year, and over a five-year ownership period that adds up to more than $10,000 back in your pocket before you factor in anything else."
+    },
+    {
+      heading: "Servicing and maintenance costs",
+      body: "Electric vehicles have far fewer moving parts than petrol cars. There is no oil to change, no timing belt to replace, no spark plugs, no exhaust system and no multi-speed transmission to service. Battery cooling systems and brake fluid still need attention, and tyres wear as normal, but the overall servicing bill for an EV is meaningfully lower than for a petrol equivalent. Independent studies in Australia and overseas consistently find that EV owners spend around 30 to 40 per cent less on servicing over a typical ownership period. For a petrol car that might cost $800 to $1,200 per year in scheduled servicing, switching to an EV could save you $300 to $500 a year on top of your fuel savings. Over five years that is another $1,500 to $2,500 in the plus column for the electric option."
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "Use the ev-vs-petrol-calc.com calculator to plug in your own annual kilometres, local electricity rate and petrol price. The tool will show you a side-by-side five-year cost comparison so you can see your personalised break-even point rather than relying on national averages."
+      }
+    },
+    {
+      heading: "Government incentives and concessions in Australia",
+      body: "The upfront price gap between EVs and petrol cars can also be narrowed by government incentives, which vary considerably depending on where you live. At the federal level, eligible EVs priced below the luxury car tax threshold are exempt from fringe benefits tax when provided through a novated lease, which can be a significant saving for employees. Several states and territories offer additional benefits such as stamp duty exemptions, registration discounts and cash rebates, though eligibility thresholds and program availability change regularly so it pays to check your state government website before you buy. When you subtract applicable rebates and concessions from the drive-away price, the real out-of-pocket cost of buying an EV often looks considerably more competitive than the advertised sticker price suggests."
+    },
+    {
+      heading: "Depreciation and resale value",
+      body: "Depreciation is the single largest cost of car ownership for most Australians, yet it is the one that gets the least attention at purchase time. EVs have had a mixed reputation on this front. Early models from some brands depreciated steeply as newer, longer-range alternatives entered the market. However, more established EV brands have shown competitive residual values, and as the used EV market matures in Australia there is growing buyer confidence in second-hand electric vehicles. When comparing depreciation, it is worth looking at three-year residual value estimates from independent valuation services rather than assuming EVs will always lose more value. In some segments, strong demand for used EVs is actually producing resale values that rival or beat comparable petrol models.",
+      callout: {
+        type: "info",
+        text: "Battery warranty coverage matters for resale. Most mainstream EV manufacturers offer battery warranties of eight years or 160,000 km, whichever comes first. A valid warranty transferable to future owners adds meaningful confidence to the second-hand market."
+      }
+    },
+    {
+      heading: "Putting it all together",
+      body: "When you add fuel savings, lower servicing costs and applicable government incentives together, many EVs on sale in Australia today reach cost parity with their petrol equivalents somewhere between three and six years of average driving. For buyers planning to keep their vehicle for seven to ten years, the total cost of ownership calculation often favours the EV by a significant margin even when the purchase price is notably higher. The key is to do the sums for your own situation: your annual kilometres, your local electricity and petrol prices, your access to home charging, and any incentives available in your state. A national average will never be as useful as a number tailored to your actual life. That is exactly what the calculator on this site is designed to help you work out, quickly and without any jargon. Before you let a sticker price make the decision for you, give yourself the full picture first."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
