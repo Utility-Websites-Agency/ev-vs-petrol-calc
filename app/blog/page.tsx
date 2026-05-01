@@ -14,14 +14,12 @@ import { SiteNav } from "@/components/SiteNav";
 const ALL_CATEGORIES = ["All", ...Array.from(new Set(BLOG_POSTS.map((p) => p.category)))];
 
 const CATEGORY_COLORS: Record<string, string> = {
-  "Tax":             "bg-blue-50 text-blue-700",
-  "Contractor Pay":  "bg-purple-50 text-purple-700",
-  "Personal Finance":"bg-green-50 text-green-700",
-  "Tax Refund":      "bg-orange-50 text-orange-700",
-  "Tax Savings":     "bg-teal-50 text-teal-700",
-  "Superannuation":  "bg-indigo-50 text-indigo-700",
-  "Mortgage":        "bg-rose-50 text-rose-700",
-  "Work Planning":   "bg-amber-50 text-amber-700",
+  "Comparison":    "bg-blue-50 text-blue-700",
+  "Charging":      "bg-green-50 text-green-700",
+  "Buying":        "bg-purple-50 text-purple-700",
+  "Technology":    "bg-cyan-50 text-cyan-700",
+  "Tax & Finance": "bg-orange-50 text-orange-700",
+  "Tips":          "bg-amber-50 text-amber-700",
 };
 
 export default function BlogPage() {
@@ -76,10 +74,10 @@ const filtered = useMemo(() => {
             transition={{ duration: 0.4 }}
           >
             <h1 className="text-[32px] md:text-[48px] font-extrabold tracking-tight text-[#1f2328] leading-[1.1] mb-4">
-              Contractor &amp; Tax Guides
+              EV guides and comparisons
             </h1>
             <p className="text-[16px] text-[#343638] max-w-xl leading-relaxed">
-              Plain-English guides for Australian contractors and sole traders. Tax planning, rate setting, super and more.
+              Plain-English guides to help you understand the real cost of switching to electric. Charging, buying, technology and more.
             </p>
           </motion.div>
         </div>
@@ -96,7 +94,7 @@ const filtered = useMemo(() => {
               placeholder="Search articles…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full max-w-[600px] rounded-lg border border-[#e7e7e7] bg-white px-4 py-2.5 text-[14px] text-[#1f2328] outline-none focus:border-[#1a6fe8] focus:ring-2 focus:ring-[#1a6fe8]/20 placeholder:text-[#8b949e]"
+              className="w-full max-w-[600px] rounded-lg border border-[#e7e7e7] bg-white px-4 py-2.5 text-[14px] text-[#1f2328] outline-none focus:border-[#5e6ad2] focus:ring-2 focus:ring-[#5e6ad2]/20 placeholder:text-[#8b949e]"
             />
             <div className="flex flex-wrap gap-2">
               {ALL_CATEGORIES.map((cat) => (
@@ -105,8 +103,8 @@ const filtered = useMemo(() => {
                   onClick={() => setActiveCategory(cat)}
                   className={`rounded-full px-4 py-2 text-[13px] font-semibold transition-colors border ${
                     activeCategory === cat
-                      ? "bg-[#1a6fe8] text-white border-[#1a6fe8]"
-                      : "bg-white text-[#343638] border-[#e7e7e7] hover:border-[#1a6fe8] hover:text-[#1a6fe8]"
+                      ? "bg-[#5e6ad2] text-white border-[#5e6ad2]"
+                      : "bg-white text-[#343638] border-[#e7e7e7] hover:border-[#5e6ad2] hover:text-[#5e6ad2]"
                   }`}
                 >
                   {cat}
@@ -136,7 +134,7 @@ const filtered = useMemo(() => {
                 >
                   <Link
                     href={`/blog/${post.slug}`}
-                    className="group flex flex-col h-full rounded-xl border border-[#e7e7e7] bg-white hover:border-[#1a6fe8]/40 hover:shadow-md transition-all duration-200 overflow-hidden"
+                    className="group flex flex-col h-full rounded-xl border border-[#e7e7e7] bg-white hover:border-[#5e6ad2]/40 hover:shadow-md transition-all duration-200 overflow-hidden"
                   >
                     <div className="flex flex-col flex-1 p-5 gap-3">
                       {/* Category */}
@@ -146,7 +144,7 @@ const filtered = useMemo(() => {
                       </span>
 
                       {/* Title */}
-                      <h2 className="text-[18px] font-bold text-[#1f2328] leading-[28px] group-hover:text-[#1a6fe8] transition-colors line-clamp-3">
+                      <h2 className="text-[18px] font-bold text-[#1f2328] leading-[28px] group-hover:text-[#5e6ad2] transition-colors line-clamp-3">
                         {post.title}
                       </h2>
 
@@ -167,7 +165,7 @@ const filtered = useMemo(() => {
                             {post.date}
                           </span>
                         </div>
-                        <span className="flex items-center gap-1 text-[12px] font-semibold text-[#1a6fe8] group-hover:gap-2 transition-all">
+                        <span className="flex items-center gap-1 text-[12px] font-semibold text-[#5e6ad2] group-hover:gap-2 transition-all">
                           Read <ChevronRight className="w-3.5 h-3.5" />
                         </span>
                       </div>
