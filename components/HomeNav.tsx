@@ -33,7 +33,7 @@ export function HomeNav() {
           <div className="flex items-center gap-4">
             <Link
               href="/#calculator"
-              className="inline-flex rounded-full border border-[#388053] bg-[#388053] px-5 py-1.5 text-[14px] font-semibold text-white transition hover:bg-[#2d6943]"
+              className="inline-flex rounded-lg border border-[#388053] bg-[#388053] px-5 py-1.5 text-[14px] font-semibold text-white transition hover:bg-[#2d6943]"
             >
               Calculate now
             </Link>
@@ -116,7 +116,7 @@ export function HomeNav() {
           <Link
             href="/#calculator"
             onClick={() => setDrawerOpen(false)}
-            className="flex items-center justify-center w-full rounded-full bg-[#388053] px-5 py-3 text-[15px] font-semibold text-white transition hover:bg-[#2d6943]"
+            className="flex items-center justify-center w-full rounded-lg bg-[#388053] px-5 py-3 text-[15px] font-semibold text-white transition hover:bg-[#2d6943]"
           >
             Calculate now
           </Link>
