@@ -32,26 +32,94 @@ export default function HomePage() {
       <HomeNav />
 
       {/* Hero */}
-      <section className="px-4 md:px-6 pt-20 pb-12 text-center">
-        <div className="mx-auto max-w-[760px]">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#e7e7e7] bg-[#f6f8fa] px-4 py-1.5 mb-6">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-            <span className="text-[13px] text-[#5f676f]">Free · No sign-up · Supports km and miles</span>
+      <section className="px-4 md:px-6 pt-16 pb-12">
+        <div className="mx-auto max-w-[1280px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+
+          {/* Left: copy */}
+          <div className="flex flex-col items-start">
+            <div className="inline-flex items-center gap-2 rounded-full border border-[#e7e7e7] bg-[#f6f8fa] px-4 py-1.5 mb-6">
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+              <span className="text-[13px] text-[#5f676f]">Free · No sign-up · Supports km and miles</span>
+            </div>
+            <h1 className="text-[36px] md:text-[52px] font-semibold tracking-tight leading-[1.08] mb-5 text-[#1f2328]">
+              Stop guessing what an{" "}
+              <span className="text-[#388053]">EV actually costs you</span>
+            </h1>
+            <p className="text-[17px] text-[#5f676f] leading-relaxed mb-4">
+              Most EV comparisons ignore your electricity rate, charging habits, and real-world efficiency. Ours don&apos;t.
+            </p>
+            <p className="text-[17px] text-[#5f676f] leading-relaxed mb-8">
+              Enter your current car and the EV you&apos;re considering. Get your annual savings, monthly cost difference, break-even point, and CO₂ reduction — in under 2 minutes.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-10">
+              <a
+                href="#calculator"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] font-semibold text-white bg-[#388053] hover:bg-[#2d6943] transition-colors"
+              >
+                Calculate my savings →
+              </a>
+              <a
+                href="#how-it-works"
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] font-semibold text-[#343638] border border-[#e7e7e7] bg-white hover:bg-[#f6f8fa] transition-colors"
+              >
+                See how it works
+              </a>
+            </div>
+            <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-[13px] text-[#8b949e]">
+              <span className="flex items-center gap-1.5"><span className="text-[#388053]">✓</span> No account needed</span>
+              <span className="flex items-center gap-1.5"><span className="text-[#388053]">✓</span> Real car database</span>
+              <span className="flex items-center gap-1.5"><span className="text-[#388053]">✓</span> AU, UK &amp; US rates</span>
+            </div>
           </div>
-          <h1 className="text-[38px] md:text-[56px] font-extrabold tracking-tight leading-[1.05] mb-5 text-[#1f2328]">
-            Electric car vs petrol{" "}
-            <span className="text-[#388053]">cost calculator</span>
-          </h1>
-          <p className="text-[17px] text-[#5f676f] leading-relaxed max-w-xl mx-auto mb-8">
-            Enter your driving habits and local fuel prices to see a full cost comparison
-            between electric and petrol vehicles — in under two minutes.
-          </p>
-          <a
-            href="#calculator"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] font-semibold text-white bg-[#388053] hover:bg-[#2d6943] transition-colors"
-          >
-            Calculate my savings →
-          </a>
+
+          {/* Right: results preview card */}
+          <div className="w-full lg:flex lg:justify-end">
+            <div className="w-full max-w-[480px] mx-auto lg:mx-0 rounded-2xl bg-[#1b1f24] p-6 shadow-2xl">
+              {/* Card header */}
+              <div className="flex items-center justify-between mb-5">
+                <div>
+                  <p className="text-[11px] font-semibold uppercase tracking-widest text-[#8b949e] mb-1">Your result</p>
+                  <p className="text-[13px] text-[#c9d1d9]">Tesla Model 3 vs Toyota Camry</p>
+                </div>
+                <span className="rounded-full bg-[#388053]/20 px-3 py-1 text-[12px] font-semibold text-[#4ade80]">EV wins</span>
+              </div>
+
+              {/* Big saving number */}
+              <div className="rounded-xl bg-[#388053]/10 border border-[#388053]/20 px-5 py-4 mb-4 text-center">
+                <p className="text-[13px] text-[#4ade80] font-semibold mb-1">Annual fuel saving</p>
+                <p className="text-[44px] font-semibold text-white leading-none tracking-tight">$2,640</p>
+                <p className="text-[13px] text-[#8b949e] mt-1">$220 / month</p>
+              </div>
+
+              {/* Stats row */}
+              <div className="grid grid-cols-2 gap-3 mb-4">
+                <div className="rounded-xl bg-white/5 px-4 py-3">
+                  <p className="text-[11px] text-[#8b949e] mb-1">Petrol cost / yr</p>
+                  <p className="text-[20px] font-semibold text-white">$3,840</p>
+                </div>
+                <div className="rounded-xl bg-white/5 px-4 py-3">
+                  <p className="text-[11px] text-[#8b949e] mb-1">EV cost / yr</p>
+                  <p className="text-[20px] font-semibold text-white">$1,200</p>
+                </div>
+                <div className="rounded-xl bg-white/5 px-4 py-3">
+                  <p className="text-[11px] text-[#8b949e] mb-1">Break-even</p>
+                  <p className="text-[20px] font-semibold text-white">4.2 yrs</p>
+                </div>
+                <div className="rounded-xl bg-white/5 px-4 py-3">
+                  <p className="text-[11px] text-[#8b949e] mb-1">CO₂ saved / yr</p>
+                  <p className="text-[20px] font-semibold text-white">2.1 t</p>
+                </div>
+              </div>
+
+              <a
+                href="#calculator"
+                className="flex items-center justify-center w-full rounded-lg bg-[#388053] hover:bg-[#2d6943] px-5 py-3 text-[14px] font-semibold text-white transition-colors"
+              >
+                Calculate your numbers →
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -61,9 +129,9 @@ export default function HomePage() {
       </div>
 
       {/* How it works */}
-      <section className="px-4 md:px-6 py-20 bg-white border-t border-[#e7e7e7]">
+      <section id="how-it-works" className="px-4 md:px-6 py-20 bg-white border-t border-[#e7e7e7]">
         <div className="mx-auto max-w-[900px]">
-          <h2 className="text-[28px] font-extrabold tracking-tight text-[#1f2328] mb-2 text-center">How it works</h2>
+          <h2 className="text-[28px] font-semibold tracking-tight text-[#1f2328] mb-2 text-center">How it works</h2>
           <p className="text-[15px] text-[#5f676f] mb-12 text-center">No account needed. Results in under two minutes.</p>
           <div className="grid gap-4 md:grid-cols-2">
             {HOW_STEPS.map((step, i) => (
