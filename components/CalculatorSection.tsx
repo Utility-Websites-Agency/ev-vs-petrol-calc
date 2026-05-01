@@ -535,8 +535,8 @@ export function CalculatorSection() {
                         ? "bg-[#16a34a]/10 border-[#16a34a]/30"
                         : "bg-white border-[#dfdfdf] hover:border-[#4b5563]"
                     ].join(" ")}>
-                    <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
-                    <p className={["text-[15px] leading-[22px]", form.distancePreset === p.value ? "text-[#16a34a]/70" : "text-[#4a4c4d]"].join(" ")}>{p.sub}</p>
+                    <p className={["text-xs leading-none mb-2 font-semibold", form.distancePreset === p.value ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
+                    <p className={["text-[15px] leading-[18px]", form.distancePreset === p.value ? "text-[#16a34a]/70" : "text-[#4a4c4d]"].join(" ")}>{p.sub}</p>
                   </button>
                 ))}
               </div>
