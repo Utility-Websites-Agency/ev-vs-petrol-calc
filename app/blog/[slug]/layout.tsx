@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { getPostBySlug, BLOG_POSTS } from "@/lib/blog";
 
-const BASE = "https://ev-vs-petrol-calc.com";
+const BASE = "https://www.evrunningcosts.com";
 
 export async function generateStaticParams() {
   return BLOG_POSTS.map((post) => ({ slug: post.slug }));
@@ -16,14 +16,14 @@ export async function generateMetadata({
   if (!post) return {};
 
   return {
-    title: `${post.title} | SoleTraderTax.com.au`,
+    title: `${post.title} | evrunningcosts.com`,
     description: post.excerpt,
     alternates: { canonical: `${BASE}/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.excerpt,
       url: `${BASE}/blog/${post.slug}`,
-      siteName: "SoleTraderTax",
+      siteName: "EV Running Costs",
       locale: "en_AU",
       type: "article",
       publishedTime: new Date(post.date).toISOString(),

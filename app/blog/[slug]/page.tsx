@@ -129,10 +129,10 @@ export default function BlogPostPage() {
     "datePublished": new Date(post.date).toISOString(),
     "publisher": {
       "@type": "Organization",
-      "name": "SoleTraderTax",
-      "url": "https://ev-vs-petrol-calc.com",
+      "name": "EV Running Costs",
+      "url": "https://www.evrunningcosts.com",
     },
-    "url": `https://ev-vs-petrol-calc.com/blog/${post.slug}`,
+    "url": `https://www.evrunningcosts.com/blog/${post.slug}`,
     "keywords": post.tags.join(", "),
   };
 
@@ -144,19 +144,19 @@ export default function BlogPostPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://ev-vs-petrol-calc.com",
+        "item": "https://www.evrunningcosts.com",
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://ev-vs-petrol-calc.com/blog",
+        "item": "https://www.evrunningcosts.com/blog",
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": post.title,
-        "item": `https://ev-vs-petrol-calc.com/blog/${post.slug}`,
+        "item": `https://www.evrunningcosts.com/blog/${post.slug}`,
       },
     ],
   };

@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Contact | EV vs Petrol Cost Calculator",
   description: "Get in touch with the EV vs Petrol team. Questions, corrections, or feedback about our calculator.",
-  alternates: { canonical: "https://ev-vs-petrol-calc.com/contact" },
+  alternates: { canonical: "https://www.evrunningcosts.com/contact" },
 };
 
 export default function ContactPage() {
@@ -25,8 +25,8 @@ export default function ContactPage() {
             <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Email</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               The best way to reach us:{" "}
-              <a href="mailto:hello@ev-vs-petrol-calc.com" className="text-[#5e6ad2] hover:underline">
-                hello@ev-vs-petrol-calc.com
+              <a href="mailto:hello@evrunningcosts.com" className="text-[#5e6ad2] hover:underline">
+                hello@evrunningcosts.com
               </a>
             </p>
             <p className="text-[16px] text-[#5f676f] leading-[28px] mt-2">We aim to respond within 2–3 business days.</p>

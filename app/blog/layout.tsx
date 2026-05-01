@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sole Trader Tax Guides & Tips | SoleTraderTax.com.au Blog",
-  description: "Free guides for Australian sole traders and ABN contractors. Tax tips, GST, super, PAYG, invoicing and more — written in plain English.",
-  alternates: { canonical: "https://ev-vs-petrol-calc.com/blog" },
+  title: "EV guides and comparisons | evrunningcosts.com",
+  description: "Plain-English guides to help you understand the real cost of switching to electric. Charging, buying, technology and more.",
+  alternates: { canonical: "https://www.evrunningcosts.com/blog" },
   openGraph: {
-    title: "Sole Trader Tax Guides & Tips | SoleTraderTax.com.au",
-    description: "Free guides for Australian sole traders and ABN contractors on tax, GST, super and invoicing.",
-    url: "https://ev-vs-petrol-calc.com/blog",
-    siteName: "SoleTraderTax",
+    title: "EV guides and comparisons | evrunningcosts.com",
+    description: "Plain-English guides to help you understand the real cost of switching to electric. Charging, buying, technology and more.",
+    url: "https://www.evrunningcosts.com/blog",
+    siteName: "EV Running Costs",
     locale: "en_AU",
     type: "website",
   },

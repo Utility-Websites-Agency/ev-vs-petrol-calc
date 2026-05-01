@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ev-vs-petrol-calc.com"),
+  metadataBase: new URL("https://www.evrunningcosts.com"),
   title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
   description: "Compare the real cost of driving electric vs petrol. Enter your mileage, energy prices, and car details to see total ownership costs side by side.",
   openGraph: {
     title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
     description: "See exactly how much you save switching to electric. Compare EV vs petrol running costs in seconds.",
-    url: "https://ev-vs-petrol-calc.com",
+    url: "https://www.evrunningcosts.com",
     siteName: "EV vs Petrol Cost Calculator",
     type: "website",
   },
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     description: "See exactly how much you save switching to electric. Compare EV vs petrol running costs in seconds.",
   },
   robots: { index: true, follow: true },
-  alternates: { canonical: "https://ev-vs-petrol-calc.com" },
+  alternates: { canonical: "https://www.evrunningcosts.com" },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -4,7 +4,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "https://ev-vs-petrol-calc.com" },
+  alternates: { canonical: "https://www.evrunningcosts.com" },
 };
 
 const HOW_STEPS = [
@@ -89,7 +89,7 @@ export default function HomePage() {
             "@type": "WebApplication",
             name: "EV vs Petrol Cost Calculator",
             description: "Compare the total running cost of electric vehicles vs petrol cars. Enter your mileage, energy prices, and car details to see annual savings and break-even timeline.",
-            url: "https://ev-vs-petrol-calc.com",
+            url: "https://www.evrunningcosts.com",
             applicationCategory: "FinanceApplication",
             operatingSystem: "Web",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },

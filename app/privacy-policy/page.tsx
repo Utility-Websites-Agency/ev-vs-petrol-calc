@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "Privacy Policy | EV vs Petrol Cost Calculator",
   description: "EV vs Petrol privacy policy. How we collect, use, and protect your information.",
-  alternates: { canonical: "https://ev-vs-petrol-calc.com/privacy-policy" },
+  alternates: { canonical: "https://www.evrunningcosts.com/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPolicyPage() {
           <p className="text-[13px] text-[#8b949e] mb-10">Last updated: 30 April 2026</p>
 
           <p className="text-[16px] text-[#5f676f] leading-[28px] mb-10">
-            This privacy policy explains how <strong className="text-[#1f2328]">ev-vs-petrol-calc.com</strong> collects,
+            This privacy policy explains how <strong className="text-[#1f2328]">evrunningcosts.com</strong> collects,
             uses, and protects information when you use our website and calculator.
           </p>
 
@@ -106,8 +106,8 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-[20px] font-bold text-[#1f2328] mb-3">Contact</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               Privacy questions:{" "}
-              <a href="mailto:hello@ev-vs-petrol-calc.com" className="text-[#5e6ad2] hover:underline">
-                hello@ev-vs-petrol-calc.com
+              <a href="mailto:hello@evrunningcosts.com" className="text-[#5e6ad2] hover:underline">
+                hello@evrunningcosts.com
               </a>
               {" "}·{" "}
               <Link href="/contact" className="text-[#5e6ad2] hover:underline">Contact page</Link>

@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 export const metadata: Metadata = {
   title: "About | EV vs Petrol Cost Calculator",
   description: "EV vs Petrol is a free calculator that compares the running cost of electric and petrol vehicles. Learn about the tool and how it works.",
-  alternates: { canonical: "https://ev-vs-petrol-calc.com/about" },
+  alternates: { canonical: "https://www.evrunningcosts.com/about" },
 };
 
 export default function AboutPage() {

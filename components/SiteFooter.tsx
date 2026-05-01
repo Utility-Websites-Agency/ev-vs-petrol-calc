@@ -41,7 +41,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="border-t border-[#30363d] pt-6 flex flex-col gap-1">
-          <p className="text-[12px] text-[#8b949e]">© {new Date().getFullYear()} ev-vs-petrol-calc.com · Free to use, no sign-up required.</p>
+          <p className="text-[12px] text-[#8b949e]">© {new Date().getFullYear()} evrunningcosts.com · Free to use, no sign-up required.</p>
           <p className="text-[12px] text-[#8b949e]">Estimates only. Always consult a qualified professional for financial decisions.</p>
         </div>
       </div>

@@ -592,7 +592,7 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       callout: {
         type: "tip",
-        text: "Use the ev-vs-petrol-calc.com calculator to plug in your own annual kilometres, local electricity rate and petrol price. The tool will show you a side-by-side five-year cost comparison so you can see your personalised break-even point rather than relying on national averages."
+        text: "Use the evrunningcosts.com calculator to plug in your own annual kilometres, local electricity rate and petrol price. The tool will show you a side-by-side five-year cost comparison so you can see your personalised break-even point rather than relying on national averages."
       }
     },
     {
