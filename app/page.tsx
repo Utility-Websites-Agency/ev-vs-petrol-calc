@@ -32,7 +32,7 @@ export default function HomePage() {
       <HomeNav />
 
       {/* Hero */}
-      <section className="px-4 md:px-6 pt-16 pb-12">
+      <section className="px-4 md:px-6 py-16 md:py-20">
         <div className="mx-auto max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           {/* Left: copy */}
