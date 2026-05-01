@@ -2,7 +2,7 @@ name: Auto-generate blog post
 
 on:
   schedule:
-    - cron: "0 9 * * 1"   # Every Monday at 9am UTC
+    - cron: "0 23 * * 0"   # Every Monday at 9am Sydney time (UTC+10)
   workflow_dispatch:
 
 env:
