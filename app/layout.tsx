@@ -27,12 +27,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3581257773539253" crossOrigin="anonymous" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-W3QKWV1SW1" />
-        <script>
-          {`window.dataLayer = window.dataLayer || [];
+        <script dangerouslySetInnerHTML={{__html: `window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-gtag('config', 'G-W3QKWV1SW1');`}
-        </script>
+gtag('config', 'G-W3QKWV1SW1');`}} />
       </head>
       <body>{children}</body>
     </html>
