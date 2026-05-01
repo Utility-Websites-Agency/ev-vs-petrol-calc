@@ -79,7 +79,7 @@ const EMPTY: FormState = {
 function inputClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all",
-    "placeholder:text-[#4a4c4d]",
+    "placeholder:text-[#767676]",
     "focus:border-[#16a34a] focus:ring-2 focus:ring-[#16a34a]/15",
     err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
