@@ -40,7 +40,7 @@ export default function HomePage() {
           </div>
           <h1 className="text-[38px] md:text-[56px] font-extrabold tracking-tight leading-[1.05] mb-5 text-[#1f2328]">
             Electric car vs petrol{" "}
-            <span className="text-[#1e9b4c]">cost calculator</span>
+            <span className="text-[#388053]">cost calculator</span>
           </h1>
           <p className="text-[17px] text-[#5f676f] leading-relaxed max-w-xl mx-auto mb-8">
             Enter your driving habits and local fuel prices to see a full cost comparison
@@ -48,7 +48,7 @@ export default function HomePage() {
           </p>
           <a
             href="#calculator"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] font-semibold text-white bg-[#1e9b4c] hover:bg-[#17813f] transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-lg text-[15px] font-semibold text-white bg-[#388053] hover:bg-[#2d6943] transition-colors"
           >
             Calculate my savings →
           </a>
@@ -68,7 +68,7 @@ export default function HomePage() {
           <div className="grid gap-4 md:grid-cols-2">
             {HOW_STEPS.map((step, i) => (
               <div key={i} className="flex gap-4 rounded-xl border border-[#e7e7e7] bg-[#f6f8fa] p-5">
-                <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#1e9b4c]/10 border border-[#1e9b4c]/20 flex items-center justify-center text-[13px] font-bold text-[#1e9b4c]">
+                <div className="flex-shrink-0 w-8 h-8 rounded-lg bg-[#388053]/10 border border-[#388053]/20 flex items-center justify-center text-[13px] font-bold text-[#388053]">
                   {i + 1}
                 </div>
                 <div>

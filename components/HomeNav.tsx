@@ -14,7 +14,7 @@ export function HomeNav() {
     <nav className="sticky top-0 z-50 bg-white border-b border-[#e7e7e7]">
       <div className="mx-auto max-w-[1280px] px-4 md:px-6 flex items-center justify-between h-14">
         <Link href="/" className="flex items-center gap-2">
-          <span className="w-7 h-7 rounded bg-[#1e9b4c] text-white flex items-center justify-center text-[11px] font-black tracking-tight">
+          <span className="w-7 h-7 rounded bg-[#388053] text-white flex items-center justify-center text-[11px] font-black tracking-tight">
             EV
           </span>
           <span className="text-[15px] font-semibold text-[#1f2328]">EV vs Petrol</span>
@@ -25,7 +25,7 @@ export function HomeNav() {
               {l.label}
             </Link>
           ))}
-          <Link href="/#calculator" className="px-4 py-1.5 rounded-lg text-[13px] font-semibold text-white bg-[#1e9b4c] hover:bg-[#17813f] transition-colors">
+          <Link href="/#calculator" className="px-4 py-1.5 rounded-lg text-[13px] font-semibold text-white bg-[#388053] hover:bg-[#2d6943] transition-colors">
             Calculate now
           </Link>
         </div>
@@ -38,7 +38,7 @@ export function HomeNav() {
       {open && (
         <div className="md:hidden border-t border-[#e7e7e7] bg-white px-4 py-3 flex flex-col gap-3">
           {NAV_LINKS.map((l) => (
-            <Link key={l.href} href={l.href} className="text-[15px] text-[#1f2328] hover:text-[#1e9b4c]" onClick={() => setOpen(false)}>
+            <Link key={l.href} href={l.href} className="text-[15px] text-[#1f2328] hover:text-[#388053]" onClick={() => setOpen(false)}>
               {l.label}
             </Link>
           ))}

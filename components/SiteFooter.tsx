@@ -7,7 +7,7 @@ export function SiteFooter() {
         <div className="flex flex-col md:flex-row justify-between gap-10 mb-10">
           <div className="flex flex-col gap-3 max-w-xs">
             <Link href="/" className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded bg-[#1e9b4c] text-white flex items-center justify-center text-[11px] font-black tracking-tight">EV</span>
+              <span className="w-7 h-7 rounded bg-[#388053] text-white flex items-center justify-center text-[11px] font-black tracking-tight">EV</span>
               <span className="text-[15px] font-semibold text-white">EV vs Petrol</span>
             </Link>
             <p className="text-[13px] text-[#8b949e] leading-relaxed">
