@@ -81,15 +81,15 @@ function inputClass(err?: boolean) {
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all",
     "placeholder:text-[#94a3b8]",
     "focus:border-[#5e6ad2] focus:ring-2 focus:ring-[#5e6ad2]/15",
-    err ? "border-red-400" : "border-[#e7e7e7]",
+    err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
 }
 
 function selectClass(err?: boolean) {
   return [
     "w-full bg-white border rounded-lg px-3 py-2.5 text-sm text-[#1f2328] outline-none transition-all appearance-none cursor-pointer",
-    "focus:border-[#5e6ad2]",
-    err ? "border-red-400" : "border-[#e7e7e7]",
+    "focus:border-[#5e6ad2] disabled:text-[#94a3b8] disabled:cursor-not-allowed",
+    err ? "border-red-400" : "border-[#dfdfdf]",
   ].join(" ")
 }
 
@@ -116,7 +116,7 @@ function SelectWrap({ children }: { children: React.ReactNode }) {
 
 function ResultCard({ label, value, sub, accent }: { label: string; value: string; sub?: string; accent?: boolean }) {
   return (
-    <div className={["rounded-xl p-4 border", accent ? "bg-[#5e6ad2]/8 border-[#5e6ad2]/25" : "bg-[#f6f8fa] border-[#e7e7e7]"].join(" ")}>
+    <div className={["rounded-xl p-4 border", accent ? "bg-[#5e6ad2]/8 border-[#5e6ad2]/25" : "bg-[#f6f8fa] border-[#dfdfdf]"].join(" ")}>
       <p className="text-[11px] text-[#64748b] mb-1 uppercase tracking-wider font-semibold">{label}</p>
       <p className={["text-2xl font-bold", accent ? "text-[#5e6ad2]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
       {sub && <p className="text-xs text-[#94a3b8] mt-0.5">{sub}</p>}
@@ -292,7 +292,7 @@ export function CalculatorSection() {
 
         {/* Controls row */}
         <div className="flex items-center justify-between flex-wrap gap-3 mb-5">
-          <div className="flex items-center gap-1 bg-white border border-[#e7e7e7] rounded-lg p-0.5">
+          <div className="flex items-center gap-1 bg-white border border-[#dfdfdf] rounded-lg p-0.5">
             {(["metric", "imperial"] as Unit[]).map((u) => (
               <button key={u} type="button" onClick={() => handleUnitChange(u)}
                 className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#5e6ad2] text-white shadow-sm" : "text-[#64748b] hover:text-[#1f2328]"].join(" ")}>
@@ -303,7 +303,7 @@ export function CalculatorSection() {
           <div className="flex items-center gap-2">
             <span className="text-xs text-[#64748b]">Currency</span>
             <SelectWrap>
-              <select className="bg-white border border-[#e7e7e7] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#5e6ad2]"
+              <select className="bg-white border border-[#dfdfdf] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#5e6ad2]"
                 value={currency.code}
                 onChange={(e) => { const c = CURRENCIES.find((x) => x.code === e.target.value); if (c) setCurrency(c) }}>
                 {CURRENCIES.map((c) => <option key={c.code} value={c.code}>{c.label}</option>)}
@@ -316,7 +316,7 @@ export function CalculatorSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
 
           {/* Step 1: Petrol car */}
-          <div className="rounded-xl border border-[#e7e7e7] bg-white p-6 flex flex-col gap-4">
+          <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1 font-semibold">Step 1</p>
@@ -344,8 +344,7 @@ export function CalculatorSection() {
               <SelectWrap>
                 <select className={selectClass()} value={form.petrolModel}
                   onChange={(e) => onPetrolModel(e.target.value)}
-                  disabled={!form.petrolMake}
-                  style={{ opacity: form.petrolMake ? 1 : 0.5 }}>
+                  disabled={!form.petrolMake}>
                   <option value="">{form.petrolMake ? "Select model" : "Select make first"}</option>
                   {petrolModels.map((m) => <option key={m.model} value={m.model}>{m.model}</option>)}
                 </select>
@@ -357,8 +356,7 @@ export function CalculatorSection() {
               <SelectWrap>
                 <select className={selectClass()} value={form.petrolVersion}
                   onChange={(e) => onPetrolVersion(e.target.value)}
-                  disabled={!form.petrolModel}
-                  style={{ opacity: form.petrolModel ? 1 : 0.5 }}>
+                  disabled={!form.petrolModel}>
                   <option value="">{form.petrolModel ? "Select version" : "Select model first"}</option>
                   {petrolVersions.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
                 </select>
@@ -416,7 +414,7 @@ export function CalculatorSection() {
           </div>
 
           {/* Step 2: EV */}
-          <div className="rounded-xl border border-[#e7e7e7] bg-white p-6 flex flex-col gap-4">
+          <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1 font-semibold">Step 2</p>
@@ -444,8 +442,7 @@ export function CalculatorSection() {
               <SelectWrap>
                 <select className={selectClass()} value={form.evModel}
                   onChange={(e) => onEvModel(e.target.value)}
-                  disabled={!form.evMake}
-                  style={{ opacity: form.evMake ? 1 : 0.5 }}>
+                  disabled={!form.evMake}>
                   <option value="">{form.evMake ? "Select model" : "Select make first"}</option>
                   {evModels.map((m) => <option key={m.model} value={m.model}>{m.model}</option>)}
                 </select>
@@ -457,8 +454,7 @@ export function CalculatorSection() {
               <SelectWrap>
                 <select className={selectClass()} value={form.evVersion}
                   onChange={(e) => onEvVersion(e.target.value)}
-                  disabled={!form.evModel}
-                  style={{ opacity: form.evModel ? 1 : 0.5 }}>
+                  disabled={!form.evModel}>
                   <option value="">{form.evModel ? "Select version" : "Select model first"}</option>
                   {evVersions.map((v) => <option key={v.name} value={v.name}>{v.name}</option>)}
                 </select>
@@ -512,7 +508,7 @@ export function CalculatorSection() {
           </div>
 
           {/* Step 3: Distance */}
-          <div className="rounded-xl border border-[#e7e7e7] bg-white p-6 flex flex-col gap-4">
+          <div className="rounded-xl border border-[#dfdfdf] bg-white p-6 flex flex-col gap-4">
             <div className="flex items-start justify-between">
               <div>
                 <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-1 font-semibold">Step 3</p>
@@ -537,7 +533,7 @@ export function CalculatorSection() {
                     className={["rounded-lg border px-3 py-2.5 text-left transition-all cursor-pointer",
                       form.distancePreset === p.value
                         ? "bg-[#5e6ad2]/10 border-[#5e6ad2]/30"
-                        : "bg-white border-[#e7e7e7] hover:border-[#4b5563]"
+                        : "bg-white border-[#dfdfdf] hover:border-[#4b5563]"
                     ].join(" ")}>
                     <p className={["text-xs leading-none mb-0.5 font-semibold", form.distancePreset === p.value ? "text-[#5e6ad2]" : "text-[#1f2328]"].join(" ")}>{p.label}</p>
                     <p className={["text-[11px]", form.distancePreset === p.value ? "text-[#5e6ad2]/70" : "text-[#94a3b8]"].join(" ")}>{p.sub}</p>
@@ -549,9 +545,9 @@ export function CalculatorSection() {
 
             <div>
               <div className="flex items-center gap-3 mb-3">
-                <div className="flex-1 h-px bg-[#e7e7e7]" />
+                <div className="flex-1 h-px bg-[#dfdfdf]" />
                 <span className="text-[10px] text-[#94a3b8] uppercase tracking-wider">or enter custom</span>
-                <div className="flex-1 h-px bg-[#e7e7e7]" />
+                <div className="flex-1 h-px bg-[#dfdfdf]" />
               </div>
               <input type="number" inputMode="numeric" min="0" step="1000"
                 placeholder={unit === "metric" ? "e.g. 17,500 km/year" : "e.g. 11,000 mi/year"}
@@ -579,7 +575,7 @@ export function CalculatorSection() {
 
         {/* Results */}
         {results && (
-          <div id="ev-results" className="mt-12 border-t border-[#e7e7e7] pt-10">
+          <div id="ev-results" className="mt-12 border-t border-[#dfdfdf] pt-10">
             <p className="text-[11px] text-[#5e6ad2] uppercase tracking-widest mb-2 text-center font-semibold">Your results</p>
             <p className="text-2xl font-extrabold text-[#1f2328] text-center mb-1" style={{ letterSpacing: "-0.5px" }}>
               {results.annualSaving > 0
