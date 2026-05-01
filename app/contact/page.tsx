@@ -25,7 +25,7 @@ export default function ContactPage() {
             <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Email</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               The best way to reach us:{" "}
-              <a href="mailto:hello@evrunningcosts.com" className="text-[#5e6ad2] hover:underline">
+              <a href="mailto:hello@evrunningcosts.com" className="text-[#1e9b4c] hover:underline">
                 hello@evrunningcosts.com
               </a>
             </p>
@@ -59,9 +59,9 @@ export default function ContactPage() {
 
           <section>
             <div className="flex gap-4 flex-wrap">
-              <Link href="/about" className="text-[14px] text-[#5e6ad2] hover:underline">About us</Link>
-              <Link href="/privacy-policy" className="text-[14px] text-[#5e6ad2] hover:underline">Privacy policy</Link>
-              <Link href="/blog" className="text-[14px] text-[#5e6ad2] hover:underline">EV guides</Link>
+              <Link href="/about" className="text-[14px] text-[#1e9b4c] hover:underline">About us</Link>
+              <Link href="/privacy-policy" className="text-[14px] text-[#1e9b4c] hover:underline">Privacy policy</Link>
+              <Link href="/blog" className="text-[14px] text-[#1e9b4c] hover:underline">EV guides</Link>
             </div>
           </section>
         </div>

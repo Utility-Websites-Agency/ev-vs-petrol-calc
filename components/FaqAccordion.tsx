@@ -50,7 +50,7 @@ export function FaqAccordion() {
                 className="w-full flex items-center justify-between px-5 py-4 text-left transition-colors hover:bg-[#f6f8fa] cursor-pointer"
               >
                 <span className="text-[15px] font-semibold text-[#1f2328] pr-4">{faq.q}</span>
-                <span className="flex-shrink-0 text-[#5e6ad2] text-[18px] font-light leading-none">
+                <span className="flex-shrink-0 text-[#1e9b4c] text-[18px] font-light leading-none">
                   {open === i ? "−" : "+"}
                 </span>
               </button>

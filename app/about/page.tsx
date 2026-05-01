@@ -79,7 +79,7 @@ export default function AboutPage() {
             <h2 className="text-[22px] font-bold text-[#1f2328] mb-3">Get in touch</h2>
             <p className="text-[16px] text-[#5f676f] leading-[28px]">
               Questions, corrections, or feedback?{" "}
-              <Link href="/contact" className="text-[#5e6ad2] hover:underline">Send us a message</Link>.
+              <Link href="/contact" className="text-[#1e9b4c] hover:underline">Send us a message</Link>.
             </p>
           </section>
         </div>
