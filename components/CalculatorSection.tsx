@@ -53,7 +53,6 @@ interface FormState {
   chargingMethod: ChargingMethod
   evConsumption: string
   electricityPrice: string
-  purchasePriceDiff: string
   distancePreset: number | null
   distanceCustom: string
 }
@@ -63,7 +62,6 @@ interface Results {
   annualEvCost: number
   annualSaving: number
   monthlySaving: number
-  breakEvenYears: number | null
   co2ReductionKg: number
 }
 
@@ -72,7 +70,6 @@ const EMPTY: FormState = {
   fuelType: "petrol", fuelEfficiency: "", fuelPrice: "",
   evMake: "", evModel: "", evVersion: "",
   chargingMethod: "home", evConsumption: "", electricityPrice: String(CHARGING_RATES.home),
-  purchasePriceDiff: "",
   distancePreset: null, distanceCustom: "",
 }
 
@@ -134,7 +131,6 @@ function calculate(form: FormState, unit: Unit): Results | null {
   const ec = parseFloat(form.evConsumption)
   const ep = parseFloat(form.electricityPrice)
   const rawDist = form.distancePreset ?? parseFloat(form.distanceCustom)
-  const priceDiff = parseFloat(form.purchasePriceDiff) || 0
 
   if ([eff, fp, ec, ep, rawDist].some((v) => isNaN(v) || v <= 0)) return null
 
@@ -161,11 +157,10 @@ function calculate(form: FormState, unit: Unit): Results | null {
   const annualEvCost = annualKwh * ep
   const annualSaving = annualFuelCost - annualEvCost
   const monthlySaving = annualSaving / 12
-  const breakEvenYears = priceDiff > 0 && annualSaving > 0 ? priceDiff / annualSaving : null
   const co2PerLitre = form.fuelType === "diesel" ? CO2_PER_LITRE_DIESEL : CO2_PER_LITRE_PETROL
   const co2ReductionKg = annualLitres * co2PerLitre
 
-  return { annualFuelCost, annualEvCost, annualSaving, monthlySaving, breakEvenYears, co2ReductionKg }
+  return { annualFuelCost, annualEvCost, annualSaving, monthlySaving, co2ReductionKg }
 }
 
 export function CalculatorSection() {
@@ -399,18 +394,6 @@ export function CalculatorSection() {
               <Err msg={errors.fuelPrice} />
             </div>
 
-            <div>
-              <label className={labelClass()}>{`EV price premium (${sym}) — optional`}</label>
-              <div className="relative">
-                <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm text-[#4b5563] pointer-events-none">{sym}</span>
-                <input type="number" inputMode="numeric" min="0" step="500"
-                  placeholder="e.g. 8000"
-                  className={inputClass() + " pl-7"}
-                  value={form.purchasePriceDiff}
-                  onChange={(e) => set({ purchasePriceDiff: e.target.value })} />
-              </div>
-              <p className="mt-1 text-[12px] text-[#4a4c4d]">How much more the EV costs upfront — calculates your break-even</p>
-            </div>
           </div>
 
           {/* Step 2: EV */}
@@ -600,14 +583,6 @@ export function CalculatorSection() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-              {results.breakEvenYears !== null && (
-                <ResultCard
-                  label="Break-even point"
-                  value={results.annualSaving > 0 ? `${results.breakEvenYears.toFixed(1)} years` : "Never at current rates"}
-                  sub="Years to recover the EV price premium"
-                  accent={results.annualSaving > 0 && results.breakEvenYears < 10}
-                />
-              )}
               <ResultCard label="CO₂ reduction" value={`${Math.round(results.co2ReductionKg).toLocaleString()} kg/yr`} sub="vs your current car (tailpipe emissions only)" />
             </div>
           </div>
