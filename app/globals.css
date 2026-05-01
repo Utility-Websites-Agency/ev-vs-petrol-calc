@@ -12,6 +12,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  overflow-x: hidden;
   /* System font stack — zero download, instant FCP, looks native on every device */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;

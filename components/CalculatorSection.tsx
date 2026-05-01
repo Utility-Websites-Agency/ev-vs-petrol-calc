@@ -117,7 +117,7 @@ function SelectWrap({ children }: { children: React.ReactNode }) {
 function ResultCard({ label, value, sub, accent }: { label: string; value: string; sub?: string; accent?: boolean }) {
   return (
     <div className={["rounded-xl p-4 border", accent ? "bg-[#16a34a]/8 border-[#16a34a]/25" : "bg-[#f6f8fa] border-[#dfdfdf]"].join(" ")}>
-      <p className="text-[11px] text-[#64748b] mb-1 uppercase tracking-wider font-semibold">{label}</p>
+      <p className="text-[11px] text-[#4a4c4d] mb-1 uppercase tracking-wider font-semibold">{label}</p>
       <p className={["text-2xl font-bold", accent ? "text-[#16a34a]" : "text-[#1f2328]"].join(" ")} style={{ letterSpacing: "-0.4px" }}>{value}</p>
       {sub && <p className="text-xs text-[#94a3b8] mt-0.5">{sub}</p>}
     </div>
@@ -285,7 +285,7 @@ export function CalculatorSection() {
           <h2 className="text-[2rem] sm:text-[2.5rem] text-[#1f2328] font-semibold tracking-tight leading-tight mb-3">
             How much could you save switching to an EV?
           </h2>
-          <p className="text-[#5f676f] text-base leading-relaxed max-w-lg mx-auto">
+          <p className="text-[#4a4c4d] text-base leading-relaxed max-w-lg mx-auto">
             Pick your current car and your EV, choose how far you drive, then hit Calculate.
           </p>
         </div>
@@ -295,13 +295,13 @@ export function CalculatorSection() {
           <div className="flex items-center gap-1 bg-white border border-[#dfdfdf] rounded-lg p-0.5">
             {(["metric", "imperial"] as Unit[]).map((u) => (
               <button key={u} type="button" onClick={() => handleUnitChange(u)}
-                className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#16a34a] text-white shadow-sm" : "text-[#64748b] hover:text-[#1f2328]"].join(" ")}>
+                className={["px-3 py-1.5 rounded-md text-xs transition-all cursor-pointer font-medium", unit === u ? "bg-[#16a34a] text-white shadow-sm" : "text-[#4a4c4d] hover:text-[#1f2328]"].join(" ")}>
                 {u === "metric" ? "km / L" : "mi / gal"}
               </button>
             ))}
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-xs text-[#64748b]">Currency</span>
+            <span className="text-xs text-[#4a4c4d]">Currency</span>
             <SelectWrap>
               <select className="bg-white border border-[#dfdfdf] rounded-lg pl-3 pr-8 py-1.5 text-sm text-[#1f2328] outline-none cursor-pointer appearance-none focus:border-[#16a34a]"
                 value={currency.code}
@@ -582,7 +582,7 @@ export function CalculatorSection() {
                 ? `You save ${fmt(results.annualSaving, sym)} per year switching to an EV`
                 : `EV charging costs ${fmt(Math.abs(results.annualSaving), sym)} more per year at current rates`}
             </p>
-            <p className="text-sm text-[#5f676f] text-center mb-8">Based on your inputs. Figures are estimates only.</p>
+            <p className="text-sm text-[#4a4c4d] text-center mb-8">Based on your inputs. Figures are estimates only.</p>
 
             {results.annualSaving <= 0 && (
               <div className="rounded-xl border border-yellow-300 bg-yellow-50 px-4 py-3 mb-6 max-w-xl mx-auto">

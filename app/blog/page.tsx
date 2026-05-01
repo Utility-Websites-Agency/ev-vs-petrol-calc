@@ -94,7 +94,7 @@ const filtered = useMemo(() => {
               placeholder="Search articles…"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full max-w-[600px] rounded-lg border border-[#e7e7e7] bg-white px-4 py-2.5 text-[14px] text-[#1f2328] outline-none focus:border-[#16a34a] focus:ring-2 focus:ring-[#16a34a]/20 placeholder:text-[#8b949e]"
+              className="w-full max-w-[600px] rounded-lg border border-[#e7e7e7] bg-white px-4 py-2.5 text-[14px] text-[#1f2328] outline-none focus:border-[#16a34a] focus:ring-2 focus:ring-[#16a34a]/20 placeholder:text-[#4a4c4d]"
             />
             <div className="flex flex-wrap gap-2">
               {ALL_CATEGORIES.map((cat) => (
@@ -122,7 +122,7 @@ const filtered = useMemo(() => {
 
           {/* Grid */}
           {filtered.length === 0 ? (
-            <div className="text-center py-20 text-[#8b949e] text-[14px]">No articles found.</div>
+            <div className="text-center py-20 text-[#4a4c4d] text-[14px]">No articles found.</div>
           ) : (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {filtered.map((post, i) => (

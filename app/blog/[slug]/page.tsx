@@ -177,7 +177,7 @@ export default function BlogPostPage() {
 
       {/* Breadcrumb */}
       <div className="border-b border-[#e7e7e7] py-3">
-        <div className="mx-auto max-w-[1200px] flex items-center gap-2 text-[14px] text-[#8b949e]">
+        <div className="mx-auto max-w-[1200px] flex items-center gap-2 text-[14px] text-[#4a4c4d]">
           <Link href="/blog" className="flex items-center gap-1.5 hover:text-[#16a34a] transition-colors">
             <ArrowLeft className="w-3.5 h-3.5" />
             All articles
@@ -259,13 +259,13 @@ export default function BlogPostPage() {
                 href={`/blog/${prev.slug}`}
                 className="group flex flex-col gap-1.5 rounded-xl border border-[#e7e7e7] bg-white p-4 hover:border-[#16a34a]/40 hover:shadow-sm transition-all"
               >
-                <span className="flex items-center gap-1.5 text-[12px] font-semibold text-[#8b949e] uppercase tracking-wider">
+                <span className="flex items-center gap-1.5 text-[12px] font-semibold text-[#4a4c4d] uppercase tracking-wider">
                   <ChevronLeft className="w-3.5 h-3.5" /> Previous
                 </span>
                 <span className="text-[14px] font-semibold text-[#1f2328] group-hover:text-[#16a34a] transition-colors line-clamp-2 leading-snug">
                   {prev.title}
                 </span>
-                <span className="text-[12px] text-[#8b949e]">{prev.readTime}</span>
+                <span className="text-[12px] text-[#4a4c4d]">{prev.readTime}</span>
               </Link>
             ) : <div />}
 
@@ -274,13 +274,13 @@ export default function BlogPostPage() {
                 href={`/blog/${next.slug}`}
                 className="group flex flex-col gap-1.5 rounded-xl border border-[#e7e7e7] bg-white p-4 hover:border-[#16a34a]/40 hover:shadow-sm transition-all sm:text-right"
               >
-                <span className="flex items-center gap-1.5 sm:justify-end text-[12px] font-semibold text-[#8b949e] uppercase tracking-wider">
+                <span className="flex items-center gap-1.5 sm:justify-end text-[12px] font-semibold text-[#4a4c4d] uppercase tracking-wider">
                   Next <ChevronRight className="w-3.5 h-3.5" />
                 </span>
                 <span className="text-[14px] font-semibold text-[#1f2328] group-hover:text-[#16a34a] transition-colors line-clamp-2 leading-snug">
                   {next.title}
                 </span>
-                <span className="text-[12px] text-[#8b949e]">{next.readTime}</span>
+                <span className="text-[12px] text-[#4a4c4d]">{next.readTime}</span>
               </Link>
             ) : <div />}
           </div>
@@ -322,7 +322,7 @@ export default function BlogPostPage() {
                     <span className="text-[14px] font-semibold text-[#1f2328] group-hover:text-[#16a34a] transition-colors line-clamp-2 leading-[22px]">
                       {p.title}
                     </span>
-                    <span className="flex items-center gap-1 text-[12px] text-[#8b949e]">
+                    <span className="flex items-center gap-1 text-[12px] text-[#4a4c4d]">
                       <Clock className="w-3 h-3" /> {p.readTime}
                     </span>
                   </Link>

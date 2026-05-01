@@ -16,20 +16,20 @@ export default function ContactPage() {
       <main className="flex-1 px-6 py-16">
         <div className="mx-auto max-w-[720px]">
           <h1 className="text-[32px] font-semibold tracking-tight text-[#1f2328] mb-4">Contact us</h1>
-          <p className="text-[17px] text-[#5f676f] leading-[28px] mb-10">
+          <p className="text-[17px] text-[#4a4c4d] leading-[28px] mb-10">
             Have a question about the calculator, found an error in the car data, or want to suggest a new feature?
             We welcome all feedback.
           </p>
 
           <section className="mb-10">
             <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Email</h2>
-            <p className="text-[16px] text-[#5f676f] leading-[28px]">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px]">
               The best way to reach us:{" "}
               <a href="mailto:hello@evrunningcosts.com" className="text-[#1f2328] underline hover:no-underline">
                 hello@evrunningcosts.com
               </a>
             </p>
-            <p className="text-[16px] text-[#5f676f] leading-[28px] mt-2">We aim to respond within 2–3 business days.</p>
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px] mt-2">We aim to respond within 2–3 business days.</p>
           </section>
 
           <section className="mb-10">
@@ -51,7 +51,7 @@ export default function ContactPage() {
               ].map(({ q, a }) => (
                 <div key={q} className="rounded-xl border border-[#e7e7e7] bg-[#f6f8fa] px-5 py-4">
                   <p className="text-[15px] font-semibold text-[#1f2328] mb-1">{q}</p>
-                  <p className="text-[14px] text-[#5f676f] leading-[22px]">{a}</p>
+                  <p className="text-[14px] text-[#4a4c4d] leading-[22px]">{a}</p>
                 </div>
               ))}
             </div>

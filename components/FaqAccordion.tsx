@@ -55,7 +55,7 @@ export function FaqAccordion() {
                 </span>
               </button>
               {open === i && (
-                <div className="px-5 pb-4 text-[14px] text-[#5f676f] leading-relaxed border-t border-[#e7e7e7] pt-3">
+                <div className="px-5 pb-4 text-[14px] text-[#4a4c4d] leading-relaxed border-t border-[#e7e7e7] pt-3">
                   {faq.a}
                 </div>
               )}

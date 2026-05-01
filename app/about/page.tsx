@@ -16,19 +16,19 @@ export default function AboutPage() {
       <main className="flex-1 px-6 py-16">
         <div className="mx-auto max-w-[720px]">
           <h1 className="text-[32px] font-semibold tracking-tight text-[#1f2328] mb-4">About EV vs Petrol</h1>
-          <p className="text-[17px] text-[#5f676f] leading-[28px] mb-10">
+          <p className="text-[17px] text-[#4a4c4d] leading-[28px] mb-10">
             A free, no-signup calculator for anyone who wants to know whether switching to an electric vehicle
             actually saves money given their specific driving habits and local energy prices.
           </p>
 
           <section className="mb-10">
             <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Why we built this</h2>
-            <p className="text-[16px] text-[#5f676f] leading-[28px] mb-4">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px] mb-4">
               Most EV vs petrol comparisons online give you averages. Average mileage. Average electricity prices.
               Average petrol cars. But your situation isn't average — you drive a specific car, pay a specific tariff,
               and cover a specific distance each year.
             </p>
-            <p className="text-[16px] text-[#5f676f] leading-[28px]">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px]">
               This tool lets you enter your actual numbers and get a result that reflects your life, not a national
               average. Pick your exact petrol car, the EV you're considering, and your annual mileage. The calculator
               does the rest.
@@ -46,7 +46,7 @@ export default function AboutPage() {
               ].map(([title, desc]) => (
                 <li key={title} className="rounded-xl border border-[#e7e7e7] bg-[#f6f8fa] px-5 py-4">
                   <p className="text-[15px] font-semibold text-[#1f2328] mb-1">{title}</p>
-                  <p className="text-[14px] text-[#5f676f] leading-[22px]">{desc}</p>
+                  <p className="text-[14px] text-[#4a4c4d] leading-[22px]">{desc}</p>
                 </li>
               ))}
             </ul>
@@ -54,12 +54,12 @@ export default function AboutPage() {
 
           <section className="mb-10">
             <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Accuracy and limitations</h2>
-            <p className="text-[16px] text-[#5f676f] leading-[28px] mb-4">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px] mb-4">
               The calculator uses real-world efficiency data for a large database of petrol and EV models. Car data is
               sourced from manufacturer specifications and independent testing. Electricity and fuel prices use your
               inputs, not regional averages.
             </p>
-            <p className="text-[16px] text-[#5f676f] leading-[28px]">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px]">
               Results are estimates. They do not account for depreciation, insurance, tyres, maintenance, or battery
               degradation over time. For a complete financial analysis before a purchase decision, consider all
               ownership costs, not just fuel and charging.
@@ -68,7 +68,7 @@ export default function AboutPage() {
 
           <section className="mb-10">
             <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Who is behind this</h2>
-            <p className="text-[16px] text-[#5f676f] leading-[28px]">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px]">
               EV vs Petrol is an independent website. We are not affiliated with any car manufacturer, EV brand,
               energy company, or financial services provider. The site is funded by advertising. We have no commercial
               interest in whether you buy an EV or keep your petrol car.
@@ -77,7 +77,7 @@ export default function AboutPage() {
 
           <section>
             <h2 className="text-[22px] font-semibold text-[#1f2328] mb-3">Get in touch</h2>
-            <p className="text-[16px] text-[#5f676f] leading-[28px]">
+            <p className="text-[16px] text-[#4a4c4d] leading-[28px]">
               Questions, corrections, or feedback?{" "}
               <Link href="/contact" className="text-[#1f2328] underline hover:no-underline">Send us a message</Link>.
             </p>
