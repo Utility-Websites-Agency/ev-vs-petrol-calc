@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -15,11 +16,8 @@ export function HomeNav() {
     <>
       <header className="sticky top-0 z-50 bg-white border-b border-[#e7e7e7]/60">
         <div className="mx-auto max-w-[1200px] px-4 md:px-6 flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="w-7 h-7 rounded bg-[#16a34a] text-white flex items-center justify-center text-[11px] font-black tracking-tight shrink-0">
-              EV
-            </span>
-            <span className="text-[15px] font-semibold text-[#1f2328] tracking-tight">EV vs Petrol</span>
+          <Link href="/" className="flex items-center">
+            <Image src="/ev-logo-dark.svg" alt="EV Running Costs" width={120} height={37} priority />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6 text-[14px] font-medium text-[#343638]">
@@ -100,6 +98,9 @@ export function HomeNav() {
               <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round"/>
             </svg>
           </button>
+        </div>
+        <div className="px-6 py-2">
+          <Image src="/ev-logo-dark.svg" alt="EV Running Costs" width={100} height={31} />
         </div>
         <nav className="flex flex-col gap-1 px-4 flex-1">
           {NAV_LINKS.map((item) => (

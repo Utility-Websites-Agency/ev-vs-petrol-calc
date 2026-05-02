@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function SiteFooter() {
@@ -6,9 +7,8 @@ export function SiteFooter() {
       <div className="mx-auto max-w-[1200px]">
         <div className="flex flex-col md:flex-row justify-between gap-10 mb-10">
           <div className="flex flex-col gap-3 max-w-xs">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="w-7 h-7 rounded bg-[#16a34a] text-white flex items-center justify-center text-[12px] font-black tracking-tight">EV</span>
-              <span className="text-[15px] font-semibold text-white">EV vs Petrol</span>
+            <Link href="/" className="flex items-center">
+              <Image src="/ev-logo-light.svg" alt="EV Running Costs" width={120} height={37} />
             </Link>
             <p className="text-[13px] text-[#c9d1d9] leading-relaxed">
               Free tool to compare the running cost of electric and petrol vehicles. Supports km/miles and multiple currencies.
