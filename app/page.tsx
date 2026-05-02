@@ -128,6 +128,36 @@ export default function HomePage() {
         <DeferredSections />
       </div>
 
+      {/* Why switch */}
+      <section className="px-4 md:px-6 py-20 bg-[#f6f8fa] border-t border-[#e7e7e7]">
+        <div className="mx-auto max-w-[1200px]">
+          <h2 className="text-[28px] font-semibold tracking-tight text-[#1f2328] mb-2 text-center">Is switching to an EV worth it?</h2>
+          <p className="text-[15px] text-[#4a4c4d] mb-12 text-center max-w-2xl mx-auto">For most drivers, the answer comes down to three numbers: how far you drive, what you pay for fuel, and what electricity costs in your area. Here&apos;s what the data shows.</p>
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-xl bg-white border border-[#e7e7e7] p-6">
+              <p className="text-[32px] font-semibold text-[#16a34a] mb-2">70%</p>
+              <h3 className="text-[15px] font-semibold text-[#1f2328] mb-2">Lower fuel cost per km</h3>
+              <p className="text-[13px] text-[#4a4c4d] leading-relaxed">Electricity is significantly cheaper than petrol on a per-kilometre basis in Australia, the UK, and the US — even at public charging rates.</p>
+            </div>
+            <div className="rounded-xl bg-white border border-[#e7e7e7] p-6">
+              <p className="text-[32px] font-semibold text-[#16a34a] mb-2">$1,500+</p>
+              <h3 className="text-[15px] font-semibold text-[#1f2328] mb-2">Average annual fuel saving</h3>
+              <p className="text-[13px] text-[#4a4c4d] leading-relaxed">A typical driver covering 15,000 km per year saves over $1,500 annually on fuel alone when switching from a mid-size petrol car to an EV.</p>
+            </div>
+            <div className="rounded-xl bg-white border border-[#e7e7e7] p-6">
+              <p className="text-[32px] font-semibold text-[#16a34a] mb-2">2 t</p>
+              <h3 className="text-[15px] font-semibold text-[#1f2328] mb-2">CO₂ avoided per year</h3>
+              <p className="text-[13px] text-[#4a4c4d] leading-relaxed">The average EV driver eliminates roughly 2 tonnes of CO₂ per year compared to an equivalent petrol car — equivalent to planting about 90 trees.</p>
+            </div>
+          </div>
+          <div className="mt-10 rounded-xl bg-white border border-[#e7e7e7] p-6 max-w-3xl mx-auto">
+            <h3 className="text-[16px] font-semibold text-[#1f2328] mb-3">How we calculate your savings</h3>
+            <p className="text-[14px] text-[#4a4c4d] leading-relaxed mb-3">Our calculator uses real-world fuel efficiency data from manufacturer specifications and independent testing databases. We apply your local petrol price and electricity tariff (home or public charging) to compute an honest annual running cost for both your current car and the EV you&apos;re considering.</p>
+            <p className="text-[14px] text-[#4a4c4d] leading-relaxed">The result is a side-by-side comparison: annual petrol spend vs annual electricity cost, the difference as your yearly saving, and an estimate of CO₂ emissions avoided. All figures update instantly as you adjust your inputs — no account or sign-up required.</p>
+          </div>
+        </div>
+      </section>
+
       {/* How it works */}
       <section id="how-it-works" className="px-4 md:px-6 py-20 bg-white border-t border-[#e7e7e7]">
         <div className="mx-auto max-w-[1200px]">
@@ -152,7 +182,16 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "EV Running Costs",
+            url: "https://www.evrunningcosts.com",
+            logo: "https://www.evrunningcosts.com/favicon.svg",
+            description: "Free tool to compare the running cost of electric vehicles vs petrol cars.",
+          },
+          {
             "@context": "https://schema.org",
             "@type": "WebApplication",
             name: "EV vs Petrol Cost Calculator",
@@ -161,7 +200,7 @@ export default function HomePage() {
             applicationCategory: "FinanceApplication",
             operatingSystem: "Web",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-          }),
+          }]),
         }}
       />
 
