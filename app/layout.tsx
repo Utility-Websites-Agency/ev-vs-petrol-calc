@@ -3,19 +3,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.evrunningcosts.com"),
-  title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
-  description: "Compare the real cost of driving electric vs petrol. Enter your mileage, energy prices, and car details to see total ownership costs side by side.",
+  title: "EV vs Petrol Cost Calculator — Calculate Annual Fuel Savings",
+  description: "Calculate your annual fuel savings switching from a petrol car to an EV. Compare running costs, CO2 emissions, and break-even point. Free, no sign-up.",
   openGraph: {
-    title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
-    description: "See exactly how much you save switching to electric. Compare EV vs petrol running costs in seconds.",
+    title: "EV vs Petrol Cost Calculator — Calculate Annual Fuel Savings",
+    description: "Calculate your annual fuel savings switching from a petrol car to an EV. Compare running costs, CO2 emissions, and break-even point. Free, no sign-up.",
     url: "https://www.evrunningcosts.com",
     siteName: "EV vs Petrol Cost Calculator",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Electric Car vs Petrol Cost Calculator | EV vs Petrol",
-    description: "See exactly how much you save switching to electric. Compare EV vs petrol running costs in seconds.",
+    title: "EV vs Petrol Cost Calculator — Calculate Annual Fuel Savings",
+    description: "Calculate your annual fuel savings switching from a petrol car to an EV. Compare running costs, CO2 emissions, and break-even point. Free, no sign-up.",
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://www.evrunningcosts.com" },

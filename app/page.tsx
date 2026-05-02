@@ -179,6 +179,70 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* EV vs Petrol: The full picture */}
+      <section className="px-4 md:px-6 py-20 bg-[#f6f8fa] border-t border-[#e7e7e7]">
+        <div className="mx-auto max-w-[860px]">
+          <h2 className="text-[28px] font-semibold tracking-tight text-[#1f2328] mb-8 text-center">EV vs petrol running costs: the full picture</h2>
+
+          <div className="space-y-8 text-[15px] text-[#4a4c4d] leading-relaxed">
+            <div>
+              <h3 className="text-[17px] font-semibold text-[#1f2328] mb-3">Why calculate your annual fuel savings before switching?</h3>
+              <p>Switching from a petrol car to an electric vehicle is one of the biggest financial decisions a driver can make. The purchase price of an EV is often higher than an equivalent petrol car, but the running costs tell a very different story. Fuel savings alone can offset thousands of dollars per year, depending on how far you drive and what you pay for petrol and electricity.</p>
+              <p className="mt-3">Our EV vs petrol cost calculator gives you a personalised estimate in under two minutes. Instead of relying on generic averages, you enter your actual car, your real annual driving distance, and your local fuel and electricity prices. The result is an accurate, honest comparison of what each car actually costs to run — not a best-case marketing figure.</p>
+            </div>
+
+            <div>
+              <h3 className="text-[17px] font-semibold text-[#1f2328] mb-3">How much can you save on fuel costs?</h3>
+              <p>The average Australian driver covers around 13,000 km per year. At current petrol prices, a mid-size petrol car with a fuel consumption of 8 L/100km costs roughly $2,500–$3,500 per year in fuel alone. An equivalent EV consuming 18 kWh/100km, charged primarily at home, costs around $500–$900 per year in electricity — a saving of $1,500 to $2,500 annually.</p>
+              <p className="mt-3">Higher annual mileage amplifies the savings further. If you drive 20,000 km or more each year, the annual fuel cost difference between a petrol car and an EV can easily exceed $3,000. Over a five-year ownership period, that adds up to $15,000 or more in fuel savings — a figure that significantly narrows the purchase price gap.</p>
+            </div>
+
+            <div>
+              <h3 className="text-[17px] font-semibold text-[#1f2328] mb-3">Home charging vs public charging: does it change the calculation?</h3>
+              <p>Yes — your charging mix has a meaningful impact on annual running costs. Home charging is significantly cheaper than public fast charging in most markets. In Australia, a standard home electricity tariff sits around 25–35 cents per kWh, while public DC fast chargers typically cost 55–75 cents per kWh. If you charge primarily at home overnight, your electricity cost per kilometre drops to roughly a third of the equivalent petrol cost.</p>
+              <p className="mt-3">Our calculator lets you select your charging profile — home only, public only, or a mix — so the result reflects your actual behaviour rather than an idealised scenario. Drivers without home charging still save on fuel costs compared to petrol, just less dramatically than those who charge overnight.</p>
+            </div>
+
+            <div>
+              <h3 className="text-[17px] font-semibold text-[#1f2328] mb-3">CO₂ savings: how much does switching actually reduce your emissions?</h3>
+              <p>A petrol car producing around 180 g CO₂/km and driven 13,000 km per year emits approximately 2.3 tonnes of CO₂ from the tailpipe. An EV produces zero direct emissions. When you factor in the emissions from generating the electricity used to charge the EV — which depends on your country&apos;s grid mix — a typical EV in Australia still results in roughly 60–70% fewer lifecycle emissions than an equivalent petrol car.</p>
+              <p className="mt-3">As the electricity grid becomes cleaner over time with more renewable energy, the lifetime CO₂ advantage of owning an EV only improves. Our calculator shows you an estimated annual CO₂ saving so you can weigh the environmental benefit alongside the financial one.</p>
+            </div>
+
+            <div>
+              <h3 className="text-[17px] font-semibold text-[#1f2328] mb-3">What about maintenance costs?</h3>
+              <p>EVs have significantly fewer moving parts than petrol cars — no engine oil, no timing belt, no exhaust system, no transmission fluid. Industry data consistently shows EV maintenance costs are 30–40% lower than for equivalent petrol vehicles. While our calculator focuses on fuel and energy costs (the largest and most variable running expense), it&apos;s worth factoring in reduced servicing when you evaluate the total cost of ownership.</p>
+            </div>
+
+            <div>
+              <h3 className="text-[17px] font-semibold text-[#1f2328] mb-3">Frequently asked questions</h3>
+              <div className="space-y-5">
+                <div>
+                  <p className="font-semibold text-[#1f2328]">Is this calculator free to use?</p>
+                  <p>Yes. The EV vs petrol cost calculator is completely free. No account, no sign-up, and no personal data required.</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-[#1f2328]">Which petrol cars and EVs are included?</p>
+                  <p>Our car database covers over 60 petrol makes and 25 EV makes, with real-world consumption figures for each trim and variant. If your exact car isn&apos;t listed, you can enter a custom fuel efficiency figure manually.</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-[#1f2328]">How accurate are the fuel consumption figures?</p>
+                  <p>We use WLTP-combined figures from manufacturer specifications as a baseline. Real-world consumption varies depending on driving style, climate, and load — but WLTP combined figures are a reasonable approximation for annual cost calculations.</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-[#1f2328]">Does the calculator work in Australia, the UK, and the US?</p>
+                  <p>Yes. You can switch between km and miles, and enter local petrol and electricity prices in your currency. The calculator is unit-agnostic — it works with any combination of distance and price inputs.</p>
+                </div>
+                <div>
+                  <p className="font-semibold text-[#1f2328]">What is the break-even point?</p>
+                  <p>The break-even point is the number of years it takes for annual fuel savings to offset the price premium you pay for an EV over an equivalent petrol car. Enter both purchase prices in the calculator to see your estimated break-even timeline.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
