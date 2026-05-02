@@ -17,7 +17,7 @@ export function HomeNav() {
       <header className="sticky top-0 z-50 bg-white border-b border-[#e7e7e7]/60">
         <div className="mx-auto max-w-[1200px] px-4 md:px-6 flex items-center justify-between py-4">
           <Link href="/" className="flex items-center">
-            <Image src="/ev-logo-dark.svg" alt="EV Running Costs" width={120} height={37} priority />
+            <Image src="/ev-logo-dark.svg" alt="EV Running Costs" width={102} height={32} priority />
           </Link>
 
           <nav className="hidden md:flex items-center gap-6 text-[14px] font-medium text-[#343638]">
