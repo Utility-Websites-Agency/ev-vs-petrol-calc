@@ -698,6 +698,74 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "electric-cars-vs-petrol-cars-which-has-lower-lifetime-emissi",
+  title: "Electric cars vs petrol cars: which has lower lifetime emissions and costs?",
+  excerpt: "We break down the real numbers behind electric and petrol cars in Australia, covering lifetime emissions, running costs, and what it all means for your hip pocket.",
+  date: "May 10, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "petrol cars", "emissions", "running costs", "Australia", "EV", "lifetime cost"],
+  content: [
+    {
+      heading: "The big question Australians are asking",
+      body: "With fuel prices stubbornly high and electricity rates shifting constantly, more Australians than ever are wondering whether switching to an electric vehicle actually makes sense. Is it better for the environment? Is it cheaper over the long run? And how do you even compare the two when so many variables are involved? This post walks through the key numbers so you can make a genuinely informed decision, whether you are shopping for your next car today or just curious about how it all stacks up."
+    },
+    {
+      heading: "Lifetime emissions: the full picture",
+      body: "A common argument against EVs is that manufacturing the battery produces a large carbon footprint, sometimes called the 'carbon debt'. That is true to a degree. Producing an EV, particularly the battery pack, does generate more emissions upfront than building a comparable petrol car. Studies generally estimate that manufacturing an EV produces roughly 70 to 100 percent more emissions than manufacturing a petrol car of similar size. However, this debt is paid back over time through lower operational emissions. In Australia, the national electricity grid has been getting cleaner every year as coal plants close and renewable energy capacity grows. As of 2026, the average grid emissions intensity sits around 0.45 to 0.50 kg of CO2-equivalent per kilowatt hour, depending on your state. That figure continues to fall. Over a 10 to 15 year ownership period, a typical EV driven in Australia will produce significantly fewer total lifecycle emissions than an equivalent petrol vehicle, even when you factor in battery production. If you are in South Australia, Tasmania, or the ACT, where renewable penetration is especially high, the emissions advantage of an EV is even more pronounced."
+    },
+    {
+      heading: "How do running costs compare?",
+      body: "This is where EVs tend to shine most clearly for Australian drivers. Electricity is generally cheaper per kilometre than petrol, and EVs have far fewer moving parts, which means lower servicing costs over time. Here is a rough comparison based on average Australian conditions in 2026.",
+      table: {
+        headers: ["Cost category", "Petrol car (per year)", "Electric car (per year)"],
+        rows: [
+          ["Fuel / charging", "$2,800 (at $2.00/L, 15,000 km)", "$600 (home charging at $0.30/kWh)"],
+          ["Servicing", "$800 to $1,200", "$300 to $500"],
+          ["Registration", "$700 to $900", "$700 to $900"],
+          ["Insurance", "$1,200 to $1,800", "$1,300 to $1,900"],
+          ["Total (approx.)", "$5,500 to $6,700", "$2,900 to $3,900"]
+        ]
+      }
+    },
+    {
+      heading: "The upfront cost gap is narrowing",
+      body: "One of the biggest sticking points for EV adoption in Australia has been the higher purchase price. That gap is closing. Entry-level EVs are now available from around $40,000 to $45,000 drive-away, and the used EV market has matured considerably. When you spread the purchase price premium over a typical ownership period and account for lower running costs, many EVs now reach total cost of ownership parity with petrol equivalents within four to seven years, sometimes sooner if you drive high annual kilometres. The Australian Government's Fringe Benefits Tax exemption for eligible EVs under the luxury car tax threshold also makes salary packaging an EV an attractive option for employees, effectively reducing the net cost significantly."
+    },
+    {
+      heading: "Factors that tip the balance",
+      body: "Not every situation is the same. Several factors will influence whether an EV or a petrol car comes out ahead for you personally.",
+      list: [
+        "Annual kilometres driven: the more you drive, the faster you recoup the EV purchase premium through fuel savings.",
+        "Your electricity tariff: if you can charge on an off-peak or controlled load rate (often as low as $0.10 to $0.15 per kWh overnight), your savings increase substantially.",
+        "Access to home charging: renters or apartment dwellers without dedicated charging may rely more on public charging, which costs more per kWh.",
+        "Your state's grid mix: Queensland and Victoria still have higher grid emissions intensity than SA or Tasmania, so the emissions benefit varies by location.",
+        "Vehicle type and size: larger EVs with bigger batteries have a higher manufacturing footprint to overcome.",
+        "Resale value: EV resale values have stabilised but can still vary significantly by brand and battery condition.",
+        "Government incentives: some states still offer stamp duty exemptions or rebates that reduce the upfront gap."
+      ]
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "Use our EV vs petrol calculator to plug in your own numbers, including your postcode, annual kilometres, electricity tariff, and vehicle models. It will estimate your personalised lifetime cost and emissions comparison in under two minutes."
+      }
+    },
+    {
+      heading: "What about the charging network?",
+      body: "Range anxiety was a legitimate concern a few years ago but it has diminished significantly. Australia's fast-charging network along major highways and in metropolitan areas has grown rapidly, with networks like Chargefox, Evie, Tesla Supercharger, and BP Pulse covering most populated routes. For daily driving, the vast majority of Australians travelling under 200 kilometres per day will rarely if ever need a public fast charger, as overnight home charging is sufficient. Long road trips do require a bit more planning than filling up at a servo, but with apps and in-car navigation improving, this is increasingly a minor inconvenience rather than a dealbreaker."
+    },
+    {
+      heading: "So which should you choose?",
+      body: "For most Australians who drive regularly, own or have access to home charging, and plan to keep their vehicle for more than five years, an electric car will likely deliver lower lifetime costs and lower lifetime emissions than a comparable petrol vehicle. The case is strongest if you drive high annual kilometres, have access to cheap overnight electricity, and live in a state with a cleaner grid. That said, petrol cars still make practical sense in some situations, particularly for people in very remote areas with limited charging infrastructure, those who cannot install a home charger, or those who need the flexibility of a vehicle type not yet well represented in the EV market, such as certain utes and larger four-wheel drives (though that segment is changing quickly too). The honest answer is that the right choice depends on your personal circumstances, and a good calculator can do the heavy lifting for you.",
+      callout: {
+        type: "info",
+        text: "Australia's average grid emissions intensity is projected to drop further as more renewable capacity comes online over the next decade. An EV you buy today will produce even lower operational emissions in five years than it does now, making the lifetime emissions case for EVs stronger the longer you own one."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
