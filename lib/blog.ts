@@ -766,6 +766,74 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-to-compare-the-total-cost-of-ownership-for-any-ev-and-pe",
+  title: "How to compare the total cost of ownership for any EV and petrol model",
+  excerpt: "Sticker price is only part of the story. Here is how to calculate the true long-term cost of an electric vehicle versus a petrol car so you can make a confident decision.",
+  date: "May 17, 2026",
+  readTime: "7 min read",
+  category: "How-to",
+  tags: ["total cost of ownership", "EV vs petrol", "calculator", "running costs", "Australia"],
+  content: [
+    {
+      heading: "Why sticker price alone will mislead you",
+      body: "Walk into any dealership and the price on the windscreen feels like the whole story. But for most Australians, a car is a five-to-ten-year commitment, and the purchase price is often a smaller piece of the total spend than you might expect. Fuel, servicing, insurance, registration, depreciation and financing costs all stack up over time. An EV that looks $15,000 more expensive at the point of sale can easily end up cheaper over a typical ownership period once you account for lower running costs. The only way to know for certain is to compare total cost of ownership, or TCO, rather than just the drive-away price."
+    },
+    {
+      heading: "What total cost of ownership actually includes",
+      body: "TCO is the sum of every dollar you spend on a vehicle from the day you buy it to the day you sell or scrap it. For a fair apples-to-apples comparison between an EV and a petrol car, you need to include the same categories for both. Here are the main cost buckets to consider:",
+      list: [
+        "Purchase price (or deposit plus loan repayments if financing)",
+        "Fuel or electricity costs based on how many kilometres you drive each year",
+        "Scheduled servicing and maintenance",
+        "Tyres and consumables",
+        "Registration and compulsory third-party insurance",
+        "Comprehensive insurance premiums",
+        "Depreciation over the ownership period",
+        "Any government rebates or stamp duty concessions you are eligible for",
+        "Home charger installation cost if buying an EV"
+      ]
+    },
+    {
+      heading: "Step-by-step: how to run the comparison",
+      body: "Once you know which cost categories to include, the process is straightforward. Work through each step below and you will end up with a reliable annual and lifetime cost figure for each vehicle.",
+      subheading: "Step 1: Set your ownership period and annual kilometres",
+      body: "Decide how long you plan to keep the car and roughly how far you drive each year. The Australian average is around 13,000 km per year, but your actual figure matters a lot. The more you drive, the more fuel or energy savings compound in favour of an EV."
+    },
+    {
+      heading: "Step 2: calculate fuel and energy costs",
+      body: "For the petrol car, multiply your annual kilometres by the vehicle's fuel consumption (litres per 100 km) and then by the current petrol price in your area. Petrol prices vary significantly across states and between city and regional areas, so use a figure that reflects your real-world fill-ups. For the EV, multiply your annual kilometres by the vehicle's energy consumption (kWh per 100 km) and then by your home electricity rate. Most home chargers in Australia deliver electricity at somewhere between 20 and 35 cents per kWh depending on your plan and state. If you charge partly at public fast chargers, factor in those higher rates too. A realistic split for most EV owners is roughly 80 per cent home charging and 20 per cent public charging.",
+      callout: {
+        type: "tip",
+        text: "If you have rooftop solar, your effective charging cost could be close to zero for daytime top-ups. Use your solar feed-in tariff as a proxy for the true cost of the electricity you are diverting to your car rather than exporting."
+      }
+    },
+    {
+      heading: "Step 3: estimate servicing and maintenance",
+      body: "This is where EVs tend to have a clear structural advantage. EVs have no oil changes, no timing belts, fewer brake wear issues thanks to regenerative braking, and generally simpler drivetrains. Industry data consistently puts EV servicing costs at 30 to 50 per cent lower than equivalent petrol vehicles over a five-year period. For a ballpark figure, budget around $300 to $500 per year for EV servicing (tyre rotations, cabin air filters, software checks) versus $800 to $1,500 per year for a petrol car depending on the model and service intervals."
+    },
+    {
+      heading: "Step 4: account for depreciation and resale value",
+      body: "Depreciation is the single largest cost for most car owners and it is easy to overlook. The difference between what you pay and what you eventually sell the car for is a real cost, even if it does not show up as a monthly bill. EV resale values in Australia have stabilised considerably since the early 2020s as the used EV market has matured. Popular models from reputable manufacturers now hold their value reasonably well. Check recent private sale and auction data on sites like RedBook or CarsGuide for the specific models you are comparing rather than relying on rules of thumb.",
+      callout: {
+        type: "info",
+        text: "Some states still offer stamp duty exemptions or reduced rates for new EVs. Check your state revenue office website for the current rules before finalising your numbers, as these concessions can shift the purchase price comparison meaningfully."
+      }
+    },
+    {
+      heading: "Use our calculator to pull it all together",
+      body: "Doing all of this manually in a spreadsheet is absolutely possible, but it takes time and it is easy to miss a variable or use an outdated figure. Our TCO calculator on ev-vs-petrol-calc.com is designed specifically for Australian conditions. It pulls in current average fuel prices by state, lets you enter your actual electricity tariff, and applies up-to-date servicing benchmarks for hundreds of EV and petrol models available in Australia. You can adjust every assumption to match your situation and see instantly how the lifetime costs shift. The output shows you a year-by-year cost breakdown and a clear crossover point where the EV becomes cheaper in cumulative terms. For most drivers doing average kilometres, that crossover happens somewhere between year two and year four.",
+      callout: {
+        type: "warning",
+        text: "Be cautious of comparisons you find on manufacturer websites or in press releases. They often use best-case fuel consumption figures, low petrol prices or high electricity rates to favour their own product. Always use your real-world numbers."
+      }
+    },
+    {
+      heading: "Making a decision that suits your situation",
+      body: "A TCO comparison gives you the financial picture, but it is worth remembering that numbers alone do not capture everything. Your access to home charging, how often you drive long distances, whether you live in a regional area with limited public charging, and even how much you enjoy driving a particular car all factor into the right choice for you. That said, the maths for many Australian drivers now favours EVs over a typical ownership period, particularly for people who drive above average kilometres and can charge at home overnight. Running the comparison with your own figures is the best way to find out where the line sits for your circumstances."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
