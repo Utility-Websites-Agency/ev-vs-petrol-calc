@@ -797,6 +797,8 @@ export const BLOG_POSTS: BlogPost[] = [
     {
       heading: "Step-by-step: how to run the comparison",
       body: "Once you know which cost categories to include, the process is straightforward. Work through each step below and you will end up with a reliable annual and lifetime cost figure for each vehicle.",
+    },
+    {
       subheading: "Step 1: Set your ownership period and annual kilometres",
       body: "Decide how long you plan to keep the car and roughly how far you drive each year. The Australian average is around 13,000 km per year, but your actual figure matters a lot. The more you drive, the more fuel or energy savings compound in favour of an EV."
     },
