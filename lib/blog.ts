@@ -836,6 +836,72 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-fuel-price-volatility-makes-the-case-for-switching-to-an",
+  title: "How fuel price volatility makes the case for switching to an electric car",
+  excerpt: "Petrol prices in Australia have always been unpredictable, but recent swings are making drivers rethink their next car. Here's how fuel price volatility strengthens the financial argument for going electric.",
+  date: "May 24, 2026",
+  readTime: "6 min read",
+  category: "Tips",
+  tags: ["fuel prices", "electric vehicles", "running costs", "EV savings", "petrol vs electric", "Australia"],
+  content: [
+    {
+      heading: "The petrol price rollercoaster is getting worse",
+      body: "If you've filled up your tank lately, you already know the pain. Australian petrol prices have always moved in cycles, but the swings have become sharper and harder to predict. One week you're paying $1.75 per litre, the next it's crept past $2.20. Global oil markets, the Australian dollar, refinery issues, and geopolitical tensions all feed into what you pay at the bowser. And none of those factors are going away anytime soon. For households trying to budget, this unpredictability is genuinely stressful. It makes it very difficult to know what your car will actually cost you from one month to the next."
+    },
+    {
+      heading: "Why electricity costs are more stable",
+      body: "Electricity prices in Australia are not immune to change either. We've seen increases over recent years tied to energy market reforms and infrastructure investment. But there's a crucial difference: electricity price changes tend to be gradual, announced in advance, and far less dramatic than the week-to-week swings you see at the petrol pump. If you're on a fixed-rate electricity plan, your charging cost per kilometre is essentially locked in. Better still, if you have solar panels at home, a significant portion of your charging can come at near-zero cost. That kind of cost certainty is something petrol drivers simply cannot access."
+    },
+    {
+      heading: "What the numbers actually look like",
+      body: "Let's put some rough figures around this. At $2.00 per litre, a petrol car averaging 10 litres per 100 km costs around $20 per 100 km in fuel alone. At $1.75 per litre, that drops to $17.50. At $2.25, it jumps to $22.50. Your monthly fuel spend can vary by $30 to $60 or more just because of market forces you can't control. An average EV in Australia uses roughly 15 to 18 kWh per 100 km. At a typical off-peak home charging rate of around $0.15 per kWh, that works out to roughly $2.25 to $2.70 per 100 km. Even at peak grid rates of $0.35 per kWh, you're looking at around $5.25 to $6.30 per 100 km. The difference is substantial, and the EV side of that equation barely moves.",
+      table: {
+        headers: ["Scenario", "Cost per 100 km", "Monthly cost (1,500 km)"],
+        rows: [
+          ["Petrol at $1.75/L (10L/100km)", "$17.50", "$262.50"],
+          ["Petrol at $2.00/L (10L/100km)", "$20.00", "$300.00"],
+          ["Petrol at $2.25/L (10L/100km)", "$22.50", "$337.50"],
+          ["EV at $0.15/kWh (16kWh/100km)", "$2.40", "$36.00"],
+          ["EV at $0.35/kWh (16kWh/100km)", "$5.60", "$84.00"]
+        ]
+      }
+    },
+    {
+      heading: "The hidden cost of uncertainty",
+      body: "Beyond the dollars and cents, there's a real cognitive and emotional cost to fuel price volatility. Budgeting for a household becomes harder when one of your regular expenses can shift by 20 to 30 per cent without warning. Families making decisions about longer road trips, daily commutes, or whether to take on extra driving for work often factor in this uncertainty in ways that quietly affect quality of life. Switching to an EV doesn't just save money in most scenarios. It also removes a major source of financial unpredictability from your monthly budget. That peace of mind has real value, even if it doesn't show up neatly on a spreadsheet."
+    },
+    {
+      heading: "Factors that make the switch even more compelling right now",
+      list: [
+        "The range of affordable EVs available in Australia has expanded significantly, with more models under $50,000 than ever before.",
+        "Many state governments still offer stamp duty exemptions or rebates for new EV purchases, reducing the upfront cost gap.",
+        "Home solar installation rates in Australia are among the highest in the world, meaning many households can charge for very little.",
+        "Public charging infrastructure has improved considerably, making range anxiety less of a practical concern for most drivers.",
+        "EV servicing costs are generally lower than petrol vehicles due to fewer moving parts and no need for oil changes.",
+        "Time-of-use electricity tariffs allow savvy EV owners to charge overnight at the cheapest possible rates."
+      ]
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "Use the EV vs Petrol Calculator on this site to plug in your own driving habits, local electricity rate, and the current petrol price in your area. It shows you a personalised breakeven point and long-term savings estimate, so you can see exactly where you stand rather than relying on generic figures."
+      }
+    },
+    {
+      heading: "What about the upfront cost?",
+      body: "The most common objection to switching to an EV is the higher purchase price compared to an equivalent petrol car. It's a fair point. Entry-level EVs typically cost more upfront than a comparable petrol hatchback or SUV. But the calculation changes significantly when you factor in lower running costs over time. For drivers covering 15,000 km or more per year, many EVs reach cost parity with their petrol equivalents within three to five years, sometimes sooner if petrol prices spike. The key is to look at the total cost of ownership over the life of the vehicle, not just the sticker price on the lot. A car you own for seven to ten years will accumulate a lot of fuel costs, and every time petrol prices surge, that total grows."
+    },
+    {
+      heading: "Is now a good time to make the switch?",
+      body: "For many Australian drivers, the answer is yes, particularly if you do a reasonable amount of driving, have access to home charging, and are due for a new car anyway. The financial case has never been stronger, and the practical barriers around range and charging have come down considerably. That said, switching isn't right for everyone. If you live in a regional area with limited charging infrastructure, drive very low annual kilometres, or rely heavily on long interstate hauls without convenient charging stops, you may want to wait a little longer. The best approach is to run your own numbers. Use a calculator that accounts for your actual driving patterns, your electricity rate, and realistic petrol price scenarios. The results might surprise you.",
+      callout: {
+        type: "info",
+        text: "Fuel price forecasts are notoriously unreliable, but historical data shows Australian petrol prices have trended upward over the long term with frequent short-term spikes. Building that volatility into your cost comparison gives you a much more realistic picture than assuming prices stay flat."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
