@@ -902,6 +902,75 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-many-miles-do-you-need-to-drive-before-an-ev-pays-off",
+  title: "How many miles do you need to drive before an EV pays off?",
+  excerpt: "Buying an electric vehicle costs more upfront than a comparable petrol car, but lower running costs mean you eventually come out ahead. Here is how to work out your personal break-even point as an Australian driver.",
+  date: "June 1, 2026",
+  readTime: "7 min read",
+  category: "Calculator guide",
+  tags: ["electric vehicles", "break-even", "running costs", "EV savings", "Australia"],
+  content: [
+    {
+      heading: "The big question every EV buyer asks",
+      body: "When you are staring down a sticker price that can be $10,000 to $30,000 higher than a comparable petrol car, it is only natural to wonder whether you will ever actually save money. The good news is that for most Australian drivers the answer is yes. The catch is that the payoff depends heavily on how much you drive, what you pay for electricity, and what petrol costs in your area. There is no single magic number that applies to everyone, but this guide will walk you through the logic so you can find your own break-even point."
+    },
+    {
+      heading: "Why kilometres matter more than years",
+      body: "Most break-even guides talk about years, but kilometres driven is the more honest measure. A tradie who racks up 35,000 km a year will hit break-even far sooner than a retiree doing 8,000 km a year, even if they both buy the same car on the same day. Every kilometre you drive in an EV instead of a petrol car generates a saving on fuel. The more you drive, the faster those savings stack up to cancel out the premium you paid at the dealership. That is why the question in the title is really the right one to ask."
+    },
+    {
+      heading: "The numbers behind a typical Australian comparison",
+      body: "Let us use a realistic mid-range example to make this concrete. Assume you are comparing a popular electric SUV priced at $65,000 against a similar petrol SUV at $48,000. That is a $17,000 price gap to recover. Here is what the running cost difference looks like on a per-kilometre basis using mid-2026 Australian averages.",
+      table: {
+        headers: ["Cost item", "Petrol SUV", "Electric SUV"],
+        rows: [
+          ["Fuel or electricity cost per 100 km", "$14.50 (at $2.10/L, 6.9L/100km)", "$3.60 (at 30 kWh/100km, 12c/kWh home charging)"],
+          ["Annual servicing estimate", "$900", "$350"],
+          ["Registration and insurance (similar)", "$1,800", "$1,800"],
+          ["Total annual cost at 15,000 km", "$4,875", "$2,210"],
+          ["Annual saving with EV", "", "$2,665"]
+        ]
+      }
+    },
+    {
+      heading: "Calculating your break-even kilometre figure",
+      body: "With a $17,000 price premium and a saving of roughly $2,665 per year at 15,000 km, you would break even in about 6.4 years. But what if you drive more? At 25,000 km a year the annual saving scales up to around $4,440, and you hit break-even in about 3.8 years. At 8,000 km a year it blows out to roughly 12 years, which may be longer than you plan to keep the car. In total kilometres driven, break-even for this example sits at around 95,000 to 100,000 km regardless of how quickly you accumulate them. That is a useful anchor number to keep in mind."
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "Use the ev-vs-petrol-calc.com calculator to plug in your own numbers. Enter your actual postcode electricity rate, your local petrol price, and your real annual kilometres, and the tool will show you a personalised break-even chart in seconds."
+      }
+    },
+    {
+      heading: "Factors that move the break-even point closer or further away",
+      body: "The example above uses averages, but your situation may be quite different. Here are the main levers that will shift your personal break-even distance.",
+      list: [
+        "Home charging rate: If you are on a controlled-load or off-peak tariff as low as 8 to 10 cents per kWh, your electricity cost per kilometre drops significantly and break-even arrives sooner.",
+        "Solar panels: Charging from rooftop solar can push the effective cost per kilometre close to zero during daylight hours, which dramatically improves the EV case.",
+        "Petrol prices: Every time the bowser price rises, your petrol car costs more to run and your EV break-even point moves closer.",
+        "Government incentives: Some states still offer stamp duty exemptions or rebates on new EVs in 2026. These reduce your effective price premium and shorten the payback period.",
+        "EV model efficiency: A more efficient EV (using fewer kWh per 100 km) will save more per kilometre. Check the energy consumption figure, not just the range.",
+        "Resale value: EVs from reputable brands have been holding their value reasonably well. A stronger resale value effectively reduces the total cost of ownership.",
+        "Servicing savings: EVs have no oil changes, fewer brake replacements thanks to regenerative braking, and simpler drivetrains. These savings compound over time.",
+        "Public charging habits: If you rely heavily on fast chargers at highway stops or shopping centres, your per-kilometre electricity cost rises and the savings narrow."
+      ]
+    },
+    {
+      heading: "A quick rule of thumb for Australian drivers",
+      body: "If you drive more than 20,000 km per year and you have access to home charging, an EV will almost certainly pay off within five years for most models currently on sale in Australia. If you drive under 10,000 km per year, the financial case alone is unlikely to be compelling unless the price gap is small or you charge almost entirely on cheap solar. For drivers in the middle, the calculator on this site is the fastest way to get a clear answer without working through the maths yourself."
+    },
+    {
+      heading: "The bottom line",
+      callout: {
+        type: "info",
+        text: "Break-even is not just about kilometres. It is the combination of your price premium, your electricity tariff, your petrol spending, and how long you plan to own the car. Run your own numbers before you decide."
+      },
+      body: "There is no universal answer to how many kilometres you need to drive before an EV pays off, but for a typical Australian household driving around 15,000 km per year and charging at home, the break-even point tends to fall somewhere between 80,000 and 120,000 km. Many drivers reach that mark within five to eight years. If you drive more, you get there faster. The best thing you can do is stop relying on averages and spend two minutes entering your own figures into the calculator. You might be pleasantly surprised by how soon your EV starts paying you back."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
