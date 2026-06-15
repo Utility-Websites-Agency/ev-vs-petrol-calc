@@ -1044,6 +1044,74 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-electricity-prices-affect-the-savings-from-switching-to",
+  title: "How electricity prices affect the savings from switching to an EV",
+  excerpt: "Your electricity rate is one of the biggest variables in the EV savings equation. Here is what Australian drivers need to know before making the switch.",
+  date: "June 15, 2026",
+  readTime: "6 min read",
+  category: "Tips",
+  tags: ["electricity prices", "EV savings", "running costs", "Australia", "charging"],
+  content: [
+    {
+      heading: "The fuel cost equation has changed",
+      body: "When Australians talk about switching to an electric vehicle, the conversation almost always lands on fuel savings. Petrol prices are visible and painful, updated on a big sign at every servo you drive past. Electricity costs, on the other hand, are buried in a quarterly bill and vary enormously depending on where you live, who your retailer is, and when you charge. That variability matters a lot. Two EV owners driving identical cars the same number of kilometres each year can end up with very different savings simply because of their electricity rate. Understanding how your rate affects the numbers is one of the most useful things you can do before you commit to going electric."
+    },
+    {
+      heading: "Why electricity rates vary so much in Australia",
+      body: "Australia does not have a single national electricity market in the way it has a single petrol price benchmark. Retail electricity prices differ by state, by distributor network, by tariff type, and by retailer plan. In 2026, flat-rate residential tariffs across the country range from roughly 25 cents per kilowatt-hour in parts of Queensland to over 40 cents per kilowatt-hour in South Australia. Add solar feed-in tariffs, time-of-use plans, and EV-specific tariffs into the mix and the spread widens further. The rate you are actually paying right now might be quite different from the default rate your neighbour is on, even if you live on the same street.",
+      list: [
+        "Flat-rate tariffs: a single price per kWh regardless of when you use power",
+        "Time-of-use tariffs: cheaper off-peak rates (often overnight) and more expensive peak rates",
+        "EV-specific tariffs: some retailers offer dedicated low overnight rates for EV charging",
+        "Solar self-consumption: if you have rooftop solar, charging during the day can reduce your effective cost to near zero",
+        "Controlled load tariffs: a separate cheaper circuit, sometimes available for EV charging in certain networks"
+      ]
+    },
+    {
+      heading: "How the rate changes your annual savings",
+      body: "Let us look at a concrete example. Assume you drive 15,000 kilometres per year in a mid-size EV with an efficiency of 18 kWh per 100 km. That means you consume around 2,700 kWh of electricity annually for driving. Now compare that against a petrol equivalent consuming 8 litres per 100 km, with petrol at $2.00 per litre.",
+      table: {
+        headers: ["Electricity rate (per kWh)", "Annual electricity cost", "Annual petrol cost", "Annual saving"],
+        rows: [
+          ["$0.25", "$675", "$2,400", "$1,725"],
+          ["$0.30", "$810", "$2,400", "$1,590"],
+          ["$0.35", "$945", "$2,400", "$1,455"],
+          ["$0.40", "$1,080", "$2,400", "$1,320"],
+          ["$0.10 (solar or EV tariff)", "$270", "$2,400", "$2,130"]
+        ]
+      }
+    },
+    {
+      heading: "The solar charging advantage",
+      body: "If your home has rooftop solar, the calculus shifts dramatically in your favour. Instead of exporting excess solar generation at a feed-in tariff that has dropped to as low as 4 to 6 cents per kWh in many states, you can use that energy to charge your EV at an effective cost of almost nothing. Drivers who can schedule their charging between 10am and 3pm and work from home, or who have a smart charger that tops up automatically during solar generation hours, are routinely achieving effective charging costs well below 10 cents per kWh. Over a year, that can push savings past $2,000 compared to petrol, even before you factor in lower servicing costs.",
+      callout: {
+        type: "tip",
+        text: "If you have solar panels, set your EV charger to run during peak generation hours rather than overnight. On a good sunny day you can fill up for virtually nothing, instead of exporting cheap solar back to the grid."
+      }
+    },
+    {
+      heading: "Time-of-use tariffs and overnight charging",
+      body: "For households without solar, a time-of-use or EV-specific tariff is the next best option. Several Australian retailers now offer overnight rates as low as 15 to 20 cents per kWh between 11pm and 6am. If you plug in before bed every night, you could halve your effective charging cost compared to a flat-rate tariff. The catch is that your daytime rate on these plans is often higher, so households with heavy daytime usage need to do the sums carefully. For most EV-owning households where the car charges overnight and other consumption patterns stay roughly the same, the switch to a time-of-use plan is almost always worth it.",
+      callout: {
+        type: "warning",
+        text: "Switching to a time-of-use tariff to save on EV charging can backfire if your household uses a lot of power during peak evening hours (typically 3pm to 9pm). Check your usage pattern on your retailer app before switching plans."
+      }
+    },
+    {
+      heading: "Public charging costs are a different story",
+      body: "Home charging is where the real savings live for most Australians. Public DC fast chargers, while convenient on long trips, typically cost between 45 and 75 cents per kWh in 2026, and some operators charge session fees on top of that. If you relied entirely on public charging, the cost advantage over petrol would shrink significantly or disappear altogether. The good news is that most Australian EV owners do the vast majority of their charging at home. Public charging is best thought of as a top-up for longer journeys, not a regular fuelling strategy."
+    },
+    {
+      heading: "Use the calculator to find your personal number",
+      body: "The examples above use round numbers to illustrate the principle, but your actual savings depend on your specific electricity rate, your driving habits, your vehicle's efficiency, and where you charge. Our EV vs petrol calculator lets you plug in your own electricity tariff, your postcode, your annual kilometres, and the specific models you are comparing. The difference between entering 28 cents per kWh and 38 cents per kWh can change your projected five-year saving by thousands of dollars, so it is worth taking the five minutes to get the inputs right rather than relying on generic national averages.",
+      callout: {
+        type: "info",
+        text: "Not sure what rate you are on? Check your latest electricity bill for the supply and usage charges section, or log in to your retailer's app. Look for the usage rate in cents per kWh, not the daily supply charge."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
