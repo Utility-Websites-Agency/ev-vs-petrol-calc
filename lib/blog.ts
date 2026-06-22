@@ -1112,6 +1112,78 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "electric-car-vs-petrol-which-is-cheaper-to-run-in-2025",
+  title: "Electric car vs petrol: which is cheaper to run in 2025?",
+  excerpt: "Fuel prices, electricity rates, servicing costs and more. We break down the real numbers so you can see which powertrain actually saves you money on Australian roads.",
+  date: "June 22, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "petrol cars", "running costs", "Australia", "EV savings", "fuel costs"],
+  content: [
+    {
+      heading: "The big question Australian drivers are asking",
+      body: "With petrol prices stubbornly sitting above $2.00 per litre in most capital cities and electricity tariffs creeping upward, the question of whether an electric vehicle (EV) is genuinely cheaper to run than a petrol car has never been more relevant. The answer depends on how you drive, where you live and how you charge. Let us walk through the numbers honestly so you can make an informed decision rather than rely on marketing claims from either side.",
+    },
+    {
+      heading: "Fuel and energy costs: the day-to-day numbers",
+      body: "The most obvious ongoing cost is energy. Petrol cars guzzle liquid fuel priced at the bowser, while EVs sip electricity priced per kilowatt-hour. Here is a straightforward comparison based on 2025 Australian averages.",
+      table: {
+        headers: ["", "Petrol car", "Electric car"],
+        rows: [
+          ["Average fuel/energy cost", "$2.05 per litre", "$0.30 per kWh (home)"],
+          ["Typical consumption", "9L per 100 km", "18 kWh per 100 km"],
+          ["Cost per 100 km", "$18.45", "$5.40"],
+          ["Annual cost (15,000 km)", "$2,768", "$810"],
+          ["Annual saving with EV", "", "$1,958"],
+        ],
+      },
+    },
+    {
+      heading: "Servicing and maintenance costs",
+      body: "EVs have far fewer moving parts than petrol vehicles. There is no oil to change, no timing belt to replace and no exhaust system to worry about. Regenerative braking also reduces brake wear significantly. For a typical mid-size petrol car, annual servicing in Australia runs between $400 and $800 depending on the model and dealer. An equivalent EV generally costs between $150 and $350 per year for routine checks, tyre rotations and software updates. Over five years that difference adds up to roughly $2,000 to $4,000 in savings on the EV side.",
+      callout: {
+        type: "info",
+        text: "Some EV manufacturers include servicing in the purchase price for the first few years. Check your contract carefully before comparing ongoing costs with a petrol car.",
+      },
+    },
+    {
+      heading: "Registration, insurance and other fixed costs",
+      body: "Registration fees vary by state, but most Australian states now charge EVs at a similar rate to comparable petrol vehicles after the federal government wound back EV registration discounts in several jurisdictions during 2024 and 2025. Insurance is where things get interesting. EVs often attract higher premiums because replacement parts and specialist repairs can cost more. A mainstream petrol hatchback might cost $1,200 per year to insure, while a comparable EV could run $1,500 to $1,900. This gap is narrowing as more repairers become EV-qualified, but it is still worth factoring in when you run the numbers.",
+    },
+    {
+      heading: "The hidden advantage: home charging habits",
+      body: "One of the most overlooked factors in the EV vs petrol debate is how and when you charge. Drivers who can charge overnight on an off-peak tariff unlock the biggest savings. Some energy retailers in New South Wales, Victoria and Queensland offer EV-specific plans with rates as low as $0.10 to $0.15 per kWh during overnight windows. At those rates, the cost per 100 km can drop below $3.00, making the annual running cost advantage even more dramatic. If you rely heavily on public DC fast chargers, costs rise considerably and can approach or even exceed petrol running costs for high-mileage drivers.",
+      callout: {
+        type: "tip",
+        text: "Use our free EV vs petrol calculator to enter your own electricity tariff, driving distance and petrol price. You will get a personalised annual cost comparison in under a minute.",
+      },
+    },
+    {
+      heading: "What genuinely favours petrol cars right now",
+      body: "It is only fair to acknowledge where petrol vehicles still have the edge in 2025.",
+      list: [
+        "Lower purchase price: the cheapest new EVs in Australia start around $38,000, while comparable petrol cars start closer to $22,000.",
+        "Long trips are easier: petrol refills take 3 minutes; even fast charging takes 20 to 45 minutes for an 80 per cent top-up.",
+        "Rural and regional drivers face a thinner public charging network, making longer journeys more stressful.",
+        "Resale values for EVs remain less predictable, with battery degradation a common concern among buyers.",
+        "Higher upfront insurance costs can erode year-one savings for some drivers.",
+      ],
+    },
+    {
+      heading: "So which is actually cheaper over five years?",
+      body: "Running the numbers over a typical five-year ownership period for a mainstream model in each category, and assuming 15,000 km per year, home charging and average urban driving, an EV comes out ahead by roughly $8,000 to $12,000 in total running costs. However, if you factor in the higher purchase price of the EV, the breakeven point lands somewhere between three and six years depending on the specific models compared and your individual driving pattern. The more you drive, the faster the EV pays for itself. A driver covering 25,000 km per year will reach breakeven much sooner than someone doing 8,000 km.",
+      callout: {
+        type: "warning",
+        text: "These figures are estimates based on 2025 Australian averages. Electricity tariffs, petrol prices and insurance premiums vary significantly by state and individual circumstance. Always plug your own numbers into a calculator before making a financial decision.",
+      },
+    },
+    {
+      heading: "How to calculate your own breakeven point",
+      body: "The simplest way to work out whether an EV makes sense for your situation is to use a dedicated calculator built for Australian conditions. Our ev-vs-petrol-calc.com tool lets you enter your postcode, annual kilometres, current petrol spend, home electricity rate and preferred EV model. It then produces a side-by-side cost comparison across one, three, five and ten years. You can also toggle between home charging only and a mix of home and public charging to see how your habits affect the outcome. The calculator is free, takes about two minutes and is updated regularly with current Australian fuel and electricity price data.",
+    },
+  ],
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
