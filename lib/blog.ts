@@ -1184,6 +1184,81 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   ],
 },
+  {
+  slug: "how-to-calculate-the-true-cost-of-owning-an-electric-car-vs",
+  title: "How to calculate the true cost of owning an electric car vs a petrol car",
+  excerpt: "Sticker price is just the beginning. Here is how to work out what an electric car or petrol car will actually cost you over time as an Australian driver.",
+  date: "June 29, 2026",
+  readTime: "7 min read",
+  category: "How-to",
+  tags: ["electric vehicles", "petrol cars", "cost comparison", "EV ownership", "Australia", "running costs", "calculator guide"],
+  content: [
+    {
+      heading: "Why the purchase price is only half the story",
+      body: "When most Australians shop for a new car, they focus on the drive-away price. That number is visible, easy to compare, and sits front and centre on every dealer listing. But the purchase price tells you almost nothing about what the car will actually cost you over five or ten years of ownership. Fuel, insurance, servicing, registration, depreciation and charging infrastructure all add up in ways that are very different between an electric vehicle and a conventional petrol car. To make a genuinely informed decision, you need to look at the total cost of ownership, which means adding up every dollar you will spend from the day you drive away to the day you sell."
+    },
+    {
+      heading: "The key costs to include in your comparison",
+      body: "A thorough comparison needs to account for both upfront and ongoing costs. Here is what to include for each vehicle type.",
+      list: [
+        "Purchase price (including stamp duty, dealer delivery and any optional extras)",
+        "Government rebates and incentives (federal and state-level EV incentives can significantly reduce the upfront cost of an electric vehicle)",
+        "Fuel or electricity costs (based on your annual kilometres driven and local prices)",
+        "Servicing and maintenance (EVs have fewer moving parts and generally lower service costs)",
+        "Registration and compulsory third party insurance (CTP) fees",
+        "Comprehensive insurance premiums (EVs can cost more to insure due to higher repair costs)",
+        "Depreciation (how much value the car loses each year)",
+        "Home charging equipment installation if you are buying an EV",
+        "Loan interest if you are financing the purchase",
+        "Resale value at the end of your ownership period"
+      ]
+    },
+    {
+      heading: "How to estimate your fuel and electricity costs",
+      body: "Fuel and electricity are usually the biggest ongoing cost difference between the two vehicle types. To estimate your annual fuel spend for a petrol car, multiply your annual kilometres by the car's fuel consumption per 100 km, then divide by 100, then multiply by the current petrol price per litre. For example, a car using 8 litres per 100 km driven 15,000 km per year at $2.10 per litre costs roughly $2,520 a year in fuel. For an electric vehicle, the same calculation uses kilowatt-hours per 100 km and your electricity rate. A typical EV uses around 18 kWh per 100 km. At a home charging rate of $0.30 per kWh, that same 15,000 km would cost around $810 a year. The gap is significant, and it compounds over several years. Keep in mind that if you charge mostly on public fast chargers, the cost per kWh is much higher and will narrow that gap considerably."
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "Use our free calculator at ev-vs-petrol-calc.com to plug in your own numbers. You can adjust annual kilometres, local fuel prices, electricity rates and ownership period to get a personalised estimate in minutes."
+      }
+    },
+    {
+      heading: "Servicing and maintenance: where EVs often win",
+      body: "Electric vehicles have significantly fewer components that wear out or need regular replacement. There is no engine oil, no timing belt, no exhaust system and no transmission fluid. Regenerative braking also means brake pads last much longer than on a petrol car. A typical petrol car might cost between $400 and $800 per year in servicing, while many EV owners report annual service costs well under $300. Over a five-year period, this difference can add up to well over $2,000. That said, if your EV battery needs replacement outside the warranty period, the cost can be substantial, so it is worth checking the manufacturer's battery warranty before you buy. Most major manufacturers now offer at least eight years or 160,000 km of battery coverage in Australia."
+    },
+    {
+      heading: "Depreciation and resale value",
+      body: "Depreciation is often the single largest cost of car ownership, yet most people ignore it entirely. A new car typically loses 15 to 25 per cent of its value in the first year alone. For EVs, the depreciation picture has been mixed. Early models depreciated quickly as newer technology arrived, but more recent EVs from established brands are holding their value much better. Petrol cars generally have a well-established and predictable resale market in Australia. When running your cost comparison, it is worth looking up used car listings for the specific models you are considering to get a realistic sense of what each will be worth after three or five years. Subtract the expected resale value from your total ownership costs to arrive at a true net cost figure."
+    },
+    {
+      heading: "A simple comparison table",
+      table: {
+        headers: ["Cost category", "Typical petrol car (5 years)", "Typical EV (5 years)"],
+        rows: [
+          ["Purchase price (after incentives)", "$35,000", "$42,000"],
+          ["Fuel / electricity", "$12,500", "$4,000"],
+          ["Servicing and maintenance", "$3,500", "$1,500"],
+          ["Registration and CTP", "$4,500", "$4,500"],
+          ["Comprehensive insurance", "$7,500", "$9,000"],
+          ["Home charger installation", "N/A", "$1,200"],
+          ["Depreciation (estimated)", "$17,000", "$18,000"],
+          ["Total 5-year cost", "$80,000", "$80,200"]
+        ]
+      }
+    },
+    {
+      callout: {
+        type: "info",
+        text: "The figures in the table above are illustrative averages based on Australian conditions in mid-2026. Your actual costs will vary depending on the specific models you compare, your location, driving habits and electricity tariff. Always run the numbers for your own situation."
+      }
+    },
+    {
+      heading: "Putting it all together",
+      body: "As the table above shows, the total cost of owning an EV and a comparable petrol car can end up surprisingly close once you account for all the variables. The higher purchase price of an EV is often offset by lower running costs, particularly if you do a lot of kilometres and charge mostly at home overnight. Petrol cars tend to make more financial sense for drivers who cover fewer kilometres each year, live in regional areas without reliable home charging, or plan to keep the car for only a short period. The best approach is to build a full ownership cost model using your own numbers rather than relying on headlines or general rules of thumb. Our calculator is designed to make that process straightforward for Australian drivers, with default values based on current local fuel prices, electricity tariffs and registration costs. Try it out, adjust the inputs to match your situation, and you will have a much clearer picture of which option actually makes sense for your household."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
