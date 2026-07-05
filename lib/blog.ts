@@ -1259,6 +1259,72 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-to-use-a-cost-calculator-to-decide-if-an-ev-is-right-for",
+  title: "How to use a cost calculator to decide if an EV is right for you",
+  excerpt: "Thinking about making the switch to an electric vehicle? A cost calculator can cut through the noise and show you the real numbers behind the decision. Here is how to use one effectively.",
+  date: "July 5, 2026",
+  readTime: "6 min read",
+  category: "Calculator guide",
+  tags: ["EV", "cost calculator", "electric vehicles", "Australia", "petrol vs electric", "running costs"],
+  content: [
+    {
+      heading: "Why gut feeling is not enough",
+      body: "Buying a car is one of the biggest financial decisions most Australians make. When it comes to electric vehicles, the upfront price tag can feel like a shock compared to a comparable petrol model. But purchase price is only part of the story. Fuel costs, servicing, government incentives, and the way you drive all play a role in the total cost of owning a vehicle over time. That is where a cost calculator comes in. Rather than guessing or relying on a mate's opinion, you can plug in your own numbers and see a clear comparison tailored to your situation."
+    },
+    {
+      heading: "What a cost calculator actually does",
+      body: "A good EV vs petrol cost calculator takes a range of inputs specific to you and your lifestyle, then works out the total cost of ownership over a set period, usually three, five, or ten years. It goes beyond just the sticker price and factors in things like how much you drive, what you pay for electricity and petrol, and whether you are eligible for any state or federal rebates. The result is a side-by-side comparison that makes it much easier to see which option genuinely saves you money over time, rather than just which one costs less to drive off the lot."
+    },
+    {
+      heading: "The key inputs you will need",
+      body: "Before you sit down with a calculator, it helps to gather a few pieces of information. Do not worry if some of your figures are estimates. Most calculators will use sensible Australian defaults if you leave a field blank, but the more accurate your inputs, the more useful your result will be.",
+      list: [
+        "Your annual kilometres driven (check your last registration or logbook if you are unsure)",
+        "Your current petrol costs per litre or your average weekly spend at the bowser",
+        "Your home electricity tariff in cents per kilowatt-hour (find this on your power bill)",
+        "Whether you have or plan to install solar panels at home",
+        "The purchase price of the EV and petrol vehicles you are comparing",
+        "Any applicable stamp duty concessions or rebates in your state or territory",
+        "Your expected loan interest rate if you are financing the purchase",
+        "How long you plan to keep the vehicle"
+      ]
+    },
+    {
+      heading: "Understanding the results",
+      body: "Once you hit calculate, you will typically see a breakdown across several cost categories. Pay close attention to the crossover point, which is the moment in time when the EV becomes cheaper overall despite its higher upfront cost. For many Australian drivers, this sits somewhere between two and five years depending on how much they drive and what they pay for electricity. A high-kilometre driver who charges at home on a cheap overnight tariff will usually reach that crossover point much sooner than someone who drives infrequently or relies on public charging."
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you have rooftop solar, make sure the calculator you are using allows you to enter a lower effective charging cost. Charging your EV during the day from solar can bring your per-kilometre fuel cost close to zero, which dramatically improves the long-term numbers."
+      }
+    },
+    {
+      heading: "Factors that are easy to overlook",
+      body: "A lot of people focus on fuel costs and forget about some of the other savings that come with an EV. Servicing is one of the big ones. Electric vehicles have far fewer moving parts than petrol engines, so there is no oil to change, no timing belt to replace, and generally lower maintenance bills over time. Stamp duty exemptions are available in several Australian states and territories, which can knock thousands of dollars off the effective purchase price. Some calculators also factor in resale value and depreciation, which can swing the comparison significantly depending on the models you are looking at.",
+      list: [
+        "Reduced servicing and maintenance costs over the ownership period",
+        "Stamp duty exemptions available in some states and territories",
+        "Fringe benefits tax exemptions for eligible EVs used through a novated lease",
+        "Potential savings from Vehicle Emissions Duty differences between states",
+        "Home charging equipment costs and any available installation rebates"
+      ]
+    },
+    {
+      heading: "When the numbers might not favour an EV",
+      body: "A calculator will also tell you honestly when an EV might not be the right financial call, at least not yet. If you live in a regional area where public charging is scarce and you do not have reliable home charging, the convenience costs can add up. If you drive very low kilometres each year, the fuel savings may take longer to offset the higher purchase price. And if you are comparing a budget petrol hatchback against a premium EV, the maths may simply not stack up in the short term. The calculator is not there to sell you on an EV. It is there to show you the truth.",
+      callout: {
+        type: "warning",
+        text: "Do not forget to account for public charging costs if you will not always be charging at home. Public fast charging in Australia can cost significantly more per kilowatt-hour than your home tariff, and this can erode the fuel savings that make EVs attractive."
+      }
+    },
+    {
+      heading: "Making the most of your results",
+      body: "Once you have run the numbers, try a few different scenarios. What if petrol prices rise by 20 cents a litre over the next two years? What if you negotiate a better electricity rate? What if you keep the car for seven years instead of five? Tweaking the inputs helps you understand how sensitive the outcome is to variables outside your control. If the EV comes out ahead across multiple scenarios, that is a strong signal it is the right financial choice for you. If the result flips depending on assumptions, you have a more borderline decision and may want to weigh up non-financial factors like driving experience, environmental impact, and how much you value never queuing at a petrol station again."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
