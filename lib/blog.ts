@@ -1475,6 +1475,74 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-battery-replacement-costs-factor-into-the-long-term-ev-o",
+  title: "How battery replacement costs factor into the long-term EV ownership equation",
+  excerpt: "Battery replacement is one of the most talked-about fears in EV ownership, but how much does it actually matter for your back pocket? We break down the numbers for Australian drivers.",
+  date: "July 26, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["EV ownership", "battery replacement", "long-term costs", "Australia", "electric vehicles"],
+  content: [
+    {
+      heading: "The big battery question most buyers ask",
+      body: "If you have spent any time researching electric vehicles, you have almost certainly stumbled across the battery replacement cost argument. Someone in a comment section, a sceptical relative, or a petrol-station attendant has probably told you that once the battery dies you will be up for tens of thousands of dollars. It is one of the most persistent concerns about EVs in Australia, and like most persistent concerns, the truth is more nuanced than the headline figure suggests. This post walks through what battery replacement actually costs, how likely you are to ever need one, and how to factor it sensibly into your total cost of ownership calculation."
+    },
+    {
+      heading: "What does an EV battery actually cost to replace in Australia?",
+      body: "Battery replacement costs vary significantly depending on the make, model, and battery chemistry. As of mid-2026, here is a rough picture of what Australian owners are facing for a full out-of-warranty battery replacement:",
+      table: {
+        headers: ["Vehicle", "Battery size (kWh)", "Estimated replacement cost (AUD)"],
+        rows: [
+          ["Tesla Model 3 Standard Range", "60", "$12,000 - $18,000"],
+          ["Tesla Model 3 Long Range", "82", "$18,000 - $25,000"],
+          ["BYD Atto 3", "60.5", "$10,000 - $16,000"],
+          ["Hyundai IONIQ 6 Standard Range", "53", "$11,000 - $17,000"],
+          ["Nissan Leaf (older gen)", "40", "$8,000 - $14,000"],
+          ["MG ZS EV", "51", "$9,000 - $15,000"]
+        ]
+      }
+    },
+    {
+      heading: "How likely are you to actually need a replacement?",
+      body: "Here is the part that often gets left out of the fear-mongering: most EV batteries are remarkably durable. Modern lithium-ion packs are engineered to outlast the useful life of the vehicle in most real-world driving scenarios. Battery management systems actively protect cells from the conditions that cause rapid degradation, such as frequent fast charging to 100 per cent or consistently draining to near zero. Studies of real-world Tesla, Nissan and Hyundai fleets consistently show that average battery degradation sits at around 2 to 3 per cent per year under normal use. That means a battery that started with 400 km of range might drop to around 330 to 340 km after ten years. That is a noticeable reduction, but it is rarely the catastrophic failure that the replacement cost conversation implies. Most Australian drivers will never replace their battery at all during the years they own the car."
+    },
+    {
+      heading: "Warranty coverage changes the maths considerably",
+      body: "Every major EV brand sold in Australia now offers an eight-year or 160,000 km battery warranty, whichever comes first. Most of these warranties cover the battery if it degrades below 70 per cent of its original capacity. That is a meaningful protection that most petrol car components simply do not come with.",
+      list: [
+        "Tesla: 8 years / 160,000 km, minimum 70% capacity retention",
+        "BYD: 8 years / 160,000 km, minimum 70% capacity retention",
+        "Hyundai and Kia: 8 years / 160,000 km, minimum 70% capacity retention",
+        "MG: 8 years / 160,000 km, minimum 70% capacity retention",
+        "Nissan Leaf (newer models): 8 years / 160,000 km, minimum 75% capacity retention",
+        "Polestar: 8 years / 160,000 km, minimum 70% capacity retention"
+      ]
+    },
+    {
+      callout: {
+        type: "info",
+        text: "If you are buying a used EV, always request a battery health report before purchasing. Many dealers and independent EV specialists in Australia can produce one using diagnostic tools. A battery sitting above 80% capacity after five or more years is generally considered healthy."
+      }
+    },
+    {
+      heading: "How to build battery costs into your long-term ownership calculation",
+      body: "The sensible way to account for battery replacement risk is to treat it like any other major mechanical risk on a long-lived asset. You are not paying for it upfront, you are weighing the probability of needing it against the cost if you do. A straightforward approach is to amortise the risk over your expected ownership period. For example, if you plan to own the car for 12 years and the replacement cost is $15,000, but you estimate there is only a 20 per cent chance you will need it (given the warranty covers the first eight years), the expected cost is $3,000. Spread over 12 years, that is $250 per year or about $21 per month. Compare that to annual servicing costs on a petrol vehicle, which in Australia typically run between $300 and $800 per year depending on the model, and the battery risk starts to look far less alarming. Our calculator on this site lets you plug in your own battery risk estimate and ownership period so you can see how it interacts with fuel savings, charging costs, and depreciation in your specific situation."
+    },
+    {
+      heading: "The cost trend is going in the right direction",
+      body: "It is worth noting that battery replacement costs have been falling steadily. In 2020, a replacement pack for a mid-size EV might have cost $25,000 to $35,000 in Australia. By 2026 those figures have dropped considerably, and the trajectory is expected to continue downward as manufacturing scale increases and newer cell chemistries like lithium iron phosphate (LFP) become more common. LFP batteries, which are now standard in many entry-level and mid-range EVs, are generally cheaper to produce and tend to degrade more slowly than the older NMC chemistry. If you buy an EV today and need a replacement in 2035, you will almost certainly be paying less in real terms than today's quotes suggest.",
+      callout: {
+        type: "tip",
+        text: "When comparing EV models, check whether the battery uses LFP (lithium iron phosphate) or NMC (nickel manganese cobalt) chemistry. LFP batteries are generally more tolerant of frequent full charges and tend to have longer cycle lives, which matters if you regularly top up to 100 per cent."
+      }
+    },
+    {
+      heading: "Putting it all together",
+      body: "Battery replacement is a real cost to keep in your mental model when buying an EV, but it is rarely the dealbreaker it is made out to be. The combination of strong warranty coverage, steadily improving battery longevity, and falling replacement costs means that for most Australian drivers, the expected battery-related cost over a typical ownership period is far lower than petrol engine repair and servicing expenses. The smartest thing you can do is run the full numbers for your situation, including your annual kilometres, local electricity rates, and how long you plan to keep the car, rather than letting a worst-case replacement figure drive your decision. That is exactly what the calculator on this site is built to help you do."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
