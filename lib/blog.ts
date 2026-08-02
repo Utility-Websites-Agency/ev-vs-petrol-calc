@@ -1543,6 +1543,92 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "electric-car-vs-petrol-car-a-beginner-s-guide-to-understandi",
+  title: "Electric car vs petrol car: a beginner's guide to understanding the cost difference",
+  excerpt: "Thinking about making the switch to an electric car? We break down the real costs of EVs vs petrol cars in Australia so you can make a smarter decision for your wallet.",
+  date: "August 2, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "petrol cars", "cost comparison", "EV buying guide", "Australia"],
+  content: [
+    {
+      heading: "So you're thinking about going electric",
+      body: "Electric vehicles have gone from a niche curiosity to a genuine mainstream option for Australian drivers. Sales have been climbing steadily, charging infrastructure is expanding, and the range of models available now covers everything from small city hatchbacks to large family SUVs. But one question comes up more than any other: are they actually cheaper to own than a petrol car? The honest answer is: it depends. But with a bit of number crunching, you can work out exactly where you stand. This guide walks you through the key costs involved so you can make a confident, informed decision."
+    },
+    {
+      heading: "The upfront price gap is real, but it's shrinking",
+      body: "Let's start with the most obvious difference. Electric cars still tend to cost more to buy upfront than comparable petrol models. A small petrol hatchback might start around $25,000 to $30,000, while a comparable EV is often in the $40,000 to $50,000 range. However, that gap has narrowed significantly over the past few years, and it continues to close as more manufacturers enter the Australian market with competitively priced models. It's also worth noting that the Australian Government's fringe benefits tax (FBT) exemption for eligible EVs used through a novated lease can dramatically reduce the effective cost for employees. If your employer offers salary packaging, an EV through a novated lease could end up costing you less out of pocket than a petrol car at a lower sticker price."
+    },
+    {
+      heading: "Running costs: where EVs start to win",
+      body: "This is where the story gets interesting for EV owners. The cost to run an electric car in Australia is substantially lower than a petrol equivalent, and that gap adds up quickly over the years you own the vehicle.",
+      list: [
+        "Fuel vs electricity: The average Australian petrol car uses around 8 to 10 litres per 100km. At roughly $2.00 per litre, that's $16 to $20 per 100km. A comparable EV uses around 15 to 20 kWh per 100km. If you charge at home overnight on a standard tariff of around $0.30 per kWh, that's just $4.50 to $6.00 per 100km.",
+        "Servicing: Petrol cars require regular oil changes, spark plug replacements, transmission services and more. EVs have far fewer moving parts, which means servicing is simpler and less frequent. Many EV owners report annual servicing costs that are 30 to 50 per cent lower than their previous petrol vehicles.",
+        "Brake wear: EVs use regenerative braking, which means the electric motor slows the car down and recovers energy, reducing wear on physical brake pads. This is a small but real saving over time.",
+        "Registration and insurance: These costs are broadly similar between EVs and petrol cars, though some insurers are still adjusting their pricing for EVs. It pays to shop around.",
+        "Tyres: EVs are heavier than petrol equivalents, which can lead to slightly faster tyre wear. Budget for this when comparing total running costs."
+      ]
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you drive more than 15,000 km per year, the fuel savings from an EV can add up to thousands of dollars annually. Use our EV vs petrol calculator to plug in your own driving habits and see your personal break-even point."
+      }
+    },
+    {
+      heading: "Understanding the break-even point",
+      body: "The break-even point is the moment when the total cost of owning an EV (including that higher purchase price) becomes equal to the total cost of owning a petrol car. After that point, the EV is genuinely saving you money. The break-even timeline varies depending on several factors.",
+      list: [
+        "How much you paid for each vehicle",
+        "Your annual kilometres driven",
+        "Your local electricity tariff and how often you charge at home vs public chargers",
+        "Current petrol prices in your area",
+        "Whether you access any government incentives or salary packaging benefits",
+        "Your expected servicing costs for each vehicle"
+      ]
+    },
+    {
+      heading: "A rough cost comparison over five years",
+      body: "To give you a concrete sense of the numbers, here's a simplified comparison between a mid-range petrol SUV and a comparable EV for an average Australian driver covering around 15,000 km per year.",
+      table: {
+        headers: ["Cost category", "Petrol SUV", "Electric SUV"],
+        rows: [
+          ["Purchase price (approx.)", "$45,000", "$60,000"],
+          ["Fuel / charging over 5 years", "$13,500", "$3,375"],
+          ["Servicing over 5 years", "$5,000", "$2,500"],
+          ["Total estimated cost", "$63,500", "$65,875"]
+        ]
+      }
+    },
+    {
+      callout: {
+        type: "info",
+        text: "These figures are illustrative estimates based on average Australian conditions as of mid-2026. Actual costs will vary depending on your vehicle, driving habits, electricity tariff and whether you access salary packaging or government incentives. Use our calculator for a personalised comparison."
+      }
+    },
+    {
+      heading: "State incentives and government rebates",
+      body: "Several Australian states and territories have introduced rebates, stamp duty exemptions or registration discounts for electric vehicles, though the availability and size of these incentives has shifted considerably over time. At the federal level, the FBT exemption for eligible EVs under a novated lease remains one of the most powerful financial tools available to Australian employees. If you are purchasing a car through your employer's salary packaging scheme, it is well worth getting advice from a novated lease provider to understand exactly what you could save. Even without direct rebates, the lower goods and services tax (GST) impact on a vehicle purchased through a novated lease can make a meaningful difference to the total cost.",
+    },
+    {
+      heading: "Things to consider before you decide",
+      body: "Making the switch to an EV is a great financial decision for many Australians, but it is not the right move for everyone right now. Here are a few honest considerations to keep in mind before you commit.",
+      list: [
+        "Do you have access to home charging? Drivers with off-street parking and the ability to install a home charger get the most out of EV ownership. Apartment dwellers or those relying solely on public charging may find costs and convenience less favourable.",
+        "How far do you regularly drive? EVs suit most daily driving needs comfortably, but if you frequently take long regional trips, you'll want to plan around charging stops.",
+        "How long do you plan to keep the car? The longer you own an EV, the more the running cost savings compound. If you change cars every two to three years, the upfront premium may not fully pay off.",
+        "What does the resale market look like? EV resale values in Australia have been evolving. It is worth researching how specific models hold their value before you buy.",
+        "Are you comfortable with the technology? Modern EVs are genuinely easy to live with, but if you have concerns about range anxiety or charging logistics, it is worth test driving and doing a trial period before fully committing."
+      ]
+    },
+    {
+      heading: "Ready to crunch your own numbers?",
+      body: "Every driver's situation is different, and the best way to understand what an EV would actually cost you is to run the numbers based on your own circumstances. Our EV vs petrol calculator lets you enter your driving distance, your local electricity and fuel prices, the purchase prices you're considering, and more. It will show you a personalised break-even point and five-year cost comparison so you can see exactly where you stand. No guesswork, just clear numbers to help you make the decision that's right for you."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
