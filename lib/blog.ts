@@ -1629,6 +1629,85 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "road-tax-and-registration-fees-for-evs-vs-petrol-cars-around",
+  title: "Road tax and registration fees for EVs vs petrol cars around the world",
+  excerpt: "Wondering how Australia's EV road taxes and registration fees stack up against the rest of the world? We break down what drivers in different countries pay and what it means for your hip pocket.",
+  date: "August 9, 2026",
+  readTime: "7 min read",
+  category: "Regulation",
+  tags: ["road tax", "registration fees", "EV", "petrol", "Australia", "international comparison", "electric vehicles"],
+  content: [
+    {
+      heading: "Why road tax and registration fees matter for EV buyers",
+      body: "When you're weighing up whether to switch to an electric vehicle, the purchase price and charging costs get most of the attention. But registration fees and road user charges can add up to hundreds or even thousands of dollars over a vehicle's lifetime. As governments around the world scramble to replace falling fuel excise revenue, the rules around how EVs are taxed on the road are changing fast. Whether you're curious about what Australians pay compared to drivers in the US, UK, or Norway, or you just want to understand your own state's rules better, this guide has you covered."
+    },
+    {
+      heading: "How Australia handles EV road taxes",
+      body: "Australia's approach to EV road costs is a patchwork of state and territory rules, which can make it confusing. Historically, EV drivers benefited from lower registration costs in some states and avoided fuel excise altogether. However, that's been changing. Several states introduced kilometre-based road user charges for zero and low-emission vehicles, though the High Court struck down Victoria's scheme in 2023, ruling that only the federal government can levy such a charge. Since then, the federal government has been working on a national framework, but progress has been gradual.",
+    },
+    {
+      heading: "State-by-state snapshot for Australian EV owners",
+      body: "Registration fees in Australia are set by each state and territory. Here's a rough overview of how EVs are treated compared to equivalent petrol vehicles as of mid-2026.",
+      table: {
+        headers: ["State/Territory", "EV registration fee (approx.)", "Petrol equivalent (approx.)", "Road user charge for EVs"],
+        rows: [
+          ["New South Wales", "$400 per year", "$400 per year", "Federal scheme applies"],
+          ["Victoria", "$450 per year", "$450 per year", "Federal scheme applies"],
+          ["Queensland", "$350 per year", "$350 per year", "Federal scheme applies"],
+          ["South Australia", "$380 per year", "$380 per year", "Federal scheme applies"],
+          ["Western Australia", "$370 per year", "$370 per year", "Federal scheme applies"],
+          ["Tasmania", "$310 per year", "$310 per year", "Federal scheme applies"],
+          ["ACT", "$0 (zero-emission vehicles exempt)", "$320 per year", "Federal scheme applies"],
+          ["Northern Territory", "$290 per year", "$290 per year", "Federal scheme applies"]
+        ]
+      }
+    },
+    {
+      callout: {
+        type: "info",
+        text: "The ACT continues to offer free registration for zero-emission vehicles as part of its broader EV incentive package. If you're based in Canberra, this is a meaningful ongoing saving worth factoring into your total cost of ownership."
+      }
+    },
+    {
+      heading: "How other countries tax EVs on the road",
+      body: "Australia is far from alone in grappling with how to fairly tax EVs. Here's how a selection of countries approach the question.",
+      list: [
+        "United States: No federal road user charge for EVs exists yet, but over 30 states have introduced flat annual EV fees ranging from around USD $50 to $225 on top of standard registration. These fees are designed to compensate for lost fuel tax revenue.",
+        "United Kingdom: EVs pay zero Vehicle Excise Duty (road tax) up until April 2025, after which the government began phasing in standard rates. By 2026, most EVs pay the same annual road tax as petrol cars, roughly GBP $190 per year.",
+        "Norway: Norway is the global leader in EV adoption and has kept EV costs low. EVs pay a reduced annual registration fee and have historically been exempt from many tolls, though some of those benefits have been wound back to manage congestion.",
+        "Germany: Annual vehicle tax (Kraftfahrzeugsteuer) is waived for EVs registered before a certain date, with newer EVs still receiving significant discounts. Petrol cars pay based on engine size and emissions.",
+        "Netherlands: EVs are exempt from the annual motor vehicle tax (MRB) through a series of extensions, though partial rates began applying from 2025. The government is gradually reducing the gap between EV and petrol car tax treatment.",
+        "New Zealand: New Zealand introduced a road user charge for EVs in 2024 after previously exempting them. Light EVs now pay NZD $76 per 1,000 km, which is lower than the equivalent diesel rate.",
+        "China: EVs are exempt from the annual vehicle and vessel tax in most provinces, which has been a meaningful incentive alongside purchase subsidies.",
+        "Canada: No federal road user charge for EVs, but provincial registration fees vary widely. Some provinces offer reduced fees for EVs as part of their green vehicle incentive programs."
+      ]
+    },
+    {
+      heading: "The fuel excise gap: why governments are chasing EV drivers",
+      body: "In Australia, the federal government collects fuel excise of around 50 cents per litre on petrol and diesel. As more drivers switch to EVs, that revenue shrinks. The Australian government currently collects billions of dollars annually from fuel excise, which funds roads and other infrastructure. EVs contribute nothing to that pool directly. This is the core reason why road user charges for EVs are becoming more common globally. The debate is really about fairness: should EV drivers pay for the roads they use? Most policy makers say yes, but the design of the charge matters a lot. A flat annual fee hits low-mileage drivers harder, while a per-kilometre charge is more closely tied to actual road use."
+    },
+    {
+      heading: "What this means for your total cost of ownership",
+      body: "Registration fees and road user charges might seem like a minor line item compared to fuel or loan repayments, but they compound over time. If you keep a car for ten years, a $500 annual saving on registration adds up to $5,000. Conversely, a new road user charge of 2.5 cents per kilometre on a car driven 15,000 km per year works out to $375 per year, or $3,750 over a decade. These numbers are worth plugging into a proper calculator rather than estimating in your head.",
+      callout: {
+        type: "tip",
+        text: "Use our EV vs petrol cost calculator at ev-vs-petrol-calc.com to include registration fees, road user charges, fuel costs, and depreciation in one place. Getting a complete picture is the best way to make a confident decision."
+      }
+    },
+    {
+      heading: "What to watch for in the coming years",
+      body: "The regulatory landscape for EV road taxes is moving quickly, both in Australia and globally. Here are the key trends worth keeping an eye on.",
+      list: [
+        "A national Australian road user charge framework is expected to be finalised and rolled out progressively over the next few years, replacing the current state-by-state uncertainty.",
+        "Registration fee concessions for EVs in states like the ACT may be reviewed as EV uptake grows and budget pressures increase.",
+        "More countries are moving toward usage-based charging rather than flat fees, which tends to be fairer for low-mileage drivers and better reflects actual infrastructure wear.",
+        "GPS-based road pricing pilots are underway in several countries, which could eventually replace fuel excise entirely with a more granular per-kilometre or even per-road charge.",
+        "Fleet and commercial vehicle rules are often different from private car rules, so business owners should check the specific treatment for their state and vehicle type."
+      ]
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
