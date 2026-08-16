@@ -1708,6 +1708,85 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-home-charging-affects-your-electric-car-running-costs",
+  title: "How home charging affects your electric car running costs",
+  excerpt: "Charging your EV at home is one of the biggest factors in keeping running costs low. Here is what Australian drivers need to know about tariffs, timing, and real savings.",
+  date: "August 16, 2026",
+  readTime: "6 min read",
+  category: "Tips",
+  tags: ["home charging", "running costs", "electricity tariffs", "EV savings", "Australia"],
+  content: [
+    {
+      heading: "Why home charging matters so much for your running costs",
+      body: "If you have switched to an electric vehicle or are thinking about it, you have probably already seen the comparison figures for fuel versus electricity. But those numbers can be misleading if they are based on public charging rates. The real savings for most Australian EV drivers come from charging at home, overnight, using your own electricity plan. Getting this right can mean the difference between spending roughly the same as a petrol car or cutting your driving costs by more than half."
+    },
+    {
+      heading: "Understanding your electricity tariff",
+      body: "Not all electricity plans are equal, and the one you are currently on may not be the best fit for an EV owner. In Australia, the main tariff types you will encounter are flat-rate, time-of-use, and demand tariffs. Each affects your EV charging costs in a different way.",
+      list: [
+        "Flat-rate tariffs charge the same rate per kilowatt-hour (kWh) no matter when you use power. Simple, but you miss out on cheaper off-peak windows.",
+        "Time-of-use (TOU) tariffs charge different rates depending on the time of day. Off-peak periods, usually late at night and early morning, can be significantly cheaper.",
+        "Demand tariffs charge based on your peak power draw in a given period. These can work against EV owners who charge quickly at high power levels.",
+        "Solar feed-in tariffs can offset your charging costs if you have rooftop solar and use a smart charger to store or redirect that energy."
+      ]
+    },
+    {
+      heading: "What does home charging actually cost?",
+      body: "To give you a realistic picture, here is a comparison based on typical Australian electricity rates and a common mid-size EV with an energy consumption of around 18 kWh per 100 km.",
+      table: {
+        headers: ["Charging scenario", "Rate (per kWh)", "Cost per 100 km", "Cost per 15,000 km/year"],
+        rows: [
+          ["Flat-rate tariff", "$0.30", "$5.40", "$810"],
+          ["TOU off-peak charging", "$0.15", "$2.70", "$405"],
+          ["Solar self-consumption", "$0.05 (approx.)", "$0.90", "$135"],
+          ["Public DC fast charger", "$0.65", "$11.70", "$1,755"]
+        ]
+      }
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you are on a flat-rate tariff and charging at home, switching to a time-of-use plan and scheduling your EV to charge overnight could cut your annual charging bill by around 50 per cent without changing anything else."
+      }
+    },
+    {
+      heading: "How to make the most of off-peak charging",
+      body: "Most modern EVs and home chargers let you schedule charging to start at a specific time. This means you can plug in when you get home in the evening and set the car to begin drawing power after 10 pm or 11 pm, when off-peak rates kick in for most TOU plans. Here are some practical steps to get started.",
+      list: [
+        "Check your current electricity plan and look up when off-peak periods apply in your state or territory.",
+        "Contact your energy retailer and ask whether switching to a TOU plan makes sense for your usage pattern.",
+        "Use your EV's built-in scheduling feature or a smart charger app to set a charging window that aligns with off-peak hours.",
+        "If you have solar panels, talk to your installer or retailer about a plan that lets you maximise self-consumption during the day and off-peak charging at night.",
+        "Monitor your electricity bills for the first couple of months after switching to make sure the new plan is delivering savings."
+      ]
+    },
+    {
+      heading: "The role of solar panels and battery storage",
+      body: "For Australian homeowners with rooftop solar, the maths gets even more interesting. If you can charge your EV during the day while solar panels are generating power, you are effectively using near-free electricity rather than exporting it to the grid for a modest feed-in tariff. Home battery storage takes this a step further, letting you store solar energy during the day and use it to charge your car overnight. The upfront cost of a home battery system is still significant, but for high-mileage drivers the payback period is shortening as battery prices continue to fall."
+    },
+    {
+      heading: "Things to watch out for",
+      body: "Home charging is not without its considerations. A few things worth keeping in mind before you assume the cheapest possible rate is always achievable.",
+      list: [
+        "Demand tariffs can catch EV owners off guard. If your plan charges based on peak demand, adding a 7 kW home charger to your evening routine could push up your bill unexpectedly.",
+        "Older homes may need a switchboard upgrade before a Level 2 charger can be safely installed, adding to the upfront cost.",
+        "Renters face real barriers since installing a home charger depends on landlord approval and is not always possible.",
+        "If you live in an apartment, body corporate rules and shared electrical infrastructure can complicate home charging significantly."
+      ]
+    },
+    {
+      callout: {
+        type: "warning",
+        text: "Before signing up for a new electricity plan based on EV charging, check whether your property's wiring and switchboard can support a dedicated home charger circuit. An electrician can assess this quickly and it is worth doing before you commit."
+      }
+    },
+    {
+      heading: "Use our calculator to see your own numbers",
+      body: "The figures in this article are illustrative, but your actual savings depend on your specific electricity plan, your EV's efficiency, how many kilometres you drive each year, and whether you have solar. Our EV vs petrol running cost calculator lets you plug in your own details, including your home electricity rate and estimated charging split between home and public chargers, so you can see a personalised cost comparison. Small changes to your charging habits can have a surprisingly large effect on your annual running costs, and seeing the numbers for your own situation is the best way to decide where to focus."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
