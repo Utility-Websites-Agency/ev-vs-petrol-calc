@@ -1787,6 +1787,92 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "petrol-car-maintenance-costs-vs-electric-car-maintenance-cos",
+  title: "Petrol car maintenance costs vs electric car maintenance costs explained",
+  excerpt: "Wondering how much you'll actually save on servicing by switching to an EV? We break down the real maintenance costs for petrol and electric cars in Australia so you can make an informed decision.",
+  date: "August 23, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["maintenance", "electric vehicles", "petrol cars", "running costs", "Australia", "EV savings"],
+  content: [
+    {
+      heading: "Why maintenance costs matter more than most people think",
+      body: "When Australians compare petrol cars to electric vehicles, the conversation usually starts and ends with the purchase price or fuel savings. But maintenance is one of the biggest ongoing costs of owning any vehicle, and it's an area where EVs have a genuinely significant advantage. Over a five or ten year ownership period, the difference in servicing bills can easily run into thousands of dollars. Understanding where those savings come from helps you make a smarter buying decision and gives you a clearer picture of the true cost of ownership.",
+    },
+    {
+      heading: "What petrol car servicing actually costs",
+      body: "Petrol vehicles have complex engines with hundreds of moving parts, and keeping them running reliably requires regular, often expensive, servicing. Here's a look at the typical maintenance items petrol car owners deal with:",
+      list: [
+        "Oil and filter changes every 10,000 to 15,000 km, costing $100 to $300 per service depending on the vehicle",
+        "Spark plug replacement every 30,000 to 100,000 km, typically $150 to $400",
+        "Timing belt or chain service every 60,000 to 100,000 km, which can cost $600 to $1,500",
+        "Coolant flush every two to five years, around $100 to $200",
+        "Transmission fluid changes every 60,000 to 100,000 km, costing $150 to $400",
+        "Air filter replacement, roughly $50 to $150 every 15,000 to 30,000 km",
+        "Brake pad and rotor replacement, typically $300 to $800 per axle",
+        "Exhaust system repairs as the vehicle ages, potentially hundreds to thousands of dollars",
+      ],
+    },
+    {
+      heading: "What electric car servicing actually costs",
+      body: "Electric vehicles have far fewer moving parts than petrol cars. There's no combustion engine, no oil, no spark plugs, no timing belt, and no traditional gearbox. This dramatically reduces both the frequency and cost of servicing. A typical EV service in Australia involves checking and topping up brake fluid, inspecting tyres, rotating wheels, and checking cabin air filters. Some manufacturers recommend annual check-ups that cost anywhere from $150 to $400. The big-ticket mechanical items that regularly hit petrol car owners simply don't exist in an EV. Brake wear is also reduced because EVs use regenerative braking, which means the friction brakes are used much less often. Many EV owners report their brake pads lasting well over 100,000 km.",
+      callout: {
+        type: "tip",
+        text: "If you drive a lot of city kilometres with plenty of stop-start traffic, regenerative braking gives EVs an even bigger advantage. Your brake pads could last the life of the vehicle in some cases.",
+      },
+    },
+    {
+      heading: "Side-by-side cost comparison",
+      body: "To give you a clearer sense of the numbers, here's a rough comparison of typical maintenance costs over five years for a mid-range petrol car versus a comparable EV, assuming around 15,000 km per year of driving.",
+      table: {
+        headers: ["Maintenance item", "Petrol car (5 years)", "Electric car (5 years)"],
+        rows: [
+          ["Oil and filter changes", "$750 to $1,500", "Not applicable"],
+          ["Spark plug replacement", "$150 to $400", "Not applicable"],
+          ["Timing belt or chain", "$600 to $1,500", "Not applicable"],
+          ["Transmission service", "$150 to $400", "Not applicable"],
+          ["Brake pad replacement", "$300 to $800", "$0 to $300 (reduced wear)"],
+          ["Coolant and fluid flushes", "$200 to $400", "$100 to $200"],
+          ["Tyre rotation and checks", "$200 to $400", "$200 to $400"],
+          ["General annual service fees", "$750 to $1,500", "$750 to $2,000"],
+          ["Estimated total", "$3,100 to $6,900", "$1,050 to $2,900"],
+        ],
+      },
+    },
+    {
+      heading: "The battery question",
+      body: "The one area where EVs introduce a unique cost concern is the battery pack. Battery replacement is expensive, with costs typically ranging from $10,000 to $20,000 or more depending on the vehicle. However, most modern EV batteries are designed to last 150,000 to 300,000 km or more, and Australian consumer law provides strong protections under the Australian Consumer Law if a battery fails prematurely. Most manufacturers also offer battery warranties of eight years or around 160,000 km. As battery technology matures and second-hand battery markets develop, replacement costs are expected to fall significantly. For the majority of drivers, battery replacement during their ownership period is unlikely.",
+      callout: {
+        type: "info",
+        text: "Under Australian Consumer Law, a major failure in a vehicle component like a battery entitles you to a repair, replacement, or refund regardless of whether a manufacturer's warranty is still active. Keep records of your battery health over time.",
+      },
+    },
+    {
+      heading: "Other running costs worth factoring in",
+      body: "Maintenance is just one piece of the puzzle. When comparing the total cost of running a petrol car versus an EV in Australia, you should also consider the following:",
+      list: [
+        "Fuel versus electricity costs: electricity is generally cheaper per kilometre than petrol, particularly if you charge at home on an off-peak tariff",
+        "Registration costs: these vary by state and are generally similar for both vehicle types, though some states previously offered registration discounts for EVs",
+        "Insurance: EV insurance premiums can be slightly higher due to repair costs, though this gap is narrowing as the market matures",
+        "Stamp duty: some Australian states and territories have reduced or removed stamp duty concessions for EVs, so check what applies in your state",
+        "Charging infrastructure costs: installing a home charger typically costs $1,000 to $2,000 upfront but pays off quickly through cheaper home charging rates",
+      ],
+    },
+    {
+      heading: "How to calculate your own savings",
+      body: "Everyone's situation is different. How much you drive, the type of vehicle you're comparing, your local electricity rates, and how long you plan to keep the car all affect the outcome. Our EV vs petrol calculator at ev-vs-petrol-calc.com lets you plug in your specific numbers to get a personalised estimate of how much you could save on fuel and maintenance by switching to an electric vehicle. You can adjust your annual kilometres, fuel price, electricity tariff, and vehicle type to see how the numbers stack up for your situation. The maintenance savings alone are often enough to shift the total cost of ownership firmly in favour of an EV, even when the purchase price is higher.",
+      callout: {
+        type: "tip",
+        text: "Try running a comparison with our calculator using your actual annual kilometres and local electricity rate. Many drivers are surprised to find the EV breaks even sooner than they expected once maintenance savings are included.",
+      },
+    },
+    {
+      heading: "The bottom line",
+      body: "Petrol cars carry a genuine and ongoing maintenance burden that adds up significantly over time. Electric vehicles are simpler machines with fewer components that wear out, which translates into real, measurable savings for Australian drivers. While EVs have their own cost considerations, particularly around battery technology and upfront purchase price, the servicing advantage is hard to ignore. For anyone doing the sums on whether an EV makes financial sense, maintenance costs deserve to be front and centre in the calculation.",
+    },
+  ],
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
