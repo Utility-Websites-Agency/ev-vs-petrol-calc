@@ -1873,6 +1873,76 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   ],
 },
+  {
+  slug: "the-best-time-to-switch-from-a-petrol-car-to-an-electric-car",
+  title: "The best time to switch from a petrol car to an electric car based on costs",
+  excerpt: "Thinking about making the switch to an EV but not sure if the timing is right? We break down the financial signals that tell you when it actually makes sense to go electric.",
+  date: "August 31, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "petrol cars", "EV costs", "Australia", "cost comparison", "fuel savings", "EV incentives"],
+  content: [
+    {
+      heading: "Is now the right time to switch?",
+      body: "It is one of the most common questions we hear from Australian drivers: when does it actually make financial sense to swap a petrol car for an electric one? The honest answer is that it depends on your individual situation, but there are some clear signals that the numbers are swinging in favour of EVs more than ever before. In this post, we walk through the key cost factors so you can make a confident, well-timed decision.",
+    },
+    {
+      heading: "The true cost of keeping your petrol car",
+      body: "Before you can decide when to switch, you need to understand what your current petrol car is actually costing you. Most drivers underestimate this because they only think about fuel at the bowser. The real number includes fuel, servicing, registration, insurance and depreciation. In Australia, the average petrol car costs between $12,000 and $18,000 per year to own and run when you factor everything in. Petrol prices have remained volatile, regularly pushing above $2.00 per litre in capital cities, and servicing costs for combustion engines tend to climb as a car ages.",
+    },
+    {
+      heading: "What an EV actually costs to run in Australia",
+      body: "Electric vehicles have a higher upfront purchase price on average, but their running costs are significantly lower. Electricity is cheaper than petrol on a per-kilometre basis in every Australian state. Home charging overnight on an off-peak rate can bring your fuel equivalent cost down to around two to four cents per kilometre, compared to roughly twelve to fifteen cents per kilometre for a typical petrol car. EVs also have fewer moving parts, which means less servicing. No oil changes, no timing belts, no exhaust repairs. Annual servicing costs for EVs typically run between $150 and $400, versus $800 to $1,500 for petrol vehicles.",
+    },
+    {
+      heading: "Signs it is the right time to switch",
+      body: "Rather than picking an arbitrary year, look for these personal and market signals that indicate the switch will pay off sooner rather than later.",
+      list: [
+        "Your current petrol car is coming up for a major service or needs expensive repairs, making the total cost of holding it much higher.",
+        "You drive more than 15,000 kilometres per year, which means your fuel savings will accumulate quickly and shorten the EV payback period.",
+        "You have access to home charging, either through an existing solar system or a standard power outlet, which dramatically reduces your charging costs.",
+        "You are buying or leasing a new car anyway, so the comparison is EV purchase price versus petrol purchase price, not EV versus a car you already own outright.",
+        "Your employer offers a novated lease arrangement, which can save you tens of thousands in tax on an eligible EV under the current FBT exemption.",
+        "State-based incentives or rebates are available in your state, such as stamp duty exemptions or purchase rebates, reducing your upfront cost.",
+        "The resale value of your current petrol car is still reasonable, giving you a strong trade-in to offset the EV purchase price.",
+      ],
+    },
+    {
+      heading: "The payback period: how long until an EV saves you money",
+      body: "The payback period is the time it takes for your running cost savings to offset the higher purchase price of an EV compared with an equivalent petrol car. In Australia in 2026, the gap between EV and petrol vehicle purchase prices has narrowed considerably, with a number of popular EVs now priced under $50,000 before on-road costs. For a driver covering 20,000 kilometres per year, switching from a mid-size petrol SUV to a comparable EV can deliver annual savings of $2,500 to $4,500 on fuel and servicing alone. That puts the payback period at roughly three to six years depending on the price difference, your electricity rate and how much you drive.",
+      callout: {
+        type: "tip",
+        text: "Use our EV vs petrol calculator to plug in your exact driving distance, postcode and current fuel spend. It will calculate your personalised payback period in under two minutes.",
+      },
+    },
+    {
+      heading: "When it might be better to wait",
+      body: "Switching to an EV is not always the right move right now for every driver. There are situations where holding off makes more financial sense.",
+      list: [
+        "You have a petrol car that is paid off and in good mechanical condition, and you only drive short distances each week. Your savings will be modest and the payback period will stretch out.",
+        "You live in a regional or rural area without reliable access to public fast chargers and no ability to charge at home. Range anxiety becomes a real practical concern.",
+        "You are planning to sell or move in the next year or two and your living situation will change significantly. Wait until your circumstances are more settled.",
+        "The specific EV model you want has a long wait time, and a newer, cheaper model is expected to land in Australia within six to twelve months.",
+      ],
+    },
+    {
+      heading: "How Australian incentives affect your timing",
+      body: "Federal and state-level policy continues to shape the financial case for EVs in Australia. The Commonwealth FBT exemption for eligible battery electric vehicles under the luxury car tax threshold remains in place as of mid-2026, making novated leases a powerful option for employees. Several states also continue to offer stamp duty concessions or upfront rebates. These incentives are not guaranteed to last forever, and some state schemes have already wound back as EV uptake has grown. If an incentive that applies to you is still available, that is a strong reason to act sooner rather than later.",
+      callout: {
+        type: "warning",
+        text: "Incentive schemes change regularly. Always check the current status of federal and state EV incentives before making a purchasing decision, as eligibility rules and funding caps can shift quickly.",
+      },
+    },
+    {
+      heading: "The bottom line",
+      body: "The best time to switch to an EV is when your individual numbers add up, not simply because it is a popular thing to do. For most Australians who drive regularly, have access to home charging and are in the market for a new or near-new car, 2026 is genuinely one of the most compelling years to make the move. Prices are down, model choice is up, and the running cost savings are real. Start by calculating your own numbers using our free calculator, and you will have a clear, honest picture of what the switch means for your wallet.",
+      callout: {
+        type: "info",
+        text: "Our calculator is free to use and requires no sign-up. Enter your current car details, your annual kilometres and your electricity rate to get a personalised cost comparison in seconds.",
+      },
+    },
+  ],
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
