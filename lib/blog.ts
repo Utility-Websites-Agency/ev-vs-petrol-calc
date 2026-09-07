@@ -1943,6 +1943,81 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   ],
 },
+  {
+  slug: "the-real-cost-of-public-ev-charging-vs-filling-up-at-a-petro",
+  title: "The real cost of public EV charging vs filling up at a petrol station",
+  excerpt: "Thinking about switching to an EV but not sure how the numbers stack up at a public charger compared to the servo? We break down the real costs for Australian drivers in 2026.",
+  date: "September 7, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["EV charging", "petrol costs", "public charging", "running costs", "Australia", "electric vehicles"],
+  content: [
+    {
+      heading: "Why this comparison matters more than ever",
+      body: "One of the most common questions we get from Australian drivers considering an EV is whether public charging is actually cheaper than petrol. It sounds like it should be a simple yes, but the honest answer is: it depends. Home charging is almost always cheaper than petrol, but public charging is a different story. With electricity prices rising across most states and public charging networks expanding rapidly, the gap between filling up at a servo and topping up at a public charger has narrowed considerably. This post cuts through the noise and gives you real numbers to work with."
+    },
+    {
+      heading: "How petrol costs are calculated",
+      body: "When you pull into a petrol station, the cost is straightforward. You pay a cents-per-litre price and your car consumes a certain number of litres per 100 km. As of mid-2026, unleaded petrol in Australian capital cities is averaging around $2.05 per litre, though prices vary significantly between cities and regional areas. A typical medium-sized petrol car uses around 8 to 10 litres per 100 km. At $2.05 per litre, that works out to roughly $16.40 to $20.50 per 100 km. For a driver covering 15,000 km per year, you are looking at fuel costs somewhere between $2,460 and $3,075 annually."
+    },
+    {
+      heading: "How public EV charging costs are calculated",
+      body: "Public EV charging is priced in a few different ways depending on the network and charger type, which is where things get a little more complicated. Most DC fast chargers in Australia now charge per kilowatt-hour (kWh), which is the most consumer-friendly model. Some older or council-run chargers still offer free charging, though these are becoming rarer. A typical medium-sized EV uses around 15 to 18 kWh per 100 km. Public DC fast charger rates across major Australian networks currently sit between $0.45 and $0.65 per kWh. Using a midpoint of $0.55 per kWh, that works out to roughly $8.25 to $9.90 per 100 km. Over 15,000 km per year, that is approximately $1,238 to $1,485 in public charging costs."
+    },
+    {
+      heading: "A side-by-side cost comparison",
+      table: {
+        headers: ["", "Petrol car", "EV on public charging"],
+        rows: [
+          ["Average energy cost", "$2.05 per litre", "$0.55 per kWh"],
+          ["Consumption per 100 km", "9 litres", "16.5 kWh"],
+          ["Cost per 100 km", "$18.45", "$9.08"],
+          ["Annual cost (15,000 km)", "$2,768", "$1,361"],
+          ["Annual saving vs petrol", "N/A", "~$1,400"]
+        ]
+      }
+    },
+    {
+      heading: "The hidden factors that affect the real cost",
+      body: "The numbers above tell a compelling story, but a few real-world factors can shift the equation for individual drivers.",
+      list: [
+        "Idle fees: Many public chargers now charge a per-minute fee once your vehicle is fully charged and still occupying the bay. These can add up quickly if you forget to move your car.",
+        "Session fees: Some networks charge a flat connection fee of $1 to $2 on top of the per-kWh rate, which hurts short top-up sessions more than long ones.",
+        "Subscription plans: Networks like Chargefox and Evie offer monthly plans that reduce the per-kWh rate significantly. If you charge publicly often, these can save you a decent amount.",
+        "Charging speed and efficiency: Charging at very high speeds (150 kW or above) can slightly reduce your battery's efficiency over time, meaning more kWh consumed per 100 km in the long run.",
+        "Regional pricing variation: Charging rates vary between states. South Australian and Queensland chargers tend to be slightly more expensive than those in Victoria and NSW.",
+        "Time-of-use pricing: A small number of public chargers now offer cheaper rates during off-peak hours, typically overnight or early morning."
+      ]
+    },
+    {
+      callout: {
+        type: "info",
+        text: "Most EV drivers in Australia do the majority of their charging at home overnight, where costs typically sit between $0.10 and $0.22 per kWh depending on your electricity plan and state. Public charging is generally used for longer trips or top-ups on the go. If you can charge mostly at home, your annual fuel equivalent cost drops dramatically compared to the public-only figures shown above."
+      }
+    },
+    {
+      heading: "When public charging can cost more than petrol",
+      body: "It might seem counterintuitive, but there are scenarios where relying heavily on public DC fast charging can end up costing more per kilometre than petrol. If you are driving a less efficient EV that uses 22 kWh or more per 100 km, and you are paying $0.65 per kWh at a premium fast charger, you are paying around $14.30 per 100 km. That is still below the average petrol cost, but the margin is much smaller than many EV advocates suggest. Add in a $2 session fee on short stops and the occasional idle fee, and a heavy public charging habit can start to look less impressive financially. The key takeaway is that EVs deliver their biggest cost advantage when combined with regular home charging."
+    },
+    {
+      heading: "How to calculate your own break-even point",
+      body: "Everyone's driving habits are different, so the best way to understand your personal costs is to run the numbers based on your own situation. Our calculator at ev-vs-petrol-calc.com lets you plug in your specific postcode, your current petrol spend, your likely home charging rate, and how often you would rely on public chargers. It then gives you a personalised estimate of annual savings and a break-even timeline that accounts for the higher purchase price of an EV. A few inputs that are worth gathering before you calculate:",
+      list: [
+        "Your current average fuel spend per month in dollars",
+        "Your average kilometres driven per year",
+        "Your home electricity tariff in cents per kWh (check your last bill)",
+        "The percentage of charging you expect to do at home versus in public",
+        "The purchase price difference between your current car and the EV you are considering"
+      ]
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you live in an apartment or do not have off-street parking, home charging may not be an option right now. In that case, factor in the full public charging cost when using the calculator. Workplace charging, where available, can bridge the gap and is often free or subsidised by employers, so it is worth checking if your employer offers this perk before writing off an EV purchase."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
