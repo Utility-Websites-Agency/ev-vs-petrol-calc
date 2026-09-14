@@ -2018,6 +2018,79 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "the-real-cost-of-public-ev-charging-vs-filling-up-at-a-petro",
+  title: "The real cost of public EV charging vs filling up at a petrol station",
+  excerpt: "Thinking about switching to an EV but unsure how public charging costs stack up against a trip to the bowser? We break down the real numbers for Australian drivers.",
+  date: "September 14, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["EV charging", "petrol costs", "running costs", "Australia", "electric vehicles", "fuel comparison"],
+  content: [
+    {
+      heading: "Why this comparison matters more than ever",
+      body: "One of the biggest questions Australian drivers ask before making the switch to an electric vehicle is whether charging costs will actually save them money. Home charging is usually the cheap and easy answer, but what about when you are on the road and relying on public chargers? That is where things get more complicated. Public charging rates vary enormously depending on the network, the charger type, your location, and even the time of day. Meanwhile, petrol prices have been bouncing around between $1.80 and $2.20 per litre in most Australian capitals through 2026. To make a genuinely useful comparison, we need to look at what you are actually paying per 100 kilometres, not just the price on the screen at the charger or the bowser.",
+    },
+    {
+      heading: "How public EV charging is priced in Australia",
+      body: "Unlike petrol, which is priced per litre at a consistent unit everywhere, public EV charging can be billed in several different ways depending on the network. This inconsistency is one of the most frustrating things for EV drivers trying to budget their trips.",
+      list: [
+        "Per kilowatt-hour (kWh): The most transparent method, similar to how your home electricity bill works. Common on networks like Chargefox and Evie Networks.",
+        "Per minute: Charged based on how long your car is plugged in, regardless of how fast it is actually charging. This can be expensive if your car charges slowly.",
+        "Per session: A flat fee per charge, sometimes combined with a per-kWh or per-minute rate.",
+        "Subscription models: Some networks offer monthly memberships that reduce the per-kWh rate significantly for frequent users.",
+        "Free charging: Still available at some shopping centres, councils, and dealerships, though becoming less common.",
+      ],
+    },
+    {
+      heading: "What public charging actually costs per 100 km",
+      body: "To make a fair comparison, we need to convert everything into a cost per 100 kilometres. A typical modern EV in Australia consumes somewhere between 15 and 20 kWh per 100 km. Let us use 17 kWh/100 km as a reasonable middle-ground figure for a mid-size EV like a Tesla Model 3 or BYD Atto 3. Public DC fast charger rates in 2026 are sitting around $0.45 to $0.65 per kWh on most major networks, though some premium locations charge up to $0.79 per kWh. Using $0.55 per kWh as an average, you are looking at roughly $9.35 per 100 km on public charging. At the budget end of $0.45 per kWh, that drops to around $7.65 per 100 km. At the expensive end of $0.75 per kWh, it climbs to $12.75 per 100 km.",
+      table: {
+        headers: ["Charging rate (per kWh)", "Cost per 100 km (17 kWh/100 km)"],
+        rows: [
+          ["$0.45 (budget network)", "$7.65"],
+          ["$0.55 (average network)", "$9.35"],
+          ["$0.65 (premium network)", "$11.05"],
+          ["$0.75 (expensive location)", "$12.75"],
+        ],
+      },
+    },
+    {
+      heading: "How petrol costs compare per 100 km",
+      body: "For petrol vehicles, the same per-100-km calculation applies. A medium-sized petrol car like a Toyota Corolla or Mazda 3 uses roughly 7 to 8 litres per 100 km. An SUV or larger vehicle might use 10 to 12 litres per 100 km. With unleaded petrol averaging around $1.95 per litre in Australian capital cities in mid-2026, here is what that looks like in practice. A fuel-efficient petrol car at 7 litres per 100 km costs approximately $13.65 per 100 km. An average family sedan at 9 litres per 100 km costs around $17.55 per 100 km. A larger SUV at 11 litres per 100 km comes in at roughly $21.45 per 100 km. Even using a mid-range public charger, an EV is generally cheaper to run per kilometre than an equivalent petrol vehicle. The gap narrows if you are using premium fast chargers, but it rarely disappears entirely.",
+    },
+    {
+      heading: "The hidden factors that affect the real comparison",
+      body: "Raw per-kilometre costs only tell part of the story. There are several other factors that can shift the balance one way or the other for Australian drivers.",
+      list: [
+        "Idle fees: Many public charging networks now charge a fee if you leave your car plugged in after it has finished charging. These can add up quickly if you forget to move the car.",
+        "Network membership fees: If you pay a monthly subscription to get cheaper charging rates, that fixed cost needs to be factored into your overall spend.",
+        "Charging speed and your car: A slower on-board charger means more time on a per-minute priced charger, even if the power delivered is the same.",
+        "Regional vs city pricing: Charging in regional Australia can be more expensive due to fewer competing networks and higher infrastructure costs.",
+        "Petrol price cycles: Australian petrol prices follow well-known weekly cycles. Experienced drivers fill up at the bottom of the cycle and can save 20 to 30 cents per litre compared to peak prices.",
+        "EV efficiency in extreme temperatures: EVs lose range in very cold or very hot weather, which means more charging stops and higher costs on long summer or winter road trips.",
+      ],
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you are planning a long road trip, try to map your charging stops using a network that bills per kWh rather than per minute. At a busy DC fast charger, charging speeds can sometimes drop due to thermal management or network load sharing, and you do not want to be paying for time you are not getting energy.",
+      },
+    },
+    {
+      heading: "When public charging beats petrol, and when it does not",
+      body: "Public EV charging almost always beats petrol on a pure per-kilometre cost basis for efficient EVs compared against average or larger petrol cars. The scenario where public charging becomes less attractive is when you are comparing it to a very fuel-efficient petrol hybrid or small city car, or when you are stuck using premium-priced ultra-fast chargers for every single charge because you have no access to home charging. For drivers who live in apartments without charging infrastructure and rely entirely on public networks, the cost advantage of an EV shrinks considerably. In some edge cases, particularly with older EVs that have higher consumption figures and frequent use of expensive chargers, the running costs can actually be comparable to a petrol vehicle. This is worth factoring in honestly before making the switch.",
+      callout: {
+        type: "warning",
+        text: "If you live in an apartment and cannot charge at home, make sure you model your charging costs based on public network rates before assuming an EV will save you money. The savings are real for most drivers, but not guaranteed for everyone.",
+      },
+    },
+    {
+      heading: "Use our calculator to get your personalised estimate",
+      body: "Every driver's situation is different. Your vehicle's real-world consumption, your local charging network options, how often you drive long distances, and whether you have home charging all affect the final number. Rather than relying on rough averages, use the ev-vs-petrol-calc.com calculator to plug in your own figures. You can enter your EV model or estimated consumption, the public charging rate you typically pay, your current petrol price, and your weekly driving distance to get a clear side-by-side cost comparison tailored to your actual driving life. The goal is not to tell you EVs are always cheaper or always more expensive. It is to give you the honest numbers so you can make the right call for your situation.",
+    },
+  ],
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
