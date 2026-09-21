@@ -2091,6 +2091,90 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   ],
 },
+  {
+  slug: "insurance-costs-for-electric-cars-vs-petrol-cars-what-to-exp",
+  title: "Insurance costs for electric cars vs petrol cars: what to expect",
+  excerpt: "Wondering whether insuring an electric car will cost you more than a petrol one? We break down the key differences, what drives the premiums, and how to keep your costs in check.",
+  date: "September 21, 2026",
+  readTime: "6 min read",
+  category: "Tips",
+  tags: ["insurance", "electric cars", "petrol cars", "running costs", "Australia", "EV ownership"],
+  content: [
+    {
+      heading: "Is EV insurance more expensive in Australia?",
+      body: "The short answer is yes, in most cases electric vehicles currently attract higher insurance premiums than comparable petrol cars in Australia. But the gap is narrowing, and how much you pay depends on a wide range of factors beyond just what powers your car. Understanding those factors can help you shop smarter and avoid paying more than you need to."
+    },
+    {
+      heading: "Why electric cars tend to cost more to insure",
+      body: "Insurance premiums are essentially a reflection of risk and repair costs. Electric vehicles introduce a few unique challenges that push premiums up compared with traditional petrol cars.",
+      list: [
+        "Higher purchase price: EVs generally cost more to buy, which means insurers pay out more if your car is written off. A higher sum insured almost always means a higher premium.",
+        "Expensive battery packs: The battery is the most valuable component in an EV, sometimes accounting for 30 to 50 per cent of the vehicle's total value. Replacing or repairing a damaged battery is extremely costly.",
+        "Specialist repair costs: Not every panel beater or mechanic is qualified to work on EVs. Fewer approved repairers means less competition and higher labour rates.",
+        "Parts availability: EV-specific parts can have longer lead times, especially for newer or less common models, which increases the cost of claims.",
+        "Newer technology: Insurers have less historical claims data for EVs, so they price conservatively to manage uncertainty."
+      ]
+    },
+    {
+      heading: "How petrol car insurance compares",
+      body: "Petrol cars have decades of claims data behind them. Insurers understand exactly how much it costs to repair a cracked bumper, replace an engine component, or write off a specific model. This predictability generally leads to lower premiums. The repair network is also far more extensive, meaning competitive labour rates and quicker turnaround times. That said, high-end petrol vehicles or performance cars can still carry very steep premiums, so it is not as simple as saying petrol is always cheaper."
+    },
+    {
+      heading: "Average premium differences: a rough guide",
+      body: "Exact figures vary widely depending on the insurer, your location, driving history, and the specific vehicle. The table below gives a general sense of what Australian drivers are reporting in 2026 for comparable vehicle segments.",
+      table: {
+        headers: ["Vehicle segment", "Typical petrol annual premium", "Typical EV annual premium", "Approximate difference"],
+        rows: [
+          ["Small hatchback / sedan", "$900 to $1,300", "$1,200 to $1,700", "+20% to +35%"],
+          ["Medium SUV", "$1,100 to $1,600", "$1,500 to $2,200", "+25% to +40%"],
+          ["Large / luxury SUV", "$1,500 to $2,500", "$2,000 to $3,500", "+25% to +45%"],
+          ["Performance / prestige", "$2,000 to $5,000+", "$2,500 to $6,000+", "+10% to +30%"]
+        ]
+      }
+    },
+    {
+      callout: {
+        type: "info",
+        text: "These figures are indicative estimates based on market research and community-reported data as of mid-2026. Always get multiple quotes tailored to your specific vehicle, postcode, and driver profile before making a decision."
+      }
+    },
+    {
+      heading: "Factors that affect your individual premium",
+      body: "Whether you drive an EV or a petrol car, your personal circumstances will heavily influence what you actually pay. Keep these variables in mind when comparing quotes.",
+      list: [
+        "Your age and driving history: Younger drivers or those with prior claims will pay more regardless of vehicle type.",
+        "Where you live: Inner-city postcodes with higher theft or accident rates attract higher premiums.",
+        "Annual kilometres driven: The more you drive, the greater your exposure to risk.",
+        "Where you park: A secured garage or carport can reduce your premium compared with street parking.",
+        "Your chosen excess: A higher voluntary excess typically lowers your premium.",
+        "The level of cover: Comprehensive cover costs more than third-party fire and theft or third-party property only.",
+        "Agreed value vs market value: Agreed value policies tend to cost more but give you certainty at claim time.",
+        "No-claims discount: A strong claims-free history can significantly reduce your premium over time."
+      ]
+    },
+    {
+      heading: "Tips for reducing your EV insurance costs",
+      body: "Even if EV premiums are higher on average, there are practical steps you can take to bring your costs down.",
+      list: [
+        "Compare multiple insurers: Not all insurers price EVs the same way. Some are actively trying to grow their EV book and price accordingly. Use comparison sites and also call insurers directly.",
+        "Ask about EV-specific policies: A handful of Australian insurers now offer policies tailored to EVs, which may include better cover for charging equipment and battery-specific events.",
+        "Bundle your policies: Combining your car insurance with home or contents insurance under one insurer often unlocks a discount.",
+        "Choose a higher excess: If you are a careful driver with a good history, a higher excess can meaningfully reduce your annual premium.",
+        "Install approved security: Dashcams and approved tracking devices may attract a discount with some insurers.",
+        "Pay annually: Monthly payment plans usually include a fee or interest component. Paying upfront saves money.",
+        "Review your sum insured regularly: As your EV depreciates, make sure your agreed value is not set higher than necessary."
+      ]
+    },
+    {
+      heading: "The bigger picture: total cost of ownership",
+      body: "Insurance is just one piece of the puzzle. While EVs may cost more to insure today, they often offset that through lower fuel costs, reduced servicing expenses, and government incentives that are still available in many Australian states and territories. When comparing an EV to a petrol equivalent, it pays to look at the full cost of ownership over three to five years rather than focusing on any single line item. Our calculator on ev-vs-petrol-calc.com lets you plug in your own numbers, including insurance costs, to get a personalised comparison for your situation.",
+      callout: {
+        type: "tip",
+        text: "Try adding your current or quoted insurance premiums into the ev-vs-petrol-calc.com calculator alongside fuel, servicing, and registration costs. You might find the overall picture is closer than you expect, or that one option is clearly ahead for your circumstances."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
