@@ -2175,6 +2175,78 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-electricity-prices-affect-the-savings-from-switching-to",
+  title: "How electricity prices affect the savings from switching to an EV",
+  excerpt: "Electricity rates vary wildly across Australia, and that variation has a bigger impact on your EV savings than most people realise. Here is what you need to know before you make the switch.",
+  date: "September 28, 2026",
+  readTime: "6 min read",
+  category: "Tips",
+  tags: ["electricity prices", "EV savings", "running costs", "Australia", "charging", "tariffs"],
+  content: [
+    {
+      heading: "Why electricity prices matter more than you might think",
+      body: "When people calculate the savings from switching to an electric vehicle, they often focus on the price of petrol versus the price of electricity in broad strokes. But the truth is that the rate you pay for electricity can make or break the business case for going electric. A driver charging at a generous off-peak rate in South Australia will have a very different experience to someone on a flat-rate plan in Queensland or a time-of-use plan in New South Wales. Understanding how your specific electricity tariff interacts with your driving habits is one of the most important things you can do before committing to an EV."
+    },
+    {
+      heading: "The current state of electricity prices in Australia",
+      body: "Australian electricity prices have continued to shift over the past few years due to changes in the energy mix, grid infrastructure investment, and wholesale market conditions. As of late 2026, average household electricity rates sit somewhere between 28 and 42 cents per kilowatt-hour depending on your state and retailer, though off-peak rates on time-of-use plans can be significantly lower. Here is a rough guide to typical flat rates by state:",
+      table: {
+        headers: ["State", "Typical flat rate (c/kWh)", "Typical off-peak rate (c/kWh)"],
+        rows: [
+          ["NSW", "32", "18"],
+          ["VIC", "30", "16"],
+          ["QLD", "34", "20"],
+          ["SA", "40", "22"],
+          ["WA", "31", "17"]
+        ]
+      }
+    },
+    {
+      heading: "How the rate you pay changes your fuel cost comparison",
+      body: "The clearest way to see the effect of electricity pricing is to compare the cost per 100 kilometres for an EV versus a petrol car. A typical EV uses around 15 to 18 kWh per 100 km. At 30 cents per kWh, that works out to roughly $4.50 to $5.40 per 100 km. At 40 cents per kWh, it climbs to $6.00 to $7.20. Compare that to a petrol car averaging 8 litres per 100 km at $2.10 per litre, which costs around $16.80 per 100 km. Even at the higher electricity rate, the EV is still significantly cheaper to run. But the gap between those two scenarios is real, and over 15,000 kilometres a year it can add up to several hundred dollars in difference."
+    },
+    {
+      heading: "Time-of-use tariffs: the biggest lever you have",
+      body: "If your retailer offers a time-of-use tariff, switching to one before you get your EV can meaningfully improve your savings. These plans charge different rates depending on when you use electricity, with off-peak windows typically running overnight between around 10 pm and 7 am. Charging your EV during those hours can cut your effective fuel cost almost in half compared to charging at peak times during the evening. Most modern EVs and home chargers let you schedule charging so it starts automatically at the cheapest time of night. This is one of the simplest and most effective ways to maximise the savings from your vehicle.",
+      callout: {
+        type: "tip",
+        text: "Before you buy an EV, contact your electricity retailer and ask about time-of-use plans. Switching to off-peak charging can save you $400 to $700 per year depending on how much you drive."
+      }
+    },
+    {
+      heading: "Solar panels change the equation entirely",
+      body: "For homeowners with rooftop solar, the calculus changes dramatically. If you can charge your EV during daylight hours using solar generation, your effective electricity cost can drop close to zero, depending on your system size and household consumption. Even a modest 6.6 kW system can generate enough excess energy on sunny days to cover most or all of a typical day's driving. Some households are finding that their EV running costs are negligible once solar is factored in. Feed-in tariffs for exported solar have fallen considerably in most states, which actually makes it more attractive to self-consume that power by charging your car rather than sending it back to the grid for a few cents per kWh."
+    },
+    {
+      heading: "Public and workplace charging: what does it really cost?",
+      body: "Not everyone charges exclusively at home, and public charging rates are a different story. DC fast chargers at service stations and shopping centres typically charge between 45 and 75 cents per kWh, which can bring your per-kilometre cost closer to that of a petrol car for road trips. The key things to factor in when calculating your real-world savings include:",
+      list: [
+        "What percentage of your charging will be done at home versus in public",
+        "Whether your workplace offers free or subsidised charging",
+        "Whether you have access to off-peak or solar charging at home",
+        "How often you do long highway trips that require fast charging",
+        "Whether your EV has a subscription included for any charging networks"
+      ]
+    },
+    {
+      heading: "Use our calculator to model your specific situation",
+      body: "Because electricity rates, driving patterns, and vehicle efficiency all vary so much, there is no single answer that applies to every Australian driver. That is exactly why we built the ev-vs-petrol-calc.com calculator. You can enter your actual electricity tariff, including off-peak rates if you have them, your estimated annual kilometres, and your solar situation, and the tool will give you a personalised breakdown of what you would spend fuelling a petrol car versus an EV over one, five, and ten years. Small changes in the electricity rate you enter can shift the outcome by thousands of dollars over the life of the vehicle, so it is worth taking a few minutes to get the numbers right.",
+      callout: {
+        type: "info",
+        text: "Check your latest electricity bill for your exact rate in cents per kWh. Do not use a round number or a guess. Even a difference of 5 cents per kWh can change your 10-year savings estimate by over $1,000."
+      }
+    },
+    {
+      heading: "The bottom line",
+      body: "Electricity prices are one of the most powerful variables in the EV savings equation, and they are also one of the few you can actually influence. Switching to a time-of-use tariff, charging overnight, and making use of solar where possible are all practical steps that can significantly improve the financial case for going electric. Even at today's higher grid electricity rates, the majority of Australian drivers will still come out ahead compared to running a petrol vehicle, particularly once you account for lower servicing costs. The key is to run the numbers based on your own situation rather than relying on general estimates.",
+      callout: {
+        type: "warning",
+        text: "If you are considering an EV but live in a unit or apartment without access to home charging, make sure you factor in the cost and availability of public charging in your area. Relying entirely on fast chargers will significantly reduce your savings compared to home charging."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
