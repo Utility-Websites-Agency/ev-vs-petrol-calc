@@ -2337,6 +2337,94 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-to-factor-in-government-incentives-when-comparing-ev-and",
+  title: "How to factor in government incentives when comparing EV and petrol costs",
+  excerpt: "Australian governments offer a range of rebates, stamp duty exemptions and tax breaks for EV buyers. Here is how to find what applies to you and plug those numbers into your cost comparison.",
+  date: "October 12, 2026",
+  readTime: "7 min read",
+  category: "How-to",
+  tags: ["EV incentives", "government rebates", "EV vs petrol", "Australia", "stamp duty", "FBT exemption", "cost comparison"],
+  content: [
+    {
+      heading: "Why incentives matter more than you might think",
+      body: "When most people sit down to compare the cost of an electric vehicle against a petrol car, they focus on the sticker price, fuel costs and servicing. That is a good start, but it leaves out a significant piece of the puzzle: government incentives. In Australia, federal and state governments have put real money on the table to accelerate EV adoption, and if you ignore those numbers your comparison will be skewed from the beginning. Depending on where you live and how you plan to use the vehicle, incentives can reduce your effective purchase price by several thousand dollars, sometimes more. This guide walks you through the main types of incentives available, how to find out what applies to your situation, and how to feed those figures into a proper cost comparison."
+    },
+    {
+      heading: "The main types of incentives available in Australia",
+      body: "Australian EV incentives broadly fall into a few categories. Not every incentive applies in every state, and eligibility rules change regularly, so always check the current rules with the relevant government body before making a decision.",
+      list: [
+        "Purchase rebates: A one-off cash rebate applied at the point of sale or claimed after purchase. Queensland, Western Australia, South Australia and the ACT have all offered rebates at various times, though availability and amounts vary.",
+        "Stamp duty exemptions or concessions: Several states waive or reduce stamp duty on new EVs. This can save buyers anywhere from a few hundred to a few thousand dollars depending on the vehicle price and the state.",
+        "Registration fee discounts: Some states offer reduced registration costs for EVs, which is a smaller but still meaningful ongoing saving.",
+        "Federal fringe benefits tax (FBT) exemption: If you are using a novated lease or a company car arrangement, eligible EVs under the luxury car tax threshold are exempt from FBT. This is one of the most powerful incentives for employees and business owners.",
+        "Income tax savings through novated leasing: Because lease payments are made from pre-tax salary, the effective cost of the vehicle is lower for anyone in a higher tax bracket.",
+        "Interest-free or low-interest loans: Some state governments and councils have partnered with lenders to offer green car loans at reduced rates.",
+        "Infrastructure rebates: A handful of programs offer rebates on home charger installation, which reduces the upfront cost of switching."
+      ]
+    },
+    {
+      callout: {
+        type: "info",
+        text: "Incentive programs are updated frequently. The information in this post reflects the landscape as at October 2026, but you should verify current offerings through your state revenue office and the Australian Tax Office before making any financial decisions."
+      }
+    },
+    {
+      heading: "How to find what applies to you",
+      body: "The easiest way to get a clear picture is to work through a short checklist based on your state, your buying method and your employment situation.",
+      subheading: "Step 1: Check your state government website",
+      body: "Search for your state revenue office or department of transport and look for their EV incentives page. Most states now have a dedicated page that lists current rebates, stamp duty rules and registration discounts. Make a note of the dollar values and any eligibility requirements such as purchase price caps or income limits."
+    },
+    {
+      subheading: "Step 2: Work out your buying method",
+      body: "Are you buying outright, financing through a personal loan, or using a novated lease? The FBT exemption only benefits you if you are using a novated lease or a company vehicle arrangement. If you are buying privately with a personal loan, the FBT exemption does not apply to you directly, though it can still affect resale values. Once you know your buying method, you can narrow down which incentives are actually relevant to your situation."
+    },
+    {
+      subheading: "Step 3: Calculate the net purchase price",
+      body: "Take the drive-away price of the EV you are considering, then subtract any applicable rebate and stamp duty saving. This gives you the true out-of-pocket cost to compare against the petrol vehicle. For example, if an EV has a drive-away price of $55,000 and your state offers a $3,000 rebate plus $1,500 in stamp duty savings, your effective purchase price is $50,500. That changes the comparison significantly."
+    },
+    {
+      heading: "Plugging incentives into your cost comparison",
+      body: "Once you have your adjusted purchase price and a list of ongoing savings, you can run a proper total cost of ownership comparison. Here is how to handle each type of incentive in your calculations.",
+      table: {
+        headers: ["Incentive type", "Where it fits in your comparison", "One-off or ongoing"],
+        rows: [
+          ["Purchase rebate", "Subtract from upfront vehicle cost", "One-off"],
+          ["Stamp duty exemption", "Subtract from upfront vehicle cost", "One-off"],
+          ["Registration discount", "Add to annual running cost savings", "Ongoing"],
+          ["FBT exemption", "Reduces effective lease cost each year", "Ongoing"],
+          ["Home charger rebate", "Subtract from infrastructure setup cost", "One-off"],
+          ["Low-interest green loan", "Use actual interest rate in loan repayment calc", "Ongoing"]
+        ]
+      }
+    },
+    {
+      heading: "Using the ev-vs-petrol-calc.com calculator with incentives",
+      body: "Our calculator has dedicated fields for government incentives so you do not have to do the maths by hand. Here is how to use them effectively.",
+      list: [
+        "Enter the drive-away price as the vehicle purchase price, then use the rebate field to enter any state or federal rebate amount. The calculator will subtract this automatically.",
+        "If your state offers a stamp duty exemption, enter the amount you would have paid on a standard vehicle purchase and note it as a saving in the upfront cost section.",
+        "For registration discounts, enter your actual estimated annual registration cost rather than the standard rate.",
+        "If you are using a novated lease and benefit from the FBT exemption, use the novated lease mode in the calculator. This adjusts the pre-tax salary deduction and shows your real after-tax cost per year.",
+        "In the infrastructure section, enter your charger installation cost minus any rebate you are eligible for."
+      ]
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you are unsure whether you qualify for the FBT exemption, talk to your employer's payroll team or a tax accountant before running your comparison. The saving can be substantial for higher-income earners but the rules around eligible vehicles and arrangement types do have nuances."
+      }
+    },
+    {
+      heading: "A realistic example to bring it together",
+      body: "Say you are in Victoria, employed full time and considering a novated lease on an EV priced at $58,000 drive-away. Victoria currently offers a stamp duty exemption on EVs under a certain price threshold. You are also eligible for the federal FBT exemption through your employer's novated lease arrangement. After the stamp duty saving of roughly $2,200 and factoring in the pre-tax salary benefit of the novated lease over three years, your effective cost of the vehicle could be meaningfully lower than the sticker price suggests. When you compare that adjusted figure against a similarly sized petrol SUV at $48,000, add in the fuel cost difference and lower EV servicing costs, the EV may well come out ahead over a five-year period even before you count the registration discount. The key is not to skip this step. Running the comparison on sticker prices alone almost always makes the EV look more expensive than it actually is once you live with it for a few years."
+    },
+    {
+      heading: "Staying up to date as rules change",
+      body: "One of the trickier aspects of comparing EVs and petrol cars in Australia right now is that the incentive landscape is still shifting. State governments add, modify and wind back programs as EV uptake grows. The federal FBT exemption has its own review timeline. Keeping an eye on changes is worth doing, especially if you are not planning to buy immediately. We recommend bookmarking your state's EV incentives page and checking back every few months. We also update our calculator regularly to reflect current incentive amounts, so running a fresh comparison closer to your purchase date will give you the most accurate picture. The bottom line is simple: incentives are real money, and leaving them out of your comparison is leaving money on the table."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
