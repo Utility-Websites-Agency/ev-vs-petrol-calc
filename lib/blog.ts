@@ -2425,6 +2425,80 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "electric-car-vs-petrol-car-a-beginner-s-guide-to-understandi",
+  title: "Electric car vs petrol car: a beginner's guide to understanding the cost difference",
+  excerpt: "Thinking about making the switch to an electric car but not sure if the numbers stack up? We break down the real costs of electric vs petrol ownership for Australian drivers.",
+  date: "October 19, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "petrol cars", "cost comparison", "EV ownership", "Australia", "fuel costs", "car buying guide"],
+  content: [
+    {
+      heading: "So you're thinking about going electric",
+      body: "The electric vehicle (EV) market in Australia has grown enormously over the past few years. More models are available, charging infrastructure has improved, and the federal government's fringe benefits tax exemption for eligible EVs has made them even more attractive for many buyers. But if you've ever tried to compare the true cost of an electric car against a petrol car, you've probably found it a little confusing. Purchase price, fuel savings, servicing, depreciation, charging costs... where do you even start? This guide cuts through the noise and gives you a straightforward look at what it actually costs to own each type of vehicle in Australia."
+    },
+    {
+      heading: "The upfront cost: EVs still cost more to buy",
+      body: "The most obvious difference between electric and petrol cars is the sticker price. In Australia, entry-level EVs typically start around $40,000 to $50,000 for popular models, while you can find a reliable petrol hatchback or small SUV for anywhere between $25,000 and $40,000. That gap is real, and it matters. However, the upfront price is only one part of the equation. The cheaper car to buy is not always the cheaper car to own. To understand the full picture, you need to look at what you'll spend over the entire time you own the vehicle, which is what we call the total cost of ownership.",
+      callout: {
+        type: "info",
+        text: "The Australian government's FBT exemption means eligible EVs novated leased through an employer can result in significant tax savings. Check with your employer or a salary packaging provider to see if you qualify."
+      }
+    },
+    {
+      heading: "Running costs: where EVs start to win",
+      body: "This is where the story gets more interesting for EV owners. The day-to-day cost of running an electric car is substantially lower than running a petrol car in Australia. Let's look at the two biggest ongoing expenses: fuel and servicing.",
+      subheading: "Charging vs filling up",
+      body: "The average Australian drives around 15,000 kilometres per year. A typical petrol car uses roughly 8 to 10 litres per 100 km. With petrol sitting around $1.90 to $2.20 per litre in most Australian cities, that works out to somewhere between $2,280 and $3,300 per year just in fuel. An equivalent EV might use around 15 to 18 kWh per 100 km. If you charge mostly at home using a standard off-peak electricity rate of around 25 to 35 cents per kWh, your annual charging cost could be as low as $560 to $945. Even if you do a mix of home and public charging, you're very likely to spend significantly less than a petrol car owner."
+    },
+    {
+      heading: "Servicing and maintenance: fewer moving parts, fewer bills",
+      body: "Petrol engines are complex. They have hundreds of moving parts, require regular oil changes, new air filters, spark plugs, timing belts, and more. Electric motors, by contrast, are far simpler. There's no engine oil to change, no timing belt to worry about, and regenerative braking means brake pads last much longer than on a petrol car. Most EV owners report servicing costs that are 30 to 50 per cent lower than what they previously spent on petrol vehicles. The main ongoing maintenance items for an EV are tyres, cabin air filters, and windscreen washer fluid. That's a pretty short list."
+    },
+    {
+      heading: "A quick cost comparison: what the numbers look like",
+      body: "To give you a clearer picture, here's a rough side-by-side comparison based on average Australian conditions over a 5-year ownership period. Keep in mind these are estimates and your actual costs will vary depending on your driving habits, location, electricity tariff, and the specific vehicles you're comparing.",
+      table: {
+        headers: ["Cost category", "Petrol car (est.)", "Electric car (est.)"],
+        rows: [
+          ["Purchase price", "$35,000", "$48,000"],
+          ["Fuel / charging (5 years)", "$13,750", "$4,500"],
+          ["Servicing (5 years)", "$7,500", "$3,500"],
+          ["Registration & insurance (5 years)", "$9,000", "$9,500"],
+          ["Total estimated cost", "$65,250", "$65,500"]
+        ]
+      }
+    },
+    {
+      heading: "Other things worth considering",
+      body: "Beyond the raw numbers, there are a few other factors that Australian buyers should keep in mind when making this decision.",
+      list: [
+        "Depreciation: EVs are still a relatively new technology, and resale values can be harder to predict. Some popular models hold their value well, while others have depreciated quickly as newer, cheaper EVs enter the market.",
+        "Charging at home: if you live in a house with off-street parking, installing a home charger (typically $1,000 to $2,500 installed) is straightforward and makes daily charging very convenient. Apartment dwellers may face more challenges.",
+        "Long-distance driving: Australia's vast distances mean range anxiety is a genuine concern for some drivers. Check that your preferred EV has enough range for your regular trips, and plan for charging stops on longer journeys.",
+        "State-based incentives: some Australian states offer additional rebates or stamp duty exemptions for EVs. These can reduce the upfront cost gap considerably.",
+        "Vehicle to grid (V2G) technology: some newer EVs can feed power back into your home or the grid, potentially earning you money or reducing your electricity bill further."
+      ]
+    },
+    {
+      heading: "How to calculate your personal break-even point",
+      body: "The break-even point is when the total cost of owning an EV drops below what you would have spent on an equivalent petrol car. For most Australian drivers, this typically falls somewhere between three and six years, depending on how much they drive and how cheaply they can charge. The easiest way to figure out your own break-even is to use a calculator that takes into account your specific situation, including your annual kilometres, local electricity rates, petrol prices in your area, and the specific vehicles you're comparing.",
+      callout: {
+        type: "tip",
+        text: "Use the ev-vs-petrol-calc.com calculator to plug in your own numbers and see exactly when an EV would start saving you money based on your real driving habits and location."
+      }
+    },
+    {
+      heading: "The bottom line",
+      body: "There's no single right answer for everyone. If you drive a lot, can charge at home, and plan to keep your car for five or more years, an EV will very likely save you money over the long run despite the higher purchase price. If you drive minimal kilometres, need to travel long distances regularly, or don't have access to home charging, the case for switching is a little less clear-cut right now. The good news is that EVs are becoming more affordable every year, charging infrastructure across Australia continues to improve, and the running cost advantages are only going to become more attractive as petrol prices remain volatile. Doing your homework now puts you in a great position to make the right decision for your budget and your lifestyle.",
+      callout: {
+        type: "warning",
+        text: "Always get independent financial advice before making a major purchase decision. The figures in this article are estimates based on average Australian conditions and may not reflect your personal circumstances."
+      }
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
