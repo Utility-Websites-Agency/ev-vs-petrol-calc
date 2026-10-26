@@ -2499,6 +2499,79 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-to-use-a-cost-calculator-to-decide-if-an-ev-is-right-for",
+  title: "How to use a cost calculator to decide if an EV is right for you",
+  excerpt: "Thinking about switching to an electric vehicle but not sure if the numbers stack up? Here is how to use a cost calculator to get a clear, honest picture of what an EV would actually cost you in Australia.",
+  date: "October 26, 2026",
+  readTime: "6 min read",
+  category: "Calculator guide",
+  tags: ["EV calculator", "electric vehicle cost", "petrol vs electric", "Australia", "how-to"],
+  content: [
+    {
+      heading: "Why guessing is not good enough",
+      body: "The decision to buy an electric vehicle is one of the bigger financial calls you will make. And yet most Australians approach it with a rough gut feel, a few conversations with mates, and maybe a glance at the sticker price. The problem is that the sticker price tells you almost nothing. What you really need to know is the total cost of ownership over the years you plan to drive the car. That is where a proper cost calculator comes in. It takes the guesswork out and gives you actual numbers you can act on.",
+    },
+    {
+      heading: "What a cost calculator actually does",
+      body: "A good EV versus petrol calculator compares two vehicles side by side over a period you choose, usually three, five, or seven years. It accounts for all the costs that matter, not just fuel. Here is what a solid calculator will factor in:",
+      list: [
+        "Purchase price (including any government rebates or stamp duty concessions available in your state)",
+        "Fuel or electricity costs based on how many kilometres you drive each year",
+        "Servicing and maintenance costs (EVs generally have fewer moving parts and lower ongoing service costs)",
+        "Registration fees, which can vary between states and vehicle types",
+        "Insurance estimates based on vehicle value",
+        "Depreciation over your ownership period",
+        "Charging infrastructure costs, such as installing a home wall charger",
+        "Any applicable fringe benefits tax if the vehicle is salary sacrificed through your employer",
+      ],
+    },
+    {
+      heading: "Step by step: how to get useful results",
+      body: "Getting meaningful output from a calculator depends on putting in accurate inputs. Here is how to work through it properly.",
+      subheading: "Step 1: Enter your real driving habits",
+      body: "The single biggest variable is how far you drive each year. Pull up your logbook or check your last few fuel receipts to work out a realistic annual kilometre figure. Do not just estimate. If you drive 12,000 km a year, that is very different from 25,000 km, and the calculator results will reflect that gap significantly.",
+    },
+    {
+      subheading: "Step 2: Use your actual electricity and petrol costs",
+      body: "The calculator will ask for your electricity tariff and your average petrol price. Do not use headline figures from the news. Log in to your energy account and find your actual cents per kilowatt-hour rate, including any time-of-use rates if you plan to charge overnight. For petrol, use what you have been paying at your local servo over the past month or two. These two numbers drive a large portion of the running cost comparison, so accuracy here matters.",
+    },
+    {
+      subheading: "Step 3: Compare like-for-like vehicles",
+      body: "Try to compare vehicles that are genuinely similar in size, features, and use case. Comparing a base model petrol hatchback to a premium EV SUV will skew the numbers in an unhelpful direction. Pick the petrol car you would actually buy if you were not going electric, then find an EV in the same segment. That comparison will give you a fair picture.",
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "If you are in New South Wales, Victoria, Queensland, or another state that offers EV incentives, make sure the calculator you use applies those correctly. Rebates and stamp duty exemptions can shift the upfront cost by several thousand dollars and meaningfully change the break-even point.",
+      },
+    },
+    {
+      heading: "Understanding the break-even point",
+      body: "The break-even point is the moment in time when the total cost of owning the EV drops below the total cost of owning the petrol alternative. Because EVs tend to cost more upfront but less to run, there is always a crossover. A calculator will show you when that crossover happens for your specific situation. For many Australians driving average distances with standard electricity tariffs, the break-even lands somewhere between three and six years. If you plan to keep the car for longer than that, the EV almost always comes out ahead over the full ownership period. If you are likely to sell in two years, the numbers may not favour an EV just yet.",
+    },
+    {
+      heading: "What the calculator cannot tell you",
+      body: "A cost calculator is a powerful tool but it does have limits. It cannot predict future petrol prices or electricity tariffs with certainty, though you can run scenarios with different assumptions to stress test the result. It also cannot quantify how convenient public charging is in your area, whether your apartment building will allow a home charger to be installed, or how you will feel about range anxiety on a long trip to the country. These are real considerations that sit outside the maths. Use the calculator to get confident on the financial side, then weigh up the lifestyle factors separately.",
+      callout: {
+        type: "warning",
+        text: "Be cautious of calculators that do not include depreciation or that use overly optimistic electricity rates. Always check which assumptions are baked in so you can adjust them to match your real situation.",
+      },
+    },
+    {
+      heading: "Running a few different scenarios",
+      body: "One of the most useful things you can do is run the calculator more than once with different inputs. Try a low annual kilometre scenario and a high one. Try your current electricity tariff and a slightly higher one in case rates rise. Try a three-year ownership period and a seven-year one. Seeing how the results shift across these scenarios helps you understand which factors matter most in your decision and gives you a much more rounded view than a single calculation.",
+    },
+    {
+      heading: "Ready to run the numbers?",
+      body: "The ev-vs-petrol-calc.com calculator is built specifically for Australian conditions. It uses current Australian electricity and fuel benchmarks, applies state-based incentives automatically, and lets you customise every input so the results reflect your actual life. If you have been sitting on the fence about going electric, spending ten minutes with the calculator is the most practical first step you can take. Put your real numbers in, see where the break-even lands, and make the call with confidence rather than guesswork.",
+      callout: {
+        type: "info",
+        text: "The calculator is free to use and does not require you to create an account. You can save or share your results as a link if you want to compare scenarios later or show them to a partner or financial adviser.",
+      },
+    },
+  ],
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
