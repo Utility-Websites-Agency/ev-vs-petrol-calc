@@ -2572,6 +2572,97 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   ],
 },
+  {
+  slug: "how-to-compare-the-total-cost-of-ownership-for-any-ev-and-pe",
+  title: "How to compare the total cost of ownership for any EV and petrol model",
+  excerpt: "Sticker price is only part of the story. Learn how to do a proper total cost of ownership comparison between any electric and petrol vehicle so you can make a confident, informed decision.",
+  date: "November 2, 2026",
+  readTime: "7 min read",
+  category: "How-to",
+  tags: ["total cost of ownership", "EV vs petrol", "car buying", "Australia", "calculator guide", "running costs"],
+  content: [
+    {
+      heading: "Why sticker price tells you almost nothing",
+      body: "Walk into a dealership and the price tag on the windscreen feels like the whole story. But for most Australian drivers, the purchase price is actually one of the smaller factors when you look at what a car truly costs over five or ten years of ownership. Fuel, servicing, insurance, registration, depreciation and even the cost of borrowing money all stack up in ways that can completely flip which vehicle is the better deal. This is what total cost of ownership (TCO) is all about, and it is the fairest way to compare an EV against a petrol equivalent.",
+    },
+    {
+      heading: "What total cost of ownership actually includes",
+      body: "TCO adds up every dollar you spend on a vehicle from the day you buy it to the day you sell or scrap it. When comparing an EV to a petrol car, you need to account for the following categories:",
+      list: [
+        "Purchase price (including any applicable government rebates or stamp duty differences)",
+        "Finance costs if you are borrowing, including interest over the loan term",
+        "Fuel or electricity costs based on your annual kilometres and local energy prices",
+        "Scheduled servicing and maintenance (EVs generally have lower ongoing costs here)",
+        "Tyres and consumables such as brake pads (EVs use regenerative braking and wear pads more slowly)",
+        "Registration and compulsory third party insurance",
+        "Comprehensive insurance premiums",
+        "Depreciation, or how much value the car loses over time",
+        "Any home charging equipment you need to install for an EV",
+        "Resale value at the end of your ownership period",
+      ],
+    },
+    {
+      heading: "How to use the ev-vs-petrol-calc.com calculator",
+      body: "Our calculator is designed to handle all of the categories above without requiring a spreadsheet or a finance degree. Here is how to get the most accurate result from it. Start by entering the drive-away price for each vehicle, not just the manufacturer's list price. Drive-away includes on-road costs, stamp duty and dealer delivery fees, which vary by state. Next, enter your postcode so the tool can apply the correct state-based rebates and any applicable EV stamp duty exemptions. As of late 2026, several Australian states still offer purchase incentives for EVs, and the calculator keeps these up to date automatically.",
+    },
+    {
+      callout: {
+        type: "tip",
+        text: "Always use the drive-away price rather than the manufacturer's list price when entering vehicle costs. Drive-away figures include stamp duty and dealer fees, which differ significantly between states and can add thousands to the real purchase cost.",
+      },
+    },
+    {
+      heading: "Getting your energy and fuel costs right",
+      body: "This is where many back-of-envelope comparisons go wrong. For petrol costs, enter the fuel consumption figure from the manufacturer (in litres per 100 km) and the average petrol price in your area. For electricity costs on an EV, the calculator uses your postcode to suggest a regional average, but you should override this with your actual tariff if you know it. If you charge mostly overnight on an off-peak rate, your cost per kilometre will be considerably lower than someone on a flat rate. If you rely heavily on public DC fast chargers, your cost per kilometre will be higher. The calculator lets you set a mix of home charging and public charging to reflect your real habits.",
+    },
+    {
+      heading: "Depreciation and resale value",
+      body: "Depreciation is often the single largest cost of car ownership for Australians, yet it is the most frequently ignored. EVs have historically depreciated faster than petrol equivalents in some segments, though this gap has narrowed considerably as buyer confidence has grown and the used EV market has matured. Our calculator uses current Australian used car market data to estimate residual values at one, three and five year marks for each model you compare. If you plan to keep the car for a long time, depreciation matters less. If you change cars every three years, it can be the deciding factor.",
+      callout: {
+        type: "info",
+        text: "Residual value estimates in the calculator are updated quarterly using Australian used car market data. They are projections only and your actual resale price will depend on vehicle condition, kilometres travelled and market conditions at the time of sale.",
+      },
+    },
+    {
+      heading: "A worked example: small SUV comparison",
+      body: "To show how the numbers can look in practice, here is a simplified example comparing a popular petrol small SUV against a comparable EV, for a driver in suburban Melbourne doing 15,000 km per year and keeping the car for five years.",
+      table: {
+        headers: ["Cost category", "Petrol SUV", "EV SUV"],
+        rows: [
+          ["Drive-away price", "$42,000", "$52,000"],
+          ["Less government rebate", "$0", "-$3,000"],
+          ["Net purchase cost", "$42,000", "$49,000"],
+          ["5-year fuel/electricity", "$12,750", "$3,900"],
+          ["5-year servicing", "$6,500", "$2,800"],
+          ["5-year registration", "$4,200", "$4,200"],
+          ["Estimated depreciation (5 yr)", "$18,000", "$21,000"],
+          ["Total 5-year cost", "$83,450", "$80,900"],
+        ],
+      },
+    },
+    {
+      heading: "Common mistakes to avoid",
+      body: "Even with a good calculator, it is easy to skew your comparison by making a few common errors. Watch out for these when you run your numbers:",
+      list: [
+        "Using the ADR fuel consumption figure instead of your real-world consumption, which is typically 15 to 25 per cent higher",
+        "Forgetting to include the cost of a home EV charger installation, which can range from $800 to $2,500 depending on your switchboard",
+        "Ignoring the time value of money by not accounting for the higher upfront cost of an EV when comparing",
+        "Assuming identical insurance premiums when EVs often cost more to insure due to higher repair costs",
+        "Using a single electricity price when you might benefit from a time-of-use tariff by charging overnight",
+      ],
+    },
+    {
+      callout: {
+        type: "warning",
+        text: "Do not rely on manufacturer fuel consumption figures for your petrol car cost estimate. Real-world consumption is almost always higher. Use your own data from previous fill-ups if you have it, or add around 20 per cent to the official figure as a rough correction.",
+      },
+    },
+    {
+      heading: "Making a decision that fits your situation",
+      body: "The right answer is different for every driver. Someone who does long regional drives and has limited access to charging infrastructure may find that a petrol car still makes financial sense right now. Someone who commutes daily in a city, charges at home overnight and keeps their car for seven or more years will almost certainly find the EV comes out ahead. That is exactly why a personalised calculator beats any generic comparison you find in a newspaper or on a car review site. Plug in your own numbers, your own state, your own driving habits and your own ownership period. The result you get will be relevant to you, not to some average Australian that may not look anything like you.",
+    },
+  ],
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
