@@ -2663,6 +2663,77 @@ export const BLOG_POSTS: BlogPost[] = [
     },
   ],
 },
+  {
+  slug: "how-fuel-price-volatility-makes-the-case-for-switching-to-an",
+  title: "How fuel price volatility makes the case for switching to an electric car",
+  excerpt: "Petrol prices in Australia can swing by 30 cents a litre in a single week. We look at how that unpredictability hits your hip pocket and why switching to an EV could give you a much smoother ride.",
+  date: "November 9, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["fuel prices", "electric vehicles", "EV savings", "petrol costs", "Australia", "running costs"],
+  content: [
+    {
+      heading: "The price at the pump is never the same twice",
+      body: "If you have ever pulled into a servo on a Tuesday and paid $1.65 a litre, then driven past the same station on Friday to see $2.10 on the board, you already understand fuel price volatility. It is not just an annoyance. For Australian households that drive regularly, unpredictable petrol prices make budgeting genuinely difficult. You can plan your grocery spend, your electricity bill, and your mortgage repayment with reasonable confidence, but the cost of filling your tank can shift dramatically from one week to the next. That uncertainty has a real financial cost, and it is one that electric vehicle owners largely avoid."
+    },
+    {
+      heading: "Why petrol prices are so hard to predict",
+      body: "Australian petrol prices are tied to the global oil market, which is influenced by geopolitical events, OPEC production decisions, the Australian dollar exchange rate, and seasonal demand. Local refinery capacity and retailer pricing cycles add another layer of complexity. Capital cities like Sydney and Melbourne follow a well-documented price cycle where costs rise sharply and then fall gradually over a period of roughly four to six weeks. Regional drivers often face even higher prices with less predictable movement. The result is that no matter how carefully you plan, the fuel line in your household budget is always a moving target.",
+      list: [
+        "Global crude oil prices fluctuate daily based on supply and demand",
+        "The AUD/USD exchange rate affects what Australians pay at the pump",
+        "OPEC and major oil-producing nations can cut or increase supply with little warning",
+        "Local pricing cycles in major cities can add 20 to 40 cents per litre at the wrong time",
+        "Conflict, natural disasters, and trade disruptions can cause sudden price spikes",
+        "Regional and rural Australians typically pay a premium on top of already volatile city prices"
+      ]
+    },
+    {
+      heading: "What volatility actually costs you over a year",
+      body: "Let us put some numbers around this. The average Australian drives roughly 13,000 kilometres per year. In a mid-size petrol car with a fuel efficiency of around 10 litres per 100 km, that is 1,300 litres of petrol annually. When the average price sits at $1.80 per litre, your annual fuel bill is $2,340. But if prices spike to $2.10 for even a quarter of your fill-ups across the year, that figure climbs noticeably. More importantly, there is a planning problem. You simply cannot know in advance what your fuel spend will be. That makes it hard to set a realistic transport budget and even harder to compare the true cost of your current car against an alternative.",
+      callout: {
+        type: "info",
+        text: "Use the EV vs Petrol calculator on this site to plug in your actual driving distance, your local electricity rate, and current petrol prices. The calculator lets you model different fuel price scenarios so you can see exactly how much petrol price swings affect your annual running costs compared to an EV."
+      }
+    },
+    {
+      heading: "How electricity costs compare",
+      body: "Electricity prices in Australia have risen over the past few years, and that is a fair concern for anyone considering an EV. But there are two key differences between electricity and petrol as an energy source for your car. First, the cost per kilometre for electricity is significantly lower. Charging a typical EV at the average Australian residential rate of around 30 to 35 cents per kilowatt hour works out to roughly 5 to 7 cents per kilometre. A comparable petrol car at $1.90 per litre costs around 19 cents per kilometre. Second, electricity prices, while not perfectly stable, do not swing by 20 per cent in a single week the way petrol can. If you add solar panels and home charging, your effective fuel cost can drop close to zero during daylight hours, locking in a rate that petrol simply cannot match."
+    },
+    {
+      heading: "The budgeting advantage of going electric",
+      body: "One underappreciated benefit of an EV is that it turns your transport energy cost into something much closer to a fixed expense. If you charge at home overnight on a flat-rate electricity tariff, you know almost exactly what each month will cost you. Many EV owners on time-of-use tariffs charge during off-peak periods, often between 10pm and 7am, where rates can be as low as 15 to 20 cents per kilowatt hour. That predictability has genuine value. It means you can budget your transport costs with the same confidence you have for rent or a mortgage repayment. For households managing tight finances, removing one major variable from the equation is a meaningful quality-of-life improvement.",
+      callout: {
+        type: "tip",
+        text: "If you have rooftop solar, consider setting your EV to charge during the middle of the day when your panels are producing the most power. Many newer EVs and home chargers allow you to schedule charging windows, which can reduce your effective per-kilometre cost to near zero."
+      }
+    },
+    {
+      heading: "What to watch out for when making the switch",
+      body: "Switching to an EV is not without its own considerations. The upfront purchase price of electric vehicles remains higher than equivalent petrol models for many segments, though that gap has been narrowing. Charging infrastructure outside major cities is improving but is not yet at petrol station density. And if you live in an apartment without access to home charging, your options are more limited. These are real factors and worth weighing carefully.",
+      list: [
+        "Higher purchase price: compare the total cost of ownership, not just the sticker price",
+        "Home charging access: renters and apartment dwellers may have limited options",
+        "Long road trips: plan your route around fast chargers using apps like PlugShare or the NRMA map",
+        "Electricity tariff: check whether your retailer offers an EV-friendly or off-peak rate",
+        "Battery range: match the vehicle range to your actual daily driving needs",
+        "Resale value: EV resale values are still maturing in Australia, so factor this into your calculations"
+      ]
+    },
+    {
+      heading: "Running the numbers before you decide",
+      body: "The best way to cut through the noise is to compare costs based on your own situation rather than national averages. How far do you drive each week? What petrol price do you typically pay? What is your home electricity rate? Do you have solar? These inputs make an enormous difference to the outcome. Our EV vs Petrol calculator is designed specifically for Australian users and lets you adjust all of these variables. You can model a conservative scenario with higher electricity prices and a lower petrol price, or a more realistic scenario based on current market conditions. The goal is to give you a clear, honest picture of whether an EV makes financial sense for your household right now, not just in theory.",
+      callout: {
+        type: "warning",
+        text: "Be cautious of comparisons that use a single fixed petrol price. Given how volatile fuel costs are in Australia, any calculation that does not account for price variability will likely understate the long-term savings of switching to an EV."
+      }
+    },
+    {
+      heading: "The bottom line",
+      body: "Fuel price volatility is not going away. The same global forces that have driven petrol above $2.00 a litre in Australian cities multiple times in recent years are still in play. For drivers who are tired of watching the number on the pump change every week, an electric vehicle offers something genuinely valuable: a stable, predictable, and significantly cheaper cost per kilometre. The upfront investment still needs to stack up for your situation, but for many Australian households, the maths is becoming increasingly hard to ignore. Use the calculator, run your own numbers, and see where you stand."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
