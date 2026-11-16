@@ -2734,6 +2734,81 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "how-driving-habits-change-the-cost-equation-for-electric-vs",
+  title: "How driving habits change the cost equation for electric vs petrol cars",
+  excerpt: "Your annual kilometres, charging setup and daily routine can shift the financial case for going electric dramatically. Here is what Australian drivers need to know before making the switch.",
+  date: "November 16, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["electric vehicles", "petrol cars", "running costs", "driving habits", "Australia", "EV calculator", "fuel costs", "charging"],
+  content: [
+    {
+      heading: "It is not just about the sticker price",
+      body: "When Australians compare electric vehicles (EVs) to petrol cars, the conversation usually starts and ends at the purchase price. That is understandable, because the upfront gap can still be significant. But the sticker price only tells part of the story. How you actually use your car, where you drive, how far you travel each week, and how you charge, can completely flip the financial comparison. Two drivers buying the same EV can end up with very different cost outcomes simply because of how they live their lives."
+    },
+    {
+      heading: "Annual kilometres: the single biggest lever",
+      body: "The more you drive, the faster you recoup an EV's higher purchase price through fuel savings. Electricity costs roughly a third to a quarter of what petrol costs per kilometre in most parts of Australia right now. That means high-kilometre drivers benefit enormously from switching, while someone who barely uses their car may not break even within a typical ownership period.",
+      list: [
+        "Under 10,000 km per year: the payback period stretches out considerably and petrol cars may remain cheaper over five years",
+        "10,000 to 15,000 km per year: break-even is realistic within five to seven years depending on the models compared",
+        "15,000 to 20,000 km per year: EVs typically become cheaper to own within four to six years",
+        "Over 20,000 km per year: the savings case for EVs is usually very strong, often breaking even in three to five years",
+        "High-mileage workers such as tradies or regional salespeople can see the biggest lifetime savings of all"
+      ]
+    },
+    {
+      heading: "Home charging versus public charging: a cost gap you cannot ignore",
+      body: "One of the most important variables in the EV cost equation is where you charge. Drivers with a home charger, particularly those on a time-of-use electricity tariff, can charge overnight at some of the cheapest rates available. In contrast, relying heavily on public DC fast chargers can push your per-kilometre electricity cost much closer to what you would spend on petrol, narrowing the savings gap significantly.",
+      callout: {
+        type: "tip",
+        text: "If you live in a house and can install a home charger, you are in the best possible position to maximise EV savings. Even a standard 10-amp plug can work for low-kilometre drivers, while a 7kW wall charger suits most households. Check whether your electricity retailer offers an EV tariff, as some are as low as 10 to 15 cents per kWh overnight."
+      }
+    },
+    {
+      heading: "City driving versus highway driving",
+      body: "EVs recover energy through regenerative braking, which makes them particularly efficient in stop-start city traffic. Petrol engines, on the other hand, tend to perform more efficiently at steady highway speeds. This means urban commuters typically see a larger efficiency advantage with an EV compared to someone who does mostly long highway runs. If your daily drive involves a lot of traffic lights, school zones and suburban streets, your real-world EV savings will likely be higher than the official estimates suggest."
+    },
+    {
+      heading: "How different driver profiles stack up",
+      body: "To make this concrete, consider how three different Australian driver profiles compare when choosing between a mid-range EV and a comparable petrol car.",
+      table: {
+        headers: ["Driver profile", "Annual km", "Charging method", "Likely outcome"],
+        rows: [
+          ["City commuter with home charger", "14,000 km", "Mostly home overnight", "EV likely cheaper within 5 years"],
+          ["Suburban family, mixed use", "18,000 km", "Mix of home and public", "EV competitive, break-even around 5 to 6 years"],
+          ["Regional driver, highway focused", "25,000 km", "Mostly public fast charging", "Savings reduced, petrol may still compete"],
+          ["Low-use retiree", "7,000 km", "Home charger available", "Petrol likely cheaper over 5 years on purchase price alone"],
+          ["High-km tradie, metro area", "30,000 km", "Home charger overnight", "EV very likely cheaper over 5 years, strong savings case"]
+        ]
+      }
+    },
+    {
+      heading: "Other habits that affect the numbers",
+      body: "Beyond kilometres and charging, a few other driving habits can nudge the equation one way or the other.",
+      list: [
+        "Air conditioning use: heavy AC use in Queensland or Western Australia will reduce your EV range and increase running costs slightly",
+        "Towing and carrying heavy loads: EVs use more energy under heavy load, so frequent towing reduces the efficiency advantage",
+        "Driving style: aggressive acceleration and high speeds reduce range and increase per-kilometre costs for EVs just as they do for petrol cars",
+        "Parking with solar: if your home or workplace has solar panels and you can charge during the day, your effective charging cost can drop to near zero",
+        "Planned long trips: occasional long road trips are manageable with modern EVs and fast charger networks, but they do require more planning than a petrol fill-up"
+      ]
+    },
+    {
+      heading: "Use a calculator to crunch your specific numbers",
+      body: "General rules of thumb are useful, but nothing beats putting your actual numbers in. Our EV vs petrol calculator at ev-vs-petrol-calc.com lets you enter your real annual kilometres, your local electricity and petrol prices, your expected charging split between home and public, and the specific vehicles you are comparing. It then gives you a year-by-year cost comparison so you can see exactly when, and whether, an EV makes financial sense for your situation.",
+      callout: {
+        type: "info",
+        text: "Australian petrol prices and electricity tariffs vary significantly by state and even by suburb. Using your actual local prices rather than national averages can change the break-even point by a year or more. Our calculator lets you enter your postcode to get more accurate local fuel and electricity costs."
+      }
+    },
+    {
+      heading: "The bottom line",
+      body: "There is no single answer to whether an EV or a petrol car is cheaper for every Australian driver. The honest answer is that it depends heavily on how you drive. High-kilometre city drivers with home charging are the clearest winners financially. Low-kilometre drivers or those without home charging access need to look more carefully at the numbers before assuming an EV will save them money. The good news is that the tools to work this out are now available and straightforward to use. Put your own situation into the calculator and let the numbers guide your decision rather than relying on anyone else's generalisation."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
