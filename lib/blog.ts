@@ -2809,6 +2809,76 @@ export const BLOG_POSTS: BlogPost[] = [
     }
   ]
 },
+  {
+  slug: "electric-car-depreciation-vs-petrol-car-depreciation-what-th",
+  title: "Electric car depreciation vs petrol car depreciation: what the numbers show",
+  excerpt: "Depreciation is the biggest hidden cost of car ownership. We break down how electric and petrol cars lose their value over time, and what it means for Australian buyers.",
+  date: "November 23, 2026",
+  readTime: "7 min read",
+  category: "Tips",
+  tags: ["depreciation", "electric cars", "petrol cars", "car costs", "Australia", "EV"],
+  content: [
+    {
+      heading: "Why depreciation matters more than you think",
+      body: "When most Australians compare the cost of an electric car versus a petrol car, they focus on fuel savings and purchase price. Depreciation rarely gets the attention it deserves, yet it is typically the single largest cost of owning any vehicle. Depreciation is simply the difference between what you paid for your car and what it is worth when you sell it or trade it in. Over a standard five-year ownership period, the average Australian car loses somewhere between 40% and 65% of its original value. That can easily add up to tens of thousands of dollars, dwarfing what you spend on fuel or servicing. Understanding how electric vehicles (EVs) and internal combustion engine (ICE) vehicles depreciate differently can make a real difference to the total cost of ownership calculation."
+    },
+    {
+      heading: "How depreciation is calculated",
+      body: "Depreciation is not a fixed fee you pay each month. It is a gradual loss of market value that only becomes real when you decide to sell. The standard way to express it is as a percentage of the original purchase price lost per year, or as a total percentage lost over a set period. For example, if you buy a car for $60,000 and sell it five years later for $30,000, you have lost $30,000 or 50% of its value. That works out to roughly $6,000 per year in depreciation costs. Several factors drive how fast a car depreciates, including brand reputation, mileage, condition, fuel type, running costs, and broader market demand. The tricky part for EVs is that many of these factors are still shifting as the technology matures and the second-hand market develops."
+    },
+    {
+      heading: "What the data shows for petrol cars",
+      body: "Petrol cars in Australia have a relatively predictable depreciation pattern because we have decades of resale data to draw on. As a general rule, a new petrol car loses around 15% to 25% of its value in the first year alone, simply by being driven off the lot. By year three, the typical petrol vehicle has lost around 40% of its original value. By year five, that figure climbs to between 50% and 60% for most mainstream models. Premium or luxury petrol vehicles often depreciate faster in percentage terms, while popular utes and SUVs from brands like Toyota tend to hold their value better than average. The used petrol car market in Australia is mature and liquid, which means buyers and sellers have a clear sense of what a vehicle should be worth at any given age and mileage."
+    },
+    {
+      heading: "What the data shows for electric cars",
+      body: "EV depreciation in Australia is a more complicated story. In the early years of the EV market, some models depreciated very quickly because buyer confidence was low and the second-hand market was thin. That picture has changed significantly. High-demand EVs, particularly Tesla models, have at times held their value exceptionally well, and in some periods even appreciated due to supply constraints. More recently, as EV supply has caught up and competition has intensified, depreciation rates have started to normalise. As of late 2026, mainstream EVs in Australia are depreciating at rates broadly similar to comparable petrol cars over a five-year period, though there is significant variation by brand and model. One important factor that remains unique to EVs is battery degradation. Buyers in the used market will pay close attention to battery health, so a vehicle with a degraded battery can depreciate more sharply than average.",
+      callout: {
+        type: "info",
+        text: "Battery health reports are becoming a standard part of used EV listings in Australia. If you are buying or selling a second-hand EV, getting an independent battery health check can significantly affect the asking price."
+      }
+    },
+    {
+      heading: "Side-by-side comparison: a typical five-year scenario",
+      body: "To make this concrete, consider two vehicles purchased new in 2026 for a similar price. The table below uses indicative figures based on current Australian market trends. These are estimates and actual results will vary by model, condition, and location.",
+      table: {
+        headers: ["", "Petrol SUV ($60,000)", "Electric SUV ($60,000)"],
+        rows: [
+          ["Value after year 1", "$46,500 (22.5% loss)", "$48,000 (20% loss)"],
+          ["Value after year 2", "$39,000 (35% loss)", "$40,800 (32% loss)"],
+          ["Value after year 3", "$33,000 (45% loss)", "$34,800 (42% loss)"],
+          ["Value after year 4", "$27,600 (54% loss)", "$29,400 (51% loss)"],
+          ["Value after year 5", "$24,000 (60% loss)", "$25,800 (57% loss)"],
+          ["Total depreciation cost", "$36,000", "$34,200"]
+        ]
+      }
+    },
+    {
+      heading: "Key factors that affect EV depreciation specifically",
+      body: "If you are considering an EV purchase and want to protect your resale value, it helps to understand what buyers in the used market actually care about. The following factors have the biggest influence on how well an EV holds its value:",
+      list: [
+        "Battery state of health: a battery holding above 80% of original capacity is considered good. Anything lower will attract buyer scrutiny and lower offers.",
+        "Brand and model popularity: established brands with strong service networks, like Tesla and BYD, tend to retain value better than newer or less recognised names.",
+        "Charging compatibility: vehicles with CCS or NACS charging standards hold value better than those relying on proprietary or less common connectors.",
+        "Software and feature support: manufacturers that continue to push over-the-air updates and add features keep older vehicles feeling current, which supports resale value.",
+        "Government incentive changes: if state or federal incentives are phased out for certain models or price points, resale values on those vehicles can drop quickly.",
+        "Range anxiety perception: models with longer real-world range continue to outperform shorter-range alternatives in the used market."
+      ]
+    },
+    {
+      heading: "The total cost of ownership picture",
+      body: "Depreciation does not exist in isolation. When you factor in fuel or electricity costs, servicing, insurance, and registration, the total cost of ownership comparison between EVs and petrol cars becomes more nuanced. EVs generally save money on fuel and routine servicing because they have fewer moving parts and no oil changes. Depreciation costs, as the table above suggests, are now broadly similar over five years for comparable models. This means the overall cost advantage of EVs is real, but it comes primarily from lower running costs rather than a dramatic difference in depreciation. For high-kilometre drivers, the fuel saving compounds quickly. For someone doing 10,000 km per year or less, the numbers are closer.",
+      callout: {
+        type: "tip",
+        text: "Use the ev-vs-petrol-calc.com calculator to plug in your own purchase price, annual kilometres, and local electricity and fuel costs. The tool will show you a full five-year cost breakdown including estimated depreciation, so you can compare apples with apples."
+      }
+    },
+    {
+      heading: "What this means for Australian buyers in 2026",
+      body: "The short answer is that electric car depreciation is no longer the wild card it once was. For most mainstream EV models available in Australia today, you can expect depreciation rates within a few percentage points of a comparable petrol vehicle over a five-year period. The bigger variables are brand, battery health, and how the broader market shifts as more EVs hit the road. If you are buying new and planning to keep the car for five or more years, depreciation is a sunk cost either way, and the running cost savings of an EV are likely to work in your favour. If you are buying used or planning to sell within two to three years, do your homework on the specific model, check battery health, and use a calculator to model the full cost picture before you commit. The numbers are there to guide you. It just takes a few minutes to run them."
+    }
+  ]
+},
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
